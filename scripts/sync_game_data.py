@@ -28,6 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 DEFAULT_DB = DATA_DIR / "三国谋定天下_Steam_S1.sqlite3"
 BASE_URL = "https://www.sgmdtx.com"
+WIKI_URL = "https://wiki.ldmnq.com/sanguo_modingtianxia"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) CodexLocalGameArchive/1.0"
 NOW = dt.datetime.now(dt.timezone(dt.timedelta(hours=8))).isoformat(timespec="seconds")
 
@@ -209,6 +210,56 @@ def parse_effects(url: str) -> list[dict]:
     return result
 
 
+def wiki_catalog(section: str) -> list[tuple[str, str]]:
+    index_url = f"{WIKI_URL}/{section}/"
+    doc = html.fromstring(fetch(index_url))
+    result = {}
+    for anchor in doc.xpath(f"//a[contains(@href, '/{section}/')]"):
+        href = anchor.get("href") or ""
+        name = clean_text(anchor)
+        if not name or not href.endswith(".html"):
+            continue
+        result[name] = urllib.parse.urljoin(index_url, href)
+    return sorted(result.items())
+
+
+def wiki_tactic_quality_catalog() -> list[dict]:
+    index_url = f"{WIKI_URL}/zhanfa/"
+    doc = html.fromstring(fetch(index_url))
+    colors = {"#FFFF33": "金", "#871F78": "紫", "#38B0DE": "蓝"}
+    result = []
+    for anchor in doc.xpath("//a[contains(@href, '/zhanfa/')]"):
+        href = anchor.get("href") or ""
+        name = clean_text(anchor)
+        if not name or not href.endswith(".html"):
+            continue
+        style = " ".join(anchor.xpath(".//*[@style]/@style"))
+        quality = next((value for color, value in colors.items() if color.lower() in style.lower()), None)
+        result.append({
+            "name": name,
+            "url": urllib.parse.urljoin(index_url, href),
+            "quality": quality,
+            "combat_role": None,
+        })
+    return sorted(result, key=lambda row: row["name"])
+
+
+def parse_wiki_quality(item: tuple[str, str], include_role: bool = False) -> dict:
+    name, url = item
+    doc = html.fromstring(fetch(url))
+    body = clean_text(doc)
+    quality = None
+    for marker, value in (("橙卡", "金"), ("紫卡", "紫"), ("蓝卡", "蓝")):
+        if marker in body:
+            quality = value
+            break
+    role = None
+    if include_role:
+        match = re.search(r"战法推荐\s*主[：:]\s*(兵刃|谋略|治疗|防御|辅助|文武)", body)
+        role = match.group(1) if match else None
+    return {"name": name, "url": url, "quality": quality, "combat_role": role}
+
+
 def parallel_parse(urls: list[str], parser, workers: int) -> tuple[list[dict], list[str]]:
     rows, errors = [], []
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
@@ -258,8 +309,9 @@ def load_account(conn: sqlite3.Connection) -> None:
     gold = {"威名显赫", "伏兵四起", "五雷轰顶", "王佐之才", "铁骑横冲", "势如破竹", "战八方"}
     for name, level, team in inventory["generals"]:
         conn.execute(
-            "INSERT INTO generals(name,updated_at,verification_status) VALUES(?,?,?) ON CONFLICT(name) DO NOTHING",
-            (name, NOW, "Steam已核"),
+            """INSERT INTO generals(name,quality,updated_at,verification_status) VALUES(?,?,?,?)
+               ON CONFLICT(name) DO UPDATE SET quality='金'""",
+            (name, "金", NOW, "Steam已核"),
         )
         general_id = conn.execute("SELECT id FROM generals WHERE name=?", (name,)).fetchone()[0]
         conn.execute(
@@ -297,6 +349,14 @@ def seed_steam_data(conn: sqlite3.Connection) -> None:
         conn, "武将系统说明", "https://www.taptap.cn/moment/531478269581592397",
         "官方社区攻略", 80, None, "s1", "每升一阶获得10点自由属性。",
     )
+    strategy_src = source_id(
+        conn, "韬略重修说明", "https://www.taptap.cn/moment/531462563137849323",
+        "官方社区攻略", 80, None, "s1", "三个韬略位、重修随机三选一、专属韬略限制与保底。",
+    )
+    user_mechanic_src = source_id(
+        conn, "用户当前机制说明", "local:conversation/2026-08-05", "用户口述", 90,
+        "Steam", "s1", "每名武将可查看自己的可能获得韬略列表；抽取规则未知。",
+    )
     formations = [
         ("一字阵", 3, 0, "前排受到伤害降低8%", "效果Steam已核；站位S1参考"),
         ("箕形阵", 1, 2, "前排受到伤害降低6%；后排造成伤害提升12%", "效果Steam已核；站位S1参考"),
@@ -327,6 +387,35 @@ def seed_steam_data(conn: sqlite3.Connection) -> None:
                VALUES(?,?,?,?,?) ON CONFLICT(rule_key) DO UPDATE SET formula=excluded.formula,
                description=excluded.description,verification_status=excluded.verification_status,source_id=excluded.source_id""",
             (key, formula, description, status, src),
+        )
+    strategy_rules = [
+        ("unlock_slots", "25、30、35级分别解锁第1、2、3个韬略位。", "官方社区攻略", rules_src),
+        ("refit_requires_three", "三本韬略全部研读后才能开启重修。", "官方社区攻略", strategy_src),
+        ("refit_three_choices", "每次选择一本韬略重修，该韬略随机出现3个选项，可保留重修前结果。", "官方社区攻略", strategy_src),
+        ("exclusive_limit", "一名武将同时只能应用1个专属韬略；同一武将可能存在多个专属候选。", "官方社区攻略", strategy_src),
+        ("exclusive_guarantee", "单将10次重修内必出专属；出过专属且仍有其他专属时，后续3次内再出专属，但可能重复。", "官方社区攻略", strategy_src),
+        ("candidate_list", "每名武将均可查看自己的可能获得韬略列表；应按武将逐项保存候选关系。", "Steam截图已核", steam_src),
+        ("draw_algorithm", "候选列表如何生成、各韬略抽取权重及是否按职业共享池，目前未知。", "待Steam或官方规则核验", user_mechanic_src),
+    ]
+    for key, text, status, src in strategy_rules:
+        conn.execute(
+            """INSERT INTO strategy_rules(rule_key,rule_text,verification_status,source_id)
+               VALUES(?,?,?,?) ON CONFLICT(rule_key) DO UPDATE SET rule_text=excluded.rule_text,
+               verification_status=excluded.verification_status,source_id=excluded.source_id""",
+            (key, text, status, src),
+        )
+    visible_books = [
+        ("神勇", "金", "金色候选（归属待确认）", "自身规避率和倒戈提升5%"),
+        ("作战·善本", "紫", "通用候选", "兵刃伤害提升6.5%"),
+        ("胜战·善本", "紫", "通用候选", "战斗前4回合，兵刃伤害提升8%"),
+        ("久战·善本", "紫", "通用候选", "造成兵刃伤害后，兵刃伤害提升1.8%，最多叠加5次"),
+    ]
+    for name, quality, scope, effect in visible_books:
+        conn.execute(
+            """INSERT INTO strategy_books(name,quality,book_scope,effect_raw,source_id)
+               VALUES(?,?,?,?,?) ON CONFLICT(name) DO UPDATE SET quality=excluded.quality,
+               book_scope=excluded.book_scope,effect_raw=excluded.effect_raw,source_id=excluded.source_id""",
+            (name, quality, scope, effect, steam_src),
         )
     observations = [
         ("大乔", 50, None, 0, 50, 0, 0, 40, 242, 182, 113, "演武大会固定50级，全智力+50"),
@@ -379,7 +468,12 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
             except Exception as exc:
                 tactic_errors.append(f"retry {row['url']}: {exc}")
     effects = parse_effects(f"{BASE_URL}/buff/")
-    errors = general_errors + tactic_errors
+    wiki_generals, wiki_general_errors = parallel_parse(
+        wiki_catalog("wujiangtujian"), lambda item: parse_wiki_quality(item, True), workers
+    )
+    wiki_tactics = wiki_tactic_quality_catalog()
+    wiki_tactic_errors = []
+    errors = general_errors + tactic_errors + wiki_general_errors + wiki_tactic_errors
 
     snapshot = {
         "generated_at": NOW,
@@ -387,6 +481,7 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
         "generals": generals,
         "tactics": tactics,
         "effects": effects,
+        "quality_reference": {"generals": wiki_generals, "tactics": wiki_tactics},
         "errors": errors,
     }
     snapshot_path.parent.mkdir(parents=True, exist_ok=True)
@@ -398,6 +493,10 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
     conn.executescript((DATA_DIR / "schema.sql").read_text(encoding="utf-8"))
     src_id = source_id(conn, "三谋助手资料站", BASE_URL, "第三方结构化资料", 60)
     buff_src_id = source_id(conn, "三谋助手状态词典", f"{BASE_URL}/buff/", "第三方状态资料", 65)
+    quality_src_id = source_id(
+        conn, "雷电模拟器三谋图鉴", f"{WIKI_URL}/", "第三方品质参考", 50,
+        notes="仅补充金/紫/蓝品质和武将主定位；不覆盖Steam截图。",
+    )
     conn.execute("INSERT INTO sync_runs(started_at,status) VALUES(?,?)", (started, "running"))
     run_id = conn.execute("SELECT last_insert_rowid()").fetchone()[0]
 
@@ -433,9 +532,23 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
         )
         if row.get("season") == "s1" and row.get("self_tactic"):
             conn.execute(
-                "UPDATE tactics SET first_season=COALESCE(first_season,'s1') WHERE id=?",
+                "UPDATE tactics SET first_season=COALESCE(first_season,'s1'),is_self_tactic=1 WHERE id=?",
                 (tactic_ids.get(row.get("self_tactic")),),
             )
+        elif row.get("self_tactic"):
+            conn.execute("UPDATE tactics SET is_self_tactic=1 WHERE id=?", (tactic_ids.get(row.get("self_tactic")),))
+
+    for row in wiki_generals:
+        conn.execute(
+            """UPDATE generals SET quality=COALESCE(?,quality),combat_role=COALESCE(?,combat_role)
+               WHERE name=?""",
+            (row.get("quality"), row.get("combat_role"), row["name"]),
+        )
+    for row in wiki_tactics:
+        conn.execute(
+            "UPDATE tactics SET quality=COALESCE(?,quality),first_season=COALESCE(first_season,'s1') WHERE name=?",
+            (row.get("quality"), row["name"]),
+        )
 
     for row in generals:
         for bond in row["bonds"]:
@@ -488,7 +601,9 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
     counts = {
         "generals": conn.execute("SELECT count(*) FROM generals").fetchone()[0],
         "s1_generals": conn.execute("SELECT count(*) FROM v_s1_generals").fetchone()[0],
+        "s1_gold_generals": conn.execute("SELECT count(*) FROM v_s1_gold_generals").fetchone()[0],
         "tactics": conn.execute("SELECT count(*) FROM tactics").fetchone()[0],
+        "recommendable_tactics": conn.execute("SELECT count(*) FROM v_recommendable_tactics").fetchone()[0],
         "effects": conn.execute("SELECT count(*) FROM effects").fetchone()[0],
         "bonds": conn.execute("SELECT count(*) FROM bonds").fetchone()[0],
         "account_generals": conn.execute("SELECT count(*) FROM account_generals").fetchone()[0],

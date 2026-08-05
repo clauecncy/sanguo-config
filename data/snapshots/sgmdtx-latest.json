@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T15:41:35+08:00",
+  "generated_at": "2026-08-05T16:27:07+08:00",
   "source": "https://www.sgmdtx.com",
   "generals": [
     {
@@ -5890,5 +5890,1025 @@
       "control": true
     }
   ],
+  "quality_reference": {
+    "generals": [
+      {
+        "name": "丁奉",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/dingfeng.html",
+        "quality": "紫",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "于禁",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/yujin.html",
+        "quality": "金",
+        "combat_role": "防御"
+      },
+      {
+        "name": "关平",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/guanping.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "关羽",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/guanyu.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "典韦",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/dianwei.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "刘备",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/liubei.html",
+        "quality": "金",
+        "combat_role": "治疗"
+      },
+      {
+        "name": "刘晔",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/liuye.html",
+        "quality": "紫",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "刘表",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/liubiao.html",
+        "quality": "蓝",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "华佗",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/huotuo.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "华雄",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/huaxiong.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "卢植",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/luzhi.html",
+        "quality": "紫",
+        "combat_role": "防御"
+      },
+      {
+        "name": "吕布",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/lvbu.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "吕蒙",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/lvmeng.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "周仓",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhoucang.html",
+        "quality": "金",
+        "combat_role": "防御"
+      },
+      {
+        "name": "周瑜",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhouyu.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "夏侯惇",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xiahoudun.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "夏侯渊",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xiahouyuan.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "大乔",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/daqiao.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "太史慈",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/taishici.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "孔融",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/kongrong.html",
+        "quality": "紫",
+        "combat_role": "文武"
+      },
+      {
+        "name": "孙坚",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/sunjian.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "孙尚香",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/sunshangxiang.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "孙权",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/sunquan.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "孙策",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/sunce.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "小乔",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xiaoqiao.html",
+        "quality": "金",
+        "combat_role": "治疗"
+      },
+      {
+        "name": "庞德",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/pangde.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "张宝",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhangbao.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "张曼成",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhangmancheng.html",
+        "quality": "紫",
+        "combat_role": "防御"
+      },
+      {
+        "name": "张梁",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhangliang.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "张角",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhangjiao.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "张郃",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhanghe.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "张飞",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhangfei.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "徐晃",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xuhuang.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "徐盛",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xusheng.html",
+        "quality": "金",
+        "combat_role": "防御"
+      },
+      {
+        "name": "徐遮",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xuzhe.html",
+        "quality": "金",
+        "combat_role": "文武"
+      },
+      {
+        "name": "文丑",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/wenchou.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "文聘",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/wenpin.html",
+        "quality": "紫",
+        "combat_role": "防御"
+      },
+      {
+        "name": "曹仁",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/caoren.html",
+        "quality": "金",
+        "combat_role": "防御"
+      },
+      {
+        "name": "曹操",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/caocao.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "曹洪",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/caohong.html",
+        "quality": "紫",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "曹真",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/caozhen.html",
+        "quality": "紫",
+        "combat_role": "防御"
+      },
+      {
+        "name": "李儒",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/liru.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "杨修",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/yangxiu.html",
+        "quality": "紫",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "沙摩柯",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/shamoke.html",
+        "quality": "紫",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "潘璋",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/panzhang.html",
+        "quality": "紫",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "王朗",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/wanglang.html",
+        "quality": "蓝",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "甄洛",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhenluo.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "甘宁",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/ganning.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "皇甫嵩",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/huangfusong.html",
+        "quality": "紫",
+        "combat_role": "防御"
+      },
+      {
+        "name": "程昱",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/chengyu.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "程普",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/chengpu.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "简雍",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/jianyong.html",
+        "quality": "紫",
+        "combat_role": "治疗"
+      },
+      {
+        "name": "糜竺",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/mizhu.html",
+        "quality": "蓝",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "臧霸",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zangba.html",
+        "quality": "紫",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "荀彧",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xunyu.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "董卓",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/dongzhuo.html",
+        "quality": "金",
+        "combat_role": "文武"
+      },
+      {
+        "name": "董袭",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/dongxi.html",
+        "quality": "紫",
+        "combat_role": "防御"
+      },
+      {
+        "name": "蒋钦",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/jiangqin.html",
+        "quality": "紫",
+        "combat_role": "文武"
+      },
+      {
+        "name": "蔡文姬",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/caiwenji.html",
+        "quality": "金",
+        "combat_role": "治疗"
+      },
+      {
+        "name": "袁绍",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/yuanshao.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "许褚",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/xuchu.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "诸葛亮",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhigeliang.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "貂蝉",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/diaochan.html",
+        "quality": "金",
+        "combat_role": "防御"
+      },
+      {
+        "name": "赵云",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhaoyun.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "邓艾",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/dengai.html",
+        "quality": "金",
+        "combat_role": "治疗"
+      },
+      {
+        "name": "邹氏",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zoushi.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "郭嘉",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/guojia.html",
+        "quality": "金",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "郭图",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/guotu.html",
+        "quality": "紫",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "郭淮",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/guohuai.html",
+        "quality": "紫",
+        "combat_role": "防御"
+      },
+      {
+        "name": "钟繇",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/zhongyao.html",
+        "quality": "紫",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "陈武",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/chenwu.html",
+        "quality": "紫",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "陈琳",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/chenlin.html",
+        "quality": "蓝",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "韩当",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/handang.html",
+        "quality": "紫",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "颜良",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/yanliang.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "马良",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/maliang.html",
+        "quality": "紫",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "马谡",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/masu.html",
+        "quality": "紫",
+        "combat_role": "谋略"
+      },
+      {
+        "name": "马超",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/machao.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "鲁肃",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/lusu.html",
+        "quality": "金",
+        "combat_role": "防御"
+      },
+      {
+        "name": "黄忠",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/huangzong.html",
+        "quality": "金",
+        "combat_role": "兵刃"
+      },
+      {
+        "name": "黄月英",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/huangyueying.html",
+        "quality": "金",
+        "combat_role": "辅助"
+      },
+      {
+        "name": "黄盖",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/wujiangtujian/huagngai.html",
+        "quality": "金",
+        "combat_role": "防御"
+      }
+    ],
+    "tactics": [
+      {
+        "name": "一计决胜",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yijijuesheng.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "万夫莫当",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/wanfumodi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "上兵伐谋",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/shangbingfamou.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "上智为间",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/shangzhiweijian.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "临危勇烈",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/linweiyonglie.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "临阵突袭",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/linzhentuxi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "乘虚而入",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/chengxuerru.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "乱敌方阵",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/luandifangzhen.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "五雷轰顶",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/wuleihongding.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "以战养战",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yizhanyangzhan.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "以静制动",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yijingzhidong.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "任人择势",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/renrenzeshi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "伏兵四起",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/fubignsiqi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "克敌如风",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/kedirufeng.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "兵贵神速",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/bingguishensu.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "决水破敌",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jueshuipodi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "出其不意",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/chuqibuyi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "出击",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/chuji.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "势如破竹",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/shirupozhu.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "勇冠三军",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yongguansanjun.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "勇武",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yongwu.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "千里突袭",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qianlituxi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "咏歌尝酒",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yonggechangjiu.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "坚壁清野",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jianbiqingye.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "坚如磐石",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jianrupanshi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "夜袭",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yexi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "奇计迭出",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qijidiechu.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "奇门遁甲",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qimendunjia.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "如有神助",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/ruyoushenzhu.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "如沐春风",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/rumuchenfeng.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "威名显赫",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/weimingxianhe.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "射人",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/sheren.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "射马",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/shema.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "屈人之兵",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qurenzhibing.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "巧利天灾",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qiaolitianzai.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "开智",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/kaizhi.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "强袭",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qiangxi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "忘私相助",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/wwangsixiangzhu.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "战八方",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/zhanbafang.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "披坚执锐",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/pijianzhirui.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "指点乾坤",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/zhidianqiankun.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "揭竿而起",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jieganerqi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "攻其不备",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/gongqibubei.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "文武双全",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/wenwushuangquan.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "文治武功",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/wenzhiwugong.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "料事如神",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/liaoshirushen.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "斩将夺旗",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/zhanjiangduoqi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "断敌粮道",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/duandiliangdao.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "无难之志",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/wunanzhizhi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "束手无策",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/sushouwuce.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "来好息师",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/laihaoxishi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "横征暴敛",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/hengzhengbaolian.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "横扫千军",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/hengsaoqianjun.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "殿后",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/dianhou.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "水淹七军",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/shuiyanqijun.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "洞若观火",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/dongruoguanhuo.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "清风驱疾",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qingfengquji.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "激励",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jili.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "火羽",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/huoyu.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "烈火焚营",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/liehuofenying.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "狂风大作",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/kuangfengdazuo.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "王佐之才",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/wangzuozhicai.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "疾行侧击",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jixingceji.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "百战不殆",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/baizhanbudai.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "破军袭敌",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/pojunxidi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "破阵",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/pozhen.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "破阵驰围",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/pozhenchiwei.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "筹划良策",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/chouhualiangce.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "舍生取义",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/sheshengquyi.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "蓄势诗发",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/xushishifa.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "计袭粮仓",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jixiliangcang.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "计逐穷寇",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/jizhuqiongkou.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "谈心",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/tanxin.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "谈笑诛心",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/tanxiaozhuxin.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "谋智",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/mouzhi.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "趁火打劫",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/chenhuodajie.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "轻装驰援",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qingzhuangchiyuan.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "辕门射戟",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yuanmensheji.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "迎敌",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yingdi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "运筹帷幄",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/yunchouweiwo.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "避其锐气",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/biqiruiqi.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "重击",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/zhongji.html",
+        "quality": "蓝",
+        "combat_role": null
+      },
+      {
+        "name": "铁骑横冲",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/tieqihengchong.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "铸甲销戈",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/zhujiaxiaoge.html",
+        "quality": "紫",
+        "combat_role": null
+      },
+      {
+        "name": "锐不可当",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/ruibukedang.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "青囊急救",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/qingnangjijiu.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "风卷残云",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/fengjuancanyun.html",
+        "quality": "金",
+        "combat_role": null
+      },
+      {
+        "name": "骁勇之姿",
+        "url": "https://wiki.ldmnq.com/sanguo_modingtianxia/zhanfa/xiaoyongzhizi.html",
+        "quality": "紫",
+        "combat_role": null
+      }
+    ]
+  },
   "errors": []
 }

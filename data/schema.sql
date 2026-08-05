@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS tactics (
   damage_type TEXT,
   activation_rate TEXT,
   troop_limit TEXT,
+  is_self_tactic INTEGER NOT NULL DEFAULT 0,
   description_raw TEXT,
   first_season TEXT,
   verification_status TEXT NOT NULL DEFAULT 'S1参考',
@@ -52,6 +53,7 @@ CREATE TABLE IF NOT EXISTS generals (
   faction TEXT,
   quality TEXT,
   troop_type TEXT,
+  combat_role TEXT,
   first_season TEXT,
   reference_level INTEGER NOT NULL DEFAULT 5,
   base_force REAL,
@@ -127,8 +129,38 @@ CREATE TABLE IF NOT EXISTS strategy_books (
   id INTEGER PRIMARY KEY,
   name TEXT NOT NULL UNIQUE,
   quality TEXT,
+  book_scope TEXT NOT NULL DEFAULT '通用',
+  role_pool TEXT,
+  exclusive_general_id INTEGER REFERENCES generals(id),
+  acquisition_method TEXT,
   effect_raw TEXT,
   source_id INTEGER REFERENCES sources(id)
+);
+
+CREATE TABLE IF NOT EXISTS strategy_rules (
+  id INTEGER PRIMARY KEY,
+  rule_key TEXT NOT NULL UNIQUE,
+  rule_text TEXT NOT NULL,
+  verification_status TEXT NOT NULL,
+  source_id INTEGER REFERENCES sources(id)
+);
+
+CREATE TABLE IF NOT EXISTS general_strategy_eligibility (
+  general_id INTEGER NOT NULL REFERENCES generals(id) ON DELETE CASCADE,
+  strategy_book_id INTEGER NOT NULL REFERENCES strategy_books(id) ON DELETE CASCADE,
+  verification_status TEXT NOT NULL,
+  source_id INTEGER REFERENCES sources(id),
+  PRIMARY KEY (general_id, strategy_book_id)
+);
+
+CREATE TABLE IF NOT EXISTS account_general_strategy_slots (
+  general_id INTEGER NOT NULL REFERENCES generals(id) ON DELETE CASCADE,
+  slot_no INTEGER NOT NULL CHECK(slot_no BETWEEN 1 AND 3),
+  strategy_book_id INTEGER REFERENCES strategy_books(id),
+  is_currently_applied INTEGER NOT NULL DEFAULT 1,
+  last_verified_at TEXT NOT NULL,
+  notes TEXT,
+  PRIMARY KEY (general_id, slot_no)
 );
 
 CREATE TABLE IF NOT EXISTS general_strategy_recommendations (
@@ -197,6 +229,17 @@ SELECT * FROM generals WHERE lower(first_season) = 's1';
 
 CREATE VIEW IF NOT EXISTS v_s1_tactics AS
 SELECT * FROM tactics WHERE lower(first_season) = 's1';
+
+CREATE VIEW IF NOT EXISTS v_s1_gold_generals AS
+SELECT * FROM v_s1_generals WHERE quality = '金';
+
+CREATE VIEW IF NOT EXISTS v_recommendable_tactics AS
+SELECT * FROM v_s1_tactics
+WHERE quality IN ('金','紫') AND is_self_tactic = 0;
+
+CREATE VIEW IF NOT EXISTS v_recommendable_strategy_books AS
+SELECT * FROM strategy_books
+WHERE quality = '紫' OR book_scope LIKE '%专属%';
 
 CREATE INDEX IF NOT EXISTS idx_generals_season ON generals(first_season);
 CREATE INDEX IF NOT EXISTS idx_tactics_type ON tactics(tactic_type);

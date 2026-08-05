@@ -25,8 +25,11 @@ def main() -> int:
             """SELECT
             (SELECT count(*) FROM generals) AS generals,
             (SELECT count(*) FROM v_s1_generals) AS s1_generals,
+            (SELECT count(*) FROM v_s1_gold_generals) AS s1_gold_generals,
             (SELECT count(*) FROM tactics) AS tactics,
             (SELECT count(*) FROM v_s1_tactics) AS s1_tactics,
+            (SELECT count(*) FROM v_recommendable_tactics) AS recommendable_tactics,
+            (SELECT count(*) FROM v_recommendable_strategy_books) AS recommendable_strategy_books,
             (SELECT count(*) FROM effects) AS effects,
             (SELECT count(*) FROM bonds) AS bonds,
             (SELECT count(*) FROM tactic_effects) AS tactic_effects,
@@ -62,6 +65,12 @@ def main() -> int:
                FROM bonds b LEFT JOIN bond_members bm ON bm.bond_id=b.id
                WHERE b.name='江表虎臣' GROUP BY b.id"""
         )),
+        "account_out_of_scope_generals": conn.execute(
+            "SELECT count(*) FROM account_generals a JOIN generals g ON g.id=a.general_id WHERE g.quality<>'金' OR g.quality IS NULL"
+        ).fetchone()[0],
+        "account_out_of_scope_tactics": conn.execute(
+            "SELECT count(*) FROM account_tactics a JOIN tactics t ON t.id=a.tactic_id WHERE t.quality NOT IN ('金','紫') OR t.quality IS NULL"
+        ).fetchone()[0],
     }
     conn.close()
     print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -71,6 +80,8 @@ def main() -> int:
         report["s1_missing_four_stats"] == 0,
         report["counts"]["account_generals"] == 17,
         report["counts"]["account_tactics"] == 36,
+        report["account_out_of_scope_generals"] == 0,
+        report["account_out_of_scope_tactics"] == 0,
         len(report["steam_observations"]) == 2,
     ]
     return 0 if all(checks) else 1
