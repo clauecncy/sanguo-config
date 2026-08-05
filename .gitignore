@@ -3,4 +3,8 @@
 *.log
 Thumbs.db
 .DS_Store
+__pycache__/
+*.pyc
 
+# User screenshots are preserved locally as evidence but not duplicated in Git.
+evidence/**/*.png
