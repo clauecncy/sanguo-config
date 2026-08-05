@@ -1,0 +1,6 @@
+# Local caches and generated files
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
+
