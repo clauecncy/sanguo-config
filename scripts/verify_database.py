@@ -67,6 +67,12 @@ def main() -> int:
                FROM bonds b LEFT JOIN bond_members bm ON bm.bond_id=b.id
                WHERE b.name='江表虎臣' GROUP BY b.id"""
         )),
+        "hebei": row_dicts(conn.execute(
+            """SELECT b.name,b.activation_count,b.effect_raw,b.verification_status,
+                      count(bm.general_id) AS members
+               FROM bonds b LEFT JOIN bond_members bm ON bm.bond_id=b.id
+               WHERE b.name='河北庭将' GROUP BY b.id"""
+        )),
         "account_out_of_scope_generals": conn.execute(
             "SELECT count(*) FROM account_generals a JOIN generals g ON g.id=a.general_id WHERE g.quality<>'金' OR g.quality IS NULL"
         ).fetchone()[0],
@@ -96,6 +102,7 @@ def main() -> int:
         report["account_out_of_scope_generals"] == 0,
         report["account_out_of_scope_tactics"] == 0,
         len(report["steam_observations"]) == 2,
+        len(report["hebei"]) == 1 and report["hebei"][0]["activation_count"] == 2,
         len(report["latest_inventory_checks"]) == 5,
     ]
     return 0 if all(checks) else 1

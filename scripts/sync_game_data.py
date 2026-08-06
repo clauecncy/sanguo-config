@@ -448,6 +448,10 @@ def seed_steam_data(conn: sqlite3.Connection) -> None:
         "UPDATE bonds SET activation_count=2, effect_raw='部队中缘分武将统率提升10点，受到伤害降低3%', verification_status='Steam已核', source_id=? WHERE name='江表虎臣'",
         (steam_src,),
     )
+    conn.execute(
+        "UPDATE bonds SET activation_count=2, effect_raw='部队中缘分武将武力提升20点', verification_status='Steam已核', source_id=? WHERE name='河北庭将'",
+        (steam_src,),
+    )
     conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('network_source_id',?)", (str(web_src),))
 
 
