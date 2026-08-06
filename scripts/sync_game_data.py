@@ -306,11 +306,15 @@ def upsert_tactic(conn: sqlite3.Connection, row: dict, src_id: int) -> int:
 def load_account(conn: sqlite3.Connection) -> None:
     inventory = json.loads((DATA_DIR / "account_inventory.json").read_text(encoding="utf-8"))
     verified = inventory["verified_at"]
-    gold = {"威名显赫", "伏兵四起", "五雷轰顶", "王佐之才", "铁骑横冲", "势如破竹", "战八方"}
+    gold = {
+        "威名显赫", "伏兵四起", "五雷轰顶", "王佐之才", "铁骑横冲",
+        "势如破竹", "战八方", "清风驱疾", "无难之志", "攻其不备",
+    }
     for name, level, team in inventory["generals"]:
         conn.execute(
             """INSERT INTO generals(name,quality,updated_at,verification_status) VALUES(?,?,?,?)
-               ON CONFLICT(name) DO UPDATE SET quality='金'""",
+               ON CONFLICT(name) DO UPDATE SET quality='金',updated_at=excluded.updated_at,
+               verification_status='Steam已核'""",
             (name, "金", NOW, "Steam已核"),
         )
         general_id = conn.execute("SELECT id FROM generals WHERE name=?", (name,)).fetchone()[0]
@@ -324,7 +328,7 @@ def load_account(conn: sqlite3.Connection) -> None:
         conn.execute(
             """INSERT INTO tactics(name,quality,first_season,verification_status,updated_at)
                VALUES(?,?,?,?,?) ON CONFLICT(name) DO UPDATE SET quality=excluded.quality,
-               first_season='s1'""",
+               first_season='s1',verification_status='Steam已核',updated_at=excluded.updated_at""",
             (name, "金" if name in gold else "紫", "s1", "Steam已核", NOW),
         )
         tactic_id = conn.execute("SELECT id FROM tactics WHERE name=?", (name,)).fetchone()[0]
@@ -338,8 +342,8 @@ def load_account(conn: sqlite3.Connection) -> None:
 
 def seed_steam_data(conn: sqlite3.Connection) -> None:
     steam_src = source_id(
-        conn, "用户Steam S1截图", "local:evidence/steam_s1/2026-08-05/", "截图",
-        100, "Steam", "s1", "当前账号游戏内截图；冲突时覆盖网络资料。",
+        conn, "用户Steam S1截图", "local:evidence/steam_s1/", "截图",
+        100, "Steam", "s1", "按日期保存的当前账号游戏内截图；较新截图优先并覆盖网络资料。",
     )
     web_src = source_id(
         conn, "三谋助手资料站", BASE_URL, "第三方结构化资料", 60, None, None,

@@ -10,6 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "data" / "三国谋定天下_Steam_S1.sqlite3"
+INVENTORY = ROOT / "data" / "account_inventory.json"
 
 
 def row_dicts(cursor):
@@ -17,6 +18,7 @@ def row_dicts(cursor):
 
 
 def main() -> int:
+    inventory = json.loads(INVENTORY.read_text(encoding="utf-8"))
     conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
     report = {
@@ -71,6 +73,17 @@ def main() -> int:
         "account_out_of_scope_tactics": conn.execute(
             "SELECT count(*) FROM account_tactics a JOIN tactics t ON t.id=a.tactic_id WHERE t.quality NOT IN ('金','紫') OR t.quality IS NULL"
         ).fetchone()[0],
+        "latest_inventory_checks": row_dicts(conn.execute(
+            """SELECT '武将' AS kind,g.name,a.level,g.quality,a.current_team AS status,
+                      g.verification_status
+               FROM account_generals a JOIN generals g ON g.id=a.general_id WHERE g.name='颜良'
+               UNION ALL
+               SELECT '战法',t.name,a.level,t.quality,COALESCE(a.current_holder,'未装备'),
+                      t.verification_status
+               FROM account_tactics a JOIN tactics t ON t.id=a.tactic_id
+               WHERE t.name IN ('清风驱疾','无难之志','攻其不备','谈笑诛心')
+               ORDER BY kind,name"""
+        )),
     }
     conn.close()
     print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -78,11 +91,12 @@ def main() -> int:
         report["integrity"] == "ok",
         report["counts"]["s1_generals"] > 0,
         report["s1_missing_four_stats"] == 0,
-        report["counts"]["account_generals"] == 17,
-        report["counts"]["account_tactics"] == 36,
+        report["counts"]["account_generals"] == len(inventory["generals"]),
+        report["counts"]["account_tactics"] == len(inventory["tactics"]),
         report["account_out_of_scope_generals"] == 0,
         report["account_out_of_scope_tactics"] == 0,
         len(report["steam_observations"]) == 2,
+        len(report["latest_inventory_checks"]) == 5,
     ]
     return 0 if all(checks) else 1
 
