@@ -1,0 +1,15 @@
+{
+  "platform": "Steam",
+  "season": "s1",
+  "verified_at": "2026-08-12",
+  "activity_generals": ["曹操", "于禁", "关羽", "马超", "小乔", "大乔", "周瑜", "黄盖", "袁绍", "庞德"],
+  "activity_tactics_gold": ["水淹七军", "奇门遁甲", "清风驱疾", "战八方", "忘私相助", "指点乾坤", "狂风大作", "蓄势待发", "舍生取义", "烈火焚营", "轻装驰援", "无难之志"],
+  "activity_tactics_purple": ["火羽", "筹划良策", "强袭", "临阵突袭", "束手无策", "避其锐气", "迎敌", "如有神助"],
+  "default_support": {"gold_general": 1, "gold_tactics": 2},
+  "recommended_pouch": "战法支援",
+  "recommended_support": {
+    "gold_general": "张飞",
+    "gold_tactics": ["王佐之才", "横征暴敛"],
+    "purple_tactic": "铸甲销戈"
+  }
+}
