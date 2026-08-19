@@ -310,7 +310,7 @@ def load_account(conn: sqlite3.Connection) -> None:
         "威名显赫", "伏兵四起", "五雷轰顶", "王佐之才", "铁骑横冲",
         "势如破竹", "战八方", "清风驱疾", "无难之志", "攻其不备",
         "断敌粮道", "出其不意", "横征暴敛", "水淹七军", "百战不殆",
-        "蓄势待发",
+        "蓄势待发", "锐不可当", "烈火焚营", "乘虚而入", "勇冠三军",
     }
     for name, level, team in inventory["generals"]:
         conn.execute(

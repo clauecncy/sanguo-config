@@ -82,12 +82,13 @@ def main() -> int:
         "latest_inventory_checks": row_dicts(conn.execute(
             """SELECT '武将' AS kind,g.name,a.level,g.quality,a.current_team AS status,
                       g.verification_status
-               FROM account_generals a JOIN generals g ON g.id=a.general_id WHERE g.name='颜良'
+               FROM account_generals a JOIN generals g ON g.id=a.general_id
+               WHERE g.name IN ('关平','关羽','徐晃','夏侯渊','徐庶','周仓')
                UNION ALL
                SELECT '战法',t.name,a.level,t.quality,COALESCE(a.current_holder,'未装备'),
                       t.verification_status
                FROM account_tactics a JOIN tactics t ON t.id=a.tactic_id
-               WHERE t.name IN ('清风驱疾','无难之志','攻其不备','谈笑诛心')
+               WHERE t.name IN ('锐不可当','烈火焚营','乘虚而入','勇冠三军','上兵伐谋','临危勇烈')
                ORDER BY kind,name"""
         )),
     }
@@ -103,7 +104,7 @@ def main() -> int:
         report["account_out_of_scope_tactics"] == 0,
         len(report["steam_observations"]) == 2,
         len(report["hebei"]) == 1 and report["hebei"][0]["activation_count"] == 2,
-        len(report["latest_inventory_checks"]) == 5,
+        len(report["latest_inventory_checks"]) == 12,
     ]
     return 0 if all(checks) else 1
 
