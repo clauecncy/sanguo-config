@@ -8,3 +8,12 @@ __pycache__/
 
 # User screenshots are preserved locally as evidence but not duplicated in Git.
 evidence/**/*.png
+
+# Local OCR runtime, source images, and derived crop artifacts
+chi_sim.traineddata
+references/.ocr/
+references/**/*.jpg
+references/**/assets/crops/
+references/**/assets/teams/
+references/**/assets/ocr/
+references/**/assets/ocr-teams/
