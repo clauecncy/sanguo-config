@@ -17,3 +17,7 @@ references/**/assets/crops/
 references/**/assets/teams/
 references/**/assets/ocr/
 references/**/assets/ocr-teams/
+
+# Generated S2 OCR runtime and intermediate images
+references/.ocr-python/
+references/**/assets/
