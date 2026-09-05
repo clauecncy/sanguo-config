@@ -244,3 +244,20 @@ WHERE quality = '紫' OR book_scope LIKE '%专属%';
 CREATE INDEX IF NOT EXISTS idx_generals_season ON generals(first_season);
 CREATE INDEX IF NOT EXISTS idx_tactics_type ON tactics(tactic_type);
 CREATE INDEX IF NOT EXISTS idx_effects_category ON effects(category);
+
+CREATE TABLE IF NOT EXISTS tactic_level_observations (
+  id INTEGER PRIMARY KEY,
+  tactic_id INTEGER NOT NULL REFERENCES tactics(id) ON DELETE CASCADE,
+  level INTEGER NOT NULL,
+  activation_rate TEXT,
+  effect_raw TEXT NOT NULL,
+  effect_json TEXT,
+  observed_context TEXT,
+  verification_status TEXT NOT NULL,
+  source_id INTEGER REFERENCES sources(id),
+  observed_at TEXT NOT NULL,
+  UNIQUE(tactic_id, level, source_id, observed_context)
+);
+
+CREATE INDEX IF NOT EXISTS idx_tactic_level_observations_lookup
+ON tactic_level_observations(tactic_id, level);

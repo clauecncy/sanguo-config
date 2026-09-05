@@ -342,6 +342,49 @@ def load_account(conn: sqlite3.Connection) -> None:
         )
 
 
+def load_tactic_level_observations(conn: sqlite3.Connection) -> None:
+    """Load level-specific Steam observations without replacing reference text."""
+    path = DATA_DIR / "tactic_level_observations.json"
+    if not path.exists():
+        return
+    payload = json.loads(path.read_text(encoding="utf-8-sig"))
+    for row in payload.get("observations", []):
+        source = row["source"]
+        src_id = source_id(
+            conn, source["name"], source["url"], source["source_type"],
+            source["trust_rank"], source.get("platform"), source.get("season"),
+            source.get("notes"),
+        )
+        conn.execute(
+            """INSERT INTO tactics(name,quality,tactic_type,damage_type,updated_at)
+               VALUES(?,?,?,?,?)
+               ON CONFLICT(name) DO UPDATE SET
+                 quality=COALESCE(tactics.quality,excluded.quality),
+                 tactic_type=COALESCE(tactics.tactic_type,excluded.tactic_type),
+                 damage_type=COALESCE(tactics.damage_type,excluded.damage_type),
+                 updated_at=excluded.updated_at""",
+            (row["name"], row.get("quality"), row.get("tactic_type"),
+             row.get("damage_type"), NOW),
+        )
+        tactic_id = conn.execute(
+            "SELECT id FROM tactics WHERE name=?", (row["name"],)
+        ).fetchone()[0]
+        conn.execute(
+            """INSERT INTO tactic_level_observations(
+                   tactic_id,level,activation_rate,effect_raw,effect_json,
+                   observed_context,verification_status,source_id,observed_at)
+               VALUES(?,?,?,?,?,?,?,?,?)
+               ON CONFLICT(tactic_id,level,source_id,observed_context) DO UPDATE SET
+                 activation_rate=excluded.activation_rate,
+                 effect_raw=excluded.effect_raw,
+                 effect_json=excluded.effect_json,
+                 verification_status=excluded.verification_status,
+                 observed_at=excluded.observed_at""",
+            (tactic_id, row["level"], row.get("activation_rate"), row["effect_raw"],
+             json.dumps(row.get("effect"), ensure_ascii=False), row.get("context"),
+             row["verification_status"], src_id, row["observed_at"]),
+        )
+
 def seed_steam_data(conn: sqlite3.Connection) -> None:
     steam_src = source_id(
         conn, "用户Steam S1截图", "local:evidence/steam_s1/", "截图",
@@ -597,7 +640,8 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
 
     load_account(conn)
     seed_steam_data(conn)
-    conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('schema_version','1')")
+    load_tactic_level_observations(conn)
+    conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('schema_version','2')")
     conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('default_platform','Steam')")
     conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('default_season','s1')")
     conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('last_sync_at',?)", (NOW,))
@@ -618,6 +662,7 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
         "bonds": conn.execute("SELECT count(*) FROM bonds").fetchone()[0],
         "account_generals": conn.execute("SELECT count(*) FROM account_generals").fetchone()[0],
         "account_tactics": conn.execute("SELECT count(*) FROM account_tactics").fetchone()[0],
+        "tactic_level_observations": conn.execute("SELECT count(*) FROM tactic_level_observations").fetchone()[0],
         "integrity": integrity,
     }
     conn.close()

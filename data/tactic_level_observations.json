@@ -1,0 +1,181 @@
+{
+  "observations": [
+    {
+      "name": "料事如神",
+      "level": 10,
+      "quality": "金",
+      "tactic_type": "主动",
+      "damage_type": "谋略",
+      "activation_rate": "45%",
+      "effect_raw": "对敌军随机两人造成180%谋略伤害，并有50%概率施加技穷，持续1回合",
+      "effect": {
+        "targets": "敌军随机两人",
+        "strategy_damage_rate_per_target": 180,
+        "status": "技穷",
+        "status_probability": 50,
+        "status_duration_rounds": 1
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-料事如神10级",
+        "url": "references/S2演武战报/2026-09-04/30-料事如神10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "上智为间",
+      "level": 10,
+      "quality": "金",
+      "tactic_type": "主动",
+      "damage_type": "谋略",
+      "activation_rate": "45%",
+      "effect_raw": "使敌军随机单体混乱，持续1回合，并造成300%谋略伤害，若目标已持有混乱状态，则额外对其造成150%谋略伤害",
+      "effect": {
+        "targets": "敌军随机单体",
+        "status": "混乱",
+        "status_duration_rounds": 1,
+        "strategy_damage_rate": 300,
+        "condition": "目标已持有混乱状态",
+        "conditional_extra_strategy_damage_rate": 150
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-上智为间10级",
+        "url": "references/S2演武战报/2026-09-04/31-上智为间10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "束手无策",
+      "level": 10,
+      "quality": "紫",
+      "tactic_type": "主动",
+      "damage_type": "谋略",
+      "activation_rate": "45%",
+      "effect_raw": "对敌军随机单体造成200%谋略伤害，并施加技穷，持续1回合",
+      "effect": {
+        "targets": "敌军随机单体",
+        "strategy_damage_rate": 200,
+        "status": "技穷",
+        "status_probability": 100,
+        "status_duration_rounds": 1
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-束手无策10级",
+        "url": "references/S2演武战报/2026-09-04/32-束手无策10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "横征暴敛",
+      "level": 10,
+      "quality": "金",
+      "tactic_type": "被动",
+      "damage_type": "防御",
+      "activation_rate": "100%",
+      "effect_raw": "战斗中，施加负面效果后恢复自身兵力（治疗率40%，受智力和统率影响），并使自身受到伤害降低10%，持续2回合，可叠加4次。每回合最多触发10次",
+      "effect": {
+        "trigger": "施加负面效果后",
+        "healing_rate": 40,
+        "healing_affected_by": [
+          "智力",
+          "统率"
+        ],
+        "self_damage_taken_reduction": 10,
+        "duration_rounds": 2,
+        "max_stacks": 4,
+        "max_triggers_per_round": 10
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-横征暴敛10级",
+        "url": "references/S2演武战报/2026-09-04/34-横征暴敛10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "固若金汤",
+      "level": 10,
+      "quality": "金",
+      "tactic_type": "指挥",
+      "damage_type": "防御",
+      "activation_rate": "100%",
+      "effect_raw": "自身统率提升20%，第2回合起，每个回合开始时有60%概率（受统率影响）嘲讽敌军随机2-3人，持续2回合",
+      "effect": {
+        "self_command_increase": 20,
+        "starts_from_round": 2,
+        "trigger_timing": "每个回合开始时",
+        "taunt_probability": 60,
+        "probability_affected_by": "统率",
+        "targets": "敌军随机2-3人",
+        "status": "嘲讽",
+        "status_duration_rounds": 2
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-固若金汤10级",
+        "url": "references/S2演武战报/2026-09-04/35-固若金汤10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "谈笑诛心",
+      "level": 10,
+      "quality": "紫",
+      "tactic_type": "被动",
+      "damage_type": "谋略",
+      "activation_rate": "100%",
+      "effect_raw": "敌军被施加负面状态时，有60%概率对敌军随机单体造成119.9%谋略伤害，每回合最多触发2次",
+      "effect": {
+        "trigger": "敌军被施加负面状态时",
+        "trigger_probability": 60,
+        "targets": "敌军随机单体",
+        "strategy_damage_rate": 119.9,
+        "max_triggers_per_round": 2
+      },
+      "context": "S2演武大会1级战法的10级满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-谈笑诛心10级预览",
+        "url": "references/S2演武战报/2026-09-04/36-谈笑诛心10级预览.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "1级战法界面切换至10级满级预览"
+      }
+    }
+  ]
+}

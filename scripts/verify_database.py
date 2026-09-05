@@ -36,9 +36,17 @@ def main() -> int:
             (SELECT count(*) FROM bonds) AS bonds,
             (SELECT count(*) FROM tactic_effects) AS tactic_effects,
             (SELECT count(*) FROM account_generals) AS account_generals,
-            (SELECT count(*) FROM account_tactics) AS account_tactics"""
+            (SELECT count(*) FROM account_tactics) AS account_tactics,
+            (SELECT count(*) FROM tactic_level_observations) AS tactic_level_observations"""
         ).fetchone()),
-        "s1_missing_four_stats": conn.execute(
+        "tactic_level_observations": row_dicts(conn.execute(
+            """SELECT t.name,o.level,o.activation_rate,o.effect_raw,o.effect_json,
+                      o.verification_status,s.url AS source_url
+               FROM tactic_level_observations o
+               JOIN tactics t ON t.id=o.tactic_id
+               JOIN sources s ON s.id=o.source_id
+               ORDER BY t.name,o.level"""
+        )),        "s1_missing_four_stats": conn.execute(
             """SELECT count(*) FROM v_s1_generals
                WHERE base_force IS NULL OR growth_force IS NULL
                   OR base_intelligence IS NULL OR growth_intelligence IS NULL
@@ -105,6 +113,8 @@ def main() -> int:
         len(report["steam_observations"]) == 2,
         len(report["hebei"]) == 1 and report["hebei"][0]["activation_count"] == 2,
         len(report["latest_inventory_checks"]) == 12,
+        report["counts"]["tactic_level_observations"] >= 2,
+        {row["name"] for row in report["tactic_level_observations"]} >= {"料事如神","上智为间"},
     ]
     return 0 if all(checks) else 1
 
