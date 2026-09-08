@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS tactics (
   troop_limit TEXT,
   is_self_tactic INTEGER NOT NULL DEFAULT 0,
   description_raw TEXT,
+  description_level INTEGER CHECK(description_level=10),
   first_season TEXT,
   verification_status TEXT NOT NULL DEFAULT 'S1参考',
   source_id INTEGER REFERENCES sources(id),
@@ -192,22 +193,28 @@ CREATE TABLE IF NOT EXISTS general_stat_observations (
 );
 
 CREATE TABLE IF NOT EXISTS account_generals (
-  general_id INTEGER PRIMARY KEY REFERENCES generals(id),
-  level INTEGER,
-  advancement INTEGER,
+  general_id INTEGER NOT NULL REFERENCES generals(id),
+  variant TEXT NOT NULL DEFAULT '普通',
+  availability TEXT NOT NULL DEFAULT '常驻',
+  level INTEGER CHECK(level IS NULL),
+  advancement INTEGER CHECK(advancement BETWEEN 0 AND 5),
   allocated_force INTEGER,
   allocated_intelligence INTEGER,
   allocated_command INTEGER,
   allocated_initiative INTEGER,
-  current_team TEXT,
+  current_team TEXT CHECK(current_team IS NULL),
   last_verified_at TEXT NOT NULL,
-  notes TEXT
+  notes TEXT,
+  PRIMARY KEY(general_id, variant)
 );
 
 CREATE TABLE IF NOT EXISTS account_tactics (
   tactic_id INTEGER PRIMARY KEY REFERENCES tactics(id),
-  level INTEGER,
-  current_holder TEXT,
+  level INTEGER CHECK(level IS NULL),
+  current_holder TEXT CHECK(current_holder IS NULL),
+  advancement INTEGER CHECK(advancement BETWEEN 0 AND 5),
+  advancement_verified_at TEXT,
+  advancement_source TEXT,
   last_verified_at TEXT NOT NULL,
   notes TEXT
 );
@@ -248,7 +255,7 @@ CREATE INDEX IF NOT EXISTS idx_effects_category ON effects(category);
 CREATE TABLE IF NOT EXISTS tactic_level_observations (
   id INTEGER PRIMARY KEY,
   tactic_id INTEGER NOT NULL REFERENCES tactics(id) ON DELETE CASCADE,
-  level INTEGER NOT NULL,
+  level INTEGER NOT NULL CHECK(level=10),
   activation_rate TEXT,
   effect_raw TEXT NOT NULL,
   effect_json TEXT,

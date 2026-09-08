@@ -6,6 +6,9 @@ Thumbs.db
 __pycache__/
 *.pyc
 
+# Pre-migration duplicate databases remain local, never delete notes.
+notes/backups/**/*.sqlite3
+
 # User screenshots are preserved locally as evidence but not duplicated in Git.
 evidence/**/*.png
 

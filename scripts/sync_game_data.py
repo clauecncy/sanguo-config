@@ -304,42 +304,8 @@ def upsert_tactic(conn: sqlite3.Connection, row: dict, src_id: int) -> int:
 
 
 def load_account(conn: sqlite3.Connection) -> None:
-    inventory = json.loads((DATA_DIR / "account_inventory.json").read_text(encoding="utf-8"))
-    verified = inventory["verified_at"]
-    gold = {
-        "威名显赫", "伏兵四起", "五雷轰顶", "王佐之才", "铁骑横冲",
-        "势如破竹", "战八方", "清风驱疾", "无难之志", "攻其不备",
-        "断敌粮道", "出其不意", "横征暴敛", "水淹七军", "百战不殆",
-        "蓄势待发", "锐不可当", "烈火焚营", "乘虚而入", "勇冠三军",
-    }
-    for name, level, team in inventory["generals"]:
-        conn.execute(
-            """INSERT INTO generals(name,quality,updated_at,verification_status) VALUES(?,?,?,?)
-               ON CONFLICT(name) DO UPDATE SET quality='金',updated_at=excluded.updated_at,
-               verification_status='Steam已核'""",
-            (name, "金", NOW, "Steam已核"),
-        )
-        general_id = conn.execute("SELECT id FROM generals WHERE name=?", (name,)).fetchone()[0]
-        conn.execute(
-            """INSERT INTO account_generals(general_id,level,current_team,last_verified_at)
-               VALUES(?,?,?,?) ON CONFLICT(general_id) DO UPDATE SET level=excluded.level,
-               current_team=excluded.current_team,last_verified_at=excluded.last_verified_at""",
-            (general_id, level, team, verified),
-        )
-    for name, level, holder in inventory["tactics"]:
-        conn.execute(
-            """INSERT INTO tactics(name,quality,first_season,verification_status,updated_at)
-               VALUES(?,?,?,?,?) ON CONFLICT(name) DO UPDATE SET quality=excluded.quality,
-               first_season='s1',verification_status='Steam已核',updated_at=excluded.updated_at""",
-            (name, "金" if name in gold else "紫", "s1", "Steam已核", NOW),
-        )
-        tactic_id = conn.execute("SELECT id FROM tactics WHERE name=?", (name,)).fetchone()[0]
-        conn.execute(
-            """INSERT INTO account_tactics(tactic_id,level,current_holder,last_verified_at)
-               VALUES(?,?,?,?) ON CONFLICT(tactic_id) DO UPDATE SET level=excluded.level,
-               current_holder=excluded.current_holder,last_verified_at=excluded.last_verified_at""",
-            (tactic_id, level, holder, verified),
-        )
+    from account_inventory import load_account as apply_inventory
+    apply_inventory(conn)
 
 
 def load_tactic_level_observations(conn: sqlite3.Connection) -> None:
@@ -349,6 +315,8 @@ def load_tactic_level_observations(conn: sqlite3.Connection) -> None:
         return
     payload = json.loads(path.read_text(encoding="utf-8-sig"))
     for row in payload.get("observations", []):
+        if row["level"] != 10:
+            continue
         source = row["source"]
         src_id = source_id(
             conn, source["name"], source["url"], source["source_type"],
@@ -641,9 +609,12 @@ def write_database(db_path: Path, snapshot_path: Path, workers: int) -> tuple[di
     load_account(conn)
     seed_steam_data(conn)
     load_tactic_level_observations(conn)
-    conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('schema_version','2')")
+    from account_inventory import apply_max_level_policy, create_views
+    apply_max_level_policy(conn)
+    create_views(conn)
+    conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('schema_version','3')")
     conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('default_platform','Steam')")
-    conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('default_season','s1')")
+    # Account season is set by the inventory seed, not the historical DB filename.
     conn.execute("INSERT OR REPLACE INTO meta(key,value) VALUES('last_sync_at',?)", (NOW,))
     status = "partial" if errors else "complete"
     conn.execute(

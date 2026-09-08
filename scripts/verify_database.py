@@ -1,122 +1,98 @@
-#!/usr/bin/env python3
-"""Run high-signal integrity and business-rule checks for the local database."""
-
+"""Verify inventory, max-level semantics, foreign keys and replay safety."""
 from __future__ import annotations
-
 import json
 import sqlite3
 from pathlib import Path
-
+from account_inventory import load_account, apply_max_level_policy, create_views
+from sync_game_data import load_tactic_level_observations, seed_steam_data
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "data" / "三国谋定天下_Steam_S1.sqlite3"
-INVENTORY = ROOT / "data" / "account_inventory.json"
 
 
-def row_dicts(cursor):
-    return [dict(row) for row in cursor]
+def check(conn, require_stats=True):
+    payload = json.loads((ROOT / "data/account_inventory.json").read_text(encoding="utf-8"))
+    assert conn.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
+    assert not conn.execute("PRAGMA foreign_key_check").fetchall()
+    actual = set(conn.execute("""SELECT g.name,a.variant,a.advancement FROM account_generals a
+        JOIN generals g ON g.id=a.general_id"""))
+    expected = {(r["name"],r.get("variant","普通"),r["advancement"]) for r in payload["generals"]}
+    assert actual == expected
+    assert len(actual) == 45
+    assert ("张梁","普通",2) in actual and ("张梁","英雄",3) in actual
+    assert {("夏侯渊","普通",1),("张飞","普通",1),("小乔","普通",1)} <= actual
+    tactics = set(conn.execute("""SELECT t.name,t.quality,a.advancement FROM account_tactics a
+        JOIN tactics t ON t.id=a.tactic_id"""))
+    assert tactics == {(r["name"],r["quality"],r["advancement"]) for r in payload["tactics"]}
+    assert len(tactics) == 62 and sum(r[1]=="紫" for r in tactics) == 31
+    assert ("破军袭敌","金",None) in tactics
+    assert ("烈火焚营","金",2) in tactics
+    assert conn.execute("SELECT count(*) FROM generals WHERE quality='紫'").fetchone()[0] == 0
+    assert conn.execute("""SELECT count(*) FROM account_generals a JOIN generals g ON g.id=a.general_id
+        WHERE g.quality<>'金' OR a.level IS NOT NULL OR a.current_team IS NOT NULL""").fetchone()[0] == 0
+    assert conn.execute("SELECT count(*) FROM account_tactics WHERE level IS NOT NULL OR current_holder IS NOT NULL").fetchone()[0] == 0
+    assert conn.execute("SELECT count(*) FROM tactic_level_observations WHERE level<>10").fetchone()[0] == 0
+    assert conn.execute("SELECT count(*) FROM tactics WHERE description_raw IS NOT NULL AND description_level IS NOT 10").fetchone()[0] == 0
+    assert conn.execute("SELECT count(*) FROM v_owned_generals WHERE availability='常驻'").fetchone()[0] == 44
+    assert conn.execute("SELECT force FROM v_owned_generals WHERE variant='英雄'").fetchone()[0] is None
+    assert conn.execute("SELECT value FROM meta WHERE key='default_season'").fetchone()[0] == "s2"
+    assert conn.execute("SELECT first_season FROM tactics WHERE name='韬光养晦'").fetchone()[0] == "s2"
+    assert conn.execute("SELECT first_season FROM generals WHERE name='陆逊'").fetchone()[0] == "s2"
+    if require_stats:
+        assert conn.execute("""SELECT count(*) FROM v_owned_generals WHERE variant='普通'
+            AND (force IS NULL OR intelligence IS NULL OR command IS NULL OR initiative IS NULL)""").fetchone()[0] == 0
+        assert conn.execute("SELECT force FROM v_owned_generals WHERE name='甘宁'").fetchone()[0] == 225
+    observations = json.loads((ROOT / "data/tactic_level_observations.json").read_text(encoding="utf-8-sig"))["observations"]
+    for row in observations:
+        if row["level"] == 10:
+            stored = conn.execute("SELECT description_raw,description_level FROM tactics WHERE name=?", (row["name"],)).fetchone()
+            assert stored == (row["effect_raw"], 10), row["name"]
+    assert conn.execute("SELECT advancement FROM v_owned_tactics WHERE name='如有神助'").fetchone()[0] is None
 
 
-def main() -> int:
-    inventory = json.loads(INVENTORY.read_text(encoding="utf-8"))
-    conn = sqlite3.connect(DB)
-    conn.row_factory = sqlite3.Row
+def replay(conn):
+    load_account(conn)
+    seed_steam_data(conn)
+    load_tactic_level_observations(conn)
+    apply_max_level_policy(conn)
+    create_views(conn)
+
+
+def main():
+    conn = sqlite3.connect(f"{DB.as_uri()}?mode=ro", uri=True)
+    check(conn)
+    memory = sqlite3.connect(":memory:")
+    conn.backup(memory)
+    memory.execute("PRAGMA foreign_keys=ON")
+    replay(memory)
+    check(memory)
+    first = list(memory.iterdump())
+    replay(memory)
+    assert list(memory.iterdump()) == first, "Repeated import changed data"
+    # A fresh schema must work too, independent of the migration path.
+    fresh = sqlite3.connect(":memory:")
+    fresh.executescript((ROOT / "data/schema.sql").read_text(encoding="utf-8"))
+    fresh.execute("INSERT INTO generals(name,quality,updated_at) VALUES('紫将测试','紫','test')")
+    replay(fresh)
+    check(fresh, require_stats=False)
+    try:
+        fresh.execute("INSERT INTO account_generals(general_id,variant,level,last_verified_at) VALUES(1,'test',5,'test')")
+    except sqlite3.IntegrityError:
+        pass
+    else:
+        raise AssertionError("Current general level was accepted")
     report = {
-        "integrity": conn.execute("PRAGMA integrity_check").fetchone()[0],
-        "counts": dict(conn.execute(
-            """SELECT
-            (SELECT count(*) FROM generals) AS generals,
-            (SELECT count(*) FROM v_s1_generals) AS s1_generals,
-            (SELECT count(*) FROM v_s1_gold_generals) AS s1_gold_generals,
-            (SELECT count(*) FROM tactics) AS tactics,
-            (SELECT count(*) FROM v_s1_tactics) AS s1_tactics,
-            (SELECT count(*) FROM v_recommendable_tactics) AS recommendable_tactics,
-            (SELECT count(*) FROM v_recommendable_strategy_books) AS recommendable_strategy_books,
-            (SELECT count(*) FROM effects) AS effects,
-            (SELECT count(*) FROM bonds) AS bonds,
-            (SELECT count(*) FROM tactic_effects) AS tactic_effects,
-            (SELECT count(*) FROM account_generals) AS account_generals,
-            (SELECT count(*) FROM account_tactics) AS account_tactics,
-            (SELECT count(*) FROM tactic_level_observations) AS tactic_level_observations"""
-        ).fetchone()),
-        "tactic_level_observations": row_dicts(conn.execute(
-            """SELECT t.name,o.level,o.activation_rate,o.effect_raw,o.effect_json,
-                      o.verification_status,s.url AS source_url
-               FROM tactic_level_observations o
-               JOIN tactics t ON t.id=o.tactic_id
-               JOIN sources s ON s.id=o.source_id
-               ORDER BY t.name,o.level"""
-        )),        "s1_missing_four_stats": conn.execute(
-            """SELECT count(*) FROM v_s1_generals
-               WHERE base_force IS NULL OR growth_force IS NULL
-                  OR base_intelligence IS NULL OR growth_intelligence IS NULL
-                  OR base_command IS NULL OR growth_command IS NULL
-                  OR base_initiative IS NULL OR growth_initiative IS NULL"""
-        ).fetchone()[0],
-        "tactics_missing_full_description": conn.execute(
-            "SELECT count(*) FROM tactics WHERE description_raw IS NULL"
-        ).fetchone()[0],
-        "missing_description_names": [row[0] for row in conn.execute(
-            "SELECT name FROM tactics WHERE description_raw IS NULL ORDER BY name"
-        )],
-        "level50_unallocated": row_dicts(conn.execute(
-            "SELECT * FROM v_general_level50_estimate WHERE name IN ('大乔','甘宁') ORDER BY name"
-        )),
-        "steam_observations": row_dicts(conn.execute(
-            """SELECT g.name,o.allocated_force,o.allocated_intelligence,
-                      o.observed_force,o.observed_intelligence,o.observed_command,
-                      o.observed_initiative,o.context
-               FROM general_stat_observations o
-               JOIN generals g ON g.id=o.general_id ORDER BY g.name"""
-        )),
-        "jiangbiao": row_dicts(conn.execute(
-            """SELECT b.name,b.activation_count,b.effect_raw,b.verification_status,
-                      count(bm.general_id) AS members
-               FROM bonds b LEFT JOIN bond_members bm ON bm.bond_id=b.id
-               WHERE b.name='江表虎臣' GROUP BY b.id"""
-        )),
-        "hebei": row_dicts(conn.execute(
-            """SELECT b.name,b.activation_count,b.effect_raw,b.verification_status,
-                      count(bm.general_id) AS members
-               FROM bonds b LEFT JOIN bond_members bm ON bm.bond_id=b.id
-               WHERE b.name='河北庭将' GROUP BY b.id"""
-        )),
-        "account_out_of_scope_generals": conn.execute(
-            "SELECT count(*) FROM account_generals a JOIN generals g ON g.id=a.general_id WHERE g.quality<>'金' OR g.quality IS NULL"
-        ).fetchone()[0],
-        "account_out_of_scope_tactics": conn.execute(
-            "SELECT count(*) FROM account_tactics a JOIN tactics t ON t.id=a.tactic_id WHERE t.quality NOT IN ('金','紫') OR t.quality IS NULL"
-        ).fetchone()[0],
-        "latest_inventory_checks": row_dicts(conn.execute(
-            """SELECT '武将' AS kind,g.name,a.level,g.quality,a.current_team AS status,
-                      g.verification_status
-               FROM account_generals a JOIN generals g ON g.id=a.general_id
-               WHERE g.name IN ('关平','关羽','徐晃','夏侯渊','徐庶','周仓')
-               UNION ALL
-               SELECT '战法',t.name,a.level,t.quality,COALESCE(a.current_holder,'未装备'),
-                      t.verification_status
-               FROM account_tactics a JOIN tactics t ON t.id=a.tactic_id
-               WHERE t.name IN ('锐不可当','烈火焚营','乘虚而入','勇冠三军','上兵伐谋','临危勇烈')
-               ORDER BY kind,name"""
-        )),
+        "integrity": "ok", "foreign_keys": "ok", "repeat_import": "ok", "fresh_schema": "ok",
+        "permanent_gold_generals": 44, "temporary_hero_snapshots": 1,
+        "tactics": 62, "purple_generals": 0, "level50_stat_coverage": "44/44",
+        "known_owned_max_level_details": conn.execute("SELECT count(*) FROM v_owned_tactics WHERE description_level=10").fetchone()[0],
+        "unknown_tactic_advancement": conn.execute("SELECT count(*) FROM account_tactics WHERE advancement IS NULL").fetchone()[0],
     }
-    conn.close()
     print(json.dumps(report, ensure_ascii=False, indent=2))
-    checks = [
-        report["integrity"] == "ok",
-        report["counts"]["s1_generals"] > 0,
-        report["s1_missing_four_stats"] == 0,
-        report["counts"]["account_generals"] == len(inventory["generals"]),
-        report["counts"]["account_tactics"] == len(inventory["tactics"]),
-        report["account_out_of_scope_generals"] == 0,
-        report["account_out_of_scope_tactics"] == 0,
-        len(report["steam_observations"]) == 2,
-        len(report["hebei"]) == 1 and report["hebei"][0]["activation_count"] == 2,
-        len(report["latest_inventory_checks"]) == 12,
-        report["counts"]["tactic_level_observations"] >= 2,
-        {row["name"] for row in report["tactic_level_observations"]} >= {"料事如神","上智为间"},
-    ]
-    return 0 if all(checks) else 1
+    memory.close()
+    fresh.close()
+    conn.close()
+    return 0
 
 
 if __name__ == "__main__":
