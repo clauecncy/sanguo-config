@@ -20,7 +20,11 @@ def check(conn, require_stats=True):
     assert actual == expected
     assert len(actual) == 45
     assert ("张梁","普通",2) in actual and ("张梁","英雄",3) in actual
-    assert {("夏侯渊","普通",1),("张飞","普通",1),("小乔","普通",1)} <= actual
+    assert {("夏侯渊","普通",1),("张飞","普通",1),("小乔","普通",2)} <= actual
+    dates = set(conn.execute("""SELECT g.name,a.variant,a.last_verified_at FROM account_generals a
+        JOIN generals g ON g.id=a.general_id"""))
+    assert dates == {(r["name"],r.get("variant","普通"),r.get("verified_at",payload["verified_at"]))
+                     for r in payload["generals"]}
     tactics = set(conn.execute("""SELECT t.name,t.quality,a.advancement FROM account_tactics a
         JOIN tactics t ON t.id=a.tactic_id"""))
     assert tactics == {(r["name"],r["quality"],r["advancement"]) for r in payload["tactics"]}
@@ -29,8 +33,8 @@ def check(conn, require_stats=True):
     assert ("烈火焚营","金",2) in tactics
     assert conn.execute("SELECT count(*) FROM generals WHERE quality='紫'").fetchone()[0] == 0
     assert conn.execute("""SELECT count(*) FROM account_generals a JOIN generals g ON g.id=a.general_id
-        WHERE g.quality<>'金' OR a.level IS NOT NULL OR a.current_team IS NOT NULL""").fetchone()[0] == 0
-    assert conn.execute("SELECT count(*) FROM account_tactics WHERE level IS NOT NULL OR current_holder IS NOT NULL").fetchone()[0] == 0
+        WHERE g.quality<>'金' OR (a.level IS NOT NULL AND a.level NOT BETWEEN 1 AND 60)""").fetchone()[0] == 0
+    assert conn.execute("SELECT count(*) FROM account_tactics WHERE level IS NOT NULL AND level NOT BETWEEN 1 AND 10").fetchone()[0] == 0
     assert conn.execute("SELECT count(*) FROM tactic_level_observations WHERE level<>10").fetchone()[0] == 0
     assert conn.execute("SELECT count(*) FROM tactics WHERE description_raw IS NOT NULL AND description_level IS NOT 10").fetchone()[0] == 0
     assert conn.execute("SELECT count(*) FROM v_owned_generals WHERE availability='常驻'").fetchone()[0] == 44

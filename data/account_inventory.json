@@ -1,120 +1,744 @@
 {
   "schema_version": 2,
-  "verified_at": "2026-09-08",
+  "verified_at": "2026-09-10",
   "season": "s2",
-  "source": "evidence/account/2026-09-08/",
+  "source": "用户Steam S2截图（2026-09-10，当前武将/战法）",
   "generals": [
-    {"name":"周瑜","faction":"吴","advancement":0},
-    {"name":"黄盖","faction":"吴","advancement":0},
-    {"name":"徐盛","faction":"吴","advancement":0},
-    {"name":"貂蝉","faction":"群","advancement":2},
-    {"name":"田丰","faction":"群","advancement":0,"first_season":"s2"},
-    {"name":"张梁","faction":"群","advancement":3,"variant":"英雄","availability":"限时截图快照","notes":"截图剩余15小时16分；拍摄时刻未知，不推算到期时刻，不计入常驻库存。"},
-    {"name":"鲁肃","faction":"吴","advancement":0},
-    {"name":"孙权","faction":"吴","advancement":0},
-    {"name":"陆逊","faction":"吴","advancement":0,"first_season":"s2"},
-    {"name":"陈宫","faction":"群","advancement":0,"first_season":"s2"},
-    {"name":"蔡文姬","faction":"群","advancement":0},
-    {"name":"吕布","faction":"群","advancement":0},
-    {"name":"大乔","faction":"吴","advancement":0},
-    {"name":"甄洛","faction":"魏","advancement":1},
-    {"name":"马云禄","faction":"蜀","advancement":1,"first_season":"s2"},
-    {"name":"赵云","faction":"蜀","advancement":0},
-    {"name":"贾诩","faction":"魏","advancement":1,"first_season":"s2"},
-    {"name":"许褚","faction":"魏","advancement":0},
-    {"name":"典韦","faction":"魏","advancement":1},
-    {"name":"郭嘉","faction":"魏","advancement":0},
-    {"name":"于禁","faction":"魏","advancement":0},
-    {"name":"张郃","faction":"魏","advancement":1},
-    {"name":"徐晃","faction":"魏","advancement":0},
-    {"name":"夏侯渊","faction":"魏","advancement":1},
-    {"name":"程昱","faction":"魏","advancement":0},
-    {"name":"曹仁","faction":"魏","advancement":0},
-    {"name":"关羽","faction":"蜀","advancement":0},
-    {"name":"张飞","faction":"蜀","advancement":1},
-    {"name":"徐庶","faction":"蜀","advancement":0},
-    {"name":"法正","faction":"蜀","advancement":0,"first_season":"s2"},
-    {"name":"关平","faction":"蜀","advancement":1},
-    {"name":"周仓","faction":"蜀","advancement":0},
-    {"name":"孙策","faction":"吴","advancement":0},
-    {"name":"小乔","faction":"吴","advancement":1},
-    {"name":"甘宁","faction":"吴","advancement":0},
-    {"name":"程普","faction":"吴","advancement":0},
-    {"name":"吕蒙","faction":"吴","advancement":0},
-    {"name":"张角","faction":"群","advancement":0},
-    {"name":"颜良","faction":"群","advancement":0},
-    {"name":"文丑","faction":"群","advancement":1},
-    {"name":"华佗","faction":"群","advancement":0},
-    {"name":"庞德","faction":"群","advancement":0},
-    {"name":"邹氏","faction":"群","advancement":0},
-    {"name":"张梁","faction":"群","advancement":2},
-    {"name":"张宝","faction":"群","advancement":1}
+    {
+      "name": "周瑜",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 50,
+      "current_team": "部队一",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "黄盖",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 50,
+      "current_team": "部队一",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "徐盛",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 50,
+      "current_team": "部队一",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "貂蝉",
+      "faction": "群",
+      "advancement": 2,
+      "level": 50,
+      "current_team": "部队三",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "田丰",
+      "faction": "群",
+      "advancement": 0,
+      "first_season": "s2",
+      "level": 15,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "张梁",
+      "faction": "群",
+      "advancement": 3,
+      "variant": "英雄",
+      "availability": "限时截图快照",
+      "notes": "截图剩余15小时16分；拍摄时刻未知，不推算到期时刻，不计入常驻库存。"
+    },
+    {
+      "name": "鲁肃",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "孙权",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 50,
+      "current_team": "部队二",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "陆逊",
+      "faction": "吴",
+      "advancement": 0,
+      "first_season": "s2",
+      "level": 50,
+      "current_team": "部队二",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "陈宫",
+      "faction": "群",
+      "advancement": 0,
+      "first_season": "s2",
+      "level": 50,
+      "current_team": "部队三",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "蔡文姬",
+      "faction": "群",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "吕布",
+      "faction": "群",
+      "advancement": 0,
+      "level": 50,
+      "current_team": "部队三",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "大乔",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 43,
+      "current_team": "部队五",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "甄洛",
+      "faction": "魏",
+      "advancement": 1,
+      "level": 43,
+      "current_team": "部队五",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "马云禄",
+      "faction": "蜀",
+      "advancement": 1,
+      "first_season": "s2",
+      "level": 49,
+      "current_team": "部队四",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "赵云",
+      "faction": "蜀",
+      "advancement": 0,
+      "level": 49,
+      "current_team": "部队四",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "贾诩",
+      "faction": "魏",
+      "advancement": 1,
+      "first_season": "s2",
+      "level": 14,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "许褚",
+      "faction": "魏",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "典韦",
+      "faction": "魏",
+      "advancement": 1,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "郭嘉",
+      "faction": "魏",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "于禁",
+      "faction": "魏",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "张郃",
+      "faction": "魏",
+      "advancement": 1,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "徐晃",
+      "faction": "魏",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "夏侯渊",
+      "faction": "魏",
+      "advancement": 1,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "程昱",
+      "faction": "魏",
+      "advancement": 0,
+      "level": 43,
+      "current_team": "部队五",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "曹仁",
+      "faction": "魏",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "关羽",
+      "faction": "蜀",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "张飞",
+      "faction": "蜀",
+      "advancement": 1,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "徐庶",
+      "faction": "蜀",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "法正",
+      "faction": "蜀",
+      "advancement": 0,
+      "first_season": "s2",
+      "level": 49,
+      "current_team": "部队四",
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "关平",
+      "faction": "蜀",
+      "advancement": 1,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "周仓",
+      "faction": "蜀",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "孙策",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "小乔",
+      "faction": "吴",
+      "advancement": 2,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
+      "level": 50,
+      "current_team": "部队二"
+    },
+    {
+      "name": "甘宁",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "程普",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "吕蒙",
+      "faction": "吴",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "张角",
+      "faction": "群",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "颜良",
+      "faction": "群",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "文丑",
+      "faction": "群",
+      "advancement": 1,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "华佗",
+      "faction": "群",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "庞德",
+      "faction": "群",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "邹氏",
+      "faction": "群",
+      "advancement": 0,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "张梁",
+      "faction": "群",
+      "advancement": 2,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    },
+    {
+      "name": "张宝",
+      "faction": "群",
+      "advancement": 1,
+      "level": 5,
+      "current_team": null,
+      "verified_at": "2026-09-10",
+      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。"
+    }
   ],
   "tactic_advancement_verified_at": "2026-09-02",
   "tactic_advancement_source": "notes/S2武将与战法库存.md（修改前Git c650a5f18a1ab8da10977900317777139d3e1459 红度核定段）",
   "tactic_advancement_note": "本次战法列表不显示红度，沿用历史金色战法记录；破军袭敌和紫色战法红度未知，历史0红不是本次核定。",
   "tactics": [
-    {"name":"清风驱疾","quality":"金","advancement":0},
-    {"name":"万夫莫当","quality":"金","advancement":1},
-    {"name":"伏兵四起","quality":"金","advancement":0},
-    {"name":"断敌粮道","quality":"金","advancement":1},
-    {"name":"铁骑横冲","quality":"金","advancement":0},
-    {"name":"水淹七军","quality":"金","advancement":0},
-    {"name":"出其不意","quality":"金","advancement":0},
-    {"name":"五雷轰顶","quality":"金","advancement":0},
-    {"name":"无难之志","quality":"金","advancement":0},
-    {"name":"势如破竹","quality":"金","advancement":0},
-    {"name":"锐不可当","quality":"金","advancement":0},
-    {"name":"烈火焚营","quality":"金","advancement":2},
-    {"name":"威名显赫","quality":"金","advancement":1},
-    {"name":"狂风大作","quality":"金","advancement":0},
-    {"name":"战八方","quality":"金","advancement":0},
-    {"name":"趁火打劫","quality":"金","advancement":0},
-    {"name":"披坚执锐","quality":"金","advancement":0},
-    {"name":"攻其不备","quality":"金","advancement":0},
-    {"name":"破军袭敌","quality":"金","advancement":null},
-    {"name":"乘虚而入","quality":"金","advancement":0},
-    {"name":"横征暴敛","quality":"金","advancement":0},
-    {"name":"勇冠三军","quality":"金","advancement":0},
-    {"name":"百战不殆","quality":"金","advancement":0},
-    {"name":"王佐之才","quality":"金","advancement":0},
-    {"name":"蓄势待发","quality":"金","advancement":0},
-    {"name":"知人善任","quality":"金","advancement":0,"first_season":"s2"},
-    {"name":"三军夺气","quality":"金","advancement":0,"first_season":"s2"},
-    {"name":"乘间投隙","quality":"金","advancement":0,"first_season":"s2"},
-    {"name":"韬光养晦","quality":"金","advancement":0,"first_season":"s2"},
-    {"name":"固若金汤","quality":"金","advancement":0,"first_season":"s2"},
-    {"name":"胜敌益强","quality":"金","advancement":0,"first_season":"s2"},
-    {"name":"临阵突袭","quality":"紫","advancement":null},
-    {"name":"疾行侧击","quality":"紫","advancement":null},
-    {"name":"决水破敌","quality":"紫","advancement":null},
-    {"name":"束手无策","quality":"紫","advancement":null},
-    {"name":"坚壁清野","quality":"紫","advancement":null},
-    {"name":"计逐穷寇","quality":"紫","advancement":null},
-    {"name":"避其锐气","quality":"紫","advancement":null},
-    {"name":"铸甲销戈","quality":"紫","advancement":null},
-    {"name":"乱敌方阵","quality":"紫","advancement":null},
-    {"name":"咏歌尝酒","quality":"紫","advancement":null},
-    {"name":"克敌如风","quality":"紫","advancement":null},
-    {"name":"奇计迭出","quality":"紫","advancement":null},
-    {"name":"来好息师","quality":"紫","advancement":null},
-    {"name":"谈笑诛心","quality":"紫","advancement":null},
-    {"name":"火羽","quality":"紫","advancement":null},
-    {"name":"以战养战","quality":"紫","advancement":null},
-    {"name":"上兵伐谋","quality":"紫","advancement":null},
-    {"name":"迎敌","quality":"紫","advancement":null},
-    {"name":"夜袭","quality":"紫","advancement":null},
-    {"name":"揭竿而起","quality":"紫","advancement":null},
-    {"name":"文治武功","quality":"紫","advancement":null},
-    {"name":"骁勇之姿","quality":"紫","advancement":null},
-    {"name":"筹划良策","quality":"紫","advancement":null},
-    {"name":"屈人之兵","quality":"紫","advancement":null},
-    {"name":"如沐春风","quality":"紫","advancement":null},
-    {"name":"强袭","quality":"紫","advancement":null},
-    {"name":"如有神助","quality":"紫","advancement":null},
-    {"name":"一计决胜","quality":"紫","advancement":null},
-    {"name":"临危勇烈","quality":"紫","advancement":null},
-    {"name":"任人唯贤","quality":"紫","advancement":null,"first_season":"s2"},
-    {"name":"穷追不舍","quality":"紫","advancement":null,"first_season":"s2"}
-  ]
+    {
+      "name": "清风驱疾",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "万夫莫当",
+      "quality": "金",
+      "advancement": 1
+    },
+    {
+      "name": "伏兵四起",
+      "quality": "金",
+      "advancement": 0,
+      "level": 1
+    },
+    {
+      "name": "断敌粮道",
+      "quality": "金",
+      "advancement": 1
+    },
+    {
+      "name": "铁骑横冲",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "水淹七军",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "出其不意",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "五雷轰顶",
+      "quality": "金",
+      "advancement": 0,
+      "level": 1
+    },
+    {
+      "name": "无难之志",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "势如破竹",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "锐不可当",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "烈火焚营",
+      "quality": "金",
+      "advancement": 2
+    },
+    {
+      "name": "威名显赫",
+      "quality": "金",
+      "advancement": 1
+    },
+    {
+      "name": "狂风大作",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "战八方",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "趁火打劫",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "披坚执锐",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "攻其不备",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "破军袭敌",
+      "quality": "金",
+      "advancement": null
+    },
+    {
+      "name": "乘虚而入",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "横征暴敛",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "勇冠三军",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "百战不殆",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "王佐之才",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "蓄势待发",
+      "quality": "金",
+      "advancement": 0
+    },
+    {
+      "name": "知人善任",
+      "quality": "金",
+      "advancement": 0,
+      "first_season": "s2"
+    },
+    {
+      "name": "三军夺气",
+      "quality": "金",
+      "advancement": 0,
+      "first_season": "s2"
+    },
+    {
+      "name": "乘间投隙",
+      "quality": "金",
+      "advancement": 0,
+      "first_season": "s2"
+    },
+    {
+      "name": "韬光养晦",
+      "quality": "金",
+      "advancement": 0,
+      "first_season": "s2"
+    },
+    {
+      "name": "固若金汤",
+      "quality": "金",
+      "advancement": 0,
+      "first_season": "s2"
+    },
+    {
+      "name": "胜敌益强",
+      "quality": "金",
+      "advancement": 0,
+      "first_season": "s2"
+    },
+    {
+      "name": "临阵突袭",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "疾行侧击",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "决水破敌",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "束手无策",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "坚壁清野",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "计逐穷寇",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "避其锐气",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "铸甲销戈",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "乱敌方阵",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "咏歌尝酒",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "克敌如风",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "奇计迭出",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "来好息师",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "谈笑诛心",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "火羽",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "以战养战",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "上兵伐谋",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "迎敌",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "夜袭",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "揭竿而起",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "文治武功",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "骁勇之姿",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "筹划良策",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "屈人之兵",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "如沐春风",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "强袭",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "如有神助",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "一计决胜",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "临危勇烈",
+      "quality": "紫",
+      "advancement": null
+    },
+    {
+      "name": "任人唯贤",
+      "quality": "紫",
+      "advancement": null,
+      "first_season": "s2"
+    },
+    {
+      "name": "穷追不舍",
+      "quality": "紫",
+      "advancement": null,
+      "first_season": "s2"
+    }
+  ],
+  "tactic_level_note": "仅伏兵四起、五雷轰顶截图明确当前为1级；其余战法未显示当前等级。31项金色战法均补充游戏内10级满级效果证据。"
 }

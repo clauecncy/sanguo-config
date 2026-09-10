@@ -196,13 +196,13 @@ CREATE TABLE IF NOT EXISTS account_generals (
   general_id INTEGER NOT NULL REFERENCES generals(id),
   variant TEXT NOT NULL DEFAULT '普通',
   availability TEXT NOT NULL DEFAULT '常驻',
-  level INTEGER CHECK(level IS NULL),
+  level INTEGER CHECK(level BETWEEN 1 AND 60),
   advancement INTEGER CHECK(advancement BETWEEN 0 AND 5),
   allocated_force INTEGER,
   allocated_intelligence INTEGER,
   allocated_command INTEGER,
   allocated_initiative INTEGER,
-  current_team TEXT CHECK(current_team IS NULL),
+  current_team TEXT,
   last_verified_at TEXT NOT NULL,
   notes TEXT,
   PRIMARY KEY(general_id, variant)
@@ -210,8 +210,8 @@ CREATE TABLE IF NOT EXISTS account_generals (
 
 CREATE TABLE IF NOT EXISTS account_tactics (
   tactic_id INTEGER PRIMARY KEY REFERENCES tactics(id),
-  level INTEGER CHECK(level IS NULL),
-  current_holder TEXT CHECK(current_holder IS NULL),
+  level INTEGER CHECK(level BETWEEN 1 AND 10),
+  current_holder TEXT,
   advancement INTEGER CHECK(advancement BETWEEN 0 AND 5),
   advancement_verified_at TEXT,
   advancement_source TEXT,

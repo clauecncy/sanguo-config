@@ -25,17 +25,18 @@ def load_account(conn):
             raise ValueError(f"Invalid advancement: {row}")
     if any(r["quality"] not in ("金", "紫") for r in tactics):
         raise ValueError("Only gold/purple tactics are supported")
-    if "variant" not in columns(conn, "account_generals"):
+    table_sql = conn.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='account_generals'").fetchone()[0]
+    if "variant" not in columns(conn, "account_generals") or "CHECK(level IS NULL)" in table_sql:
         conn.execute("DROP TABLE account_generals")
         conn.execute("""CREATE TABLE account_generals (
             general_id INTEGER NOT NULL REFERENCES generals(id),
             variant TEXT NOT NULL DEFAULT '普通',
             availability TEXT NOT NULL DEFAULT '常驻',
             advancement INTEGER CHECK(advancement BETWEEN 0 AND 5),
-            level INTEGER CHECK(level IS NULL),
+            level INTEGER CHECK(level BETWEEN 1 AND 60),
             allocated_force INTEGER, allocated_intelligence INTEGER,
             allocated_command INTEGER, allocated_initiative INTEGER,
-            current_team TEXT CHECK(current_team IS NULL),
+            current_team TEXT,
             last_verified_at TEXT NOT NULL, notes TEXT,
             PRIMARY KEY(general_id, variant))""")
     for column, definition in {
@@ -56,9 +57,9 @@ def load_account(conn):
             (row["name"], row["faction"], row.get("first_season"), verified))
         gid = conn.execute("SELECT id FROM generals WHERE name=?", (row["name"],)).fetchone()[0]
         conn.execute("""INSERT INTO account_generals
-            (general_id,variant,availability,advancement,last_verified_at,notes)
-            VALUES(?,?,?,?,?,?)""", (gid, row.get("variant", "普通"),
-            row.get("availability", "常驻"), row["advancement"], verified,
+            (general_id,variant,availability,level,advancement,current_team,last_verified_at,notes)
+            VALUES(?,?,?,?,?,?,?,?)""", (gid, row.get("variant", "普通"),
+            row.get("availability", "常驻"), row.get("level"), row["advancement"], row.get("current_team"), row.get("verified_at", verified),
             row.get("notes", payload["source"])))
     for row in tactics:
         conn.execute("""INSERT INTO tactics(name,quality,first_season,updated_at)
@@ -67,9 +68,9 @@ def load_account(conn):
             (row["name"], row["quality"], row.get("first_season"), verified))
         tid = conn.execute("SELECT id FROM tactics WHERE name=?", (row["name"],)).fetchone()[0]
         known = row["advancement"] is not None
-        conn.execute("""INSERT INTO account_tactics(tactic_id,advancement,
+        conn.execute("""INSERT INTO account_tactics(tactic_id,level,advancement,
             advancement_verified_at,advancement_source,last_verified_at,notes)
-            VALUES(?,?,?,?,?,?)""", (tid, row["advancement"],
+            VALUES(?,?,?,?,?,?,?)""", (tid, row.get("level"), row["advancement"],
             payload["tactic_advancement_verified_at"] if known else None,
             payload["tactic_advancement_source"] if known else None, verified,
             "红度沿用历史核定，本次未展示" if known else "红度未知，本次截图未展示"))
