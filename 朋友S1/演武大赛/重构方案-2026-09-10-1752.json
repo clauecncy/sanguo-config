@@ -1,0 +1,19 @@
+{
+  "status": "推荐未执行；取代此前保留曹操与万夫莫当的建议",
+  "reason": "用户报告三胜三负，其中一胜为空阵，第一队基本未赢；不把既有魏队当争胜基线",
+  "support": {"general":"黄月英","advancement":2,"gold":["文武双全","狂风大作"],"purple":["避其锐气"]},
+  "teams": [
+    {"name":"孙小周","priority":"争胜","formation":"箕形阵","members":[
+      {"general":"孙坚","position":"前排","allocation":"统率","tactics":["铸甲销戈","蓄势待发"]},
+      {"general":"小乔","position":"后排","allocation":"智力","tactics":["料事如神","上兵伐谋"]},
+      {"general":"周瑜","position":"后排","allocation":"智力","tactics":["狂风大作","断敌粮道"]}]},
+    {"name":"诸徐月","priority":"争胜","formation":"箕形阵","members":[
+      {"general":"诸葛亮","position":"前排","allocation":"智力","tactics":["百战不殆","避其锐气"]},
+      {"general":"徐庶","position":"后排","allocation":"智力","tactics":["文武双全","筹划良策"]},
+      {"general":"黄月英","position":"后排","allocation":"智力","tactics":["青囊急救","披坚执锐"]}]},
+    {"name":"剩余魏队","priority":"剩余资源争取额外胜场","formation":"方圆阵","members":[
+      {"general":"曹仁","position":"前排","allocation":"统率","tactics":["舍生取义","来好息师"]},
+      {"general":"夏侯惇","position":"前排","allocation":"武力","tactics":["威名显赫","破军袭敌"]},
+      {"general":"夏侯渊","position":"后排","allocation":"武力","tactics":["兵贵神速","铁骑横冲"]}]}
+  ]
+}
