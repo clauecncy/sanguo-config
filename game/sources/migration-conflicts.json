@@ -1,0 +1,968 @@
+[
+  {
+    "table": "sources",
+    "key": {
+      "name": "用户Steam S2截图-料事如神10级",
+      "url": "references/S2演武战报/2026-09-04/30-料事如神10级详情.png"
+    },
+    "differences": {
+      "fetched_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "sources",
+    "key": {
+      "name": "用户Steam S2截图-上智为间10级",
+      "url": "references/S2演武战报/2026-09-04/31-上智为间10级详情.png"
+    },
+    "differences": {
+      "fetched_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "sources",
+    "key": {
+      "name": "用户Steam S2截图-束手无策10级",
+      "url": "references/S2演武战报/2026-09-04/32-束手无策10级详情.png"
+    },
+    "differences": {
+      "fetched_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "sources",
+    "key": {
+      "name": "用户Steam S2截图-横征暴敛10级",
+      "url": "references/S2演武战报/2026-09-04/34-横征暴敛10级详情.png"
+    },
+    "differences": {
+      "fetched_at": {
+        "primary": "2026-09-10T17:36:00+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "sources",
+    "key": {
+      "name": "用户Steam S2截图-固若金汤10级",
+      "url": "references/S2演武战报/2026-09-04/35-固若金汤10级详情.png"
+    },
+    "differences": {
+      "fetched_at": {
+        "primary": "2026-09-10T17:36:00+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "sources",
+    "key": {
+      "name": "用户Steam S2截图-谈笑诛心10级预览",
+      "url": "references/S2演武战报/2026-09-04/36-谈笑诛心10级预览.png"
+    },
+    "differences": {
+      "fetched_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "万夫莫当"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "普攻后60%对目标两名队友造成该次普攻103%传递伤害；自身武力高于目标时额外30.9%兵刃伤害。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 36,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "三军夺气"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "普攻后使目标武力、智力、统率降低30点3回合，最多叠5次。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 40,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "上智为间"
+    },
+    "differences": {
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "乘虚而入"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "普攻后随机单体280%兵刃伤害；目标虚弱则伤害提升30%，否则80%施加虚弱1回合。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 39,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "乘间投隙"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "普攻后对敌军随机单体混乱1回合并180%谋略伤害；若已混乱，对其友军随机单体100%谋略伤害。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 33,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "五雷轰顶"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "准备1回合，对敌军随机单体160%谋略伤害，施放5次；命中洪水目标该次伤害提升40%。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 42,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "伏兵四起"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "对敌军随机单体110%兵刃伤害，触发4次，发动期间附带25%会心几率。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 41,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "出其不意"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "对敌军随机单体350%谋略伤害；目标有负面状态时伤害提升25%。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 21,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "势如破竹"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "提升自身20%会心2回合，再对敌军全体140%兵刃伤害。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 38,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "勇冠三军"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "自身倒戈提升30.9%；普攻后自身兵刃伤害提升6.18%，可叠6次；累计3次普攻后随机单体206%兵刃伤害。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 19,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "固若金汤"
+    },
+    "differences": {
+      "activation_rate": {
+        "primary": null,
+        "secondary": "100%"
+      },
+      "description_raw": {
+        "primary": "自身统率提升20%；第2回合起每回合开始60%概率嘲讽敌军随机2-3人2回合。",
+        "secondary": "自身统率提升20%，第2回合起，每个回合开始时有60%概率（受统率影响）嘲讽敌军随机2-3人，持续2回合"
+      },
+      "source_id": {
+        "primary": 35,
+        "secondary": 12
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "威名显赫"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "提升自身30%倒戈2回合；对敌军随机两人造成226.6%兵刃伤害。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 18,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "战八方"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "对敌军全体造成130%兵刃伤害，并施加畏惧2回合。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 43,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "披坚执锐"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "战斗开始使我军随机单体获得披坚并受兵刃伤害降低20%；武力最高单体获执锐，普攻后50%随机单体100%兵刃伤害。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 26,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "攻其不备"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "普攻后对目标280%兵刃伤害并施加技穷1回合；已有技穷时50%震慑1回合。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 27,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "料事如神"
+    },
+    "differences": {
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "断敌粮道"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "回合开始对敌军单体施加断粮2回合；回合结束对其造成113.3%谋略伤害。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 15,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "无难之志"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "提升两名队友45%连击率和20%倒戈，持续2回合。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 22,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "束手无策"
+    },
+    "differences": {
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "横征暴敛"
+    },
+    "differences": {
+      "activation_rate": {
+        "primary": null,
+        "secondary": "100%"
+      },
+      "description_raw": {
+        "primary": "施加负面效果后治疗率40%恢复自身兵力并受伤降低10%，持续2回合、可叠4次。",
+        "secondary": "战斗中，施加负面效果后恢复自身兵力（治疗率40%，受智力和统率影响），并使自身受到伤害降低10%，持续2回合，可叠加4次。每回合最多触发10次"
+      },
+      "source_id": {
+        "primary": 28,
+        "secondary": 11
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "水淹七军"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "准备1回合，对敌军全体施加洪水2回合并造成267.8%兵刃伤害；66.95%概率施加技穷、缴械各1回合。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 17,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "清风驱疾"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "驱散我军随机两人1种负面状态，并治疗率180%恢复兵力。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 37,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "烈火焚营"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "对敌军全体造成84.8%谋略伤害，并施加火攻2回合；再3次焚营，风暴目标焚营伤害提升30%。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 14,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "狂风大作"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "第2、4回合开始敌我全体陷入风暴2回合；奇数回合60%全体100%谋略伤害，偶数回合60%随机单体280%谋略伤害。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 24,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "王佐之才"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "自身奇谋几率提升24%；谋略伤害后50%提升10智力2回合，可叠4次。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 30,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "百战不殆"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "我军统率/智力/武力最高单体受伤时60%对应提升7点属性，可叠8次至战斗结束。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 29,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "知人善任"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "我军智力最高单体受伤降低25%（受智力影响）2回合，并获1层抵御。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 32,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "破军袭敌"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "准备1回合，对敌军全体造成300%兵刃伤害。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 44,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "胜敌益强"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "造成兵刃伤害后提升16.48武力、造成谋略伤害后提升16.48智力，均可叠8次。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 20,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "蓄势待发"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "每回合开始提升两名队友7%造成伤害，可叠加至战斗结束。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 31,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "谈笑诛心"
+    },
+    "differences": {
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-09-09T17:20:59+08:00"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "趁火打劫"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "准备1回合，敌军随机两人220%谋略和兵刃伤害；火攻目标额外混乱2回合。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 25,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "铁骑横冲"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "普攻后提升自身20.6%会心2回合，再对当前目标造成412%兵刃伤害；伤害系数每回合降低25%。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 16,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "锐不可当"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "提升自身16%破甲和35%造成伤害。",
+        "secondary": null
+      },
+      "source_id": {
+        "primary": 23,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactics",
+    "key": {
+      "name": "韬光养晦"
+    },
+    "differences": {
+      "description_raw": {
+        "primary": "自身主动战法发动率提升6%（受智力影响）；每回合开始自身谋略伤害提升8%，可叠加至结束。",
+        "secondary": null
+      },
+      "verification_status": {
+        "primary": "Steam已核",
+        "secondary": "跨赛季参考"
+      },
+      "source_id": {
+        "primary": 34,
+        "secondary": 1
+      },
+      "updated_at": {
+        "primary": "2026-09-10T17:37:59+08:00",
+        "secondary": "2026-08-19T17:01:54+08:00"
+      },
+      "description_level": {
+        "primary": 10,
+        "secondary": null
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  },
+  {
+    "table": "tactic_effects",
+    "key": {
+      "tactic_id": 53,
+      "effect_id": 26,
+      "relation": "产生或依赖"
+    },
+    "differences": {
+      "evidence_text": {
+        "primary": "自身统率提升20%；第2回合起每回合开始60%概率嘲讽敌军随机2-3人2回合。",
+        "secondary": "自身统率提升20%，第2回合起，每个回合开始时有60%概率（受统率影响）嘲讽敌军随机2-3人，持续2回合"
+      }
+    },
+    "resolution": "primary retained; secondary evidence preserved, not auto-promoted"
+  }
+]

@@ -1,2 +1,0 @@
-# Duplicate database backups stay local; text history remains versioned.
-*.sqlite3

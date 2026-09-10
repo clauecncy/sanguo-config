@@ -9,8 +9,8 @@ sys.path.insert(0, str(ROOT / "references" / ".ocr-python"))
 
 import cv2  # noqa: E402
 import numpy as np  # noqa: E402
-OCR_DIR = ROOT / "references" / "S2阵容大全" / "assets" / "rapidocr-team-cells"
-OUTPUT = ROOT / "references" / "S2阵容大全" / "阵容校正稿.md"
+OCR_DIR = ROOT / "references" / "s2" / "阵容大全" / "assets" / "rapidocr-team-cells"
+OUTPUT = ROOT / "references" / "s2" / "阵容大全" / "阵容校正稿.md"
 SKIP = {"r01-c01", "r01-c02", "r02-c01", "r02-c02"}
 
 TIERS = [
@@ -158,7 +158,7 @@ def main():
     ]
 
     for index, ((cell, _ocr_title, title_y, lines), tier, heroes, title) in enumerate(zip(entries, TIERS, HEROES, TITLES), 1):
-        image_path = ROOT / "references" / "S2阵容大全" / "assets" / "team-cells" / f"{cell}.png"
+        image_path = ROOT / "references" / "s2" / "阵容大全" / "assets" / "team-cells" / f"{cell}.png"
         image = cv2.imdecode(np.fromfile(image_path, dtype=np.uint8), cv2.IMREAD_COLOR)
         out.extend([
             f"## {index:02d}. {title}（{tier}）", "",

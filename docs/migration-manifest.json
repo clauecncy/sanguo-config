@@ -1,0 +1,1328 @@
+{
+  "baseline": "ad5065b",
+  "files": [
+    {
+      "old": "references/S2阵容大全/OCR识别原稿.md",
+      "new": "references/s2/阵容大全/OCR识别原稿.md",
+      "sha256": "8b9c9f79fa7e43c510010acddd3f41d6fb2578bc7a35b3b2a514e818d2c74847",
+      "migrated_sha256": "8b9c9f79fa7e43c510010acddd3f41d6fb2578bc7a35b3b2a514e818d2c74847",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "references/S2阵容大全/README.md",
+      "new": "references/s2/阵容大全/README.md",
+      "sha256": "abdb62ab996fd18e8e4f7994630fc888536e752fccbda7e4fe41e685e5510b60",
+      "migrated_sha256": "abdb62ab996fd18e8e4f7994630fc888536e752fccbda7e4fe41e685e5510b60",
+      "post_cleanup_sha256": "01dc1b9715007ebc49776080b4b5535ef6c29b8583c8b22f24a2bcee17bead43"
+    },
+    {
+      "old": "references/S2阵容大全/待确认清单.md",
+      "new": "references/s2/阵容大全/待确认清单.md",
+      "sha256": "086af6b4b2ea3fb4d3829eb3705f7544e7552b118a6edcb1c4dc867484b1a0d9",
+      "migrated_sha256": "086af6b4b2ea3fb4d3829eb3705f7544e7552b118a6edcb1c4dc867484b1a0d9",
+      "post_cleanup_sha256": "086af6b4b2ea3fb4d3829eb3705f7544e7552b118a6edcb1c4dc867484b1a0d9"
+    },
+    {
+      "old": "references/S2阵容大全/阵容校正稿.md",
+      "new": "references/s2/阵容大全/阵容校正稿.md",
+      "sha256": "786ef4dbb704e13feb877cda2404b65e3372b622bfde0598fc2b802ae77567d3",
+      "migrated_sha256": "433c0f242a0bd87f02d834e8c358e140874faa3865d9db85874e0a7b6a6d5bf0",
+      "post_cleanup_sha256": "433c0f242a0bd87f02d834e8c358e140874faa3865d9db85874e0a7b6a6d5bf0"
+    },
+    {
+      "old": "references/S2阵容大全/阵容转录.md",
+      "new": "references/s2/阵容大全/阵容转录.md",
+      "sha256": "05210a3db3cddabb2f8e0749dc173f329035a7a09ec4c311e27ba58f9c4cb320",
+      "migrated_sha256": "6e6df799340767af7662a87ea6dbd66252b1d1a372645b31a187b113d520440a",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/01-于郭荀-负-徐荀周.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/01-于郭荀-负-徐荀周.png",
+      "sha256": "de364efa9cd21b63ee83831034b10d656fb2db836eb019852c1f6356dbc27c6c",
+      "migrated_sha256": "de364efa9cd21b63ee83831034b10d656fb2db836eb019852c1f6356dbc27c6c",
+      "post_cleanup_sha256": "de364efa9cd21b63ee83831034b10d656fb2db836eb019852c1f6356dbc27c6c"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/02-貂田梁-胜-大乔马云禄马超.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/02-貂田梁-胜-大乔马云禄马超.png",
+      "sha256": "f0144a4736d7359557c0fe587dcd11d65779720919bc5cfb7e7da6f2c4556ffa",
+      "migrated_sha256": "f0144a4736d7359557c0fe587dcd11d65779720919bc5cfb7e7da6f2c4556ffa",
+      "post_cleanup_sha256": "f0144a4736d7359557c0fe587dcd11d65779720919bc5cfb7e7da6f2c4556ffa"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/03-于郭荀-负-曹张关.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/03-于郭荀-负-曹张关.png",
+      "sha256": "244c821c0debf56bee2a612dd103216ac7a1d5447163f955a614e0a381c56ff6",
+      "migrated_sha256": "244c821c0debf56bee2a612dd103216ac7a1d5447163f955a614e0a381c56ff6",
+      "post_cleanup_sha256": "244c821c0debf56bee2a612dd103216ac7a1d5447163f955a614e0a381c56ff6"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/04-徐黄周-胜-周黄鲁.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/04-徐黄周-胜-周黄鲁.png",
+      "sha256": "14ca129da33478f83fee327928fa3fe8699cb692a42de9c3c58c7828eb505e48",
+      "migrated_sha256": "14ca129da33478f83fee327928fa3fe8699cb692a42de9c3c58c7828eb505e48",
+      "post_cleanup_sha256": "14ca129da33478f83fee327928fa3fe8699cb692a42de9c3c58c7828eb505e48"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/05-于郭荀-负-貂董袁.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/05-于郭荀-负-貂董袁.png",
+      "sha256": "da5fa9c1845a88cb7631a0fe8a3e3896bd5f4d8bb022eef2a62e96b20f27472c",
+      "migrated_sha256": "da5fa9c1845a88cb7631a0fe8a3e3896bd5f4d8bb022eef2a62e96b20f27472c",
+      "post_cleanup_sha256": "da5fa9c1845a88cb7631a0fe8a3e3896bd5f4d8bb022eef2a62e96b20f27472c"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/06-貂田梁-平-黄月英夏侯渊马云禄.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/06-貂田梁-平-黄月英夏侯渊马云禄.png",
+      "sha256": "3071e44e1a5271e9f03ff0ec64186677d94f0608856a2856adb81ed4d45b28d3",
+      "migrated_sha256": "3071e44e1a5271e9f03ff0ec64186677d94f0608856a2856adb81ed4d45b28d3",
+      "post_cleanup_sha256": "3071e44e1a5271e9f03ff0ec64186677d94f0608856a2856adb81ed4d45b28d3"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/07-徐黄周-负-董吕法.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/07-徐黄周-负-董吕法.png",
+      "sha256": "57a56c216446df724f7dca452af2a805cc38924023bbb2f0c9004a9a86c12fe4",
+      "migrated_sha256": "57a56c216446df724f7dca452af2a805cc38924023bbb2f0c9004a9a86c12fe4",
+      "post_cleanup_sha256": "57a56c216446df724f7dca452af2a805cc38924023bbb2f0c9004a9a86c12fe4"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/08-徐黄周-平-夏侯惇邓艾关羽.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/08-徐黄周-平-夏侯惇邓艾关羽.png",
+      "sha256": "d85a2c289c1c1c0dd152f6f64cd94560ec6d150efd9bba3ff4c62cb433a25fc0",
+      "migrated_sha256": "d85a2c289c1c1c0dd152f6f64cd94560ec6d150efd9bba3ff4c62cb433a25fc0",
+      "post_cleanup_sha256": "d85a2c289c1c1c0dd152f6f64cd94560ec6d150efd9bba3ff4c62cb433a25fc0"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/09-完整总览-1225.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/09-完整总览-1225.png",
+      "sha256": "aeeda15d7a11dd0ff1a91f6ca8db9e1395f8cd438503a2206f54117679a211d7",
+      "migrated_sha256": "aeeda15d7a11dd0ff1a91f6ca8db9e1395f8cd438503a2206f54117679a211d7",
+      "post_cleanup_sha256": "aeeda15d7a11dd0ff1a91f6ca8db9e1395f8cd438503a2206f54117679a211d7"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/10-完整总览-1240.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/10-完整总览-1240.png",
+      "sha256": "bdd5081b719624ec9183f3f52a62026b7630d9aeb4d41e10600d186469ce4194",
+      "migrated_sha256": "bdd5081b719624ec9183f3f52a62026b7630d9aeb4d41e10600d186469ce4194",
+      "post_cleanup_sha256": "bdd5081b719624ec9183f3f52a62026b7630d9aeb4d41e10600d186469ce4194"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/11-完整总览-1310.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/11-完整总览-1310.png",
+      "sha256": "4e0e7f41123d2d7939475d8b5dedb8d80bf530d65f9d06a606a670ceb350f602",
+      "migrated_sha256": "4e0e7f41123d2d7939475d8b5dedb8d80bf530d65f9d06a606a670ceb350f602",
+      "post_cleanup_sha256": "4e0e7f41123d2d7939475d8b5dedb8d80bf530d65f9d06a606a670ceb350f602"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/12-完整总览-1325.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/12-完整总览-1325.png",
+      "sha256": "b424cf0405caedd6853d291b5140f6fa21d653eab363d613b321a413f5cc0a42",
+      "migrated_sha256": "b424cf0405caedd6853d291b5140f6fa21d653eab363d613b321a413f5cc0a42",
+      "post_cleanup_sha256": "b424cf0405caedd6853d291b5140f6fa21d653eab363d613b321a413f5cc0a42"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/13-完整总览-1340.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/13-完整总览-1340.png",
+      "sha256": "984c1d1ea03174c3bfae8d8f1625df30767c03d711c97d3b33517ab1c4a36122",
+      "migrated_sha256": "984c1d1ea03174c3bfae8d8f1625df30767c03d711c97d3b33517ab1c4a36122",
+      "post_cleanup_sha256": "984c1d1ea03174c3bfae8d8f1625df30767c03d711c97d3b33517ab1c4a36122"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/14-镜像败局详情-徐黄周.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/14-镜像败局详情-徐黄周.png",
+      "sha256": "7b713b784fcababc18dec26bf9c9a8bc60bf703f41cf0a4b5ec3da3da6ab7695",
+      "migrated_sha256": "7b713b784fcababc18dec26bf9c9a8bc60bf703f41cf0a4b5ec3da3da6ab7695",
+      "post_cleanup_sha256": "7b713b784fcababc18dec26bf9c9a8bc60bf703f41cf0a4b5ec3da3da6ab7695"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/15-胜局详情-于郭荀.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/15-胜局详情-于郭荀.png",
+      "sha256": "85f5df4a037abbfad90acfa59b97648595cc1fb0d31882a3e967ada45dd9b4c0",
+      "migrated_sha256": "85f5df4a037abbfad90acfa59b97648595cc1fb0d31882a3e967ada45dd9b4c0",
+      "post_cleanup_sha256": "85f5df4a037abbfad90acfa59b97648595cc1fb0d31882a3e967ada45dd9b4c0"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/16-于郭荀胜局回合伤害.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/16-于郭荀胜局回合伤害.png",
+      "sha256": "64dcc0913144565d9331cb53250595341c3f352664da03361f3540df111243f4",
+      "migrated_sha256": "64dcc0913144565d9331cb53250595341c3f352664da03361f3540df111243f4",
+      "post_cleanup_sha256": "64dcc0913144565d9331cb53250595341c3f352664da03361f3540df111243f4"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/17-胜局详情-徐黄周.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/17-胜局详情-徐黄周.png",
+      "sha256": "fa92db1ce2eeae54a97c92e904eae1def999d45d95045c760b65398217bc4874",
+      "migrated_sha256": "fa92db1ce2eeae54a97c92e904eae1def999d45d95045c760b65398217bc4874",
+      "post_cleanup_sha256": "fa92db1ce2eeae54a97c92e904eae1def999d45d95045c760b65398217bc4874"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/18-第9轮战法-第一组.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/18-第9轮战法-第一组.png",
+      "sha256": "088fb7dd7ad68819d358f4526966a003a9ee8ff9d07eead3af2f085e25904491",
+      "migrated_sha256": "088fb7dd7ad68819d358f4526966a003a9ee8ff9d07eead3af2f085e25904491",
+      "post_cleanup_sha256": "088fb7dd7ad68819d358f4526966a003a9ee8ff9d07eead3af2f085e25904491"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/19-第9轮战法-第二组.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/19-第9轮战法-第二组.png",
+      "sha256": "1197bb454abd5d0778bb52146258ffe168eeab49735e2d75ae938df95791523e",
+      "migrated_sha256": "1197bb454abd5d0778bb52146258ffe168eeab49735e2d75ae938df95791523e",
+      "post_cleanup_sha256": "1197bb454abd5d0778bb52146258ffe168eeab49735e2d75ae938df95791523e"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/20-第9轮战法-第三组.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/20-第9轮战法-第三组.png",
+      "sha256": "275445a68b6e32e605a03d731c91bef9042b9c3c2096ab5015cca6c10e09a744",
+      "migrated_sha256": "275445a68b6e32e605a03d731c91bef9042b9c3c2096ab5015cca6c10e09a744",
+      "post_cleanup_sha256": "275445a68b6e32e605a03d731c91bef9042b9c3c2096ab5015cca6c10e09a744"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/21-州内锦囊选择.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/21-州内锦囊选择.png",
+      "sha256": "fab23ac15f1f9467ab10f78845c354edbafa66d55caee193b383e1e8cf467923",
+      "migrated_sha256": "fab23ac15f1f9467ab10f78845c354edbafa66d55caee193b383e1e8cf467923",
+      "post_cleanup_sha256": "fab23ac15f1f9467ab10f78845c354edbafa66d55caee193b383e1e8cf467923"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/22-狂风大作详情.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/22-狂风大作详情.png",
+      "sha256": "153b26402033dfb1bd0090e5c79a0f7a11ef14cb4fe1a5cc4b2608baa3f9c015",
+      "migrated_sha256": "153b26402033dfb1bd0090e5c79a0f7a11ef14cb4fe1a5cc4b2608baa3f9c015",
+      "post_cleanup_sha256": "153b26402033dfb1bd0090e5c79a0f7a11ef14cb4fe1a5cc4b2608baa3f9c015"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/23-黄盖韬光发动率9.77.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/23-黄盖韬光发动率9.77.png",
+      "sha256": "b204ba3adc0d02955e72c1327361363935d74c20e77972262e9ba9ea761e0377",
+      "migrated_sha256": "b204ba3adc0d02955e72c1327361363935d74c20e77972262e9ba9ea761e0377",
+      "post_cleanup_sha256": "b204ba3adc0d02955e72c1327361363935d74c20e77972262e9ba9ea761e0377"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/24-州内对手一-诸葛大乔黄盖.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/24-州内对手一-诸葛大乔黄盖.png",
+      "sha256": "07a45395b991de8f58537cf2c5335b34f0867cba77ff23dc2579e10cae5cd91e",
+      "migrated_sha256": "07a45395b991de8f58537cf2c5335b34f0867cba77ff23dc2579e10cae5cd91e",
+      "post_cleanup_sha256": "07a45395b991de8f58537cf2c5335b34f0867cba77ff23dc2579e10cae5cd91e"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/25-州内对手二-周瑜小乔陆逊.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/25-州内对手二-周瑜小乔陆逊.png",
+      "sha256": "deba97396824ebc2a57543183423669a8c3417cd18c1ae1fdeaff0154b645624",
+      "migrated_sha256": "deba97396824ebc2a57543183423669a8c3417cd18c1ae1fdeaff0154b645624",
+      "post_cleanup_sha256": "deba97396824ebc2a57543183423669a8c3417cd18c1ae1fdeaff0154b645624"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/26-州内对手三-夏侯渊张辽曹操.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/26-州内对手三-夏侯渊张辽曹操.png",
+      "sha256": "662dca4e6cfff5dc31c07eeec696d8b54475aaf0327790ba3d2f7d06aa356a73",
+      "migrated_sha256": "662dca4e6cfff5dc31c07eeec696d8b54475aaf0327790ba3d2f7d06aa356a73",
+      "post_cleanup_sha256": "662dca4e6cfff5dc31c07eeec696d8b54475aaf0327790ba3d2f7d06aa356a73"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/27-貂蝉闭月详情.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/27-貂蝉闭月详情.png",
+      "sha256": "62958252b1d6c29bd34cdf838f2df45c375c48579b3e9d897d336b58aab44992",
+      "migrated_sha256": "62958252b1d6c29bd34cdf838f2df45c375c48579b3e9d897d336b58aab44992",
+      "post_cleanup_sha256": "62958252b1d6c29bd34cdf838f2df45c375c48579b3e9d897d336b58aab44992"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/28-战法重随类型选择.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/28-战法重随类型选择.png",
+      "sha256": "cbb37b853e78e103f9786e7014096f03bd1cd6aaee212bf9aeb8b0c57fed6f35",
+      "migrated_sha256": "cbb37b853e78e103f9786e7014096f03bd1cd6aaee212bf9aeb8b0c57fed6f35",
+      "post_cleanup_sha256": "cbb37b853e78e103f9786e7014096f03bd1cd6aaee212bf9aeb8b0c57fed6f35"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/29-战法重随结果-上智为间-料事如神.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/29-战法重随结果-上智为间-料事如神.png",
+      "sha256": "3e98c851825e59f56a3c742108c2758daaf147a90571faaa303e2d886524bb97",
+      "migrated_sha256": "3e98c851825e59f56a3c742108c2758daaf147a90571faaa303e2d886524bb97",
+      "post_cleanup_sha256": "3e98c851825e59f56a3c742108c2758daaf147a90571faaa303e2d886524bb97"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/30-料事如神10级详情.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/30-料事如神10级详情.png",
+      "sha256": "93bf1cd6591f9f7ac1bceb65623fa55eb71b0495557239eb73d8df3a188bd7b0",
+      "migrated_sha256": "93bf1cd6591f9f7ac1bceb65623fa55eb71b0495557239eb73d8df3a188bd7b0",
+      "post_cleanup_sha256": "93bf1cd6591f9f7ac1bceb65623fa55eb71b0495557239eb73d8df3a188bd7b0"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/31-上智为间10级详情.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/31-上智为间10级详情.png",
+      "sha256": "736403f5cbc6e0c32aa50f74664c1de924bb4b77c4383ab5aff289bce4c35a40",
+      "migrated_sha256": "736403f5cbc6e0c32aa50f74664c1de924bb4b77c4383ab5aff289bce4c35a40",
+      "post_cleanup_sha256": "736403f5cbc6e0c32aa50f74664c1de924bb4b77c4383ab5aff289bce4c35a40"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/32-束手无策10级详情.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/32-束手无策10级详情.png",
+      "sha256": "cb779a2513160bd640ba770104096b9391ecbbf974c23044cb592ca88cf07b3b",
+      "migrated_sha256": "cb779a2513160bd640ba770104096b9391ecbbf974c23044cb592ca88cf07b3b",
+      "post_cleanup_sha256": "cb779a2513160bd640ba770104096b9391ecbbf974c23044cb592ca88cf07b3b"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/33-料事如神10级对照.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/33-料事如神10级对照.png",
+      "sha256": "69aed01156fd54ce5f69289f4dba26484b1042b205bbeb23b29a55040f362cca",
+      "migrated_sha256": "69aed01156fd54ce5f69289f4dba26484b1042b205bbeb23b29a55040f362cca",
+      "post_cleanup_sha256": "69aed01156fd54ce5f69289f4dba26484b1042b205bbeb23b29a55040f362cca"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/34-横征暴敛10级详情.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/34-横征暴敛10级详情.png",
+      "sha256": "18a6df1ac3abed060632a72f23dbc728ff9f42be7f605953035f54dff45fb308",
+      "migrated_sha256": "18a6df1ac3abed060632a72f23dbc728ff9f42be7f605953035f54dff45fb308",
+      "post_cleanup_sha256": "18a6df1ac3abed060632a72f23dbc728ff9f42be7f605953035f54dff45fb308"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/35-固若金汤10级详情.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/35-固若金汤10级详情.png",
+      "sha256": "991fbc3e71029d362b6d05d301cb4e96a0878dfee835ca6cfc8614ec56207824",
+      "migrated_sha256": "991fbc3e71029d362b6d05d301cb4e96a0878dfee835ca6cfc8614ec56207824",
+      "post_cleanup_sha256": "991fbc3e71029d362b6d05d301cb4e96a0878dfee835ca6cfc8614ec56207824"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/36-谈笑诛心10级预览.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/36-谈笑诛心10级预览.png",
+      "sha256": "b45c7992f804e5667877ee5cb249593ffcfd0762f32d796dcd1ae8f883fa6dbb",
+      "migrated_sha256": "b45c7992f804e5667877ee5cb249593ffcfd0762f32d796dcd1ae8f883fa6dbb",
+      "post_cleanup_sha256": "b45c7992f804e5667877ee5cb249593ffcfd0762f32d796dcd1ae8f883fa6dbb"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-04/战报摘要.md",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-04/战报摘要.md",
+      "sha256": "b03b9172b73b9d4a60dd881804316d5bfaa2ce89ba449142685b8bd469b3f07a",
+      "migrated_sha256": "b03b9172b73b9d4a60dd881804316d5bfaa2ce89ba449142685b8bd469b3f07a",
+      "post_cleanup_sha256": "b03b9172b73b9d4a60dd881804316d5bfaa2ce89ba449142685b8bd469b3f07a"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/01-跨州淘汰赛对阵.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/01-跨州淘汰赛对阵.png",
+      "sha256": "8948bebe1502a788e16170f5dc498797d42a3b6b4d56c090ed0b48e87d5a6241",
+      "migrated_sha256": "8948bebe1502a788e16170f5dc498797d42a3b6b4d56c090ed0b48e87d5a6241",
+      "post_cleanup_sha256": "8948bebe1502a788e16170f5dc498797d42a3b6b4d56c090ed0b48e87d5a6241"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/02-对手关羽邓艾夏侯惇.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/02-对手关羽邓艾夏侯惇.png",
+      "sha256": "d1f7239c0fc157d0f16e2d453797829a312ed67714a8187eae879eb2e9ef4ddd",
+      "migrated_sha256": "d1f7239c0fc157d0f16e2d453797829a312ed67714a8187eae879eb2e9ef4ddd",
+      "post_cleanup_sha256": "d1f7239c0fc157d0f16e2d453797829a312ed67714a8187eae879eb2e9ef4ddd"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/03-对手周瑜黄盖孙权.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/03-对手周瑜黄盖孙权.png",
+      "sha256": "8211e3353821fb8dd8c8c125ed9e429a65c454fcfba09692597bb0aedb12ed6f",
+      "migrated_sha256": "8211e3353821fb8dd8c8c125ed9e429a65c454fcfba09692597bb0aedb12ed6f",
+      "post_cleanup_sha256": "8211e3353821fb8dd8c8c125ed9e429a65c454fcfba09692597bb0aedb12ed6f"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/04-对手马超黄月英袁绍.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/04-对手马超黄月英袁绍.png",
+      "sha256": "02ede255334b99675636bb23e046fed403317b63a68727f8a867e782d5b14806",
+      "migrated_sha256": "02ede255334b99675636bb23e046fed403317b63a68727f8a867e782d5b14806",
+      "post_cleanup_sha256": "02ede255334b99675636bb23e046fed403317b63a68727f8a867e782d5b14806"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/05-我方晋级后当前三队.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/05-我方晋级后当前三队.png",
+      "sha256": "6a9332f90f85553417e783fc2e91d646668316a30362308a72afae6c07347b72",
+      "migrated_sha256": "6a9332f90f85553417e783fc2e91d646668316a30362308a72afae6c07347b72",
+      "post_cleanup_sha256": "6a9332f90f85553417e783fc2e91d646668316a30362308a72afae6c07347b72"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/06-第11轮第一组诸葛亮小乔.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/06-第11轮第一组诸葛亮小乔.png",
+      "sha256": "921ec17ddc01cc70d44ffcf2522c20bea598e30fce819581013f6d83e93ef449",
+      "migrated_sha256": "921ec17ddc01cc70d44ffcf2522c20bea598e30fce819581013f6d83e93ef449",
+      "post_cleanup_sha256": "921ec17ddc01cc70d44ffcf2522c20bea598e30fce819581013f6d83e93ef449"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/07-第11轮第二组邓艾张宝.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/07-第11轮第二组邓艾张宝.png",
+      "sha256": "63cc8b909ce07f9d6ed2cfc573a2d7315723c8e4835cf03bf2847b0e68cd9267",
+      "migrated_sha256": "63cc8b909ce07f9d6ed2cfc573a2d7315723c8e4835cf03bf2847b0e68cd9267",
+      "post_cleanup_sha256": "63cc8b909ce07f9d6ed2cfc573a2d7315723c8e4835cf03bf2847b0e68cd9267"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/08-第11轮第三组曹仁马超.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/08-第11轮第三组曹仁马超.png",
+      "sha256": "bfeb063b9f5040f72eb67cc284ee782ae699001e4d871bfa02a886808697024d",
+      "migrated_sha256": "bfeb063b9f5040f72eb67cc284ee782ae699001e4d871bfa02a886808697024d",
+      "post_cleanup_sha256": "bfeb063b9f5040f72eb67cc284ee782ae699001e4d871bfa02a886808697024d"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/09-跨州小组赛三场总战绩.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/09-跨州小组赛三场总战绩.png",
+      "sha256": "0cdf29f963df600c02d4d1eb1bb214ec15801ff46de4ba6dbce99e1c24d067ba",
+      "migrated_sha256": "0cdf29f963df600c02d4d1eb1bb214ec15801ff46de4ba6dbce99e1c24d067ba",
+      "post_cleanup_sha256": "0cdf29f963df600c02d4d1eb1bb214ec15801ff46de4ba6dbce99e1c24d067ba"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/10-第三场徐黄周败于法诸荀战果.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/10-第三场徐黄周败于法诸荀战果.png",
+      "sha256": "7b30126be29408cfe28a654bcec764799096074ac056b34407518aff109f34db",
+      "migrated_sha256": "7b30126be29408cfe28a654bcec764799096074ac056b34407518aff109f34db",
+      "post_cleanup_sha256": "7b30126be29408cfe28a654bcec764799096074ac056b34407518aff109f34db"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/11-徐黄周败局逐回合发动.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/11-徐黄周败局逐回合发动.png",
+      "sha256": "61eed7e1c5aea7bdfe8051f5e18a9f2aa2160a6812d6a4cb2161d4f476ba8bb0",
+      "migrated_sha256": "61eed7e1c5aea7bdfe8051f5e18a9f2aa2160a6812d6a4cb2161d4f476ba8bb0",
+      "post_cleanup_sha256": "61eed7e1c5aea7bdfe8051f5e18a9f2aa2160a6812d6a4cb2161d4f476ba8bb0"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/12-徐黄周败局异常统计.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/12-徐黄周败局异常统计.png",
+      "sha256": "373372a9d1cd579759cc134484903af41b7c2827b20cf0689d6c26af0b198fd4",
+      "migrated_sha256": "373372a9d1cd579759cc134484903af41b7c2827b20cf0689d6c26af0b198fd4",
+      "post_cleanup_sha256": "373372a9d1cd579759cc134484903af41b7c2827b20cf0689d6c26af0b198fd4"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/13-第三场貂田梁战平徐贾周战果.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/13-第三场貂田梁战平徐贾周战果.png",
+      "sha256": "f985979d1300eb57b9e6967696cb2d834635e5af81b2e18a9a65baa77a38053a",
+      "migrated_sha256": "f985979d1300eb57b9e6967696cb2d834635e5af81b2e18a9a65baa77a38053a",
+      "post_cleanup_sha256": "f985979d1300eb57b9e6967696cb2d834635e5af81b2e18a9a65baa77a38053a"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/14-貂田梁战平逐回合发动.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/14-貂田梁战平逐回合发动.png",
+      "sha256": "91d69e18ba1a153a0ff514b415363652496e20fe01dbf8597b93d7cec238368c",
+      "migrated_sha256": "91d69e18ba1a153a0ff514b415363652496e20fe01dbf8597b93d7cec238368c",
+      "post_cleanup_sha256": "91d69e18ba1a153a0ff514b415363652496e20fe01dbf8597b93d7cec238368c"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/15-貂田梁战平异常统计.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/15-貂田梁战平异常统计.png",
+      "sha256": "5dd7bd03c29b3a0b8f553a5d8d1d0b79048e23b9603a24f32b32a2c90492d0b1",
+      "migrated_sha256": "5dd7bd03c29b3a0b8f553a5d8d1d0b79048e23b9603a24f32b32a2c90492d0b1",
+      "post_cleanup_sha256": "5dd7bd03c29b3a0b8f553a5d8d1d0b79048e23b9603a24f32b32a2c90492d0b1"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/16-此前于郭荀败于曹仁陆逊荀彧.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/16-此前于郭荀败于曹仁陆逊荀彧.png",
+      "sha256": "29067fcfa9d64592739ecc4046496bfe1bf97716cd7bb674a5e7b0f9d3887034",
+      "migrated_sha256": "29067fcfa9d64592739ecc4046496bfe1bf97716cd7bb674a5e7b0f9d3887034",
+      "post_cleanup_sha256": "29067fcfa9d64592739ecc4046496bfe1bf97716cd7bb674a5e7b0f9d3887034"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/17-此前貂田梁败于大乔吕蒙周瑜.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/17-此前貂田梁败于大乔吕蒙周瑜.png",
+      "sha256": "01c66244477bf5614f3274470ee5f1f8840c0dcdee95ac45d77d4876e3dfbb03",
+      "migrated_sha256": "01c66244477bf5614f3274470ee5f1f8840c0dcdee95ac45d77d4876e3dfbb03",
+      "post_cleanup_sha256": "01c66244477bf5614f3274470ee5f1f8840c0dcdee95ac45d77d4876e3dfbb03"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/18-此前于郭荀败于法正诸葛荀彧.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/18-此前于郭荀败于法正诸葛荀彧.png",
+      "sha256": "c0823fc3da5781bdbb24ecb3fdd586a62f884bb51c4415dd38ae2b08bc8b83f3",
+      "migrated_sha256": "c0823fc3da5781bdbb24ecb3fdd586a62f884bb51c4415dd38ae2b08bc8b83f3",
+      "post_cleanup_sha256": "c0823fc3da5781bdbb24ecb3fdd586a62f884bb51c4415dd38ae2b08bc8b83f3"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/19-第12轮第一组战法.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/19-第12轮第一组战法.png",
+      "sha256": "a4dee7938e920b4f8a7a58a153131ed25ca844b19f9eec826890e5e7b90b335a",
+      "migrated_sha256": "a4dee7938e920b4f8a7a58a153131ed25ca844b19f9eec826890e5e7b90b335a",
+      "post_cleanup_sha256": "a4dee7938e920b4f8a7a58a153131ed25ca844b19f9eec826890e5e7b90b335a"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/20-第12轮第二组战法.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/20-第12轮第二组战法.png",
+      "sha256": "a81405568604f1cb29683a8d432770b9e287ae03ee4c4264b6c7aec885fc2b26",
+      "migrated_sha256": "a81405568604f1cb29683a8d432770b9e287ae03ee4c4264b6c7aec885fc2b26",
+      "post_cleanup_sha256": "a81405568604f1cb29683a8d432770b9e287ae03ee4c4264b6c7aec885fc2b26"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/21-第12轮第三组战法.png",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/21-第12轮第三组战法.png",
+      "sha256": "5cae854b331e9e8ea3f0501448072f6b35a1deedb1e8ed130c032e12cc0ab312",
+      "migrated_sha256": "5cae854b331e9e8ea3f0501448072f6b35a1deedb1e8ed130c032e12cc0ab312",
+      "post_cleanup_sha256": "5cae854b331e9e8ea3f0501448072f6b35a1deedb1e8ed130c032e12cc0ab312"
+    },
+    {
+      "old": "references/S2演武战报/2026-09-05/战报摘要.md",
+      "new": "user/bixianjue/演武/s2-2026-09-02/战报/2026-09-05/战报摘要.md",
+      "sha256": "0a9bfe96c02b1c65d6655e091ad014ecfe7b3e8dc05fb43f25c4e644450778d1",
+      "migrated_sha256": "0a9bfe96c02b1c65d6655e091ad014ecfe7b3e8dc05fb43f25c4e644450778d1",
+      "post_cleanup_sha256": "0a9bfe96c02b1c65d6655e091ad014ecfe7b3e8dc05fb43f25c4e644450778d1"
+    },
+    {
+      "old": "S1强队模板库.md",
+      "new": "references/s1/S1强队模板库.md",
+      "sha256": "071724dfaedd25d58cdca4731856ddd6514dc86bea8b4ea69870c4d819d8596d",
+      "migrated_sha256": "071724dfaedd25d58cdca4731856ddd6514dc86bea8b4ea69870c4d819d8596d",
+      "post_cleanup_sha256": "071724dfaedd25d58cdca4731856ddd6514dc86bea8b4ea69870c4d819d8596d"
+    },
+    {
+      "old": "notes/S2阵容参考来源.md",
+      "new": "references/s2/来源.md",
+      "sha256": "2ebfbd68aa405003efa54d2c331663ffbfce3c2c29296c9d7fea74fb158db478",
+      "migrated_sha256": "2ebfbd68aa405003efa54d2c331663ffbfce3c2c29296c9d7fea74fb158db478",
+      "post_cleanup_sha256": "2ebfbd68aa405003efa54d2c331663ffbfce3c2c29296c9d7fea74fb158db478"
+    },
+    {
+      "old": "战力机制资料库.md",
+      "new": "user/bixianjue/snapshots/历史战力机制与个人分析.md",
+      "sha256": "4022fa5d25950bc251017477c5fc0dd12c97da10a10b744ef624f06300c2bc5b",
+      "migrated_sha256": "4022fa5d25950bc251017477c5fc0dd12c97da10a10b744ef624f06300c2bc5b",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "演武大赛/规则与版本核验.md",
+      "new": "user/bixianjue/演武/s1-2026-08-05/历史规则与选卡.md",
+      "sha256": "3de52e5043f383a41a274ae0c23580bdba8620ff48172c3c2997c51dece2707b",
+      "migrated_sha256": "7dd0cc26cd4e4fdd8b6b24a440f5475095ca50e6f02bbdf5a3a177ff56691ccb",
+      "post_cleanup_sha256": "af8d41aaa970aa514fd7396291682aec6f16fabd304b0a7d42b87cb9f557bbae"
+    },
+    {
+      "old": "阵容推荐.md",
+      "new": "user/bixianjue/formations/阵容推荐.md",
+      "sha256": "1a8df367a8b5e4119465a15d666bc6816d0de41f30247b02c7f539a09928f5e5",
+      "migrated_sha256": "1a8df367a8b5e4119465a15d666bc6816d0de41f30247b02c7f539a09928f5e5",
+      "post_cleanup_sha256": "1a8df367a8b5e4119465a15d666bc6816d0de41f30247b02c7f539a09928f5e5"
+    },
+    {
+      "old": "武将战法库存.md",
+      "new": "user/bixianjue/snapshots/迁移前库存摘要.md",
+      "sha256": "65d5e8283d53e8402837707593c75e20ff81e29fbca0da56141bd8b60f92f26e",
+      "migrated_sha256": "65d5e8283d53e8402837707593c75e20ff81e29fbca0da56141bd8b60f92f26e",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "notes/S2武将与战法库存.md",
+      "new": "user/bixianjue/snapshots/S2武将与战法库存.md",
+      "sha256": "1479d34dd59f1645f570a1432cede43e86ba4724b0b1fedfcaefad50f2119606",
+      "migrated_sha256": "1479d34dd59f1645f570a1432cede43e86ba4724b0b1fedfcaefad50f2119606",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "演武大赛/S2-2026-09-02/README.md",
+      "new": "user/bixianjue/演武/s2-2026-09-02/记录/README.md",
+      "sha256": "d3b91177c8992990d0823f1a23247f07b62a4d50a2c13c822a3f94d9f589da0a",
+      "migrated_sha256": "d3b91177c8992990d0823f1a23247f07b62a4d50a2c13c822a3f94d9f589da0a",
+      "post_cleanup_sha256": "d3b91177c8992990d0823f1a23247f07b62a4d50a2c13c822a3f94d9f589da0a"
+    },
+    {
+      "old": "演武大赛/S2-2026-09-02/仓库与选卡.md",
+      "new": "user/bixianjue/演武/s2-2026-09-02/记录/仓库与选卡.md",
+      "sha256": "5f59ed172a4fd1168f8f23fddf141e5a6db8ef742783a8efb39c4a48103a352d",
+      "migrated_sha256": "5f59ed172a4fd1168f8f23fddf141e5a6db8ef742783a8efb39c4a48103a352d",
+      "post_cleanup_sha256": "5f59ed172a4fd1168f8f23fddf141e5a6db8ef742783a8efb39c4a48103a352d"
+    },
+    {
+      "old": "演武大赛/S2-2026-09-02/最终阵容.md",
+      "new": "user/bixianjue/演武/s2-2026-09-02/记录/最终阵容.md",
+      "sha256": "e376fc67022d197581d1a4b3a42160269faf7e4ddcf0fb69f20649ec3de601e7",
+      "migrated_sha256": "e376fc67022d197581d1a4b3a42160269faf7e4ddcf0fb69f20649ec3de601e7",
+      "post_cleanup_sha256": "e376fc67022d197581d1a4b3a42160269faf7e4ddcf0fb69f20649ec3de601e7"
+    },
+    {
+      "old": "演武大赛/选卡与阵容方案.md",
+      "new": "user/bixianjue/演武/s1-2026-08-05/选卡与阵容方案.md",
+      "sha256": "b0fbaf1cd118d6ff93011075c457d2ee0723e1e065bcb6bf3b569b8f61ae0843",
+      "migrated_sha256": "b0fbaf1cd118d6ff93011075c457d2ee0723e1e065bcb6bf3b569b8f61ae0843",
+      "post_cleanup_sha256": "b0fbaf1cd118d6ff93011075c457d2ee0723e1e065bcb6bf3b569b8f61ae0843"
+    },
+    {
+      "old": "演武大赛/2026-08-12-本期方案.md",
+      "new": "user/bixianjue/演武/s1-2026-08-12/2026-08-12-本期方案.md",
+      "sha256": "c2cef4e40c8b1afedf53d09a7ab4a2fdd7752a00f9406df948b8fbd599eec4f1",
+      "migrated_sha256": "c2cef4e40c8b1afedf53d09a7ab4a2fdd7752a00f9406df948b8fbd599eec4f1",
+      "post_cleanup_sha256": "c2cef4e40c8b1afedf53d09a7ab4a2fdd7752a00f9406df948b8fbd599eec4f1"
+    },
+    {
+      "old": "演武大赛/2026-08-20-下半场调整.md",
+      "new": "user/bixianjue/演武/s1-2026-08-12/2026-08-20-下半场调整.md",
+      "sha256": "9e5529c78a1901e6ec3222918c123c387a41317f39336d2224ec370b1e0856a0",
+      "migrated_sha256": "9e5529c78a1901e6ec3222918c123c387a41317f39336d2224ec370b1e0856a0",
+      "post_cleanup_sha256": "9e5529c78a1901e6ec3222918c123c387a41317f39336d2224ec370b1e0856a0"
+    },
+    {
+      "old": "演武大赛/2026-08-12-本期仓库.json",
+      "new": "user/bixianjue/演武/s1-2026-08-12/2026-08-12-本期仓库.json",
+      "sha256": "21f622c0a14cad2ba61f1b625e24c717d7ae5ec2c650a5169a49eef705096e70",
+      "migrated_sha256": "21f622c0a14cad2ba61f1b625e24c717d7ae5ec2c650a5169a49eef705096e70",
+      "post_cleanup_sha256": "21f622c0a14cad2ba61f1b625e24c717d7ae5ec2c650a5169a49eef705096e70"
+    },
+    {
+      "old": "演武大赛/README.md",
+      "new": "user/bixianjue/snapshots/旧演武入口.md",
+      "sha256": "917ae855e65cd766a7ae6ddda78450d5d3c1c31e1c994109087cfda332d1edef",
+      "migrated_sha256": "b3b447a523f2de1ef04a1d62b1e1a96627bb3f75c02a536190f2c5b024490e59",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/演武大赛/README.md",
+      "new": "user/zhaoguohua/演武/s1-2026-09-10/README.md",
+      "sha256": "91f18a38acc8f21ae3fff011edc8e1af9c1580e37dc7ce3ec49dc3d65196da65",
+      "migrated_sha256": "91f18a38acc8f21ae3fff011edc8e1af9c1580e37dc7ce3ec49dc3d65196da65",
+      "post_cleanup_sha256": "91f18a38acc8f21ae3fff011edc8e1af9c1580e37dc7ce3ec49dc3d65196da65"
+    },
+    {
+      "old": "朋友S1/演武大赛/仓库快照.json",
+      "new": "user/zhaoguohua/演武/s1-2026-09-10/仓库快照.json",
+      "sha256": "eeaab70866b93997838247d058a95459fe7989f17d8ef470da20a74ed2d486e7",
+      "migrated_sha256": "eeaab70866b93997838247d058a95459fe7989f17d8ef470da20a74ed2d486e7",
+      "post_cleanup_sha256": "eeaab70866b93997838247d058a95459fe7989f17d8ef470da20a74ed2d486e7"
+    },
+    {
+      "old": "朋友S1/演武大赛/当前阵容.md",
+      "new": "user/zhaoguohua/演武/s1-2026-09-10/当前阵容.md",
+      "sha256": "57c3ee573c2716af266ffa321d4d0df7de435faedfd029bb911b04e4dd3baf92",
+      "migrated_sha256": "57c3ee573c2716af266ffa321d4d0df7de435faedfd029bb911b04e4dd3baf92",
+      "post_cleanup_sha256": "57c3ee573c2716af266ffa321d4d0df7de435faedfd029bb911b04e4dd3baf92"
+    },
+    {
+      "old": "朋友S1/演武大赛/替换支援方案-2026-09-10.md",
+      "new": "user/zhaoguohua/演武/s1-2026-09-10/替换支援方案-2026-09-10.md",
+      "sha256": "f28fb5400ab4f4246f775a98fcf4bdd8212bed673fe4363169e89bc6e41b8d9e",
+      "migrated_sha256": "f28fb5400ab4f4246f775a98fcf4bdd8212bed673fe4363169e89bc6e41b8d9e",
+      "post_cleanup_sha256": "f28fb5400ab4f4246f775a98fcf4bdd8212bed673fe4363169e89bc6e41b8d9e"
+    },
+    {
+      "old": "朋友S1/演武大赛/重构方案-2026-09-10-1752.json",
+      "new": "user/zhaoguohua/演武/s1-2026-09-10/重构方案-2026-09-10-1752.json",
+      "sha256": "11945b4dec6a7d49049775c88df88e33f6963357f3bac63e21568f45cd9914fe",
+      "migrated_sha256": "11945b4dec6a7d49049775c88df88e33f6963357f3bac63e21568f45cd9914fe",
+      "post_cleanup_sha256": "11945b4dec6a7d49049775c88df88e33f6963357f3bac63e21568f45cd9914fe"
+    },
+    {
+      "old": "朋友S1/演武大赛/重构说明-2026-09-10-1752.md",
+      "new": "user/zhaoguohua/演武/s1-2026-09-10/重构说明-2026-09-10-1752.md",
+      "sha256": "67a3635a25a46160a57fc7b04425f78a975b9819f81b52bf4edf0de73caa4d28",
+      "migrated_sha256": "67a3635a25a46160a57fc7b04425f78a975b9819f81b52bf4edf0de73caa4d28",
+      "post_cleanup_sha256": "67a3635a25a46160a57fc7b04425f78a975b9819f81b52bf4edf0de73caa4d28"
+    },
+    {
+      "old": "朋友S1/notes/业务逻辑.md",
+      "new": "user/zhaoguohua/snapshots/旧notes/业务逻辑.md",
+      "sha256": "ba418f362822eb0095eefeb8a8abe4e54fcbb16a9f98d846fe2d3f24a4ae4615",
+      "migrated_sha256": "ba418f362822eb0095eefeb8a8abe4e54fcbb16a9f98d846fe2d3f24a4ae4615",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/notes/变更记录.md",
+      "new": "user/zhaoguohua/snapshots/旧notes/变更记录.md",
+      "sha256": "3ba10468cb2bea635cefea458a734ffc55abd4a72c47a454c76acf55f781ef07",
+      "migrated_sha256": "3ba10468cb2bea635cefea458a734ffc55abd4a72c47a454c76acf55f781ef07",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/notes/项目说明.md",
+      "new": "user/zhaoguohua/snapshots/旧notes/项目说明.md",
+      "sha256": "af33d13e11bdb0bb861635f9ec404a62ad60e649b1c3e60a292bf6f0ed147049",
+      "migrated_sha256": "af33d13e11bdb0bb861635f9ec404a62ad60e649b1c3e60a292bf6f0ed147049",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/notes/backups/.gitignore",
+      "new": "user/zhaoguohua/snapshots/旧notes/backups/.gitignore",
+      "sha256": "ce0000abf8c6c7828b9f1f59b8cabd352c645f3b1204c1cf94f073cd1b25a077",
+      "migrated_sha256": "ce0000abf8c6c7828b9f1f59b8cabd352c645f3b1204c1cf94f073cd1b25a077",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/notes/backups/2026-09-10-1742/account_inventory.json",
+      "new": "user/zhaoguohua/snapshots/旧notes/backups/2026-09-10-1742/account_inventory.json",
+      "sha256": "f890dcad1fd2eef004886dfa47dbe39c729d636ef74fc8aab955c72eb5fab37a",
+      "migrated_sha256": "f890dcad1fd2eef004886dfa47dbe39c729d636ef74fc8aab955c72eb5fab37a",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/notes/backups/2026-09-10-1742/当前阵容.md",
+      "new": "user/zhaoguohua/snapshots/旧notes/backups/2026-09-10-1742/当前阵容.md",
+      "sha256": "94ceff1ebdfbe70138247011a188973178642b67ce2897152df269934586d17d",
+      "migrated_sha256": "94ceff1ebdfbe70138247011a188973178642b67ce2897152df269934586d17d",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/README.md",
+      "new": "user/zhaoguohua/snapshots/旧项目入口.md",
+      "sha256": "8dceb9f800230aaddd1bffdf01d82aca023cd2d26cbd6156d71942a3375bd5fb",
+      "migrated_sha256": "8dceb9f800230aaddd1bffdf01d82aca023cd2d26cbd6156d71942a3375bd5fb",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/scripts/update_20260910.py",
+      "new": "docs/archive/scripts/zhaoguohua/update_20260910.py",
+      "sha256": "199e00498ae38e0444d3bf8c2e99a2296fca7274109e3c8d04ea0920a19457d6",
+      "migrated_sha256": "b0ac7dc64f5d7c1c3d15b3dc59beb6a5f55cd450d32b62c4a3895e635cf18df8",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/scripts/verify_rebuild_20260910.py",
+      "new": "docs/archive/scripts/zhaoguohua/verify_rebuild_20260910.py",
+      "sha256": "b9a973f77f8f8e5d50eba11b3f1e4a5d2f28dcd7c77fed15f393d5116bf4315c",
+      "migrated_sha256": "4c8890c83c4a1df78e01143a3e143a752444635985142c0d54ed3a9e200f236f",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/data/account_inventory.json",
+      "new": "user/zhaoguohua/snapshots/legacy-data/account_inventory.json",
+      "sha256": "0e9fded03ea749bb74ca8531d68a82f30073972e63b14eb1ee23cfe474787a98",
+      "migrated_sha256": "0e9fded03ea749bb74ca8531d68a82f30073972e63b14eb1ee23cfe474787a98",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/data/三国谋定天下_朋友_S1.sqlite3",
+      "new": "user/zhaoguohua/snapshots/legacy-data/三国谋定天下_朋友_S1.sqlite3",
+      "sha256": "635be894a6f98c7093fff5ece9155e6670af083c67890110c36f33f11cb5ff11",
+      "migrated_sha256": "635be894a6f98c7093fff5ece9155e6670af083c67890110c36f33f11cb5ff11",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "朋友S1/data/自有战法-2026-09-10.json",
+      "new": "user/zhaoguohua/snapshots/legacy-data/自有战法-2026-09-10.json",
+      "sha256": "92386389838b57e142148c0e44a61644e2f6ce8b7f63e62f4c13e5cdfc3c424b",
+      "migrated_sha256": "92386389838b57e142148c0e44a61644e2f6ce8b7f63e62f4c13e5cdfc3c424b",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "data/account_inventory.json",
+      "new": "user/bixianjue/snapshots/legacy-inventory.json",
+      "sha256": "9c5dfcca0710cc38bfe39ccb2db396b52c33d7103cf649085f965c3f140e0849",
+      "migrated_sha256": "9c5dfcca0710cc38bfe39ccb2db396b52c33d7103cf649085f965c3f140e0849",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "data/三国谋定天下_Steam_S1.sqlite3",
+      "new": "user/bixianjue/snapshots/legacy.sqlite3",
+      "sha256": "21ef4d460fd3fa0d7bc13e271c97d4c01eccce3985304d097433c6b3c843d156",
+      "migrated_sha256": "21ef4d460fd3fa0d7bc13e271c97d4c01eccce3985304d097433c6b3c843d156",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "data/snapshots/sgmdtx-latest.json",
+      "new": "game/sources/snapshots/sgmdtx-latest.json",
+      "sha256": "82868742b11d76c7c1073083dcd952e290cbecd4090792a2b9666595e0f44086",
+      "migrated_sha256": "82868742b11d76c7c1073083dcd952e290cbecd4090792a2b9666595e0f44086",
+      "post_cleanup_sha256": "82868742b11d76c7c1073083dcd952e290cbecd4090792a2b9666595e0f44086"
+    },
+    {
+      "old": "data/tactic_level_observations.json",
+      "new": "game/sources/tactic_level_observations.json",
+      "sha256": "cf029c8479af09d2d4db6de9c10d5491f71e257d03459294717b24410b5d52b3",
+      "migrated_sha256": "cf029c8479af09d2d4db6de9c10d5491f71e257d03459294717b24410b5d52b3",
+      "post_cleanup_sha256": "cf029c8479af09d2d4db6de9c10d5491f71e257d03459294717b24410b5d52b3"
+    },
+    {
+      "old": "data/覆盖率报告.md",
+      "new": "user/bixianjue/snapshots/旧覆盖率报告.md",
+      "sha256": "eb9efd7e9786fb80a5d0b7237cf64b5f7a06f579ae978153fe541ab78bbd3b26",
+      "migrated_sha256": "eb9efd7e9786fb80a5d0b7237cf64b5f7a06f579ae978153fe541ab78bbd3b26",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "data/schema.sql",
+      "new": "docs/archive/legacy-schema.sql",
+      "sha256": "9927801876f48d5b99070b4bebde98e3edcde730e097a7279b7710bed4edb3ab",
+      "migrated_sha256": "9927801876f48d5b99070b4bebde98e3edcde730e097a7279b7710bed4edb3ab",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "数据库说明.md",
+      "new": "docs/archive/数据库说明.md",
+      "sha256": "231e020ea9c7bb5471544c25d86f48f9c7d660c2103e114607ec4a6db3bc7c11",
+      "migrated_sha256": "2d15db45bc87810b0bb0046548c2938ad44a52cf3b3a92b302a92b4089cefbd1",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "项目复现指南-库存统计与50队配对及演武规则.md",
+      "new": "docs/archive/项目复现指南-库存统计与50队配对及演武规则.md",
+      "sha256": "ef2241c6a946bc5e5798e16daddd2f585aa9d79d3963c13a710ef460f1694c67",
+      "migrated_sha256": "ef4d3af4cc1e67024f27359f190a4de200c5172b06f05627bf441788afc91d65",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "notes/项目说明.md",
+      "new": "docs/archive/项目说明.md",
+      "sha256": "a52b59dd21c7e2c98867a407cda42350bf118fe4c6628fb62e8ec6bee83bff21",
+      "migrated_sha256": "1db921d649dc78088afad132d1810e30a7b5e75235a18b3e8e7ec5cb5ece4ee9",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "notes/业务逻辑.md",
+      "new": "docs/archive/业务逻辑.md",
+      "sha256": "76d4cc9a60a68235b7f8a1e60e65c9fc10357d53ad4c47f5be6e7d22c97c4052",
+      "migrated_sha256": "75b50dd580f6c6cf32fc26cf2c860b37f56d7f29288e03a711c8f57d8056d16a",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "scripts/account_inventory.py",
+      "new": "docs/archive/scripts/account_inventory.py",
+      "sha256": "964c3d91e5ac1b21ddecb7f1c395c47a7bb5ecf6d5922f1d0053e171707a553e",
+      "migrated_sha256": "09076fba55b8041f75213b183e0f10e94cbf3cf3a9d9d29121d9df0a7e991c58",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "scripts/verify_database.py",
+      "new": "docs/archive/scripts/verify_database.py",
+      "sha256": "21b0bf9f6fae9f87375c666189b7761d7259866cf00b92d910328dfa70f382fe",
+      "migrated_sha256": "dbac52d95872b3e0da7300b3f03d11ccf5efa03850a00d9557636d189b4fb83b",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "scripts/create_friend_s1_database_v2.py",
+      "new": "docs/archive/scripts/create_friend_s1_database_v2.py",
+      "sha256": "4a5cfa39c76982b88fbc4268454f4f33d01a4b52ce456532c6dc6ff78b239d24",
+      "migrated_sha256": "b2df91f141561c81e14c6e4e5bca997408683321bb86135b0c36027bc807a600",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    },
+    {
+      "old": "scripts/sync_game_data.py",
+      "new": "docs/archive/scripts/sync_game_data.py",
+      "sha256": "3c0f301125ed3edc92da899170f8a723f85c14e5ed6d68b3b9b38951fbc67149",
+      "migrated_sha256": "c825ed1ba939636f7d7fee54b743e53d8e535238e8bbddecb7b557e9f15d7f12",
+      "removed_after_verification": true,
+      "removal_reason": "用户要求仅保留当前库存和最新截图，清理已替代材料"
+    }
+  ],
+  "excluded": {
+    "bixianjue": [],
+    "zhaoguohua": [
+      {
+        "group": "generals",
+        "record": {
+          "name": "杨修",
+          "faction": "魏",
+          "quality": "紫",
+          "advancement": 3
+        },
+        "reason": "outside global quality scope"
+      },
+      {
+        "group": "generals",
+        "record": {
+          "name": "刘晔",
+          "faction": "魏",
+          "quality": "紫",
+          "advancement": 3
+        },
+        "reason": "outside global quality scope"
+      },
+      {
+        "group": "generals",
+        "record": {
+          "name": "文聘",
+          "faction": "魏",
+          "quality": "紫",
+          "advancement": 3
+        },
+        "reason": "outside global quality scope"
+      },
+      {
+        "group": "generals",
+        "record": {
+          "name": "曹洪",
+          "faction": "魏",
+          "quality": "紫",
+          "advancement": 2
+        },
+        "reason": "outside global quality scope"
+      },
+      {
+        "group": "generals",
+        "record": {
+          "name": "钟繇",
+          "faction": "魏",
+          "quality": "紫",
+          "advancement": 4
+        },
+        "reason": "outside global quality scope"
+      },
+      {
+        "group": "generals",
+        "record": {
+          "name": "曹真",
+          "faction": "魏",
+          "quality": "紫",
+          "advancement": 3
+        },
+        "reason": "outside global quality scope"
+      }
+    ]
+  },
+  "counts": {
+    "bixianjue": {
+      "generals": {
+        "before": 45,
+        "after": 45
+      },
+      "tactics": {
+        "before": 62,
+        "after": 62
+      }
+    },
+    "zhaoguohua": {
+      "generals": {
+        "before": 52,
+        "after": 46
+      },
+      "tactics": {
+        "before": 48,
+        "after": 48
+      }
+    }
+  },
+  "finalized": true,
+  "missing_original_assets": [
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r01-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r01-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r01-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r01-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r02-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r02-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r02-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r02-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r03-c01.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r03-c02.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r03-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r03-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r03-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r03-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r04-c01.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r04-c02.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r04-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r04-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r04-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r04-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r05-c01.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r05-c02.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r05-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r05-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r05-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r05-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r06-c01.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r06-c02.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r06-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r06-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r06-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r06-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r07-c01.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r07-c02.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r07-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r07-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r07-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r07-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r08-c01.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r08-c02.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r08-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r08-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r08-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r08-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r09-c01.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r09-c02.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r09-c03.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r09-c04.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r09-c05.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容校正稿.md",
+      "target": "assets/team-cells/r09-c06.png"
+    },
+    {
+      "file": "references/s2/阵容大全/阵容转录.md",
+      "target": "assets/s2阵容大全-2026-08-27.jpg"
+    }
+  ],
+  "inventory_baseline": {
+    "bixianjue": {
+      "sha256": "0c7b7a441306c897d374c4c6392e21614dcb301283f20cc4b6eff46a1430eff4",
+      "counts": {
+        "generals": 45,
+        "tactics": 62
+      }
+    },
+    "zhaoguohua": {
+      "sha256": "2cc1a060c1e4781b9378b5b177c7e5c2828175d98bd633d70a03a9cbcba51020",
+      "counts": {
+        "generals": 46,
+        "tactics": 48
+      }
+    }
+  },
+  "retention_cleanup": {
+    "removed_count": 40,
+    "removed_bytes": 1066409,
+    "removed_files": [
+      {
+        "path": "user/bixianjue/snapshots/legacy-inventory.json",
+        "bytes": 21028,
+        "sha256": "9c5dfcca0710cc38bfe39ccb2db396b52c33d7103cf649085f965c3f140e0849"
+      },
+      {
+        "path": "user/bixianjue/snapshots/legacy.sqlite3",
+        "bytes": 360448,
+        "sha256": "21ef4d460fd3fa0d7bc13e271c97d4c01eccce3985304d097433c6b3c843d156"
+      },
+      {
+        "path": "user/bixianjue/snapshots/legacy_strategy_slots.json",
+        "bytes": 4,
+        "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+      },
+      {
+        "path": "user/bixianjue/snapshots/migration-excluded.json",
+        "bytes": 4,
+        "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+      },
+      {
+        "path": "user/bixianjue/snapshots/pre-migration-inventory.json",
+        "bytes": 21028,
+        "sha256": "9c5dfcca0710cc38bfe39ccb2db396b52c33d7103cf649085f965c3f140e0849"
+      },
+      {
+        "path": "user/bixianjue/snapshots/S2武将与战法库存.md",
+        "bytes": 3648,
+        "sha256": "1479d34dd59f1645f570a1432cede43e86ba4724b0b1fedfcaefad50f2119606"
+      },
+      {
+        "path": "user/bixianjue/snapshots/历史战力机制与个人分析.md",
+        "bytes": 22438,
+        "sha256": "4022fa5d25950bc251017477c5fc0dd12c97da10a10b744ef624f06300c2bc5b"
+      },
+      {
+        "path": "user/bixianjue/snapshots/旧演武入口.md",
+        "bytes": 956,
+        "sha256": "b3b447a523f2de1ef04a1d62b1e1a96627bb3f75c02a536190f2c5b024490e59"
+      },
+      {
+        "path": "user/bixianjue/snapshots/旧覆盖率报告.md",
+        "bytes": 776,
+        "sha256": "eb9efd7e9786fb80a5d0b7237cf64b5f7a06f579ae978153fe541ab78bbd3b26"
+      },
+      {
+        "path": "user/bixianjue/snapshots/迁移前库存摘要.md",
+        "bytes": 9506,
+        "sha256": "65d5e8283d53e8402837707593c75e20ff81e29fbca0da56141bd8b60f92f26e"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/migration-excluded.json",
+        "bytes": 1247,
+        "sha256": "034a5ade1d2d4309049c498a9eb3976923ca07fba25e7ad448d976dcd9bb45eb"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/pre-migration-inventory.json",
+        "bytes": 9984,
+        "sha256": "0e9fded03ea749bb74ca8531d68a82f30073972e63b14eb1ee23cfe474787a98"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/旧项目入口.md",
+        "bytes": 1495,
+        "sha256": "8dceb9f800230aaddd1bffdf01d82aca023cd2d26cbd6156d71942a3375bd5fb"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/legacy-data/account_inventory.json",
+        "bytes": 9984,
+        "sha256": "0e9fded03ea749bb74ca8531d68a82f30073972e63b14eb1ee23cfe474787a98"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/legacy-data/三国谋定天下_朋友_S1.sqlite3",
+        "bytes": 360448,
+        "sha256": "635be894a6f98c7093fff5ece9155e6670af083c67890110c36f33f11cb5ff11"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/legacy-data/自有战法-2026-09-10.json",
+        "bytes": 798,
+        "sha256": "92386389838b57e142148c0e44a61644e2f6ce8b7f63e62f4c13e5cdfc3c424b"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/旧notes/业务逻辑.md",
+        "bytes": 582,
+        "sha256": "ba418f362822eb0095eefeb8a8abe4e54fcbb16a9f98d846fe2d3f24a4ae4615"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/旧notes/变更记录.md",
+        "bytes": 847,
+        "sha256": "3ba10468cb2bea635cefea458a734ffc55abd4a72c47a454c76acf55f781ef07"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/旧notes/项目说明.md",
+        "bytes": 494,
+        "sha256": "af33d13e11bdb0bb861635f9ec404a62ad60e649b1c3e60a292bf6f0ed147049"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/旧notes/backups/.gitignore",
+        "bytes": 85,
+        "sha256": "ce0000abf8c6c7828b9f1f59b8cabd352c645f3b1204c1cf94f073cd1b25a077"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/旧notes/backups/2026-09-10-1742/account_inventory.json",
+        "bytes": 4406,
+        "sha256": "f890dcad1fd2eef004886dfa47dbe39c729d636ef74fc8aab955c72eb5fab37a"
+      },
+      {
+        "path": "user/zhaoguohua/snapshots/旧notes/backups/2026-09-10-1742/当前阵容.md",
+        "bytes": 1318,
+        "sha256": "94ceff1ebdfbe70138247011a188973178642b67ce2897152df269934586d17d"
+      },
+      {
+        "path": "docs/archive/legacy-schema.sql",
+        "bytes": 8704,
+        "sha256": "9927801876f48d5b99070b4bebde98e3edcde730e097a7279b7710bed4edb3ab"
+      },
+      {
+        "path": "docs/archive/README.md",
+        "bytes": 421,
+        "sha256": "1b4072351bea4cac1e00c1574052c905c0bf4a06fd791d823f05e25ff1c5177b"
+      },
+      {
+        "path": "docs/archive/业务逻辑.md",
+        "bytes": 21024,
+        "sha256": "75b50dd580f6c6cf32fc26cf2c860b37f56d7f29288e03a711c8f57d8056d16a"
+      },
+      {
+        "path": "docs/archive/数据库说明.md",
+        "bytes": 4166,
+        "sha256": "2d15db45bc87810b0bb0046548c2938ad44a52cf3b3a92b302a92b4089cefbd1"
+      },
+      {
+        "path": "docs/archive/项目复现指南-库存统计与50队配对及演武规则.md",
+        "bytes": 68820,
+        "sha256": "ef4d3af4cc1e67024f27359f190a4de200c5172b06f05627bf441788afc91d65"
+      },
+      {
+        "path": "docs/archive/项目说明.md",
+        "bytes": 4340,
+        "sha256": "1db921d649dc78088afad132d1810e30a7b5e75235a18b3e8e7ec5cb5ece4ee9"
+      },
+      {
+        "path": "docs/archive/scripts/account_inventory.py",
+        "bytes": 12372,
+        "sha256": "09076fba55b8041f75213b183e0f10e94cbf3cf3a9d9d29121d9df0a7e991c58"
+      },
+      {
+        "path": "docs/archive/scripts/create_friend_s1_database_v2.py",
+        "bytes": 3421,
+        "sha256": "b2df91f141561c81e14c6e4e5bca997408683321bb86135b0c36027bc807a600"
+      },
+      {
+        "path": "docs/archive/scripts/sync_game_data.py",
+        "bytes": 34076,
+        "sha256": "c825ed1ba939636f7d7fee54b743e53d8e535238e8bbddecb7b557e9f15d7f12"
+      },
+      {
+        "path": "docs/archive/scripts/verify_database.py",
+        "bytes": 6042,
+        "sha256": "dbac52d95872b3e0da7300b3f03d11ccf5efa03850a00d9557636d189b4fb83b"
+      },
+      {
+        "path": "docs/archive/scripts/zhaoguohua/update_20260910.py",
+        "bytes": 4577,
+        "sha256": "b0ac7dc64f5d7c1c3d15b3dc59beb6a5f55cd450d32b62c4a3895e635cf18df8"
+      },
+      {
+        "path": "docs/archive/scripts/zhaoguohua/verify_rebuild_20260910.py",
+        "bytes": 1893,
+        "sha256": "4c8890c83c4a1df78e01143a3e143a752444635985142c0d54ed3a9e200f236f"
+      },
+      {
+        "path": "scripts/migrate_layout.py",
+        "bytes": 13271,
+        "sha256": "dcd7c3a96cc55cdc18618d0028e5510e05a47bb546fca51807ac905f9918319f"
+      },
+      {
+        "path": "scripts/finish_layout.py",
+        "bytes": 8463,
+        "sha256": "7586e960bd9bba8b64abd50be710981c983476a731a66564543804130724e69d"
+      },
+      {
+        "path": "references/common/legacy_strategy_recommendations.json",
+        "bytes": 4,
+        "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+      },
+      {
+        "path": "references/s2/阵容大全/OCR识别原稿.md",
+        "bytes": 22986,
+        "sha256": "8b9c9f79fa7e43c510010acddd3f41d6fb2578bc7a35b3b2a514e818d2c74847"
+      },
+      {
+        "path": "references/s2/阵容大全/阵容转录.md",
+        "bytes": 2505,
+        "sha256": "6e6df799340767af7662a87ea6dbd66252b1d1a372645b31a187b113d520440a"
+      },
+      {
+        "path": "game/sources/legacy-id-map.json",
+        "bytes": 17800,
+        "sha256": "204974a61b8d2e9813cc6e703965e5e7ab0d42043ea839561508ce29d5bd6b1a"
+      }
+    ]
+  }
+}

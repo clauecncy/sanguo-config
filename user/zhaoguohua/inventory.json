@@ -1,0 +1,622 @@
+{
+  "schema_version": 3,
+  "verified_at": "2026-09-10",
+  "season": "s1",
+  "source": "用户提供的 8 张游戏内截图（武将库、战法仓库、演武阵容）",
+  "scope": "武将为用户确认的自有武将；战法按2026-09-10新三图可见名称，演武原生池另存。未拍到不视为没有。",
+  "generals": [
+    {
+      "name": "程普",
+      "faction": "吴",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:83f68b3328def1bac222"
+    },
+    {
+      "name": "孙坚",
+      "faction": "吴",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:1fbb0e34373c3146b851"
+    },
+    {
+      "name": "徐盛",
+      "faction": "吴",
+      "advancement": 2,
+      "quality": "金",
+      "entity_id": "general:0d04bc60f598c1da65da"
+    },
+    {
+      "name": "吕布",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:990961b2ffc3e6140e01"
+    },
+    {
+      "name": "李儒",
+      "faction": "群",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:593ee96e11ce91cde8ea"
+    },
+    {
+      "name": "张角",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:5508fa98c2d6421d3e3c"
+    },
+    {
+      "name": "华雄",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:9ebe9a7cec93ffc5d3b4"
+    },
+    {
+      "name": "颜良",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:f2f34af1e7f448967678"
+    },
+    {
+      "name": "文丑",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:0f4c4105c1f5bc1b73e7"
+    },
+    {
+      "name": "华佗",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:084a5bb9b1c318048a03"
+    },
+    {
+      "name": "庞德",
+      "faction": "群",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:083b612aff32ed77fda8"
+    },
+    {
+      "name": "董卓",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:96633bbf689f585f17ef"
+    },
+    {
+      "name": "邹氏",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:13144b0dc85fccd26d2c"
+    },
+    {
+      "name": "张宝",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:35ca90d064630a3cea3c"
+    },
+    {
+      "name": "孙尚香",
+      "faction": "吴",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:823d59e4b1f09b921470"
+    },
+    {
+      "name": "吕蒙",
+      "faction": "吴",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:d09edc72e62e34cdb2da"
+    },
+    {
+      "name": "许褚",
+      "faction": "魏",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:7e6ebaf83b5273507779"
+    },
+    {
+      "name": "典韦",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:2157ac6b1d85220f6eee"
+    },
+    {
+      "name": "于禁",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:21556222ec2ac1e89ba2"
+    },
+    {
+      "name": "徐晃",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:58b6c02e43ff0623a55f"
+    },
+    {
+      "name": "夏侯渊",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:727dbb61cc174f1035db"
+    },
+    {
+      "name": "夏侯惇",
+      "faction": "魏",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:2a7e68aa7262c5da7f9f"
+    },
+    {
+      "name": "曹仁",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:121d406fe7d172e7f8ea"
+    },
+    {
+      "name": "甄洛",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:22b24edb3bdf2d0a2c72"
+    },
+    {
+      "name": "徐庶",
+      "faction": "蜀",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:8321c989883724cb13b2"
+    },
+    {
+      "name": "黄月英",
+      "faction": "蜀",
+      "advancement": 2,
+      "quality": "金",
+      "entity_id": "general:979781ac090cb71634a2"
+    },
+    {
+      "name": "关平",
+      "faction": "蜀",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:5109ea07440a2473642b"
+    },
+    {
+      "name": "周仓",
+      "faction": "蜀",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:63bf93615779c60037e7"
+    },
+    {
+      "name": "小乔",
+      "faction": "吴",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:67e210997dbbf2430955"
+    },
+    {
+      "name": "甘宁",
+      "faction": "吴",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:2665384131699d31ae0d"
+    },
+    {
+      "name": "刘备",
+      "faction": "蜀",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:daf7b56cd3aea44f7fdf"
+    },
+    {
+      "name": "张飞",
+      "faction": "蜀",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:95264f699dc478478eef"
+    },
+    {
+      "name": "黄忠",
+      "faction": "蜀",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:c9065395c9a7298a3331"
+    },
+    {
+      "name": "诸葛亮",
+      "faction": "蜀",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:53081486f9dbff9359d8"
+    },
+    {
+      "name": "黄盖",
+      "faction": "吴",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:af28979bd438c204232c"
+    },
+    {
+      "name": "大乔",
+      "faction": "吴",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:8ac44a43f06673d6272e"
+    },
+    {
+      "name": "貂蝉",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:5d3f27adabcf2be8a310"
+    },
+    {
+      "name": "蔡文姬",
+      "faction": "群",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:8e64b2b3040737249797"
+    },
+    {
+      "name": "张梁",
+      "faction": "群",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:e4039426f9f0f5d96689"
+    },
+    {
+      "name": "曹操",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:4fbe01ab8d14bc669b3e"
+    },
+    {
+      "name": "荀彧",
+      "faction": "魏",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:035be51454baa21b0e7b"
+    },
+    {
+      "name": "程昱",
+      "faction": "魏",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:16e9b12b026f2d40d0fc"
+    },
+    {
+      "name": "赵云",
+      "faction": "蜀",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:d949c9c8d528498c7bc1"
+    },
+    {
+      "name": "马超",
+      "faction": "蜀",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:63655267babca9c136c2"
+    },
+    {
+      "name": "关羽",
+      "faction": "蜀",
+      "advancement": 0,
+      "quality": "金",
+      "entity_id": "general:4b97cac39000f1c8f17e"
+    },
+    {
+      "name": "孙策",
+      "faction": "吴",
+      "advancement": 1,
+      "quality": "金",
+      "entity_id": "general:0278350322db68c0fb7a"
+    }
+  ],
+  "tactics": [
+    {
+      "name": "清风驱疾",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:f62577aa18a9be541993"
+    },
+    {
+      "name": "文武双全",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:1d43e8aca6fd102380f4"
+    },
+    {
+      "name": "万夫莫当",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:faf52c6b522d5bdb2f91"
+    },
+    {
+      "name": "伏兵四起",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:67009355fa355be9ba84"
+    },
+    {
+      "name": "断敌粮道",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:e87a6add52ed58080f91"
+    },
+    {
+      "name": "洞若观火",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:b26097af47c57064a4ae"
+    },
+    {
+      "name": "破阵驰围",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:d63b395d5863736c5bdf"
+    },
+    {
+      "name": "运筹帷幄",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:2bdc72edc661c61ef353"
+    },
+    {
+      "name": "铁骑横冲",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:f79a21585b0730e28363"
+    },
+    {
+      "name": "横扫千军",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:c737dd6eca594efc9c5c"
+    },
+    {
+      "name": "舍生取义",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:e64bb6ec86e199f1f16f"
+    },
+    {
+      "name": "水淹七军",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:d312f12e723387aad752"
+    },
+    {
+      "name": "出其不意",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:a608c3a5e036b6527224"
+    },
+    {
+      "name": "奇门遁甲",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:b123e1f04311f204a94b"
+    },
+    {
+      "name": "任人择势",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:5fef69da4e08a7c1acf1"
+    },
+    {
+      "name": "无难之志",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:059b15da21f1da5251fe"
+    },
+    {
+      "name": "势如破竹",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:727f580d200e0d7b0707"
+    },
+    {
+      "name": "上智为间",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:062052d6226cb87de367"
+    },
+    {
+      "name": "锐不可当",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:b68eb67708499b2ff2af"
+    },
+    {
+      "name": "风卷残云",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:732f31d3802bbac61f71"
+    },
+    {
+      "name": "威名显赫",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:379f54a5ed6f5ba3c80f"
+    },
+    {
+      "name": "狂风大作",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:f29622e061754dbbdbaa"
+    },
+    {
+      "name": "战八方",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:6484094ddf7e23ccd003"
+    },
+    {
+      "name": "趁火打劫",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:320f7a0d6e28e0f607e0"
+    },
+    {
+      "name": "披坚执锐",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:ce7505e773f930a6fb3e"
+    },
+    {
+      "name": "以静制动",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:0e805dafe4ac6dced483"
+    },
+    {
+      "name": "攻其不备",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:63c0f875b84aefef8bc4"
+    },
+    {
+      "name": "计袭粮仓",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:1ebe1c66d527d7992788"
+    },
+    {
+      "name": "千里突袭",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:57fb8219ac298ebfa8fd"
+    },
+    {
+      "name": "辕门射戟",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:bb6d0cb5745cca479938"
+    },
+    {
+      "name": "乘虚而入",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:3ffa580e6e0c122ceeda"
+    },
+    {
+      "name": "兵贵神速",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:f217f263c5141babbde8"
+    },
+    {
+      "name": "百战不殆",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:ac6b4c0e3783a3aaf96e"
+    },
+    {
+      "name": "王佐之才",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:53e18266b512159d87e8"
+    },
+    {
+      "name": "蓄势待发",
+      "quality": "金",
+      "advancement": null,
+      "entity_id": "tactic:62bbd903f61b9c8f919f"
+    },
+    {
+      "name": "临阵突袭",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:9090d66942f323653183"
+    },
+    {
+      "name": "疾行侧击",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:fd360dc72c2aa84b9747"
+    },
+    {
+      "name": "决水破敌",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:cb8cc13dc9eaed066ee7"
+    },
+    {
+      "name": "束手无策",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:b912dccd89978d1f2040"
+    },
+    {
+      "name": "坚壁清野",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:2719eef84e7b80a5e50d"
+    },
+    {
+      "name": "计逐穷寇",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:7e9f36d1419b92294283"
+    },
+    {
+      "name": "避其锐气",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:569140a6f79a8df6a042"
+    },
+    {
+      "name": "铸甲销戈",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:209cd4cbd1a4b56ae15e"
+    },
+    {
+      "name": "乱敌方阵",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:a8616adfb429c29db6b2"
+    },
+    {
+      "name": "咏歌尝酒",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:defce723039bb48c8a5f"
+    },
+    {
+      "name": "克敌如风",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:ec85c924a04920096a5d"
+    },
+    {
+      "name": "奇计迭出",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:a06112ea7e9e80a55bfd"
+    },
+    {
+      "name": "来好息师",
+      "quality": "紫",
+      "advancement": null,
+      "entity_id": "tactic:15208bb4d258ae927282"
+    }
+  ],
+  "tactic_source": "用户确认本次三张战法名鉴截图为朋友自有战法；仅录入完整可见名称"
+}
