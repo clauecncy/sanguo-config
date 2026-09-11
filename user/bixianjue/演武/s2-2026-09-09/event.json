@@ -1,0 +1,19 @@
+{
+  "event_id": "s2-2026-09-09",
+  "user_id": "bixianjue",
+  "season": "s2",
+  "platform": "Steam",
+  "record_date": "2026-09-09",
+  "start_date": null,
+  "last_confirmed_date": "2026-09-10",
+  "recovered_at": "2026-09-11",
+  "status": "已确认的上半场后修正配置；当前锁定/下半场进度未知",
+  "source": "本对话截图及用户逐项确认；由对话补录，并非旧目录文件直接复制",
+  "files": {
+    "warehouse": "仓库与选卡.json",
+    "formation": "当前阵容.json",
+    "report": "战报复盘.md",
+    "rules": "本期机制核验.md",
+    "evidence": "证据清单.json"
+  }
+}
