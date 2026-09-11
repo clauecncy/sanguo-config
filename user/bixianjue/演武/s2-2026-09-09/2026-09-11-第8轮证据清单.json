@@ -1,0 +1,101 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-09",
+  "recorded_at": "2026-09-11",
+  "source_count": 13,
+  "copied_count": 13,
+  "missing_count": 0,
+  "files": [
+    {
+      "image": 1,
+      "file": "codex-clipboard-096acbe1-7a28-4607-a225-d3e28ef431c2.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-096acbe1-7a28-4607-a225-d3e28ef431c2.png",
+      "sha256": "7B10C439FDD272EC3C479595C5A696C8AFCB0DFDEF2004E756777D5E04E5D580",
+      "size": 2599579
+    },
+    {
+      "image": 2,
+      "file": "codex-clipboard-9c2cb803-4dde-4b42-9144-09fee4be323b.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-9c2cb803-4dde-4b42-9144-09fee4be323b.png",
+      "sha256": "FBEEF70D6CD8ED1ECC5167425B11137BD5CF3C5A7FF4DB66AC033885060F413F",
+      "size": 1650101
+    },
+    {
+      "image": 3,
+      "file": "codex-clipboard-4c946f67-7b64-4b64-ad07-ed7a4d9cf036.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-4c946f67-7b64-4b64-ad07-ed7a4d9cf036.png",
+      "sha256": "4ED731C0F3CE4562880036EA4BE156FFF10DC2FAF154B16504C7F5D0147BAB15",
+      "size": 2586152
+    },
+    {
+      "image": 4,
+      "file": "codex-clipboard-4d041744-6670-4dd0-bdde-aa85a30796bd.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-4d041744-6670-4dd0-bdde-aa85a30796bd.png",
+      "sha256": "1AEE34484D8EDDCA1DE155387516018E09BC70E35F230CBB6709BCBF6D5C610D",
+      "size": 2599469
+    },
+    {
+      "image": 5,
+      "file": "codex-clipboard-62155b97-2b82-4961-8472-eea0088e6734.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-62155b97-2b82-4961-8472-eea0088e6734.png",
+      "sha256": "EEBBC7586EF0155D6644708A3CEFB5C4BCDF3F0AE19687317D4F85BFE84DEF77",
+      "size": 2540862
+    },
+    {
+      "image": 6,
+      "file": "codex-clipboard-5ab6b92f-3dd7-4316-b533-f8885c972116.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-5ab6b92f-3dd7-4316-b533-f8885c972116.png",
+      "sha256": "1878F6C9CC9C539573EA0A334412B282AFD05342D36ACDB96C7C35998F0BF40C",
+      "size": 2526665
+    },
+    {
+      "image": 7,
+      "file": "codex-clipboard-04409610-7fe6-4286-8bf6-6cc8492a32fe.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-04409610-7fe6-4286-8bf6-6cc8492a32fe.png",
+      "sha256": "E04B144AC1AEE407104F85B26AF6AB1B3B386581070FA448DA11CCAD69657088",
+      "size": 2609432
+    },
+    {
+      "image": 8,
+      "file": "codex-clipboard-299a3876-47eb-4f7c-be79-9533125677aa.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-299a3876-47eb-4f7c-be79-9533125677aa.png",
+      "sha256": "EF6CB8A23759DF38476AC8D355415041B3583BC13EB36A9ECCFBC82558BC7039",
+      "size": 2639701
+    },
+    {
+      "image": 9,
+      "file": "codex-clipboard-542e2922-91bc-478c-a9d1-5661323c3c32.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-542e2922-91bc-478c-a9d1-5661323c3c32.png",
+      "sha256": "30C859F3125617DE4CDBB1F2B0068A89B41198E02E1B2FC0F7D0BE20BB71F8E3",
+      "size": 2647439
+    },
+    {
+      "image": 10,
+      "file": "codex-clipboard-aff5e3e0-420b-4148-b503-f7aad14acb82.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-aff5e3e0-420b-4148-b503-f7aad14acb82.png",
+      "sha256": "4D40B91598F9044B96BB93A9FE5787BE071BB7565CE88996367175D23AB725FC",
+      "size": 2514316
+    },
+    {
+      "image": 11,
+      "file": "codex-clipboard-e2d90bfc-3ece-4bbe-a434-60231c835a60.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-e2d90bfc-3ece-4bbe-a434-60231c835a60.png",
+      "sha256": "7327CAC05A93F7B299ACE1A02C89836C9EB2FBD00CA72595EBBB5F5526EBF374",
+      "size": 1332455
+    },
+    {
+      "image": 12,
+      "file": "codex-clipboard-c3b07c9f-8d4e-472e-baae-072a7f70120d.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-c3b07c9f-8d4e-472e-baae-072a7f70120d.png",
+      "sha256": "155A66A2147731B4B06981806AE113FA2A5DAFF687DE6E983B9818ECB24B20DB",
+      "size": 1120718
+    },
+    {
+      "image": 13,
+      "file": "codex-clipboard-09eea87d-4bdf-4eda-a28e-799f4896ea4f.png",
+      "path": "证据/2026-09-11-1402/codex-clipboard-09eea87d-4bdf-4eda-a28e-799f4896ea4f.png",
+      "sha256": "C4B5CED99CC2A78EBD2A9D938DC5409D87BFD520D811EFF70976C490E937671A",
+      "size": 1354394
+    }
+  ]
+}

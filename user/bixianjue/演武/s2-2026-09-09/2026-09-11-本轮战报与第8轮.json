@@ -1,0 +1,618 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-09",
+  "recorded_at": "2026-09-11",
+  "status": "本轮晋级已确认；第8轮选将建议，未确认选取",
+  "source": "本次用户文字及13张截图",
+  "scope": "只更新本期演武，不更新常规库存或公共实体",
+  "overview": {
+    "image": 2,
+    "stage_display": "州内小组赛",
+    "area_display": "陇右赛区",
+    "group_display": "02组",
+    "visible_matches": [
+      {
+        "opponent": "书遥",
+        "score": "2:1"
+      },
+      {
+        "opponent": "云间梧",
+        "score": "2:1"
+      },
+      {
+        "opponent": "星丨白水",
+        "score": "2:1"
+      }
+    ],
+    "visible_match_wins": 3,
+    "visible_small_score": "6:3",
+    "full_round_record_known": false,
+    "promotion_confirmed_by_user": true
+  },
+  "battles": [
+    {
+      "image": 1,
+      "team": 3,
+      "opponent_display": "书遥",
+      "opponent_name_verification": "图片转写",
+      "enemy_generals": [
+        "曹仁",
+        "荀彧",
+        "陆逊"
+      ],
+      "segment_result": "负",
+      "final_result": "负",
+      "own_remaining": 0,
+      "enemy_remaining": 8893,
+      "own_war_loss_display": 11164,
+      "enemy_war_loss_display": 8100,
+      "zhenluo_second_learned_tactic": "出其不意",
+      "visible_tactic_damage_parts": {
+        "own": [
+          528,
+          2120,
+          3349,
+          1385,
+          3541,
+          4094
+        ],
+        "enemy": [
+          15720,
+          5605,
+          4242,
+          4095,
+          841
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          2408
+        ],
+        "enemy": [
+          3811
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 15017,
+        "enemy": 30503
+      },
+      "visible_tactic_healing_total": {
+        "own": 2408,
+        "enemy": 3811
+      }
+    },
+    {
+      "image": 3,
+      "team": 3,
+      "opponent_display": "云间梧",
+      "opponent_name_verification": "图片转写",
+      "enemy_generals": [
+        "貂蝉",
+        "袁绍",
+        "关羽"
+      ],
+      "segment_result": "负",
+      "final_result": "负",
+      "own_remaining": 0,
+      "enemy_remaining": 13592,
+      "own_war_loss_display": 11174,
+      "enemy_war_loss_display": 6031,
+      "zhenluo_second_learned_tactic": "出其不意",
+      "visible_tactic_damage_parts": {
+        "own": [
+          813,
+          1757,
+          1691,
+          1482,
+          906,
+          3353,
+          1213
+        ],
+        "enemy": [
+          6464,
+          5861,
+          11832,
+          1418,
+          947,
+          2739
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          2480
+        ],
+        "enemy": [
+          619
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 11215,
+        "enemy": 29261
+      },
+      "visible_tactic_healing_total": {
+        "own": 2480,
+        "enemy": 619
+      }
+    },
+    {
+      "image": 4,
+      "team": 2,
+      "opponent_display": "星丨白水",
+      "opponent_name_verification": "图片转写",
+      "enemy_generals": [
+        "大乔",
+        "小乔",
+        "周瑜"
+      ],
+      "segment_result": "平",
+      "final_result": null,
+      "own_remaining": 1580,
+      "enemy_remaining": 9700,
+      "own_war_loss_display": 10768,
+      "enemy_war_loss_display": 8727,
+      "zhenluo_second_learned_tactic": null,
+      "visible_tactic_damage_parts": {
+        "own": [
+          8525,
+          6509,
+          4681,
+          4540,
+          3792,
+          2019
+        ],
+        "enemy": [
+          11977,
+          3545,
+          5177,
+          7685
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          1371,
+          2430
+        ],
+        "enemy": [
+          4243,
+          3868,
+          2087,
+          1566
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 30066,
+        "enemy": 28384
+      },
+      "visible_tactic_healing_total": {
+        "own": 3801,
+        "enemy": 11764
+      }
+    },
+    {
+      "image": 5,
+      "team": 3,
+      "opponent_display": "星丨白水",
+      "opponent_name_verification": "图片转写",
+      "enemy_generals": [
+        "袁绍",
+        "张辽",
+        "田丰"
+      ],
+      "segment_result": "胜",
+      "final_result": "胜",
+      "own_remaining": 17510,
+      "enemy_remaining": 0,
+      "own_war_loss_display": 4928,
+      "enemy_war_loss_display": 10900,
+      "zhenluo_second_learned_tactic": "出其不意",
+      "visible_tactic_damage_parts": {
+        "own": [
+          72,
+          1884,
+          5075,
+          3257,
+          4709,
+          4899,
+          507
+        ],
+        "enemy": [
+          6126,
+          2966,
+          1939,
+          2077,
+          575
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          3364
+        ],
+        "enemy": []
+      },
+      "visible_tactic_damage_total": {
+        "own": 20403,
+        "enemy": 13683
+      },
+      "visible_tactic_healing_total": {
+        "own": 3364,
+        "enemy": 0
+      }
+    },
+    {
+      "image": 6,
+      "team": 2,
+      "opponent_display": "盘古",
+      "opponent_name_verification": "图片转写",
+      "enemy_generals": [
+        "诸葛亮",
+        "马超",
+        "张飞"
+      ],
+      "segment_result": "负",
+      "final_result": "负",
+      "own_remaining": 0,
+      "enemy_remaining": 17137,
+      "own_war_loss_display": 11202,
+      "enemy_war_loss_display": 4832,
+      "zhenluo_second_learned_tactic": null,
+      "visible_tactic_damage_parts": {
+        "own": [
+          6533,
+          3752,
+          1981,
+          793,
+          424
+        ],
+        "enemy": [
+          4252,
+          31,
+          10587,
+          6366,
+          1729,
+          6796
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          1737,
+          1021
+        ],
+        "enemy": [
+          564,
+          836
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 13483,
+        "enemy": 29761
+      },
+      "visible_tactic_healing_total": {
+        "own": 2758,
+        "enemy": 1400
+      }
+    },
+    {
+      "image": 7,
+      "team": 3,
+      "opponent_display": "盘古",
+      "opponent_name_verification": "图片转写",
+      "enemy_generals": [
+        "吕蒙",
+        "周瑜",
+        "陆逊"
+      ],
+      "segment_result": "负",
+      "final_result": "负",
+      "own_remaining": 0,
+      "enemy_remaining": 19256,
+      "own_war_loss_display": 11034,
+      "enemy_war_loss_display": 4458,
+      "zhenluo_second_learned_tactic": "任人唯贤",
+      "visible_tactic_damage_parts": {
+        "own": [
+          1568,
+          2048,
+          3260,
+          4384
+        ],
+        "enemy": [
+          6116,
+          7283,
+          6669,
+          2833,
+          2993,
+          2867
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          1203
+        ],
+        "enemy": [
+          1416,
+          1312
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 11260,
+        "enemy": 28761
+      },
+      "visible_tactic_healing_total": {
+        "own": 1203,
+        "enemy": 2728
+      }
+    },
+    {
+      "image": 8,
+      "team": 2,
+      "opponent_display": "桦舲戍胡尉",
+      "opponent_name_verification": "昵称生僻字转写待核，按图片编号关联",
+      "enemy_generals": [
+        "徐盛",
+        "周瑜",
+        "小乔"
+      ],
+      "segment_result": "平",
+      "final_result": null,
+      "own_remaining": 4883,
+      "enemy_remaining": 11249,
+      "own_war_loss_display": 9949,
+      "enemy_war_loss_display": 7752,
+      "zhenluo_second_learned_tactic": null,
+      "visible_tactic_damage_parts": {
+        "own": [
+          9960,
+          5487,
+          3516,
+          2494,
+          2911,
+          1187
+        ],
+        "enemy": [
+          22782,
+          1066,
+          4001
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          3738,
+          3473
+        ],
+        "enemy": [
+          3834,
+          4321
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 25555,
+        "enemy": 27849
+      },
+      "visible_tactic_healing_total": {
+        "own": 7211,
+        "enemy": 8155
+      }
+    },
+    {
+      "image": 9,
+      "team": 3,
+      "opponent_display": "桦舲戍胡尉",
+      "opponent_name_verification": "昵称生僻字转写待核，按图片编号关联",
+      "enemy_generals": [
+        "曹操",
+        "吕布",
+        "袁绍"
+      ],
+      "segment_result": "负",
+      "final_result": "负",
+      "own_remaining": 0,
+      "enemy_remaining": 25410,
+      "own_war_loss_display": 10990,
+      "enemy_war_loss_display": 2264,
+      "zhenluo_second_learned_tactic": "任人唯贤",
+      "visible_tactic_damage_parts": {
+        "own": [
+          1413,
+          1079,
+          1166,
+          2190,
+          776
+        ],
+        "enemy": [
+          2239,
+          6117,
+          11491,
+          3386,
+          2254
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          826
+        ],
+        "enemy": [
+          1916,
+          745,
+          2534
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 6624,
+        "enemy": 25487
+      },
+      "visible_tactic_healing_total": {
+        "own": 826,
+        "enemy": 5195
+      }
+    },
+    {
+      "image": 10,
+      "team": 2,
+      "opponent_display": "星丨泥大",
+      "opponent_name_verification": "图片转写",
+      "enemy_generals": [
+        "大乔",
+        "黄盖",
+        "周瑜"
+      ],
+      "segment_result": "负",
+      "final_result": "负",
+      "own_remaining": 0,
+      "enemy_remaining": 21512,
+      "own_war_loss_display": 11303,
+      "enemy_war_loss_display": 3771,
+      "zhenluo_second_learned_tactic": null,
+      "visible_tactic_damage_parts": {
+        "own": [
+          7387,
+          3152,
+          1786,
+          559
+        ],
+        "enemy": [
+          9918,
+          6351,
+          9427,
+          3235,
+          1625
+        ]
+      },
+      "visible_tactic_healing_parts": {
+        "own": [
+          2307,
+          1543
+        ],
+        "enemy": [
+          4047,
+          1704
+        ]
+      },
+      "visible_tactic_damage_total": {
+        "own": 12884,
+        "enemy": 30556
+      },
+      "visible_tactic_healing_total": {
+        "own": 3850,
+        "enemy": 5751
+      }
+    }
+  ],
+  "interpretation_limits": [
+    "9张明细是用户筛选样本，不能计算整体胜率。",
+    "2张平局是单段结果，续战未知，不记最终败或最终平。",
+    "战法伤害合计不是全场总伤害；战损不等于30000减剩余兵力；×1及伤害0不代表辅助无效。",
+    "甄洛两个配置的先后时间和当前锁定配置未知，图片顺序不等于时间顺序。",
+    "黄盖0次发动不能从汇总图确定为技穷、震慑、早死或随机失败。",
+    "敌方曹操援标可见，红度和属性不外推；不从对手战法反写我方仓库。"
+  ],
+  "round8": {
+    "type": "武将",
+    "display": "第8/10轮",
+    "candidates": [
+      {
+        "group": 1,
+        "generals": [
+          "黄月英",
+          "夏侯惇"
+        ],
+        "display_percentages": [
+          15,
+          28
+        ],
+        "image": 11
+      },
+      {
+        "group": 2,
+        "generals": [
+          "郭嘉",
+          "张宝"
+        ],
+        "display_percentages": [
+          7,
+          7
+        ],
+        "image": 12
+      },
+      {
+        "group": 3,
+        "generals": [
+          "袁绍",
+          "吕布"
+        ],
+        "display_percentages": [
+          24,
+          4
+        ],
+        "image": 13
+      }
+    ],
+    "percentage_meaning": null,
+    "recommended_group": 1,
+    "selected_group": null,
+    "status": "recommended",
+    "reason": "优先用黄月英替黄盖补第二队稳定恢复与增伤；夏侯惇提供后续第三队前排重构选项。",
+    "next_rounds": {
+      "9": null,
+      "10": null
+    }
+  },
+  "proposed_team2": {
+    "status": "recommended_not_applied",
+    "condition": "确认选第一组且游戏允许调整配置后",
+    "formation": "雁形阵",
+    "members": [
+      {
+        "name": "黄月英",
+        "position": "前排",
+        "tactics": [
+          "固若金汤",
+          "任人唯贤"
+        ]
+      },
+      {
+        "name": "法正",
+        "position": "前排",
+        "tactics": [
+          "狂风大作",
+          "断敌粮道"
+        ]
+      },
+      {
+        "name": "诸葛亮",
+        "position": "后排",
+        "tactics": [
+          "胜敌益强",
+          "谈笑诛心"
+        ]
+      }
+    ],
+    "cross_team_change": "第三队甄洛如当前带任人唯贤，须改回出其不意，避免重复。",
+    "risks": [
+      "移除苦肉计会失去其爆发与火攻来源。",
+      "双前排法正仍可能早死；黄月英需兼顾治疗属性和承伤，不宣称换将即解决坦度。",
+      "不带机关术等韬略，木牛并不提供免控或驱散；敌方禁疗仍会限制恢复。"
+    ]
+  },
+  "third_team_direction": {
+    "status": "conditional_not_applied",
+    "keep_until_next_cards": [
+      "甄洛",
+      "张辽",
+      "甘宁"
+    ],
+    "candidate_structure": [
+      "夏侯惇",
+      "甄洛",
+      "甘宁"
+    ],
+    "candidate_formation": "方圆阵，夏侯惇与甄洛前排，甘宁后排",
+    "tradeoff": "替张辽换取承伤与降伤，但失去张辽传递输出；不宣称必优。必须结合第9/10轮可得防护战法再决定。",
+    "constraints": [
+      "固若金汤已用于建议第二队，不能重复给夏侯惇。",
+      "现有避其锐气与横征暴敛在第一队，不默认拆第一队。",
+      "若保留张辽则维持前排，不推荐移到后排却仍计算传递条款。"
+    ]
+  },
+  "evidence_manifest": "2026-09-11-第8轮证据清单.json",
+  "analysis_file": "2026-09-11-本轮复盘与第8轮建议.md"
+}
