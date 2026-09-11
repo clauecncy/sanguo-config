@@ -1,0 +1,466 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-09",
+  "recovered_at": "2026-09-11",
+  "source_count": 57,
+  "copied_count": 57,
+  "missing_count": 0,
+  "files": [
+    {
+      "file": "codex-clipboard-44de0126-9b5e-42af-aef8-61f37292a97a.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-44de0126-9b5e-42af-aef8-61f37292a97a.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-44de0126-9b5e-42af-aef8-61f37292a97a.png",
+      "sha256": "8D45695B35FE4E2743AFB85B255E309E2C2A38047F81AE1297AB8C2A939579E2",
+      "size": 1499759
+    },
+    {
+      "file": "codex-clipboard-dc60eec1-a48c-4f42-aef2-75a248e31851.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-dc60eec1-a48c-4f42-aef2-75a248e31851.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-dc60eec1-a48c-4f42-aef2-75a248e31851.png",
+      "sha256": "CAD40C6F2708CB618089967EDE2878B43C0DC3B7EAB4DEE2D45246B0D90A5313",
+      "size": 1523142
+    },
+    {
+      "file": "codex-clipboard-3d41f7e9-96a4-49eb-8c5a-207eaff18a1b.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-3d41f7e9-96a4-49eb-8c5a-207eaff18a1b.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-3d41f7e9-96a4-49eb-8c5a-207eaff18a1b.png",
+      "sha256": "FB4A898B7DEEBEB433310A559A057DA9678049B7D81EE7363534CBE55ED0B359",
+      "size": 1486152
+    },
+    {
+      "file": "codex-clipboard-c3103871-2f60-4f57-801f-c60ed0f550a5.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-c3103871-2f60-4f57-801f-c60ed0f550a5.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-c3103871-2f60-4f57-801f-c60ed0f550a5.png",
+      "sha256": "55F5CCB7AA20F8FE8161172C2D703F49328F5D200AD78AD6FDEE4E7770EA7556",
+      "size": 653046
+    },
+    {
+      "file": "codex-clipboard-f772c995-d2d6-4707-aabf-e80311f7b5cb.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-f772c995-d2d6-4707-aabf-e80311f7b5cb.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-f772c995-d2d6-4707-aabf-e80311f7b5cb.png",
+      "sha256": "247EADBFD31C3DEC2EF8BF0BAF505E1BDB14FDCCEC62498B8FBF5D11ECBE1F8C",
+      "size": 585114
+    },
+    {
+      "file": "codex-clipboard-9105b700-7187-49b3-a5d0-9aaec4b1db2d.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-9105b700-7187-49b3-a5d0-9aaec4b1db2d.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-9105b700-7187-49b3-a5d0-9aaec4b1db2d.png",
+      "sha256": "0ABDE9BEE70BC9E6660ED60EC9C8F46DAD712AF1EC95C6AFF28C919D0028EEE7",
+      "size": 542920
+    },
+    {
+      "file": "codex-clipboard-8eda0c6c-023f-4305-a24e-f6e30a3b5817.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-8eda0c6c-023f-4305-a24e-f6e30a3b5817.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-8eda0c6c-023f-4305-a24e-f6e30a3b5817.png",
+      "sha256": "DF769B3242D16ADA5AA075C03AF44903E05C4DB956AA9E12CD711EDB4FA29511",
+      "size": 663065
+    },
+    {
+      "file": "codex-clipboard-04cecf1e-ff67-4f0c-8a68-e9265a203e72.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-04cecf1e-ff67-4f0c-8a68-e9265a203e72.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-04cecf1e-ff67-4f0c-8a68-e9265a203e72.png",
+      "sha256": "CA98D44C16A16E41CDF423DC578C6F13952B9D018151D3DA14E52DA30F784248",
+      "size": 584945
+    },
+    {
+      "file": "codex-clipboard-86fa455e-c87f-41c1-ab5c-37bcff5580d8.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-86fa455e-c87f-41c1-ab5c-37bcff5580d8.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-86fa455e-c87f-41c1-ab5c-37bcff5580d8.png",
+      "sha256": "E02DD68C83B138D223621C1E0552583BD406804691C1EE17612DC4D07C161952",
+      "size": 665778
+    },
+    {
+      "file": "codex-clipboard-ede5023f-e42e-465e-908f-05c8b63e665c.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-ede5023f-e42e-465e-908f-05c8b63e665c.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-ede5023f-e42e-465e-908f-05c8b63e665c.png",
+      "sha256": "27086E178ECB5584E90BFF35E5E80485975650A1DC711ED2BB589AEA481819AB",
+      "size": 774573
+    },
+    {
+      "file": "codex-clipboard-a0fe309f-2ac5-4cc1-89af-287df65ec7fc.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-a0fe309f-2ac5-4cc1-89af-287df65ec7fc.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-a0fe309f-2ac5-4cc1-89af-287df65ec7fc.png",
+      "sha256": "5FE0982EDA27966EF92D69DED10C55024796E99A3A3216A823B02CA283C3F70F",
+      "size": 749511
+    },
+    {
+      "file": "codex-clipboard-03e7e0d5-05c9-4c3b-a177-3feaccf35c3d.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-03e7e0d5-05c9-4c3b-a177-3feaccf35c3d.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-03e7e0d5-05c9-4c3b-a177-3feaccf35c3d.png",
+      "sha256": "4B719254DD90AAB2A0DFAE9815C93CE9A53A76B6FCA0CCFCCCB05888254197E2",
+      "size": 783286
+    },
+    {
+      "file": "codex-clipboard-dfe8608f-02a9-4b05-8ddb-7a22a1add169.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-dfe8608f-02a9-4b05-8ddb-7a22a1add169.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-dfe8608f-02a9-4b05-8ddb-7a22a1add169.png",
+      "sha256": "372D9357DA1A35DD2109F1DA3F6D3441BC1FC796BB17762AFEE76B04BDA102CB",
+      "size": 592649
+    },
+    {
+      "file": "codex-clipboard-85df42d4-aff8-42a2-903c-d57e8dafa609.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-85df42d4-aff8-42a2-903c-d57e8dafa609.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-85df42d4-aff8-42a2-903c-d57e8dafa609.png",
+      "sha256": "731F2CCAEF63F465EF5786585CB8F0286BF4DE4AF2C76819C96BE435DAA9DB5C",
+      "size": 556405
+    },
+    {
+      "file": "codex-clipboard-b3aba30e-7219-4c9e-8e6c-8f440d86661b.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-b3aba30e-7219-4c9e-8e6c-8f440d86661b.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-b3aba30e-7219-4c9e-8e6c-8f440d86661b.png",
+      "sha256": "345B27C38727DFCB837A47E3A830E31839285E09D4E06DA51A75723217952FAB",
+      "size": 584739
+    },
+    {
+      "file": "codex-clipboard-7b4a9400-6f54-4427-81c8-47b99fbef4bf.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-7b4a9400-6f54-4427-81c8-47b99fbef4bf.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-7b4a9400-6f54-4427-81c8-47b99fbef4bf.png",
+      "sha256": "5A4790086662651938B71AE1E1A9D31F4C1C1BA8060CFFDC5CADA8F387ADC6E2",
+      "size": 593513
+    },
+    {
+      "file": "codex-clipboard-1478cdd6-c3ed-49a5-8df3-01d685ae20fe.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-1478cdd6-c3ed-49a5-8df3-01d685ae20fe.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-1478cdd6-c3ed-49a5-8df3-01d685ae20fe.png",
+      "sha256": "65C81F137776B90AD79E5B948C2CD416F5A39A82C47538422572303D0CC5F6C1",
+      "size": 615106
+    },
+    {
+      "file": "codex-clipboard-fe4e765e-f453-4f62-9b56-f4f8d27d9912.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-fe4e765e-f453-4f62-9b56-f4f8d27d9912.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-fe4e765e-f453-4f62-9b56-f4f8d27d9912.png",
+      "sha256": "61B59B966FE8B0D057B8402768EAFEF71BA6600A6EA3315796E9A00536948910",
+      "size": 574520
+    },
+    {
+      "file": "codex-clipboard-8a8f28ed-b612-4513-b0f7-b2286d7e0755.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-8a8f28ed-b612-4513-b0f7-b2286d7e0755.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-8a8f28ed-b612-4513-b0f7-b2286d7e0755.png",
+      "sha256": "8248DAF9CAC61C298205F4F151BED693DF707193B99D8644EABD9D168E784364",
+      "size": 797874
+    },
+    {
+      "file": "codex-clipboard-da68d144-2bd6-4ffa-b934-96e256db9fb5.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-da68d144-2bd6-4ffa-b934-96e256db9fb5.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-da68d144-2bd6-4ffa-b934-96e256db9fb5.png",
+      "sha256": "57016F9CA4706CF3F3B7A2D7441380C3052AFBC8BE332F6781EADC1490E5726C",
+      "size": 687076
+    },
+    {
+      "file": "codex-clipboard-7555ffea-f9fc-4d2b-a272-3f92864c3020.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-7555ffea-f9fc-4d2b-a272-3f92864c3020.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-7555ffea-f9fc-4d2b-a272-3f92864c3020.png",
+      "sha256": "9EB1FDD3FB80062934F9E75793D26767E9D17D758B6F2FEC7395F4E659549B59",
+      "size": 817592
+    },
+    {
+      "file": "codex-clipboard-101aa8de-1b4a-46d4-981b-eb88e32ad273.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-101aa8de-1b4a-46d4-981b-eb88e32ad273.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-101aa8de-1b4a-46d4-981b-eb88e32ad273.png",
+      "sha256": "6E72526BD735899A294E9E7EB97847D20B3DE1E3B1E9A6C5D02EC89ACBC3340A",
+      "size": 797416
+    },
+    {
+      "file": "codex-clipboard-ed5c6932-6ea6-40fa-ac02-854edd1d1be4.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-ed5c6932-6ea6-40fa-ac02-854edd1d1be4.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-ed5c6932-6ea6-40fa-ac02-854edd1d1be4.png",
+      "sha256": "4125E318865C3B6D64E7FEF52D2AD4F2ED5799FA67CE5EFBA78DB47C66EC9A24",
+      "size": 822740
+    },
+    {
+      "file": "codex-clipboard-e2debda8-133d-4eb0-a23e-b81ae8f4b0d3.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-e2debda8-133d-4eb0-a23e-b81ae8f4b0d3.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-e2debda8-133d-4eb0-a23e-b81ae8f4b0d3.png",
+      "sha256": "4688356F74CEDB05D06855F786736788A93520784D0C89AE9B7E73AD7F369065",
+      "size": 877139
+    },
+    {
+      "file": "codex-clipboard-4d43d607-a317-404a-9461-426e73f54697.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-4d43d607-a317-404a-9461-426e73f54697.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-4d43d607-a317-404a-9461-426e73f54697.png",
+      "sha256": "3DD7D3178997078E9BA799620C27F711C05463BB7E0DA630BCE94111B8218F97",
+      "size": 701810
+    },
+    {
+      "file": "codex-clipboard-a83f60d3-7704-4ac2-8e1d-9dfdb89d4c87.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-a83f60d3-7704-4ac2-8e1d-9dfdb89d4c87.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-a83f60d3-7704-4ac2-8e1d-9dfdb89d4c87.png",
+      "sha256": "96B0389411B824B52470D453B2A48836426EA3C05EC44005FA61ED2D2823EBF2",
+      "size": 732785
+    },
+    {
+      "file": "codex-clipboard-461c4728-ba82-452a-a8e3-fad762b04574.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-461c4728-ba82-452a-a8e3-fad762b04574.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-461c4728-ba82-452a-a8e3-fad762b04574.png",
+      "sha256": "1CA5DFE0A4B0241CA344ECBB1636D3E1A8CB9EC977A60F8A03945C826E208C11",
+      "size": 759164
+    },
+    {
+      "file": "codex-clipboard-67c6cd55-d2c6-4fb4-8a55-1a4447a86007.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-67c6cd55-d2c6-4fb4-8a55-1a4447a86007.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-67c6cd55-d2c6-4fb4-8a55-1a4447a86007.png",
+      "sha256": "9D740350088DCEA48399864120244943C4F680F6D805D4BB2AB41C9470B2CA1E",
+      "size": 1364809
+    },
+    {
+      "file": "codex-clipboard-adf4b66e-b369-466d-a9e1-ef759276c820.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-adf4b66e-b369-466d-a9e1-ef759276c820.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-adf4b66e-b369-466d-a9e1-ef759276c820.png",
+      "sha256": "8A56538511DA7F825BF7E62F80CC614D26C6550DE8AED7AAC824B47CF5C4FEBD",
+      "size": 1479625
+    },
+    {
+      "file": "codex-clipboard-6086711b-5e99-468a-9032-c82ac30c18f4.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-6086711b-5e99-468a-9032-c82ac30c18f4.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-6086711b-5e99-468a-9032-c82ac30c18f4.png",
+      "sha256": "79C7D4EA6CEA47BF37B66767CD5384E46F979918981C0FCD001D0CA9798D8A98",
+      "size": 733308
+    },
+    {
+      "file": "codex-clipboard-f5eae4a1-9fc9-4ce9-80e9-6c503e47848a.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-f5eae4a1-9fc9-4ce9-80e9-6c503e47848a.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-f5eae4a1-9fc9-4ce9-80e9-6c503e47848a.png",
+      "sha256": "ECD6E88646C8FBC4D5C820D8D5B9F67CCE56E1101E387F35A4FBAB8860937DC8",
+      "size": 745228
+    },
+    {
+      "file": "codex-clipboard-4745abda-4541-475b-a7cb-63c767f4a108.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-4745abda-4541-475b-a7cb-63c767f4a108.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-4745abda-4541-475b-a7cb-63c767f4a108.png",
+      "sha256": "F515A76F604D68A4EB631BFA2420C772256940968D916CA834DF47155E32180E",
+      "size": 803510
+    },
+    {
+      "file": "codex-clipboard-4e0e8a5e-1bd1-49c8-ab4c-31c23c0589f2.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-4e0e8a5e-1bd1-49c8-ab4c-31c23c0589f2.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-4e0e8a5e-1bd1-49c8-ab4c-31c23c0589f2.png",
+      "sha256": "8ADF91F95A17063CF12711A96879EE73425BFC2CA9F42C0E71662E8242661963",
+      "size": 789937
+    },
+    {
+      "file": "codex-clipboard-20469b43-0e6f-4217-b8b4-d84d99409f7e.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-20469b43-0e6f-4217-b8b4-d84d99409f7e.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-20469b43-0e6f-4217-b8b4-d84d99409f7e.png",
+      "sha256": "D2046536F441119FA1E583E0CF9D9C8FB17E9C908BC7CC577B26963CB5F7D60A",
+      "size": 757007
+    },
+    {
+      "file": "codex-clipboard-ecac1a60-0f66-4635-9840-89f7af8050ab.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-ecac1a60-0f66-4635-9840-89f7af8050ab.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-ecac1a60-0f66-4635-9840-89f7af8050ab.png",
+      "sha256": "6A5434669A8EB74FC32287358D19A4220CBDC7DB3CF6A5491D74D8CD7C745042",
+      "size": 3118934
+    },
+    {
+      "file": "codex-clipboard-dee0d0f3-5a9e-4771-a8bf-7f3eedcb82d6.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-dee0d0f3-5a9e-4771-a8bf-7f3eedcb82d6.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-dee0d0f3-5a9e-4771-a8bf-7f3eedcb82d6.png",
+      "sha256": "0A30F974B36D9BB6E877A5B0751ED4F053D0F151550C9E68C96C2A5FB534F03C",
+      "size": 2139797
+    },
+    {
+      "file": "codex-clipboard-31b8826e-1ae7-40fd-bd23-accebe544560.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-31b8826e-1ae7-40fd-bd23-accebe544560.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-31b8826e-1ae7-40fd-bd23-accebe544560.png",
+      "sha256": "06F38EB53978CCD205BB4B805595832E57516033DED135E58FEAB9AD3DD1506A",
+      "size": 2142247
+    },
+    {
+      "file": "codex-clipboard-7ef4734d-730d-42f9-ae97-d30f4b1a27ef.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-7ef4734d-730d-42f9-ae97-d30f4b1a27ef.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-7ef4734d-730d-42f9-ae97-d30f4b1a27ef.png",
+      "sha256": "C551E38DCCAE21D4E6B5A1F2EACE0A9AA70E8846AFB5066AA964065FF83823BB",
+      "size": 2137521
+    },
+    {
+      "file": "codex-clipboard-d1afa112-8d9d-4532-bc6b-c8f036629c21.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-d1afa112-8d9d-4532-bc6b-c8f036629c21.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-d1afa112-8d9d-4532-bc6b-c8f036629c21.png",
+      "sha256": "46D8772A9511D306CF95B22C68C208EA26A73A1562963B7340C347646CA8BE59",
+      "size": 2118558
+    },
+    {
+      "file": "codex-clipboard-007cffe9-7a7a-427a-b398-447a4ef25c66.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-007cffe9-7a7a-427a-b398-447a4ef25c66.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-007cffe9-7a7a-427a-b398-447a4ef25c66.png",
+      "sha256": "D636A263C938EB9E5F57F4DA42B8F67C8AD6BA5E90A5E7FD504FC13D860C4E30",
+      "size": 2151303
+    },
+    {
+      "file": "codex-clipboard-3b687daa-3f8d-4c30-913d-064e603cf19a.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-3b687daa-3f8d-4c30-913d-064e603cf19a.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-3b687daa-3f8d-4c30-913d-064e603cf19a.png",
+      "sha256": "3EC36044F29D502FDAA2CA227532817A5C2E797D17FEC74DC6C827DE4CAC7D26",
+      "size": 2302969
+    },
+    {
+      "file": "codex-clipboard-36b1f9cb-d668-4e9f-aa1b-93a973c5486a.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-36b1f9cb-d668-4e9f-aa1b-93a973c5486a.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-36b1f9cb-d668-4e9f-aa1b-93a973c5486a.png",
+      "sha256": "A1EEC49B367873B9816784FCD1733F8FDD0C1C8D15B976022D6DD1ED52B1BFE8",
+      "size": 1478495
+    },
+    {
+      "file": "codex-clipboard-7f79732d-65c1-47c3-9885-b6d31f048b12.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-7f79732d-65c1-47c3-9885-b6d31f048b12.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-7f79732d-65c1-47c3-9885-b6d31f048b12.png",
+      "sha256": "F6DFCA95796452CA3458B1A0D951AB28D93FCE2C5D110A63E225720F542384DB",
+      "size": 1732543
+    },
+    {
+      "file": "codex-clipboard-7db82173-660f-49d3-abe9-5a768656e603.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-7db82173-660f-49d3-abe9-5a768656e603.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-7db82173-660f-49d3-abe9-5a768656e603.png",
+      "sha256": "EDFFDFE3691E2D4CD59C8749FB2605BFB6E62A3D3ECDF2BE9D320A36D20EC82E",
+      "size": 1566383
+    },
+    {
+      "file": "codex-clipboard-b6cf67ef-df90-4cca-ac15-16561b91708e.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-b6cf67ef-df90-4cca-ac15-16561b91708e.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-b6cf67ef-df90-4cca-ac15-16561b91708e.png",
+      "sha256": "00992742B02A178E72C63E5A3C2FCFEB676B3A2BED5D707B408D661F086D969B",
+      "size": 1344420
+    },
+    {
+      "file": "codex-clipboard-5c6ae71f-d838-4531-9136-26386e6d5b4f.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-5c6ae71f-d838-4531-9136-26386e6d5b4f.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-5c6ae71f-d838-4531-9136-26386e6d5b4f.png",
+      "sha256": "CFA15DC3494D83B5AC5E29B92393C14C0F0C66F82A84970B8878A4A92AF87FFE",
+      "size": 1681078
+    },
+    {
+      "file": "codex-clipboard-d32856a1-007f-410c-8613-c5fac7ec5c34.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-d32856a1-007f-410c-8613-c5fac7ec5c34.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-d32856a1-007f-410c-8613-c5fac7ec5c34.png",
+      "sha256": "F42BE1AEF3B461266C57A9A7A3AA677FBAA2093C3B8C53B18E0BC9238B17A39A",
+      "size": 1523634
+    },
+    {
+      "file": "codex-clipboard-d8e168af-a44b-4abf-a344-f4953ca25d12.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-d8e168af-a44b-4abf-a344-f4953ca25d12.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-d8e168af-a44b-4abf-a344-f4953ca25d12.png",
+      "sha256": "B34E215428D5AB814537EE65B078585FBFCE34B5059494D5BB23235FFFBFA225",
+      "size": 974452
+    },
+    {
+      "file": "codex-clipboard-17f188de-243d-4f78-9a9f-469c66bd3833.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-17f188de-243d-4f78-9a9f-469c66bd3833.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-17f188de-243d-4f78-9a9f-469c66bd3833.png",
+      "sha256": "19794793F68E9816051B8ADDD09FA8D0116CF69DCBCEA14831C358626CE1692D",
+      "size": 2230889
+    },
+    {
+      "file": "codex-clipboard-ac57a74c-1599-4d0a-bcb6-cfa06c4e9ec8.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-ac57a74c-1599-4d0a-bcb6-cfa06c4e9ec8.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-ac57a74c-1599-4d0a-bcb6-cfa06c4e9ec8.png",
+      "sha256": "E5948E4E47BA60F2C8E9A0B3DDAF2674B3166343854C6CB7A55CA72EA9183423",
+      "size": 2180510
+    },
+    {
+      "file": "codex-clipboard-fba31beb-8d74-4382-8ef3-40321dcb61d1.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-fba31beb-8d74-4382-8ef3-40321dcb61d1.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-fba31beb-8d74-4382-8ef3-40321dcb61d1.png",
+      "sha256": "4119F66B1CB3E4103802DCAB7EA66CF00CE8DF568E47E686D342610E8AB42A12",
+      "size": 2178006
+    },
+    {
+      "file": "codex-clipboard-8726cf6d-4f61-4c15-948e-3d83cdd41a54.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-8726cf6d-4f61-4c15-948e-3d83cdd41a54.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-8726cf6d-4f61-4c15-948e-3d83cdd41a54.png",
+      "sha256": "67B50573BF9CCF4A7E378D8838CC79F98E320457EF7079AF75B6A2D6181C2E43",
+      "size": 2197772
+    },
+    {
+      "file": "codex-clipboard-c4004dbd-55ec-4ebb-89ff-08ef51768bb5.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-c4004dbd-55ec-4ebb-89ff-08ef51768bb5.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-c4004dbd-55ec-4ebb-89ff-08ef51768bb5.png",
+      "sha256": "FD57C5B3D494CD3AD802C07C601C8593F4964F24FB3D0DAB98B0407EAEC9622B",
+      "size": 1112736
+    },
+    {
+      "file": "codex-clipboard-cd4452e0-ff26-4394-96c1-4da9d340830c.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-cd4452e0-ff26-4394-96c1-4da9d340830c.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-cd4452e0-ff26-4394-96c1-4da9d340830c.png",
+      "sha256": "02009E5E44B170B6F2BDADA8845BAAA079FC0B9040F23B3A8EFA358F756C05D0",
+      "size": 1121430
+    },
+    {
+      "file": "codex-clipboard-19ef810c-c04b-4a86-a34b-fa1fa6b0ba52.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-19ef810c-c04b-4a86-a34b-fa1fa6b0ba52.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-19ef810c-c04b-4a86-a34b-fa1fa6b0ba52.png",
+      "sha256": "31DA984A55B1A1E9B59E51FBA285042BC63AEE7BE461B3258F741C059A566DCD",
+      "size": 1092495
+    },
+    {
+      "file": "codex-clipboard-59f77987-d617-4b1f-98ec-27856fc19f4e.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-59f77987-d617-4b1f-98ec-27856fc19f4e.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-59f77987-d617-4b1f-98ec-27856fc19f4e.png",
+      "sha256": "C61C4334C573693E42DF498C5FDE0B8701FB9E8D5B55825F9E790F3105A24782",
+      "size": 2156604
+    },
+    {
+      "file": "codex-clipboard-186d0f8d-87a2-4f01-adbe-d43297e46c51.png",
+      "source": "C:\\Users\\BIXIAN~1\\AppData\\Local\\Temp\\codex-clipboard-186d0f8d-87a2-4f01-adbe-d43297e46c51.png",
+      "status": "copied_verified",
+      "path": "证据/codex-clipboard-186d0f8d-87a2-4f01-adbe-d43297e46c51.png",
+      "sha256": "64C79FFEBADDA5C2AD926D1EBA3B87269C75D4B943D1341B1959F2CDF16BD5AE",
+      "size": 257203
+    }
+  ]
+}

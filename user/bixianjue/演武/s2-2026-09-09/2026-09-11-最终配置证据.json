@@ -1,0 +1,12 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-09",
+  "recorded_at": "2026-09-11",
+  "status": "configuration_observed_not_lock_confirmed",
+  "files": [{
+    "path": "证据/2026-09-11-1701/codex-clipboard-9edc24ba-97ab-4ff2-a3ae-fe82c69b2cc2.png",
+    "sha256": "4C3A91B12D9F149BD12C258585E18B768DB489E23BCD5FF7F7850F050173C546",
+    "size": 2236910
+  }],
+  "notes": ["截图03:59:08仅为当时倒计时，不换算现在截止时间。", "原图保留本地，本次提交文档和哈希清单，不提交二进制。"]
+}

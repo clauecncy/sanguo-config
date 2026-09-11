@@ -1,0 +1,305 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-09",
+  "recorded_at": "2026-09-11",
+  "round9": {
+    "selected_group": 1,
+    "status": "confirmed_by_configuration",
+    "source": "本次配置图同时显示无难之志、轻装驰援、铁骑横冲已装备"
+  },
+  "reroll": {
+    "type": "战法重随",
+    "status": "confirmed",
+    "consumed": [
+      "出其不意",
+      "千里突袭"
+    ],
+    "received": [
+      "上智为间",
+      "乘虚而入"
+    ],
+    "one_to_one_mapping": null,
+    "source": "用户明确消耗与所得集合，结果及仓库截图交叉确认；不猜单个材料对应哪个结果",
+    "target_type": null,
+    "type_selection_rule": "截图只说有更高概率获得指定类型，不保证结果属于所选类型"
+  },
+  "observed_formation": {
+    "event_id": "s2-2026-09-09",
+    "user_id": "bixianjue",
+    "status": "confirmed",
+    "confirmed_at": "2026-09-11",
+    "source_image": "codex-clipboard-ce014c47-bb0a-4cb8-a5ac-24a2f86eb41f.png",
+    "teams": [
+      {
+        "number": 1,
+        "name": "孙小陆",
+        "formation": "锥形阵",
+        "members": [
+          {
+            "name": "陆逊",
+            "position": "前排",
+            "tactics": [
+              "韬光养晦",
+              "横征暴敛"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "小乔",
+            "position": "后排",
+            "tactics": [
+              "奇门遁甲",
+              "避其锐气"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "孙权",
+            "position": "后排",
+            "tactics": [
+              "烈火焚营",
+              "水淹七军"
+            ],
+            "allocation": {
+              "initiative": 50
+            },
+            "initiative_reported": 229
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "诸黄法",
+        "formation": "雁形阵",
+        "members": [
+          {
+            "name": "黄盖",
+            "position": "前排",
+            "tactics": [
+              "固若金汤",
+              "如有神助"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "法正",
+            "position": "前排",
+            "tactics": [
+              "狂风大作",
+              "断敌粮道"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "诸葛亮",
+            "position": "后排",
+            "tactics": [
+              "胜敌益强",
+              "谈笑诛心"
+            ],
+            "allocation": null
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "月夏甘",
+        "formation": "方圆阵",
+        "members": [
+          {
+            "name": "黄月英",
+            "position": null,
+            "tactics": [
+              "无难之志",
+              "束手无策"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "夏侯惇",
+            "position": null,
+            "tactics": [
+              "轻装驰援",
+              "势如破竹"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "甘宁",
+            "position": null,
+            "tactics": [
+              "攻其不备",
+              "铁骑横冲"
+            ],
+            "allocation": null
+          }
+        ],
+        "position_note": "配置总览确认阵型和战法；单将排位未单独展示，建议月英夏侯前、甘宁后，不把建议伪作排位截图确认。"
+      }
+    ],
+    "notes": [
+      "仅孙权全先攻229有用户确认，其他最终加点未知，不能用先前建议补齐。",
+      "上半场旧战报黄盖带束手无策、甄洛带如有神助；用户已互换纠正。",
+      "保留雁形，不采用随后被撤回的箕形建议。"
+    ]
+  },
+  "proposed_formation": {
+    "event_id": "s2-2026-09-09",
+    "user_id": "bixianjue",
+    "status": "recommended_not_applied",
+    "source_image": "codex-clipboard-ce014c47-bb0a-4cb8-a5ac-24a2f86eb41f.png",
+    "teams": [
+      {
+        "number": 1,
+        "name": "孙小陆",
+        "formation": "锥形阵",
+        "members": [
+          {
+            "name": "陆逊",
+            "position": "前排",
+            "tactics": [
+              "韬光养晦",
+              "横征暴敛"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "小乔",
+            "position": "后排",
+            "tactics": [
+              "奇门遁甲",
+              "避其锐气"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "孙权",
+            "position": "后排",
+            "tactics": [
+              "烈火焚营",
+              "水淹七军"
+            ],
+            "allocation": {
+              "initiative": 50
+            },
+            "initiative_reported": 229
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "诸黄法",
+        "formation": "雁形阵",
+        "members": [
+          {
+            "name": "黄盖",
+            "position": "前排",
+            "tactics": [
+              "固若金汤",
+              "如有神助"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "法正",
+            "position": "前排",
+            "tactics": [
+              "狂风大作",
+              "断敌粮道"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "诸葛亮",
+            "position": "后排",
+            "tactics": [
+              "胜敌益强",
+              "谈笑诛心"
+            ],
+            "allocation": null
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "月夏甘",
+        "formation": "方圆阵",
+        "members": [
+          {
+            "name": "黄月英",
+            "position": "前排",
+            "tactics": [
+              "无难之志",
+              "上智为间"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "夏侯惇",
+            "position": "前排",
+            "tactics": [
+              "轻装驰援",
+              "任人唯贤"
+            ],
+            "allocation": null
+          },
+          {
+            "name": "甘宁",
+            "position": "后排",
+            "tactics": [
+              "攻其不备",
+              "乘虚而入"
+            ],
+            "allocation": null
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "仅孙权全先攻229有用户确认，其他最终加点未知，不能用先前建议补齐。",
+      "上半场旧战报黄盖带束手无策、甄洛带如有神助；用户已互换纠正。",
+      "保留雁形，不采用随后被撤回的箕形建议。"
+    ]
+  },
+  "evidence": [
+    {
+      "path": "证据/2026-09-11-1602/codex-clipboard-2c3dedcb-7149-4417-9d68-4ea6e87c28c1.png",
+      "sha256": "77E27DF219501AE0310D045EF264B88B45988C1DFECC111EC812F9C71610A845",
+      "size": 964498
+    },
+    {
+      "path": "证据/2026-09-11-1602/codex-clipboard-ce014c47-bb0a-4cb8-a5ac-24a2f86eb41f.png",
+      "sha256": "21851D1CB19F0EB71A7775E2DF4B9C9226D6939517D061AD9A41B52D33C2CE6B",
+      "size": 2204920
+    }
+  ],
+  "known_rules": [
+    {
+      "name": "上智为间",
+      "level": 10,
+      "activation_rate": "45%",
+      "effect": "随机敌军单体混乱1回合及300%谋略；目标已持有混乱时额外150%谋略。",
+      "source": "公共库Steam已核，用户Steam S2上智为间10级截图，2026-09-04",
+      "limits": "不保证对面核心被控、不保证额外伤害必出；不以混乱等同技穷。"
+    },
+    {
+      "name": "乘虚而入",
+      "level": 10,
+      "activation_rate": null,
+      "effect": "普攻后随机敌军单体280%兵刃；目标虚弱则伤害提升30%，否则80%施加虚弱1回合。",
+      "source": "公共库Steam已核，用户2026-09-10乘虚而入10级效果",
+      "limits": "80%是虚弱内部概率不是战法发动率；当前库发动率缺失，不猜填；随机目标不视为定向后排，首段不默认享受虚弱增伤。"
+    }
+  ],
+  "recommendation_notes": [
+    "第一第二队阵型、武将和六战法均保留。",
+    "夏侯势如换任人，角色改为轻装保护、刚烈削弱来源、任人增益；任人随机两人，不保证总给甘宁。",
+    "甘宁铁骑换乘虚，保留双输出追击；牺牲早期铁骑爆发与会心，换无截图所示铁骑时间衰减的持续输出和虚弱机会。不是无条件伤害升级。",
+    "黄月英束手换上智为通用混乱补伤倾向；若针对主动核明确需要技穷，则保留束手亦可，上智并非必装。",
+    "不把乘虚的虚弱等同轻装减伤或刚烈降伤，不以未核叠加公式直接求总减伤。",
+    "夏侯刚烈不是普攻，不触发轻装；轻装仍依赖普攻追击。",
+    "黄月英建议智力、夏侯统率、甘宁武力；先攻要看实际面板，尽量月英在甘宁前，不虚构具体数值或全队先手。",
+    "图中4:09:41仅为截图当时倒计时，不推算当前剩余锁定时间。",
+    "出其不意、千里突袭已被消耗，不再可供配队；张辽未重随仍保留，只有围绕千里的旧路线失去必要战法。"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-09",
+  "recorded_at": "2026-09-11",
+  "round8": {
+    "selected_group": 1,
+    "generals": [
+      "黄月英",
+      "夏侯惇"
+    ],
+    "status": "confirmed",
+    "source": "用户本次明确第8轮选第一组"
+  },
+  "round9": {
+    "type": "战法",
+    "candidates": [
+      [
+        "铁骑横冲",
+        "轻装驰援",
+        "无难之志"
+      ],
+      [
+        "奇正相生",
+        "锐不可当",
+        "青囊急救"
+      ],
+      [
+        "知人善任",
+        "指点乾坤",
+        "王佐之才"
+      ]
+    ],
+    "selected_group": null,
+    "recommended_group": 1,
+    "status": "recommended_not_selected"
+  },
+  "skills": [
+    {
+      "name": "轻装驰援",
+      "level": 10,
+      "type": "追击",
+      "activation_percent": 50,
+      "effect": "普通攻击后，对我军随机两人施加1层抵御，并使其受到伤害降低20%，持续2回合。"
+    },
+    {
+      "name": "无难之志",
+      "level": 10,
+      "type": "主动",
+      "activation_percent": 70,
+      "effect": "提升两名队友45%连击率和20%倒戈，持续2回合。"
+    },
+    {
+      "name": "铁骑横冲",
+      "level": 10,
+      "type": "追击",
+      "activation_percent": 40,
+      "effect": "普通攻击后，提升自身20%会心几率，持续2回合，然后对当前目标造成400%兵刃伤害。无论是否发动，该伤害系数每回合降低25%。"
+    }
+  ],
+  "confirmed_context": {
+    "team1": "用户确认目前全胜",
+    "team2": "用户确认大多数获胜；苦肉零发动败局基本为前两三回合未发动后被击溃，不等于每次都被技穷",
+    "team3": "用户确认仅赢一场、大多数失利",
+    "zhenluo": "用户因出其不意伤害低主动换任人唯贤，当前辅助思路需保留",
+    "git": "演武任务除非用户主动要求，不commit、不push；要求本地提交不等于允许推送"
+  },
+  "proposal": {
+    "status": "conditional_not_applied",
+    "condition": "第9轮明确选第一组并且允许调整后",
+    "keep_teams": [
+      1,
+      2
+    ],
+    "team3": {
+      "formation": "方圆阵",
+      "members": [
+        {
+          "name": "黄月英",
+          "position": "前排",
+          "tactics": [
+            "任人唯贤",
+            "无难之志"
+          ]
+        },
+        {
+          "name": "张辽",
+          "position": "前排",
+          "tactics": [
+            "势如破竹",
+            "伏兵四起"
+          ]
+        },
+        {
+          "name": "甘宁",
+          "position": "后排",
+          "tactics": [
+            "攻其不备",
+            "轻装驰援"
+          ]
+        }
+      ]
+    },
+    "reserve_tactic": "铁骑横冲：作为物理追击候选，第10轮后比较，不为使用三张新战法而强换有效技能。",
+    "risks": [
+      "月英前排承压及首轮行动速度需要面板验证。",
+      "无难给两名队友、不含自己，月英携带可将增益给张辽甘宁；主动未发动或被阻断则不提供。",
+      "甘宁方圆40%连击与无难45%有效并存时为85%，不是全队85%，不是常驻。",
+      "轻装随机两人，可能不保护携带者或最危险目标；不声称重复减伤叠加、抵御固定累计。",
+      "保护与倒戈都需要行动，不能抵消开场遭控或先被打残的风险。",
+      "铁骑无论发动与否都会随回合衰减，截图未明确线性/乘法计算，不编造逐轮倍率。",
+      "轻装替掉一个伤害槽，保攻其仅为过渡，不宣称已证明优于保千里。"
+    ]
+  },
+  "evidence": [
+    {
+      "path": "证据/2026-09-11-1502/codex-clipboard-31ccbb86-902f-4e2f-8404-9ee7dfa06fd0.png",
+      "sha256": "53ECC6C27F0767EB5D7A93126B3E295CCE44296DE545407643D8C45669B48DBE",
+      "size": 901340
+    },
+    {
+      "path": "证据/2026-09-11-1502/codex-clipboard-6798e3db-42f8-40f1-973d-a728e6c254cb.png",
+      "sha256": "7CC48EEA365CF712DDBB2BB4D071B25AE6BCC03482D9E3E4E54A0E15B3E4E4B2",
+      "size": 993509
+    },
+    {
+      "path": "证据/2026-09-11-1502/codex-clipboard-d78c36ec-66e0-4aaa-8e70-56ae1389c6b2.png",
+      "sha256": "403A4C544300D49BBA2D91D3F30582E572F60213F45A5EBB6940E0B1003237F6",
+      "size": 880111
+    },
+    {
+      "path": "证据/2026-09-11-1502/codex-clipboard-43696913-f1d5-49a6-ac13-6135bd211250.png",
+      "sha256": "B729541E42ECEAED0A09AAC4DBFFFA3DDBF0A2F6091F93DCD45E7503D46C0011",
+      "size": 834864
+    },
+    {
+      "path": "证据/2026-09-11-1502/codex-clipboard-3ecb3129-3ff4-418e-baf8-b1c53a72294f.png",
+      "sha256": "33B261B246740FC2C6CBB7DBF18AAAD4D79BA681C91F8B160EB9155664635254",
+      "size": 786604
+    },
+    {
+      "path": "证据/2026-09-11-1502/codex-clipboard-b4c710eb-080f-4d4d-8630-9e0777167304.png",
+      "sha256": "18FCF1B7CC7B5C205F2DA15CABC3B1B856DE66EA7407A356F282581DFC145920",
+      "size": 740193
+    }
+  ]
+}
