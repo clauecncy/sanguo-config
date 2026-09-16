@@ -8,7 +8,6 @@
       "name": "周瑜",
       "faction": "吴",
       "advancement": 0,
-      "level": 50,
       "current_team": "部队一",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -19,7 +18,6 @@
       "name": "黄盖",
       "faction": "吴",
       "advancement": 0,
-      "level": 50,
       "current_team": "部队一",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -30,7 +28,6 @@
       "name": "徐盛",
       "faction": "吴",
       "advancement": 0,
-      "level": 50,
       "current_team": "部队一",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -41,24 +38,24 @@
       "name": "貂蝉",
       "faction": "群",
       "advancement": 2,
-      "level": 50,
-      "current_team": "部队三",
-      "verified_at": "2026-09-10",
-      "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
+      "current_team": null,
+      "verified_at": "2026-09-12",
+      "notes": "2026-09-12用户当前第三队截图为田丰、陈宫、吕布；貂蝉当前编队未知。",
       "quality": "金",
-      "entity_id": "general:5d3f27adabcf2be8a310"
+      "entity_id": "general:5d3f27adabcf2be8a310",
+      "source": "用户本次新增战法及三套主力阵容截图"
     },
     {
       "name": "田丰",
       "faction": "群",
       "advancement": 0,
       "first_season": "s2",
-      "level": 15,
-      "current_team": null,
-      "verified_at": "2026-09-10",
+      "current_team": "部队三",
+      "verified_at": "2026-09-12",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
       "quality": "金",
-      "entity_id": "general:25fc0bde1163ca42219a"
+      "entity_id": "general:25fc0bde1163ca42219a",
+      "source": "用户本次新增战法及三套主力阵容截图"
     },
     {
       "name": "张梁",
@@ -74,7 +71,6 @@
       "name": "鲁肃",
       "faction": "吴",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -85,7 +81,6 @@
       "name": "孙权",
       "faction": "吴",
       "advancement": 0,
-      "level": 50,
       "current_team": "部队二",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -97,7 +92,6 @@
       "faction": "吴",
       "advancement": 0,
       "first_season": "s2",
-      "level": 50,
       "current_team": "部队二",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -109,7 +103,6 @@
       "faction": "群",
       "advancement": 0,
       "first_season": "s2",
-      "level": 50,
       "current_team": "部队三",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -120,7 +113,6 @@
       "name": "蔡文姬",
       "faction": "群",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -131,7 +123,6 @@
       "name": "吕布",
       "faction": "群",
       "advancement": 0,
-      "level": 50,
       "current_team": "部队三",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -142,7 +133,6 @@
       "name": "大乔",
       "faction": "吴",
       "advancement": 0,
-      "level": 43,
       "current_team": "部队五",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -153,7 +143,6 @@
       "name": "甄洛",
       "faction": "魏",
       "advancement": 1,
-      "level": 43,
       "current_team": "部队五",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -165,7 +154,6 @@
       "faction": "蜀",
       "advancement": 1,
       "first_season": "s2",
-      "level": 49,
       "current_team": "部队四",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -176,7 +164,6 @@
       "name": "赵云",
       "faction": "蜀",
       "advancement": 0,
-      "level": 49,
       "current_team": "部队四",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -188,7 +175,6 @@
       "faction": "魏",
       "advancement": 1,
       "first_season": "s2",
-      "level": 14,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -199,7 +185,6 @@
       "name": "许褚",
       "faction": "魏",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -210,7 +195,6 @@
       "name": "典韦",
       "faction": "魏",
       "advancement": 1,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -221,7 +205,6 @@
       "name": "郭嘉",
       "faction": "魏",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -232,7 +215,6 @@
       "name": "于禁",
       "faction": "魏",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -243,7 +225,6 @@
       "name": "张郃",
       "faction": "魏",
       "advancement": 1,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -254,7 +235,6 @@
       "name": "徐晃",
       "faction": "魏",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -265,7 +245,6 @@
       "name": "夏侯渊",
       "faction": "魏",
       "advancement": 1,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -276,7 +255,6 @@
       "name": "程昱",
       "faction": "魏",
       "advancement": 0,
-      "level": 43,
       "current_team": "部队五",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -287,7 +265,6 @@
       "name": "曹仁",
       "faction": "魏",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -298,7 +275,6 @@
       "name": "关羽",
       "faction": "蜀",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -309,7 +285,6 @@
       "name": "张飞",
       "faction": "蜀",
       "advancement": 1,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -320,7 +295,6 @@
       "name": "徐庶",
       "faction": "蜀",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -332,7 +306,6 @@
       "faction": "蜀",
       "advancement": 0,
       "first_season": "s2",
-      "level": 49,
       "current_team": "部队四",
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -343,7 +316,6 @@
       "name": "关平",
       "faction": "蜀",
       "advancement": 1,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -354,7 +326,6 @@
       "name": "周仓",
       "faction": "蜀",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -365,7 +336,6 @@
       "name": "孙策",
       "faction": "吴",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -378,7 +348,6 @@
       "advancement": 2,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
-      "level": 50,
       "current_team": "部队二",
       "quality": "金",
       "entity_id": "general:67e210997dbbf2430955"
@@ -387,7 +356,6 @@
       "name": "甘宁",
       "faction": "吴",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -398,7 +366,6 @@
       "name": "程普",
       "faction": "吴",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -409,7 +376,6 @@
       "name": "吕蒙",
       "faction": "吴",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -420,7 +386,6 @@
       "name": "张角",
       "faction": "群",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -431,7 +396,6 @@
       "name": "颜良",
       "faction": "群",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -442,7 +406,6 @@
       "name": "文丑",
       "faction": "群",
       "advancement": 1,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -453,7 +416,6 @@
       "name": "华佗",
       "faction": "群",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -464,7 +426,6 @@
       "name": "庞德",
       "faction": "群",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -475,7 +436,6 @@
       "name": "邹氏",
       "faction": "群",
       "advancement": 0,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -486,7 +446,6 @@
       "name": "张梁",
       "faction": "群",
       "advancement": 2,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
@@ -497,12 +456,47 @@
       "name": "张宝",
       "faction": "群",
       "advancement": 1,
-      "level": 5,
       "current_team": null,
       "verified_at": "2026-09-10",
       "notes": "2026-09-10用户Steam S2截图；法正同时出现49级部队四与5级卡面，采用含编队的49级记录。",
       "quality": "金",
       "entity_id": "general:35ca90d064630a3cea3c"
+    },
+    {
+      "name": "董卓",
+      "variant": "英雄",
+      "faction": "群",
+      "quality": "金",
+      "advancement": 0,
+      "availability": "本期临时可选",
+      "notes": "用户2026-09-12确认零红；本期临时可选，满级四维未核，不计常驻。自带战法：独断专权",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图",
+      "entity_id": "general:96633bbf689f585f17ef"
+    },
+    {
+      "name": "华雄",
+      "variant": "英雄",
+      "faction": "群",
+      "quality": "金",
+      "advancement": 0,
+      "availability": "本期临时可选",
+      "notes": "用户2026-09-12确认零红；本期临时可选，满级四维未核，不计常驻。自带战法：恃勇论锋",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图",
+      "entity_id": "general:9ebe9a7cec93ffc5d3b4"
+    },
+    {
+      "name": "孙坚",
+      "variant": "英雄",
+      "faction": "吴",
+      "quality": "金",
+      "advancement": 0,
+      "availability": "本期临时可选",
+      "notes": "用户2026-09-12确认零红；本期临时可选，满级四维未核，不计常驻。自带战法：江东虎威",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图",
+      "entity_id": "general:1fbb0e34373c3146b851"
     }
   ],
   "tactic_advancement_verified_at": "2026-09-02",
@@ -525,7 +519,6 @@
       "name": "伏兵四起",
       "quality": "金",
       "advancement": 0,
-      "level": 1,
       "entity_id": "tactic:67009355fa355be9ba84"
     },
     {
@@ -544,7 +537,10 @@
       "name": "水淹七军",
       "quality": "金",
       "advancement": 0,
-      "entity_id": "tactic:d312f12e723387aad752"
+      "entity_id": "tactic:d312f12e723387aad752",
+      "current_holder": "孙权",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "出其不意",
@@ -556,7 +552,6 @@
       "name": "五雷轰顶",
       "quality": "金",
       "advancement": 0,
-      "level": 1,
       "entity_id": "tactic:4f37cca376b8b2bc4c66"
     },
     {
@@ -581,7 +576,10 @@
       "name": "烈火焚营",
       "quality": "金",
       "advancement": 2,
-      "entity_id": "tactic:2dd59b3e8429ac4febac"
+      "entity_id": "tactic:2dd59b3e8429ac4febac",
+      "current_holder": "孙权",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "威名显赫",
@@ -605,7 +603,10 @@
       "name": "趁火打劫",
       "quality": "金",
       "advancement": 0,
-      "entity_id": "tactic:320f7a0d6e28e0f607e0"
+      "entity_id": "tactic:320f7a0d6e28e0f607e0",
+      "current_holder": "黄盖",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "披坚执锐",
@@ -635,7 +636,10 @@
       "name": "横征暴敛",
       "quality": "金",
       "advancement": 0,
-      "entity_id": "tactic:101bd90623365c3c208c"
+      "entity_id": "tactic:101bd90623365c3c208c",
+      "current_holder": "陆逊",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "勇冠三军",
@@ -653,7 +657,10 @@
       "name": "王佐之才",
       "quality": "金",
       "advancement": 0,
-      "entity_id": "tactic:53e18266b512159d87e8"
+      "entity_id": "tactic:53e18266b512159d87e8",
+      "current_holder": "周瑜",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "蓄势待发",
@@ -666,7 +673,10 @@
       "quality": "金",
       "advancement": 0,
       "first_season": "s2",
-      "entity_id": "tactic:3e8e778583664d66866f"
+      "entity_id": "tactic:3e8e778583664d66866f",
+      "current_holder": "小乔",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "三军夺气",
@@ -687,21 +697,30 @@
       "quality": "金",
       "advancement": 0,
       "first_season": "s2",
-      "entity_id": "tactic:90aacda6cfdfc7296c53"
+      "entity_id": "tactic:90aacda6cfdfc7296c53",
+      "current_holder": "陆逊",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "固若金汤",
       "quality": "金",
       "advancement": 0,
       "first_season": "s2",
-      "entity_id": "tactic:343749cab32d242b4147"
+      "entity_id": "tactic:343749cab32d242b4147",
+      "current_holder": "徐盛",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "胜敌益强",
       "quality": "金",
       "advancement": 0,
       "first_season": "s2",
-      "entity_id": "tactic:4c955c4c3f1089e93588"
+      "entity_id": "tactic:4c955c4c3f1089e93588",
+      "current_holder": "周瑜",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "临阵突袭",
@@ -725,7 +744,10 @@
       "name": "束手无策",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:b912dccd89978d1f2040"
+      "entity_id": "tactic:b912dccd89978d1f2040",
+      "current_holder": "小乔",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "坚壁清野",
@@ -749,7 +771,10 @@
       "name": "铸甲销戈",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:209cd4cbd1a4b56ae15e"
+      "entity_id": "tactic:209cd4cbd1a4b56ae15e",
+      "current_holder": "徐盛",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "乱敌方阵",
@@ -863,7 +888,10 @@
       "name": "如有神助",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:f4a01e444d61aebe28ce"
+      "entity_id": "tactic:f4a01e444d61aebe28ce",
+      "current_holder": "黄盖",
+      "verified_at": "2026-09-12",
+      "source": "用户确认英雄零红；回查本次对话10:16阵容截图"
     },
     {
       "name": "一计决胜",
@@ -890,7 +918,17 @@
       "advancement": null,
       "first_season": "s2",
       "entity_id": "tactic:434e5368f6dfdb5870c7"
+    },
+    {
+      "name": "计袭粮仓",
+      "quality": "金",
+      "advancement": 0,
+      "notes": "用户确认刚抽到，0红；满级效果见公共战法数据，不追踪个人当前等级。",
+      "verified_at": "2026-09-12",
+      "source": "用户明确纠正：计袭粮仓刚抽到，0红；不跟踪个人等级",
+      "advancement_verified_at": "2026-09-12",
+      "advancement_source": "用户明确纠正：计袭粮仓刚抽到，0红；不跟踪个人等级",
+      "entity_id": "tactic:1ebe1c66d527d7992788"
     }
-  ],
-  "tactic_level_note": "仅伏兵四起、五雷轰顶截图明确当前为1级；其余战法未显示当前等级。31项金色战法均补充游戏内10级满级效果证据。"
+  ]
 }

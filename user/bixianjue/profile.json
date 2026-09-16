@@ -1,5 +1,11 @@
 {
   "user_id": "bixianjue",
   "platform": "Steam",
-  "current_season": "s2"
+  "current_season": "s2",
+  "inventory_tracking": {
+    "track_current_levels": false,
+    "track_advancement": true,
+    "comparison_basis": "公共武将满级属性、战法满级效果；未核满级属性不得猜填",
+    "level_exchange_note": "用户2026-09-12说明：每周可10次无损置换等级，配将不以当前等级作为门槛"
+  }
 }

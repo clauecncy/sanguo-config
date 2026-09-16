@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "file": "56698584654c3dbdd9c24e8938c3916b828eee4e3e20bda551cecfa8cc915a92.png",
+      "sha256": "56698584654c3dbdd9c24e8938c3916b828eee4e3e20bda551cecfa8cc915a92",
+      "bytes": 1303542
+    },
+    {
+      "file": "9f17b93f50dfeb595930f1d9c05f8e93b1323c8259e61480879422fb03bf6da5.png",
+      "sha256": "9f17b93f50dfeb595930f1d9c05f8e93b1323c8259e61480879422fb03bf6da5",
+      "bytes": 1609259
+    },
+    {
+      "file": "c9adb1da5791832ab1834b1b6fd56d7cda9d9a3b8866a2b53316ce614e0ba0e2.png",
+      "sha256": "c9adb1da5791832ab1834b1b6fd56d7cda9d9a3b8866a2b53316ce614e0ba0e2",
+      "bytes": 1576058
+    },
+    {
+      "file": "15562d1f08cb4a6ecdf1ad07252418a0e1b7d79eda347d5bb8be089b3f154582.png",
+      "sha256": "15562d1f08cb4a6ecdf1ad07252418a0e1b7d79eda347d5bb8be089b3f154582",
+      "bytes": 1595462
+    }
+  ]
+}

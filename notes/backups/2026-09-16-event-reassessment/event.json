@@ -1,0 +1,161 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-16",
+  "season": "s2",
+  "first_configuration_date": "2026-09-16",
+  "start_date": "2026-09-17",
+  "status": "configuration",
+  "date_source": "用户本次明确确认",
+  "native_generals": {
+    "status": "confirmed_from_screenshot",
+    "names": [
+      "黄月英",
+      "诸葛亮",
+      "田丰",
+      "于禁",
+      "袁绍",
+      "马超",
+      "黄盖",
+      "小乔",
+      "关羽",
+      "张飞"
+    ],
+    "level": 50,
+    "advancement": null
+  },
+  "native_tactics": {
+    "status": "confirmed_from_screenshot",
+    "gold": [
+      "兵贵神速",
+      "清风驱疾",
+      "铁骑横冲",
+      "指点乾坤",
+      "奇门遁甲",
+      "烈火焚营",
+      "狂风大作",
+      "战八方",
+      "以静制动",
+      "横征暴敛",
+      "奇正相生",
+      "胜敌益强"
+    ],
+    "purple": [
+      "穷追不舍",
+      "乱敌方阵",
+      "决水破敌",
+      "束手无策",
+      "避其锐气",
+      "文治武功",
+      "屈人之兵",
+      "揭竿而起"
+    ],
+    "note": "已学习仅表示截图状态，不据此推断具体携带者或战法等级"
+  },
+  "support": {
+    "status": "proposed",
+    "general": "周瑜",
+    "regular_tactics": [
+      "王佐之才",
+      "知人善任"
+    ],
+    "extra_purple_tactic": "如有神助",
+    "eligibility": "常规库存有对应资源；最终以本轮支援选择界面为准"
+  },
+  "stratagem": {
+    "status": "proposed",
+    "name": "战法支援"
+  },
+  "formation": {
+    "status": "proposed",
+    "teams": [
+      {
+        "generals": [
+          {
+            "name": "诸葛亮",
+            "tactics": [
+              "奇正相生",
+              "胜敌益强"
+            ]
+          },
+          {
+            "name": "田丰",
+            "tactics": [
+              "奇门遁甲",
+              "烈火焚营"
+            ]
+          },
+          {
+            "name": "黄月英",
+            "tactics": [
+              "清风驱疾",
+              "知人善任"
+            ]
+          }
+        ]
+      },
+      {
+        "generals": [
+          {
+            "name": "于禁",
+            "tactics": [
+              "以静制动",
+              "避其锐气"
+            ]
+          },
+          {
+            "name": "袁绍",
+            "tactics": [
+              "文治武功",
+              "指点乾坤"
+            ]
+          },
+          {
+            "name": "马超",
+            "tactics": [
+              "铁骑横冲",
+              "兵贵神速"
+            ]
+          }
+        ]
+      },
+      {
+        "generals": [
+          {
+            "name": "黄盖",
+            "tactics": [
+              "横征暴敛",
+              "如有神助"
+            ]
+          },
+          {
+            "name": "小乔",
+            "tactics": [
+              "束手无策",
+              "决水破敌"
+            ]
+          },
+          {
+            "name": "周瑜",
+            "tactics": [
+              "狂风大作",
+              "王佐之才"
+            ]
+          }
+        ]
+      }
+    ],
+    "positions_and_initiative": "待本轮详细属性及阵位截图核定；列表顺序不是前中后位置"
+  },
+  "pending": [
+    "确认游戏内支援位品质及候选可选性",
+    "确认实际锦囊和支援选择结果",
+    "核定阵位、属性加点、先攻及田丰实际增益目标"
+  ],
+  "evidence": [
+    "evidence/01.png",
+    "evidence/02.png",
+    "evidence/03.png",
+    "evidence/04.png",
+    "evidence/05.png"
+  ]
+}

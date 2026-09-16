@@ -1,0 +1,34 @@
+{
+  "user_id": "bixianjue",
+  "verified_at": "2026-09-12",
+  "source": "用户确认的 Steam 临时英雄与自带战法截图",
+  "generals": [
+    {
+      "name": "董卓",
+      "variant": "英雄",
+      "faction": "群",
+      "quality": "金",
+      "advancement": null,
+      "availability": "本期临时可选",
+      "notes": "仅本期临时资源；红度与满级属性未提供，不作为常驻库存。自带战法：独断专权。"
+    },
+    {
+      "name": "华雄",
+      "variant": "英雄",
+      "faction": "群",
+      "quality": "金",
+      "advancement": null,
+      "availability": "本期临时可选",
+      "notes": "仅本期临时资源；红度与满级属性未提供，不作为常驻库存。自带战法：恃勇论锋。"
+    },
+    {
+      "name": "孙坚",
+      "variant": "英雄",
+      "faction": "吴",
+      "quality": "金",
+      "advancement": null,
+      "availability": "本期临时可选",
+      "notes": "仅本期临时资源；红度与满级属性未提供，不作为常驻库存。自带战法：江东虎威。"
+    }
+  ]
+}
