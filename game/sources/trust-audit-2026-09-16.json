@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "generals": {
+      "需要确认": 102
+    },
+    "tactics": {
+      "可信": 33,
+      "需要确认": 199
+    },
+    "tactic_level_observations": {
+      "可信": 35,
+      "需要确认": 3
+    },
+    "general_stat_observations": {
+      "可信": 2
+    }
+  },
+  "policy": "trust_status为当前可信度；verification_status保留旧历史标签，不得替代可信度",
+  "known_incomplete": [
+    "五雷轰顶",
+    "披坚执锐",
+    "断敌粮道"
+  ]
+}

@@ -197,7 +197,7 @@ def query(user, root=ROOT):
         CASE WHEN COALESCE(json_extract(a.record,'$.variant'),'普通')='普通' THEN s.initiative END AS initiative,
         CASE WHEN COALESCE(json_extract(a.record,'$.variant'),'普通')='普通'
           THEN '50级未加点估算，误差约1点；不含红度自由点' ELSE '英雄版本四维未核定' END AS stat_basis,
-        g.first_season,g.applicable_seasons,g.platform,a.record AS inventory_record
+        g.trust_status,g.trust_reason,g.first_season,g.applicable_seasons,g.platform,a.record AS inventory_record
       FROM owned_generals a CROSS JOIN inventory_metadata m LEFT JOIN generals g ON g.entity_id=json_extract(a.record,'$.entity_id')
       LEFT JOIN v_general_level50_estimate s ON s.name=g.name;
       CREATE TEMP VIEW v_owned_tactics AS
@@ -212,7 +212,8 @@ def query(user, root=ROOT):
           CASE WHEN json_type(a.record,'$.advancement_source') IS NOT NULL THEN json_extract(a.record,'$.advancement_source')
           ELSE json_extract(m.record,'$.tactic_advancement_source') END END AS advancement_source,
         t.tactic_type,t.activation_rate,t.description_level,t.description_raw AS max_level_effect,
-        CASE WHEN t.description_level=10 THEN t.verification_status ELSE '缺少可信满级详情，不使用旧低等级正文' END AS detail_status,s.url AS detail_source,
+        CASE WHEN t.description_level=10 AND t.trust_status='可信' THEN '可信' ELSE '需要确认' END AS detail_status,
+        t.trust_status,t.trust_reason,s.url AS detail_source,
         t.first_season,t.applicable_seasons,t.platform,a.record AS inventory_record
       FROM owned_tactics a CROSS JOIN inventory_metadata m LEFT JOIN tactics t ON t.entity_id=json_extract(a.record,'$.entity_id')
       LEFT JOIN sources s ON s.id=t.source_id;
