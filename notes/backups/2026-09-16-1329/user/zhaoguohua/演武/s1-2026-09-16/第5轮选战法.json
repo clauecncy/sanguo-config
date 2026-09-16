@@ -1,0 +1,129 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "round": 5,
+  "total_rounds": 7,
+  "type": "战法",
+  "groups": [
+    {
+      "group": 1,
+      "source": "证据/e9a80606c09f70faf7e5ff9f87aaa48.jpg",
+      "tactics": [
+        {
+          "name": "坚如磐石",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "55%",
+          "displayed_percentage": 27,
+          "percentage_meaning": null,
+          "description_screenshot": "嘲讽全体敌军，自身受到伤害降低"
+        },
+        {
+          "name": "指点乾坤",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "50%",
+          "displayed_percentage": 49,
+          "percentage_meaning": null,
+          "description_screenshot": "令我军单体造成兵刃和谋略伤害"
+        },
+        {
+          "name": "披坚执锐",
+          "quality": "金",
+          "level": 10,
+          "type": "指挥",
+          "activation_rate": "100%",
+          "displayed_percentage": 29,
+          "percentage_meaning": null,
+          "description_screenshot": "恢复友军兵力，友军进行普攻后造成额外伤害"
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "source": "证据/10d65edd0f7edf3f5d8e2bc21cf11a0.jpg",
+      "tactics": [
+        {
+          "name": "奇门遁甲",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "40%",
+          "displayed_percentage": 16,
+          "percentage_meaning": null,
+          "description_screenshot": "全体谋略伤害并概率造成震慑"
+        },
+        {
+          "name": "乘虚而入",
+          "quality": "金",
+          "level": 10,
+          "type": "追击",
+          "activation_rate": "40%",
+          "displayed_percentage": 3,
+          "percentage_meaning": null,
+          "description_screenshot": "随机单体造成兵刃伤害，概率虚弱"
+        },
+        {
+          "name": "出其不意",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "55%",
+          "displayed_percentage": 20,
+          "percentage_meaning": null,
+          "description_screenshot": "单体谋略伤害"
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "source": "证据/e34a3764427a38445695b4b466b28d7.jpg",
+      "tactics": [
+        {
+          "name": "威名显赫",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "50%",
+          "displayed_percentage": 29,
+          "percentage_meaning": null,
+          "description_screenshot": "提升自身倒戈，对敌军群体造成兵刃伤害"
+        },
+        {
+          "name": "伏兵四起",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "50%",
+          "displayed_percentage": 10,
+          "percentage_meaning": null,
+          "description_screenshot": "造成4次兵刃伤害，并有概率触发会心"
+        },
+        {
+          "name": "运筹帷幄",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "45%",
+          "displayed_percentage": 22,
+          "percentage_meaning": null,
+          "description_screenshot": "降低敌军群体属性"
+        }
+      ]
+    }
+  ],
+  "status": "建议",
+  "recommended_group": 1,
+  "confirmed_group": null,
+  "reason": "核对公共原始快照及用户指点详情后，第一组提供前排嘲讽减伤、披坚恢复保护和执锐追加伤害、指点按最高武力/智力各打全体。改变为优先第一组；非实测结论，未确认选择。",
+  "recommendation_history": [
+    {
+      "recommended_group": 3,
+      "status": "已撤回",
+      "reason": "只查主表并依赖适配标签，遗漏通用快照机制，依据不完整"
+    }
+  ]
+}

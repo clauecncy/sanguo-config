@@ -1,0 +1,119 @@
+{
+  "event_id": "s2-2026-09-09",
+  "user_id": "bixianjue",
+  "status": "confirmed",
+  "confirmed_at": "2026-09-10",
+  "source_image": "codex-clipboard-3b687daa-3f8d-4c30-913d-064e603cf19a.png",
+  "teams": [
+    {
+      "number": 1,
+      "name": "孙小陆",
+      "formation": "锥形阵",
+      "members": [
+        {
+          "name": "陆逊",
+          "position": "前排",
+          "tactics": [
+            "韬光养晦",
+            "横征暴敛"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "小乔",
+          "position": "后排",
+          "tactics": [
+            "奇门遁甲",
+            "避其锐气"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "孙权",
+          "position": "后排",
+          "tactics": [
+            "烈火焚营",
+            "水淹七军"
+          ],
+          "allocation": {
+            "initiative": 50
+          },
+          "initiative_reported": 229
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "诸黄法",
+      "formation": "雁形阵",
+      "members": [
+        {
+          "name": "黄盖",
+          "position": "前排",
+          "tactics": [
+            "固若金汤",
+            "如有神助"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "法正",
+          "position": "前排",
+          "tactics": [
+            "狂风大作",
+            "断敌粮道"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "诸葛亮",
+          "position": "后排",
+          "tactics": [
+            "胜敌益强",
+            "谈笑诛心"
+          ],
+          "allocation": null
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name": "甄辽甘",
+      "formation": "方圆阵",
+      "members": [
+        {
+          "name": "甄洛",
+          "position": "前排",
+          "tactics": [
+            "束手无策",
+            "出其不意"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "张辽",
+          "position": "前排",
+          "tactics": [
+            "势如破竹",
+            "伏兵四起"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "甘宁",
+          "position": "后排",
+          "tactics": [
+            "攻其不备",
+            "千里突袭"
+          ],
+          "allocation": null
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "仅孙权全先攻229有用户确认，其他最终加点未知，不能用先前建议补齐。",
+    "上半场旧战报黄盖带束手无策、甄洛带如有神助；用户已互换纠正。",
+    "保留雁形，不采用随后被撤回的箕形建议。"
+  ]
+}

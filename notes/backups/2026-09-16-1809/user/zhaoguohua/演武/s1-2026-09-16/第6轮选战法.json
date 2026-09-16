@@ -1,0 +1,123 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "round": 6,
+  "total_rounds": 7,
+  "type": "战法",
+  "groups": [
+    {
+      "group": 1,
+      "source": "证据/eaa037d00246bbff2c9766fa9807132.jpg",
+      "tactics": [
+        {
+          "name": "五雷轰顶",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "50%",
+          "displayed_percentage": 13,
+          "percentage_meaning": null,
+          "description_screenshot": "5次单体谋略伤害"
+        },
+        {
+          "name": "清风驱疾",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "60%",
+          "displayed_percentage": 37,
+          "percentage_meaning": null,
+          "description_screenshot": "驱散我军群体负面状态并治疗"
+        },
+        {
+          "name": "断敌粮道",
+          "quality": "金",
+          "level": 10,
+          "type": "指挥",
+          "activation_rate": "100%",
+          "displayed_percentage": 36,
+          "percentage_meaning": null,
+          "description_screenshot": "施加断粮，并对有断粮的敌人造成谋略伤害"
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "source": "证据/de6959bbd6e6b8491eb7ddcdc69254e.jpg",
+      "tactics": [
+        {
+          "name": "威名显赫",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "50%",
+          "displayed_percentage": 29,
+          "percentage_meaning": null,
+          "description_screenshot": "提升自身倒戈，对敌军群体造成兵刃伤害"
+        },
+        {
+          "name": "料事如神",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "45%",
+          "displayed_percentage": 41,
+          "percentage_meaning": null,
+          "description_screenshot": "对敌军群体造成谋略伤害，几率造成技穷"
+        },
+        {
+          "name": "斩将夺旗",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "55%",
+          "displayed_percentage": 15,
+          "percentage_meaning": null,
+          "description_screenshot": "对统率最低单体造成伤害，施加断粮"
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "source": "证据/ce71b15fccf39b67cecc289007abb0e.jpg",
+      "tactics": [
+        {
+          "name": "兵贵神速",
+          "quality": "金",
+          "level": 10,
+          "type": "追击",
+          "activation_rate": "40%",
+          "displayed_percentage": 10,
+          "percentage_meaning": null,
+          "description_screenshot": "自身先攻提升，造成群体兵刃伤害"
+        },
+        {
+          "name": "出其不意",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "55%",
+          "displayed_percentage": 20,
+          "percentage_meaning": null,
+          "description_screenshot": "单体谋略伤害"
+        },
+        {
+          "name": "舍生取义",
+          "quality": "金",
+          "level": 10,
+          "type": "指挥",
+          "activation_rate": "100%",
+          "displayed_percentage": 9,
+          "percentage_meaning": null,
+          "description_screenshot": "全体连击率提升"
+        }
+      ]
+    }
+  ],
+  "status": "建议",
+  "recommended_group": null,
+  "recommendation_review": "原第一组确定排序撤回待重新核对；舍生取义用户证据为自身缴械2回合，不是震慑。未更改已确认库存。",
+  "confirmed_group": null,
+  "reason": "第一组机制优势仍可参考，但此前误把舍生自身缴械当震慑用于排序，撤销该依据。用户要求关键效果不确定时查库并求证，不猜测或编造。"
+}

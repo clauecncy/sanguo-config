@@ -1,0 +1,27 @@
+{
+  "event_id": "s2-2026-09-09",
+  "user_id": "bixianjue",
+  "season": "s2",
+  "platform": "Steam",
+  "record_date": "2026-09-09",
+  "start_date": null,
+  "last_confirmed_date": "2026-09-11",
+  "recovered_at": "2026-09-11",
+  "status": "第8轮第一组已确认；第9轮第一组由装备图确认；战法重随已消耗出其不意千里突袭、获得上智为间乘虚而入。截图已确认第三队月夏甘，进一步优化仅建议未应用。",
+  "source": "本对话截图及用户逐项确认；由对话补录，并非旧目录文件直接复制",
+  "files": {
+    "warehouse": "仓库与选卡.json",
+    "formation": "当前阵容.json",
+    "report": "战报复盘.md",
+    "rules": "本期机制核验.md",
+    "evidence": "证据清单.json",
+    "latest_round": "2026-09-11-重随确认与优化.json",
+    "latest_analysis": "2026-09-11-重随后阵容优化.md",
+    "round9_analysis": "2026-09-11-第9轮战法分析.md",
+    "latest_evidence": "2026-09-11-重随确认与优化.json",
+    "historical_six_general_review": "2026-09-11-六将技能重评.md",
+    "previous_round_analysis": "2026-09-11-本轮复盘与第8轮建议.md",
+    "previous_round_battles": "2026-09-11-本轮战报与第8轮.json",
+    "previous_round_evidence": "2026-09-11-第8轮证据清单.json"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "season": "s1",
+  "season_source": "账号profile.current_season；本期截图未单独显示赛季",
+  "platform": "Steam",
+  "first_recorded_at": "2026-09-16",
+  "start_date": null,
+  "status": "进行中",
+  "stage": "第4/7轮选择·武将",
+  "new_event_confirmation": "用户明确：本轮演武是新一期",
+  "files": [
+    "初始仓库.json",
+    "第1轮选将.json",
+    "第1轮选将建议.md",
+    "证据清单.json",
+    "当前仓库.json",
+    "第2轮选战法.json",
+    "第2轮战法建议.md",
+    "第2轮证据清单.json",
+    "第3轮选战法.json",
+    "第3轮战法建议.md",
+    "第3轮证据清单.json",
+    "第4轮选将.json",
+    "第4轮选将建议.md",
+    "第4轮证据清单.json"
+  ],
+  "rules": {
+    "strategy_books_allowed": false,
+    "selection": "三组武将中整组选一组，确认后无法修改",
+    "source": [
+      "证据/codex-clipboard-939368fb-15be-4e20-9642-c278988cb97e.jpg",
+      "证据/codex-clipboard-1cf5a10b-0472-4f06-9040-4eb6a4e9a7b3.jpg",
+      "证据/codex-clipboard-3c51dada-1d1a-412c-b04a-ef384693ee55.jpg"
+    ]
+  },
+  "verified_at": "2026-09-16"
+}

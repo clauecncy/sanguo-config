@@ -1,0 +1,68 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "status": "建议待游戏内确认",
+  "basis": {
+    "round_6_assumption": {
+      "group": 3,
+      "tactics": ["兵贵神速", "出其不意", "舍生取义"],
+      "status": "用户要求继续选择；尚无下一屏入库截图"
+    },
+    "fixed_options": ["武将重随", "战法重随", "战法支援"],
+    "formations": ["一字阵", "箕形阵", "雁形阵", "方圆阵", "锥形阵", "鱼鳞阵"]
+  },
+  "pouch": {
+    "choice": "战法支援",
+    "effect": "额外增加1个紫色战法支援位",
+    "reason": "当前10名原生武将已可组成三队，且第6轮第三组后有20个原生战法；两类重随具有随机性并消耗金色非支援材料，确定增加紫色支援位的风险更低。"
+  },
+  "support": {
+    "general": {"name": "周瑜", "quality": "金", "advancement": 1, "level": 50, "status": "建议"},
+    "gold_tactics": [
+      {"name": "狂风大作", "status": "建议"},
+      {"name": "战八方", "status": "建议"}
+    ],
+    "purple_tactic": {"name": "铸甲销戈", "status": "建议", "note": "由锦囊新增紫色支援位"}
+  },
+  "teams": [
+    {
+      "team": 1,
+      "formation": "方圆阵",
+      "role": "主攻追击队",
+      "members": [
+        {"general": "曹仁", "position": "前排", "tactics": ["坚如磐石", "避其锐气"]},
+        {"general": "黄月英", "position": "前排", "tactics": ["舍生取义", "蓄势待发"]},
+        {"general": "孙尚香", "position": "后排", "tactics": ["横扫千军", "兵贵神速"]}
+      ]
+    },
+    {
+      "team": 2,
+      "formation": "箕形阵",
+      "role": "谋略状态队",
+      "members": [
+        {"general": "小乔", "position": "前排", "tactics": ["铸甲销戈", "上兵伐谋"]},
+        {"general": "周瑜", "position": "后排", "tactics": ["狂风大作", "烈火焚营"]},
+        {"general": "张宝", "position": "后排", "tactics": ["出其不意", "指点乾坤"]}
+      ]
+    },
+    {
+      "team": 3,
+      "formation": "雁形阵",
+      "role": "兵刃控制队",
+      "members": [
+        {"general": "夏侯惇", "position": "前排", "tactics": ["披坚执锐", "百战不殆"]},
+        {"general": "孙坚", "position": "前排", "tactics": ["水淹七军", "火羽"]},
+        {"general": "张飞", "position": "后排", "tactics": ["锐不可当", "战八方"]}
+      ]
+    }
+  ],
+  "validation": {
+    "generals_used": 9,
+    "tactics_used": 18,
+    "duplicate_generals": [],
+    "duplicate_tactics": [],
+    "unused_native_generals": ["邓艾", "荀彧"],
+    "evidence_boundary": "方案不等于游戏内已点击；第6轮、锦囊和支援均等待后续界面确认。"
+  },
+  "created_at": "2026-09-16T18:29:00+08:00"
+}

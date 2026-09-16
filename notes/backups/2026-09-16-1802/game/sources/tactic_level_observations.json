@@ -1,0 +1,706 @@
+{
+  "observations": [
+    {
+      "name": "料事如神",
+      "level": 10,
+      "quality": "金",
+      "tactic_type": "主动",
+      "damage_type": "谋略",
+      "activation_rate": "45%",
+      "effect_raw": "对敌军随机两人造成180%谋略伤害，并有50%概率施加技穷，持续1回合",
+      "effect": {
+        "targets": "敌军随机两人",
+        "strategy_damage_rate_per_target": 180,
+        "status": "技穷",
+        "status_probability": 50,
+        "status_duration_rounds": 1
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-料事如神10级",
+        "url": "references/S2演武战报/2026-09-04/30-料事如神10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "上智为间",
+      "level": 10,
+      "quality": "金",
+      "tactic_type": "主动",
+      "damage_type": "谋略",
+      "activation_rate": "45%",
+      "effect_raw": "使敌军随机单体混乱，持续1回合，并造成300%谋略伤害，若目标已持有混乱状态，则额外对其造成150%谋略伤害",
+      "effect": {
+        "targets": "敌军随机单体",
+        "status": "混乱",
+        "status_duration_rounds": 1,
+        "strategy_damage_rate": 300,
+        "condition": "目标已持有混乱状态",
+        "conditional_extra_strategy_damage_rate": 150
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-上智为间10级",
+        "url": "references/S2演武战报/2026-09-04/31-上智为间10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "束手无策",
+      "level": 10,
+      "quality": "紫",
+      "tactic_type": "主动",
+      "damage_type": "谋略",
+      "activation_rate": "45%",
+      "effect_raw": "对敌军随机单体造成200%谋略伤害，并施加技穷，持续1回合",
+      "effect": {
+        "targets": "敌军随机单体",
+        "strategy_damage_rate": 200,
+        "status": "技穷",
+        "status_probability": 100,
+        "status_duration_rounds": 1
+      },
+      "context": "S2演武大会满级战法详情",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-束手无策10级",
+        "url": "references/S2演武战报/2026-09-04/32-束手无策10级详情.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "演武大会10级满级战法详情"
+      }
+    },
+    {
+      "name": "谈笑诛心",
+      "level": 10,
+      "quality": "紫",
+      "tactic_type": "被动",
+      "damage_type": "谋略",
+      "activation_rate": "100%",
+      "effect_raw": "敌军被施加负面状态时，有60%概率对敌军随机单体造成119.9%谋略伤害，每回合最多触发2次",
+      "effect": {
+        "trigger": "敌军被施加负面状态时",
+        "trigger_probability": 60,
+        "targets": "敌军随机单体",
+        "strategy_damage_rate": 119.9,
+        "max_triggers_per_round": 2
+      },
+      "context": "S2演武大会1级战法的10级满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-04T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-谈笑诛心10级预览",
+        "url": "references/S2演武战报/2026-09-04/36-谈笑诛心10级预览.png",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "1级战法界面切换至10级满级预览"
+      }
+    },
+    {
+      "name": "烈火焚营",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "对敌军全体造成84.8%谋略伤害，并施加火攻2回合；再3次焚营，风暴目标焚营伤害提升30%。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-烈火焚营10级",
+        "url": "local:conversation/2026-09-10/烈火焚营",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "断敌粮道",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "回合开始对敌军单体施加断粮2回合；回合结束对其造成113.3%谋略伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-断敌粮道10级",
+        "url": "local:conversation/2026-09-10/断敌粮道",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "铁骑横冲",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "普攻后提升自身20.6%会心2回合，再对当前目标造成412%兵刃伤害；伤害系数每回合降低25%。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-铁骑横冲10级",
+        "url": "local:conversation/2026-09-10/铁骑横冲",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "水淹七军",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "准备1回合，对敌军全体施加洪水2回合并造成267.8%兵刃伤害；66.95%概率施加技穷、缴械各1回合。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-水淹七军10级",
+        "url": "local:conversation/2026-09-10/水淹七军",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "威名显赫",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "提升自身30%倒戈2回合；对敌军随机两人造成226.6%兵刃伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-威名显赫10级",
+        "url": "local:conversation/2026-09-10/威名显赫",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "勇冠三军",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "自身倒戈提升30.9%；普攻后自身兵刃伤害提升6.18%，可叠6次；累计3次普攻后随机单体206%兵刃伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-勇冠三军10级",
+        "url": "local:conversation/2026-09-10/勇冠三军",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "胜敌益强",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "造成兵刃伤害后提升16.48武力、造成谋略伤害后提升16.48智力，均可叠8次。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-胜敌益强10级",
+        "url": "local:conversation/2026-09-10/胜敌益强",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "出其不意",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "对敌军随机单体350%谋略伤害；目标有负面状态时伤害提升25%。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-出其不意10级",
+        "url": "local:conversation/2026-09-10/出其不意",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "无难之志",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "提升两名队友45%连击率和20%倒戈，持续2回合。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-无难之志10级",
+        "url": "local:conversation/2026-09-10/无难之志",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "锐不可当",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "提升自身16%破甲和35%造成伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-锐不可当10级",
+        "url": "local:conversation/2026-09-10/锐不可当",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "狂风大作",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "第2、4回合开始敌我全体陷入风暴2回合；奇数回合60%全体100%谋略伤害，偶数回合60%随机单体280%谋略伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-狂风大作10级",
+        "url": "local:conversation/2026-09-10/狂风大作",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "趁火打劫",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "准备1回合，敌军随机两人220%谋略和兵刃伤害；火攻目标额外混乱2回合。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-趁火打劫10级",
+        "url": "local:conversation/2026-09-10/趁火打劫",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "披坚执锐",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "战斗开始使我军随机单体获得披坚并受兵刃伤害降低20%；武力最高单体获执锐，普攻后50%随机单体100%兵刃伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-披坚执锐10级",
+        "url": "local:conversation/2026-09-10/披坚执锐",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "攻其不备",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "普攻后对目标280%兵刃伤害并施加技穷1回合；已有技穷时50%震慑1回合。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-攻其不备10级",
+        "url": "local:conversation/2026-09-10/攻其不备",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "横征暴敛",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "施加负面效果后治疗率40%恢复自身兵力并受伤降低10%，持续2回合、可叠4次。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-横征暴敛10级",
+        "url": "local:conversation/2026-09-10/横征暴敛",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "百战不殆",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "我军统率/智力/武力最高单体受伤时60%对应提升7点属性，可叠8次至战斗结束。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-百战不殆10级",
+        "url": "local:conversation/2026-09-10/百战不殆",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "王佐之才",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "自身奇谋几率提升24%；谋略伤害后50%提升10智力2回合，可叠4次。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-王佐之才10级",
+        "url": "local:conversation/2026-09-10/王佐之才",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "蓄势待发",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "每回合开始提升两名队友7%造成伤害，可叠加至战斗结束。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-蓄势待发10级",
+        "url": "local:conversation/2026-09-10/蓄势待发",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "知人善任",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "我军智力最高单体受伤降低25%（受智力影响）2回合，并获1层抵御。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-知人善任10级",
+        "url": "local:conversation/2026-09-10/知人善任",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "乘间投隙",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "普攻后对敌军随机单体混乱1回合并180%谋略伤害；若已混乱，对其友军随机单体100%谋略伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-乘间投隙10级",
+        "url": "local:conversation/2026-09-10/乘间投隙",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "韬光养晦",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "自身主动战法发动率提升6%（受智力影响）；每回合开始自身谋略伤害提升8%，可叠加至结束。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-韬光养晦10级",
+        "url": "local:conversation/2026-09-10/韬光养晦",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "固若金汤",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "自身统率提升20%；第2回合起每回合开始60%概率嘲讽敌军随机2-3人2回合。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-固若金汤10级",
+        "url": "local:conversation/2026-09-10/固若金汤",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "万夫莫当",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "普攻后60%对目标两名队友造成该次普攻103%传递伤害；自身武力高于目标时额外30.9%兵刃伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-万夫莫当10级",
+        "url": "local:conversation/2026-09-10/万夫莫当",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "清风驱疾",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "驱散我军随机两人1种负面状态，并治疗率180%恢复兵力。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-清风驱疾10级",
+        "url": "local:conversation/2026-09-10/清风驱疾",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "势如破竹",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "提升自身20%会心2回合，再对敌军全体140%兵刃伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-势如破竹10级",
+        "url": "local:conversation/2026-09-10/势如破竹",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "乘虚而入",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "普攻后随机单体280%兵刃伤害；目标虚弱则伤害提升30%，否则80%施加虚弱1回合。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-乘虚而入10级",
+        "url": "local:conversation/2026-09-10/乘虚而入",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "三军夺气",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "普攻后使目标武力、智力、统率降低30点3回合，最多叠5次。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-三军夺气10级",
+        "url": "local:conversation/2026-09-10/三军夺气",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "伏兵四起",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "对敌军随机单体110%兵刃伤害，触发4次，发动期间附带25%会心几率。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-伏兵四起10级",
+        "url": "local:conversation/2026-09-10/伏兵四起",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "五雷轰顶",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "准备1回合，对敌军随机单体160%谋略伤害，施放5次；命中洪水目标该次伤害提升40%。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-五雷轰顶10级",
+        "url": "local:conversation/2026-09-10/五雷轰顶",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "战八方",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "对敌军全体造成130%兵刃伤害，并施加畏惧2回合。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-战八方10级",
+        "url": "local:conversation/2026-09-10/战八方",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    },
+    {
+      "name": "破军袭敌",
+      "level": 10,
+      "quality": "金",
+      "effect_raw": "准备1回合，对敌军全体造成300%兵刃伤害。",
+      "effect": {},
+      "context": "2026-09-10用户Steam S2截图10级满级效果/满级预览",
+      "verification_status": "Steam已核",
+      "observed_at": "2026-09-10T00:00:00+08:00",
+      "source": {
+        "name": "用户Steam S2截图-2026-09-10-破军袭敌10级",
+        "url": "local:conversation/2026-09-10/破军袭敌",
+        "source_type": "游戏内截图",
+        "platform": "Steam",
+        "season": "s2",
+        "trust_rank": 100,
+        "notes": "用户提供截图；部分为满级预览"
+      }
+    }
+  ]
+}

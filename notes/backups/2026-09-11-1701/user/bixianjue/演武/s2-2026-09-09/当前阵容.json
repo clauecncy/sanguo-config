@@ -1,0 +1,120 @@
+{
+  "event_id": "s2-2026-09-09",
+  "user_id": "bixianjue",
+  "status": "confirmed",
+  "confirmed_at": "2026-09-11",
+  "source_image": "codex-clipboard-ce014c47-bb0a-4cb8-a5ac-24a2f86eb41f.png",
+  "teams": [
+    {
+      "number": 1,
+      "name": "孙小陆",
+      "formation": "锥形阵",
+      "members": [
+        {
+          "name": "陆逊",
+          "position": "前排",
+          "tactics": [
+            "韬光养晦",
+            "横征暴敛"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "小乔",
+          "position": "后排",
+          "tactics": [
+            "奇门遁甲",
+            "避其锐气"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "孙权",
+          "position": "后排",
+          "tactics": [
+            "烈火焚营",
+            "水淹七军"
+          ],
+          "allocation": {
+            "initiative": 50
+          },
+          "initiative_reported": 229
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "诸黄法",
+      "formation": "雁形阵",
+      "members": [
+        {
+          "name": "黄盖",
+          "position": "前排",
+          "tactics": [
+            "固若金汤",
+            "如有神助"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "法正",
+          "position": "前排",
+          "tactics": [
+            "狂风大作",
+            "断敌粮道"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "诸葛亮",
+          "position": "后排",
+          "tactics": [
+            "胜敌益强",
+            "谈笑诛心"
+          ],
+          "allocation": null
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name": "月夏甘",
+      "formation": "方圆阵",
+      "members": [
+        {
+          "name": "黄月英",
+          "position": null,
+          "tactics": [
+            "无难之志",
+            "束手无策"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "夏侯惇",
+          "position": null,
+          "tactics": [
+            "轻装驰援",
+            "势如破竹"
+          ],
+          "allocation": null
+        },
+        {
+          "name": "甘宁",
+          "position": null,
+          "tactics": [
+            "攻其不备",
+            "铁骑横冲"
+          ],
+          "allocation": null
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "2026-09-11总览确认第三队月夏甘及战法；一二队沿用此前明确排位，第三队单将排位尚未单独确认。建议月英夏侯前甘宁后见优化方案，不把建议记为已执行。",
+    "仅孙权全先攻229有用户确认，其他最终加点未知，不能用先前建议补齐。",
+    "上半场旧战报黄盖带束手无策、甄洛带如有神助；用户已互换纠正。",
+    "保留雁形，不采用随后被撤回的箕形建议。"
+  ]
+}

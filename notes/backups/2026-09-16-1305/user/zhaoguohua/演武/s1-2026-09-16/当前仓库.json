@@ -1,0 +1,139 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "status": "已确认",
+  "stage": "第2轮选择前",
+  "source": [
+    "证据/8c139a63efd53bf7bc178cf17d26974.jpg",
+    "证据/5a6aeb912d974785fd6a6a4da678d27.jpg",
+    "证据/ed07457dd2b3107ba283552d88cc3ea.jpg"
+  ],
+  "generals": [
+    {
+      "name": "小乔",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": 50
+    },
+    {
+      "name": "黄月英",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "孙坚",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "邓艾",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": 50
+    },
+    {
+      "name": "夏侯惇",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": 50
+    },
+    {
+      "name": "孙尚香",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "张宝",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    }
+  ],
+  "tactics": [
+    {
+      "name": "避其锐气",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "迎敌",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "临阵突袭",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "火羽",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "上兵伐谋",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "强袭",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "决水破敌",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "骁勇之姿",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    }
+  ],
+  "selected_rounds": [
+    {
+      "round": 1,
+      "group": 1,
+      "status": "已确认",
+      "generals": [
+        "邓艾",
+        "小乔",
+        "夏侯惇"
+      ],
+      "confirmation": "第二轮截图仓库已出现三将"
+    }
+  ],
+  "support": {
+    "generals": [],
+    "tactics": [],
+    "status": "截图支援位为空"
+  }
+}

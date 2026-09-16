@@ -8,7 +8,7 @@
   "first_recorded_at": "2026-09-16",
   "start_date": null,
   "status": "进行中",
-  "stage": "第6/7轮选择·战法",
+  "stage": "第7轮锦囊及最终配队建议待确认",
   "new_event_confirmation": "用户明确：本轮演武是新一期",
   "files": [
     "初始仓库.json",
@@ -31,11 +31,27 @@
     "第5轮机制核对与重评.md",
     "第6轮选战法.json",
     "第6轮战法建议.md",
-    "第6轮证据清单.json"
+    "第6轮证据清单.json",
+    "第7轮锦囊与最终三队.json",
+    "第7轮锦囊与最终三队.md"
   ],
   "rules": {
     "strategy_books_allowed": false,
     "selection": "三组武将中整组选一组，确认后无法修改",
+    "fixed_pouch_options": [
+      "武将重随",
+      "战法重随",
+      "战法支援（新增1个紫色战法支援位）"
+    ],
+    "s1_s2_formations": [
+      "一字阵",
+      "箕形阵",
+      "雁形阵",
+      "方圆阵",
+      "锥形阵",
+      "鱼鳞阵"
+    ],
+    "final_plan_status": "第6轮第三组、锦囊、支援和三队均为建议，等待游戏内确认截图",
     "source": [
       "证据/codex-clipboard-939368fb-15be-4e20-9642-c278988cb97e.jpg",
       "证据/codex-clipboard-1cf5a10b-0472-4f06-9040-4eb6a4e9a7b3.jpg",

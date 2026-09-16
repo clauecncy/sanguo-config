@@ -313,5 +313,12 @@
     "role": "用户直接详情证据；自身缴械；等级以文件及图片为准",
     "trust_status": "可信",
     "verified_at": "2026-09-16"
+  },
+  {
+    "path": "game/sources/evidence/2026-09-16-S1S2可选阵型.png",
+    "sha256": "f48e133cbf9619c9adc0d4b31898131465fdadcc946ebe848b56b16fe6219733",
+    "role": "用户直接截图：确认可选阵型名称为一字、箕形、雁形、方圆、锥形、鱼鳞；不作为效果数值证据",
+    "trust_status": "可信",
+    "verified_at": "2026-09-16"
   }
 ]
