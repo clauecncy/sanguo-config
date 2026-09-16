@@ -1,0 +1,123 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "round": 3,
+  "total_rounds": 7,
+  "type": "战法",
+  "groups": [
+    {
+      "group": 1,
+      "source": "证据/397ed9a5e2e6e9da363d15f7d6d0859.jpg",
+      "tactics": [
+        {
+          "name": "以静制动",
+          "quality": "金",
+          "level": 10,
+          "type": "被动",
+          "activation_rate": "100%",
+          "displayed_percentage": 26,
+          "percentage_meaning": null,
+          "description_screenshot": "降低自身受到的伤害"
+        },
+        {
+          "name": "无难之志",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "70%",
+          "displayed_percentage": 20,
+          "percentage_meaning": null,
+          "description_screenshot": "友军群体连击率和倒戈提升"
+        },
+        {
+          "name": "料事如神",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "45%",
+          "displayed_percentage": 41,
+          "percentage_meaning": null,
+          "description_screenshot": "对敌军群体造成谋略伤害，几率造成技穷"
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "source": "证据/2c318ad07c1806f80a31a42924eea89.jpg",
+      "tactics": [
+        {
+          "name": "青囊急救",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "55%",
+          "displayed_percentage": 34,
+          "percentage_meaning": null,
+          "description_screenshot": "单体治疗，驱散部分负面"
+        },
+        {
+          "name": "文武双全",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "65%",
+          "displayed_percentage": 13,
+          "percentage_meaning": null,
+          "description_screenshot": "造成单体兵刃和谋略伤害"
+        },
+        {
+          "name": "王佐之才",
+          "quality": "金",
+          "level": 10,
+          "type": "被动",
+          "activation_rate": "100%",
+          "displayed_percentage": 20,
+          "percentage_meaning": null,
+          "description_screenshot": "获得奇谋，提升智力"
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "source": "证据/3a015a211380732408e866f17335962.jpg",
+      "tactics": [
+        {
+          "name": "水淹七军",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "40%",
+          "displayed_percentage": 28,
+          "percentage_meaning": null,
+          "description_screenshot": "对敌军全体造成兵刃伤害，造成洪水和控制"
+        },
+        {
+          "name": "锐不可当",
+          "quality": "金",
+          "level": 10,
+          "type": "被动",
+          "activation_rate": "100%",
+          "displayed_percentage": 48,
+          "percentage_meaning": null,
+          "description_screenshot": "提升自身破甲和造成伤害"
+        },
+        {
+          "name": "烈火焚营",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "45%",
+          "displayed_percentage": 40,
+          "percentage_meaning": null,
+          "description_screenshot": "对敌军全体造成谋略伤害，并施加火攻"
+        }
+      ]
+    }
+  ],
+  "status": "已确认",
+  "recommended_group": 3,
+  "confirmed_group": 3,
+  "reason": "已有百战蓄势辅助后，优先补锐不可当强化孙尚香横扫、烈火补张宝输出，水淹作为需准备的群伤控制备选；第一组是追击续航路线的强备选。",
+  "confirmation_source": "第4轮证据清单.json：仓库出现水淹七军、锐不可当、烈火焚营"
+}

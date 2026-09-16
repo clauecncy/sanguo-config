@@ -1,331 +1,535 @@
 {
   "schema_version": 3,
-  "verified_at": "2026-09-10",
+  "verified_at": "2026-09-16",
   "season": "s1",
-  "source": "用户提供的 8 张游戏内截图（武将库、战法仓库、演武阵容）",
-  "scope": "武将为用户确认的自有武将；战法按2026-09-10新三图可见名称，演武原生池另存。未拍到不视为没有。",
+  "source": "2026-09-16 用户提供的8张常规库存截图，以及紫色战法齐全的文字确认；逐项来源见记录。",
+  "scope": "按截图增量核定48名金色普通武将、37个金色战法；按账号当前S1公共目录及用户文字确认补齐29个紫色战法。未拍到不视为没有，不从75/81推断金将数量；演武池独立保存。",
   "generals": [
     {
       "name": "程普",
       "faction": "吴",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:83f68b3328def1bac222"
+      "entity_id": "general:83f68b3328def1bac222",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "孙坚",
       "faction": "吴",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:1fbb0e34373c3146b851"
+      "entity_id": "general:1fbb0e34373c3146b851",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "徐盛",
       "faction": "吴",
       "advancement": 2,
       "quality": "金",
-      "entity_id": "general:0d04bc60f598c1da65da"
+      "entity_id": "general:0d04bc60f598c1da65da",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "吕布",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:990961b2ffc3e6140e01"
+      "entity_id": "general:990961b2ffc3e6140e01",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "李儒",
       "faction": "群",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:593ee96e11ce91cde8ea"
+      "entity_id": "general:593ee96e11ce91cde8ea",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "张角",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:5508fa98c2d6421d3e3c"
+      "entity_id": "general:5508fa98c2d6421d3e3c",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "华雄",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:9ebe9a7cec93ffc5d3b4"
+      "entity_id": "general:9ebe9a7cec93ffc5d3b4",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "颜良",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:f2f34af1e7f448967678"
+      "entity_id": "general:f2f34af1e7f448967678",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "文丑",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:0f4c4105c1f5bc1b73e7"
+      "entity_id": "general:0f4c4105c1f5bc1b73e7",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "华佗",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:084a5bb9b1c318048a03"
+      "entity_id": "general:084a5bb9b1c318048a03",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "庞德",
       "faction": "群",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:083b612aff32ed77fda8"
+      "entity_id": "general:083b612aff32ed77fda8",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "董卓",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:96633bbf689f585f17ef"
+      "entity_id": "general:96633bbf689f585f17ef",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "邹氏",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:13144b0dc85fccd26d2c"
+      "entity_id": "general:13144b0dc85fccd26d2c",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "张宝",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:35ca90d064630a3cea3c"
+      "entity_id": "general:35ca90d064630a3cea3c",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "孙尚香",
       "faction": "吴",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:823d59e4b1f09b921470"
+      "entity_id": "general:823d59e4b1f09b921470",
+      "variant": "普通",
+      "level": 21,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "吕蒙",
       "faction": "吴",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:d09edc72e62e34cdb2da"
+      "entity_id": "general:d09edc72e62e34cdb2da",
+      "variant": "普通",
+      "level": 21,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "许褚",
       "faction": "魏",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:7e6ebaf83b5273507779"
+      "entity_id": "general:7e6ebaf83b5273507779",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "典韦",
       "faction": "魏",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:2157ac6b1d85220f6eee"
+      "entity_id": "general:2157ac6b1d85220f6eee",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "于禁",
       "faction": "魏",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:21556222ec2ac1e89ba2"
+      "entity_id": "general:21556222ec2ac1e89ba2",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "徐晃",
       "faction": "魏",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:58b6c02e43ff0623a55f"
+      "entity_id": "general:58b6c02e43ff0623a55f",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "夏侯渊",
       "faction": "魏",
-      "advancement": 0,
+      "advancement": 2,
       "quality": "金",
-      "entity_id": "general:727dbb61cc174f1035db"
+      "entity_id": "general:727dbb61cc174f1035db",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "夏侯惇",
       "faction": "魏",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:2a7e68aa7262c5da7f9f"
+      "entity_id": "general:2a7e68aa7262c5da7f9f",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "曹仁",
       "faction": "魏",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:121d406fe7d172e7f8ea"
+      "entity_id": "general:121d406fe7d172e7f8ea",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "甄洛",
       "faction": "魏",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:22b24edb3bdf2d0a2c72"
+      "entity_id": "general:22b24edb3bdf2d0a2c72",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "徐庶",
       "faction": "蜀",
-      "advancement": 0,
+      "advancement": 2,
       "quality": "金",
-      "entity_id": "general:8321c989883724cb13b2"
+      "entity_id": "general:8321c989883724cb13b2",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "黄月英",
       "faction": "蜀",
-      "advancement": 2,
+      "advancement": 3,
       "quality": "金",
-      "entity_id": "general:979781ac090cb71634a2"
+      "entity_id": "general:979781ac090cb71634a2",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "关平",
       "faction": "蜀",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:5109ea07440a2473642b"
+      "entity_id": "general:5109ea07440a2473642b",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "周仓",
       "faction": "蜀",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:63bf93615779c60037e7"
+      "entity_id": "general:63bf93615779c60037e7",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "小乔",
       "faction": "吴",
-      "advancement": 0,
+      "advancement": 2,
       "quality": "金",
-      "entity_id": "general:67e210997dbbf2430955"
+      "entity_id": "general:67e210997dbbf2430955",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "甘宁",
       "faction": "吴",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:2665384131699d31ae0d"
+      "entity_id": "general:2665384131699d31ae0d",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "刘备",
       "faction": "蜀",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:daf7b56cd3aea44f7fdf"
+      "entity_id": "general:daf7b56cd3aea44f7fdf",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "张飞",
       "faction": "蜀",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:95264f699dc478478eef"
+      "entity_id": "general:95264f699dc478478eef",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "黄忠",
       "faction": "蜀",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:c9065395c9a7298a3331"
+      "entity_id": "general:c9065395c9a7298a3331",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "诸葛亮",
       "faction": "蜀",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:53081486f9dbff9359d8"
+      "entity_id": "general:53081486f9dbff9359d8",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "黄盖",
       "faction": "吴",
-      "advancement": 0,
+      "advancement": 2,
       "quality": "金",
-      "entity_id": "general:af28979bd438c204232c"
+      "entity_id": "general:af28979bd438c204232c",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "大乔",
       "faction": "吴",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:8ac44a43f06673d6272e"
+      "entity_id": "general:8ac44a43f06673d6272e",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "貂蝉",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:5d3f27adabcf2be8a310"
+      "entity_id": "general:5d3f27adabcf2be8a310",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "蔡文姬",
       "faction": "群",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:8e64b2b3040737249797"
+      "entity_id": "general:8e64b2b3040737249797",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "张梁",
       "faction": "群",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:e4039426f9f0f5d96689"
+      "entity_id": "general:e4039426f9f0f5d96689",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "曹操",
       "faction": "魏",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:4fbe01ab8d14bc669b3e"
+      "entity_id": "general:4fbe01ab8d14bc669b3e",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "荀彧",
       "faction": "魏",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:035be51454baa21b0e7b"
+      "entity_id": "general:035be51454baa21b0e7b",
+      "variant": "普通",
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "程昱",
       "faction": "魏",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:16e9b12b026f2d40d0fc"
+      "entity_id": "general:16e9b12b026f2d40d0fc",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "赵云",
       "faction": "蜀",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:d949c9c8d528498c7bc1"
+      "entity_id": "general:d949c9c8d528498c7bc1",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "马超",
       "faction": "蜀",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:63655267babca9c136c2"
+      "entity_id": "general:63655267babca9c136c2",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "关羽",
       "faction": "蜀",
       "advancement": 0,
       "quality": "金",
-      "entity_id": "general:4b97cac39000f1c8f17e"
+      "entity_id": "general:4b97cac39000f1c8f17e",
+      "variant": "普通",
+      "level": 5,
+      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "孙策",
       "faction": "吴",
       "advancement": 1,
       "quality": "金",
-      "entity_id": "general:0278350322db68c0fb7a"
+      "entity_id": "general:0278350322db68c0fb7a",
+      "variant": "普通",
+      "level": 21,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16"
+    },
+    {
+      "name": "周瑜",
+      "variant": "普通",
+      "quality": "金",
+      "advancement": 1,
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "general:ff0ae9c2a3b32145b872"
+    },
+    {
+      "name": "郭嘉",
+      "variant": "普通",
+      "quality": "金",
+      "advancement": 0,
+      "level": 50,
+      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "general:525276a9bc4a7162be8f"
     }
   ],
   "tactics": [
@@ -333,290 +537,512 @@
       "name": "清风驱疾",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:f62577aa18a9be541993"
+      "entity_id": "tactic:f62577aa18a9be541993",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "文武双全",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:1d43e8aca6fd102380f4"
+      "entity_id": "tactic:1d43e8aca6fd102380f4",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "万夫莫当",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:faf52c6b522d5bdb2f91"
+      "entity_id": "tactic:faf52c6b522d5bdb2f91",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "伏兵四起",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:67009355fa355be9ba84"
+      "entity_id": "tactic:67009355fa355be9ba84",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "断敌粮道",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:e87a6add52ed58080f91"
+      "entity_id": "tactic:e87a6add52ed58080f91",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "洞若观火",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:b26097af47c57064a4ae"
+      "entity_id": "tactic:b26097af47c57064a4ae",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "破阵驰围",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:d63b395d5863736c5bdf"
+      "entity_id": "tactic:d63b395d5863736c5bdf",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "运筹帷幄",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:2bdc72edc661c61ef353"
+      "entity_id": "tactic:2bdc72edc661c61ef353",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "铁骑横冲",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:f79a21585b0730e28363"
+      "entity_id": "tactic:f79a21585b0730e28363",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "横扫千军",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:c737dd6eca594efc9c5c"
+      "entity_id": "tactic:c737dd6eca594efc9c5c",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "舍生取义",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:e64bb6ec86e199f1f16f"
+      "entity_id": "tactic:e64bb6ec86e199f1f16f",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "水淹七军",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:d312f12e723387aad752"
+      "entity_id": "tactic:d312f12e723387aad752",
+      "source": "用户库存截图 微信图片_20260916123218.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "出其不意",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:a608c3a5e036b6527224"
+      "entity_id": "tactic:a608c3a5e036b6527224",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "奇门遁甲",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:b123e1f04311f204a94b"
+      "entity_id": "tactic:b123e1f04311f204a94b",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "任人择势",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:5fef69da4e08a7c1acf1"
+      "entity_id": "tactic:5fef69da4e08a7c1acf1",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "无难之志",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:059b15da21f1da5251fe"
+      "entity_id": "tactic:059b15da21f1da5251fe",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "势如破竹",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:727f580d200e0d7b0707"
+      "entity_id": "tactic:727f580d200e0d7b0707",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "上智为间",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:062052d6226cb87de367"
+      "entity_id": "tactic:062052d6226cb87de367",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "锐不可当",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:b68eb67708499b2ff2af"
+      "entity_id": "tactic:b68eb67708499b2ff2af",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "风卷残云",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:732f31d3802bbac61f71"
+      "entity_id": "tactic:732f31d3802bbac61f71",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "威名显赫",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:379f54a5ed6f5ba3c80f"
+      "entity_id": "tactic:379f54a5ed6f5ba3c80f",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "狂风大作",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:f29622e061754dbbdbaa"
+      "entity_id": "tactic:f29622e061754dbbdbaa",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "战八方",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:6484094ddf7e23ccd003"
+      "entity_id": "tactic:6484094ddf7e23ccd003",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "趁火打劫",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:320f7a0d6e28e0f607e0"
+      "entity_id": "tactic:320f7a0d6e28e0f607e0",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "披坚执锐",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:ce7505e773f930a6fb3e"
+      "entity_id": "tactic:ce7505e773f930a6fb3e",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "以静制动",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:0e805dafe4ac6dced483"
+      "entity_id": "tactic:0e805dafe4ac6dced483",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "攻其不备",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:63c0f875b84aefef8bc4"
+      "entity_id": "tactic:63c0f875b84aefef8bc4",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "计袭粮仓",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:1ebe1c66d527d7992788"
+      "entity_id": "tactic:1ebe1c66d527d7992788",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "千里突袭",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:57fb8219ac298ebfa8fd"
+      "entity_id": "tactic:57fb8219ac298ebfa8fd",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "辕门射戟",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:bb6d0cb5745cca479938"
+      "entity_id": "tactic:bb6d0cb5745cca479938",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "乘虚而入",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:3ffa580e6e0c122ceeda"
+      "entity_id": "tactic:3ffa580e6e0c122ceeda",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "兵贵神速",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:f217f263c5141babbde8"
+      "entity_id": "tactic:f217f263c5141babbde8",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "百战不殆",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:ac6b4c0e3783a3aaf96e"
+      "entity_id": "tactic:ac6b4c0e3783a3aaf96e",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "王佐之才",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:53e18266b512159d87e8"
+      "entity_id": "tactic:53e18266b512159d87e8",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "蓄势待发",
       "quality": "金",
       "advancement": null,
-      "entity_id": "tactic:62bbd903f61b9c8f919f"
+      "entity_id": "tactic:62bbd903f61b9c8f919f",
+      "source": "用户库存截图 微信图片_20260916123158.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "临阵突袭",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:9090d66942f323653183"
+      "entity_id": "tactic:9090d66942f323653183",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "疾行侧击",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:fd360dc72c2aa84b9747"
+      "entity_id": "tactic:fd360dc72c2aa84b9747",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "决水破敌",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:cb8cc13dc9eaed066ee7"
+      "entity_id": "tactic:cb8cc13dc9eaed066ee7",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "束手无策",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:b912dccd89978d1f2040"
+      "entity_id": "tactic:b912dccd89978d1f2040",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "坚壁清野",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:2719eef84e7b80a5e50d"
+      "entity_id": "tactic:2719eef84e7b80a5e50d",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "计逐穷寇",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:7e9f36d1419b92294283"
+      "entity_id": "tactic:7e9f36d1419b92294283",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "避其锐气",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:569140a6f79a8df6a042"
+      "entity_id": "tactic:569140a6f79a8df6a042",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "铸甲销戈",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:209cd4cbd1a4b56ae15e"
+      "entity_id": "tactic:209cd4cbd1a4b56ae15e",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "乱敌方阵",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:a8616adfb429c29db6b2"
+      "entity_id": "tactic:a8616adfb429c29db6b2",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "咏歌尝酒",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:defce723039bb48c8a5f"
+      "entity_id": "tactic:defce723039bb48c8a5f",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "克敌如风",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:ec85c924a04920096a5d"
+      "entity_id": "tactic:ec85c924a04920096a5d",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "奇计迭出",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:a06112ea7e9e80a55bfd"
+      "entity_id": "tactic:a06112ea7e9e80a55bfd",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
     },
     {
       "name": "来好息师",
       "quality": "紫",
       "advancement": null,
-      "entity_id": "tactic:15208bb4d258ae927282"
+      "entity_id": "tactic:15208bb4d258ae927282",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16"
+    },
+    {
+      "name": "轻装驰援",
+      "quality": "金",
+      "source": "用户库存截图 微信图片_20260916123203.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:a7ac7d7c0e50c88e4e67"
+    },
+    {
+      "name": "烈火焚营",
+      "quality": "金",
+      "source": "用户库存截图 微信图片_20260916123212.jpg；仅确认拥有，战法等级和红度未知",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:2dd59b3e8429ac4febac"
+    },
+    {
+      "name": "一计决胜",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:e1ed9b33be13ad5d3a06"
+    },
+    {
+      "name": "上兵伐谋",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:86e16d1572182950b52b"
+    },
+    {
+      "name": "临危勇烈",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:512627950c6846c27984"
+    },
+    {
+      "name": "以战养战",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:a231dcaa1e494847d92f"
+    },
+    {
+      "name": "夜袭",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:fcb0db6a018ed3fddca6"
+    },
+    {
+      "name": "如有神助",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:f4a01e444d61aebe28ce"
+    },
+    {
+      "name": "如沐春风",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:190177d3e064c3489a5f"
+    },
+    {
+      "name": "屈人之兵",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:ebeea4078b5583710261"
+    },
+    {
+      "name": "强袭",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:6b6d72bdbf77ba61b7de"
+    },
+    {
+      "name": "揭竿而起",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:33709403c93fc96ec553"
+    },
+    {
+      "name": "文治武功",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:c642061609192c177882"
+    },
+    {
+      "name": "火羽",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:bd17584383517f145e42"
+    },
+    {
+      "name": "筹划良策",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:37fb8dc61352833fd228"
+    },
+    {
+      "name": "谈笑诛心",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:e6b284a80b21f9aa0da8"
+    },
+    {
+      "name": "迎敌",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:7624d1699c0d0d85548d"
+    },
+    {
+      "name": "骁勇之姿",
+      "quality": "紫",
+      "source": "2026-09-16 用户文字确认紫色战法全部齐全；按账号当前 S1 的公共目录补齐，不推断红度或等级",
+      "verified_at": "2026-09-16",
+      "entity_id": "tactic:2af85d95bcd850ae486a"
     }
   ],
-  "tactic_source": "用户确认本次三张战法名鉴截图为朋友自有战法；仅录入完整可见名称"
+  "tactic_source": "2026-09-16 四张战法名鉴截图确认37个金色战法；用户文字确认紫色战法齐全，当前按S1目录记29个，未推断红度或等级。"
 }

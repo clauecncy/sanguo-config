@@ -1,0 +1,23 @@
+{
+  "verified_at": "2026-09-16",
+  "files": [
+    {
+      "file": "证据/codex-clipboard-939368fb-15be-4e20-9642-c278988cb97e.jpg",
+      "sha256": "9441a0b609c7e8b83efefb1dc028ea2af7d22c39c1e5aff6e6335790c515a1d4",
+      "original": "C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-939368fb-15be-4e20-9642-c278988cb97e.jpg",
+      "group": 2
+    },
+    {
+      "file": "证据/codex-clipboard-1cf5a10b-0472-4f06-9040-4eb6a4e9a7b3.jpg",
+      "sha256": "2c5a64c8aa1a70aa74d49c1536a3ea48d5562ec949f928f5a45a58cccf7755d3",
+      "original": "C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-1cf5a10b-0472-4f06-9040-4eb6a4e9a7b3.jpg",
+      "group": 3
+    },
+    {
+      "file": "证据/codex-clipboard-3c51dada-1d1a-412c-b04a-ef384693ee55.jpg",
+      "sha256": "52d504d6b9abf6fd023ccaea1ddcc9c02e64b13e572d57428e0fd24f182b4448",
+      "original": "C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-3c51dada-1d1a-412c-b04a-ef384693ee55.jpg",
+      "group": 1
+    }
+  ]
+}

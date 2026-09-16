@@ -1,8 +1,8 @@
 {
   "counts": {
-    "generals": 46,
-    "tactics": 48
+    "generals": 48,
+    "tactics": 66
   },
   "unresolved": [],
-  "known_max_level_details": 22
+  "known_max_level_details": 24
 }

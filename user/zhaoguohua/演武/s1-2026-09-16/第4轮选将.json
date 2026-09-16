@@ -1,0 +1,123 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "round": 4,
+  "total_rounds": 7,
+  "type": "武将",
+  "groups": [
+    {
+      "group": 1,
+      "source": "证据/ecc63fb43cc5b1054bcd6e2cc0623bf.jpg",
+      "generals": [
+        {
+          "name": "曹仁",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "前排",
+          "role_label": "防御",
+          "displayed_percentage": 6,
+          "percentage_meaning": null
+        },
+        {
+          "name": "张飞",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "后排",
+          "role_label": "兵刃",
+          "displayed_percentage": 11,
+          "percentage_meaning": null
+        },
+        {
+          "name": "荀彧",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "后排",
+          "role_label": "治疗",
+          "displayed_percentage": 22,
+          "percentage_meaning": null
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "source": "证据/d258f62ed334a58ea76fa7a531f0761.jpg",
+      "generals": [
+        {
+          "name": "黄盖",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "均衡",
+          "role_label": "辅助",
+          "displayed_percentage": 21,
+          "percentage_meaning": null
+        },
+        {
+          "name": "董卓",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "前排",
+          "role_label": "文武",
+          "displayed_percentage": 7,
+          "percentage_meaning": null
+        },
+        {
+          "name": "大乔",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "均衡",
+          "role_label": "辅助",
+          "displayed_percentage": 20,
+          "percentage_meaning": null
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "source": "证据/7bd876c6f2c7dab087e15dcd46c2d1d.jpg",
+      "generals": [
+        {
+          "name": "夏侯渊",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "后排",
+          "role_label": "兵刃",
+          "displayed_percentage": 5,
+          "percentage_meaning": null
+        },
+        {
+          "name": "关羽",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "后排",
+          "role_label": "兵刃",
+          "displayed_percentage": 25,
+          "percentage_meaning": null
+        },
+        {
+          "name": "徐盛",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "position_label": "前排",
+          "role_label": "防御",
+          "displayed_percentage": 7,
+          "percentage_meaning": null
+        }
+      ]
+    }
+  ],
+  "status": "已确认",
+  "recommended_group": 1,
+  "confirmed_group": 1,
+  "reason": "按本期定位补前排曹仁、兵刃张飞及治疗荀彧，为多队分配补齐职责；仅定性推荐，不声称已核完整技能或实测排名",
+  "confirmation_source": "第5轮证据清单.json，三将在库"
+}

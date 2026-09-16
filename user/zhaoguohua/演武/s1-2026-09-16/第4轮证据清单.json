@@ -1,0 +1,22 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "files": [
+    {
+      "sha256": "42fe3d7a2d077bf4bcd9b2628ede76d8a083e2aa98bf570904823e68fa7b04ff",
+      "original": "D:\\Tencent\\WeChat Files\\WeChat Files\\wxid_xk9f4189f5y722\\FileStorage\\Temp\\7bd876c6f2c7dab087e15dcd46c2d1d.jpg",
+      "file": "证据/7bd876c6f2c7dab087e15dcd46c2d1d.jpg"
+    },
+    {
+      "sha256": "299ef58a29e11f08159579225966797302a6db98c3c3f3bfa93d7b5a5ccfb494",
+      "original": "D:\\Tencent\\WeChat Files\\WeChat Files\\wxid_xk9f4189f5y722\\FileStorage\\Temp\\d258f62ed334a58ea76fa7a531f0761.jpg",
+      "file": "证据/d258f62ed334a58ea76fa7a531f0761.jpg"
+    },
+    {
+      "sha256": "8f26b947a126e09bfc1c72005fd8f49c29d497716d5a2829f251cb4d966e0078",
+      "original": "D:\\Tencent\\WeChat Files\\WeChat Files\\wxid_xk9f4189f5y722\\FileStorage\\Temp\\ecc63fb43cc5b1054bcd6e2cc0623bf.jpg",
+      "file": "证据/ecc63fb43cc5b1054bcd6e2cc0623bf.jpg"
+    }
+  ]
+}

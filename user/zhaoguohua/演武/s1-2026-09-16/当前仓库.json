@@ -1,0 +1,280 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "status": "已确认",
+  "stage": "第6轮选择前",
+  "source": [
+    "证据/ce71b15fccf39b67cecc289007abb0e.jpg",
+    "证据/de6959bbd6e6b8491eb7ddcdc69254e.jpg",
+    "证据/eaa037d00246bbff2c9766fa9807132.jpg"
+  ],
+  "generals": [
+    {
+      "name": "小乔",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": 50
+    },
+    {
+      "name": "黄月英",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "孙坚",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "邓艾",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": 50
+    },
+    {
+      "name": "夏侯惇",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": 50
+    },
+    {
+      "name": "孙尚香",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "张宝",
+      "quality": "金",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "曹仁",
+      "quality": "金",
+      "origin": "原生",
+      "level": 50,
+      "advancement": null,
+      "source": "第四轮候选及第五轮仓库确认"
+    },
+    {
+      "name": "张飞",
+      "quality": "金",
+      "origin": "原生",
+      "level": 50,
+      "advancement": null,
+      "source": "第四轮候选及第五轮仓库确认"
+    },
+    {
+      "name": "荀彧",
+      "quality": "金",
+      "origin": "原生",
+      "level": 50,
+      "advancement": null,
+      "source": "第四轮候选及第五轮仓库确认"
+    }
+  ],
+  "tactics": [
+    {
+      "name": "避其锐气",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "迎敌",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "临阵突袭",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "火羽",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "上兵伐谋",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "强袭",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "决水破敌",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "骁勇之姿",
+      "quality": "紫",
+      "origin": "原生",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "百战不殆",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第二轮选卡及第三轮仓库截图"
+    },
+    {
+      "name": "横扫千军",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第二轮选卡及第三轮仓库截图"
+    },
+    {
+      "name": "蓄势待发",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第二轮选卡及第三轮仓库截图"
+    },
+    {
+      "name": "水淹七军",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第三轮候选及第四轮截图确认"
+    },
+    {
+      "name": "锐不可当",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第三轮候选及第四轮截图确认"
+    },
+    {
+      "name": "烈火焚营",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第三轮候选及第四轮截图确认"
+    },
+    {
+      "name": "坚如磐石",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第五轮选卡及第六轮仓库确认"
+    },
+    {
+      "name": "指点乾坤",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第五轮选卡及第六轮仓库确认"
+    },
+    {
+      "name": "披坚执锐",
+      "quality": "金",
+      "origin": "原生",
+      "level": 10,
+      "advancement": null,
+      "source": "第五轮选卡及第六轮仓库确认"
+    }
+  ],
+  "selected_rounds": [
+    {
+      "round": 1,
+      "group": 1,
+      "status": "已确认",
+      "generals": [
+        "邓艾",
+        "小乔",
+        "夏侯惇"
+      ],
+      "confirmation": "第二轮截图仓库已出现三将"
+    },
+    {
+      "round": 2,
+      "group": 1,
+      "status": "已确认",
+      "tactics": [
+        "百战不殆",
+        "横扫千军",
+        "蓄势待发"
+      ],
+      "confirmation": "第三轮仓库已出现三项金战法"
+    },
+    {
+      "round": 3,
+      "group": 3,
+      "status": "已确认",
+      "tactics": [
+        "水淹七军",
+        "锐不可当",
+        "烈火焚营"
+      ],
+      "confirmation": "第四轮截图仓库出现三项"
+    },
+    {
+      "round": 4,
+      "group": 1,
+      "status": "已确认",
+      "generals": [
+        "曹仁",
+        "张飞",
+        "荀彧"
+      ],
+      "confirmation": "第五轮截图三将入库"
+    },
+    {
+      "round": 5,
+      "group": 1,
+      "status": "已确认",
+      "tactics": [
+        "坚如磐石",
+        "指点乾坤",
+        "披坚执锐"
+      ],
+      "confirmation": "第六轮截图入库"
+    }
+  ],
+  "support": {
+    "generals": [],
+    "tactics": [],
+    "status": "截图支援位为空"
+  },
+  "scope": "本期已确认累计库存；局部截图未显示的已有战法继续保留，无消耗证据不删除"
+}

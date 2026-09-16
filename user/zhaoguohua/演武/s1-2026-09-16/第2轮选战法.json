@@ -1,0 +1,154 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "verified_at": "2026-09-16",
+  "round": 2,
+  "total_rounds": 7,
+  "type": "战法",
+  "groups": [
+    {
+      "group": 1,
+      "source": "证据/ed07457dd2b3107ba283552d88cc3ea.jpg",
+      "tactics": [
+        {
+          "name": "百战不殆",
+          "quality": "金",
+          "level": 10,
+          "type": "指挥",
+          "activation_rate": "100%",
+          "displayed_percentage": 34,
+          "percentage_meaning": null,
+          "description_screenshot": "受到伤害时属性提升",
+          "suggested_holders_screenshot": [
+            "邓艾"
+          ]
+        },
+        {
+          "name": "横扫千军",
+          "quality": "金",
+          "level": 10,
+          "type": "追击",
+          "activation_rate": "45%",
+          "displayed_percentage": 7,
+          "percentage_meaning": null,
+          "description_screenshot": "全体兵刃伤害",
+          "suggested_holders_screenshot": [
+            "孙尚香"
+          ]
+        },
+        {
+          "name": "蓄势待发",
+          "quality": "金",
+          "level": 10,
+          "type": "指挥",
+          "activation_rate": "100%",
+          "displayed_percentage": 37,
+          "percentage_meaning": null,
+          "description_screenshot": "每回合提升友军群体造成伤害",
+          "suggested_holders_screenshot": [
+            "邓艾"
+          ]
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "source": "证据/5a6aeb912d974785fd6a6a4da678d27.jpg",
+      "tactics": [
+        {
+          "name": "青囊急救",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "55%",
+          "displayed_percentage": 34,
+          "percentage_meaning": null,
+          "description_screenshot": "单体治疗，驱散部分负面",
+          "suggested_holders_screenshot": [
+            "黄月英",
+            "邓艾"
+          ]
+        },
+        {
+          "name": "战八方",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "55%",
+          "displayed_percentage": 42,
+          "percentage_meaning": null,
+          "description_screenshot": "对敌军全体造成兵刃伤害，并施加畏惧",
+          "suggested_holders_screenshot": [
+            "孙坚"
+          ]
+        },
+        {
+          "name": "伏兵四起",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "50%",
+          "displayed_percentage": 10,
+          "percentage_meaning": null,
+          "description_screenshot": "造成4次兵刃伤害，并有概率触发会心",
+          "suggested_holders_screenshot": [
+            "孙坚"
+          ]
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "source": "证据/8c139a63efd53bf7bc178cf17d26974.jpg",
+      "tactics": [
+        {
+          "name": "无难之志",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "70%",
+          "displayed_percentage": 20,
+          "percentage_meaning": null,
+          "description_screenshot": "友军群体连击率和倒戈提升",
+          "suggested_holders_screenshot": []
+        },
+        {
+          "name": "料事如神",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "45%",
+          "displayed_percentage": 41,
+          "percentage_meaning": null,
+          "description_screenshot": "对敌军群体造成谋略伤害，几率造成技穷",
+          "suggested_holders_screenshot": [
+            "张宝",
+            "黄月英"
+          ]
+        },
+        {
+          "name": "巧利天灾",
+          "quality": "金",
+          "level": 10,
+          "type": "主动",
+          "activation_rate": "50%",
+          "displayed_percentage": 1,
+          "percentage_meaning": null,
+          "description_screenshot": "对敌我全体造成谋略伤害，根据状态施加额外效果",
+          "suggested_holders_screenshot": []
+        }
+      ]
+    }
+  ],
+  "status": "已确认",
+  "recommended_group": 1,
+  "confirmed_group": 1,
+  "reason": "两项指挥辅助补充持续增益，横扫千军对应现有孙尚香；不以未知红色百分比或适配标签作为独立结论",
+  "limitations": [
+    "指挥100%发动不等于全部内部效果必定触发",
+    "百战作用对象按实际属性最高者判定，不等于携带者受击就全队加属性",
+    "蓄势提升两名队友，不含携带者",
+    "巧利具体额外效果未核，不假定能无代价利用"
+  ],
+  "confirmation_source": "第3轮证据清单.json：仓库已出现百战不殆、横扫千军、蓄势待发"
+}

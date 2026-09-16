@@ -1,0 +1,112 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s1-2026-09-16",
+  "status": "已确认",
+  "source": [
+    "证据/codex-clipboard-939368fb-15be-4e20-9642-c278988cb97e.jpg",
+    "证据/codex-clipboard-1cf5a10b-0472-4f06-9040-4eb6a4e9a7b3.jpg",
+    "证据/codex-clipboard-3c51dada-1d1a-412c-b04a-ef384693ee55.jpg"
+  ],
+  "verified_at": "2026-09-16",
+  "scope": "首轮选择前截图可见初始仓库",
+  "generals": [
+    {
+      "name": "孙尚香",
+      "quality": "金",
+      "origin": "原生",
+      "variant": null,
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "张宝",
+      "quality": "金",
+      "origin": "原生",
+      "variant": null,
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "黄月英",
+      "quality": "金",
+      "origin": "原生",
+      "variant": null,
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "孙坚",
+      "quality": "金",
+      "origin": "原生",
+      "variant": null,
+      "advancement": null,
+      "level": null
+    }
+  ],
+  "tactics": [
+    {
+      "name": "避其锐气",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "迎敌",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "临阵突袭",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "火羽",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "上兵伐谋",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "强袭",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "决水破敌",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    },
+    {
+      "name": "骁勇之姿",
+      "quality": "紫",
+      "origin": "原生",
+      "advancement": null,
+      "level": null
+    }
+  ],
+  "support": {
+    "visible_general_slots": 1,
+    "visible_tactic_slots": 2,
+    "selected_generals": [],
+    "selected_tactics": [],
+    "status": "截图支援位均为空"
+  },
+  "selected_rounds": []
+}
