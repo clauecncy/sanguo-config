@@ -171,6 +171,24 @@ class InventoryTests(unittest.TestCase):
             self.assertEqual(c.execute("select advancement_verified_at from v_owned_tactics where name='烈火焚营'").fetchone()[0],'2026-09-02')
             self.assertIsNone(c.execute("select advancement_verified_at from v_owned_tactics where name='如有神助'").fetchone()[0])
 
+    def test_remove_deletes_only_exact_general_variant(self):
+        old=load_inventory('bixianjue',self.root)
+        result=prepare_update(old,{'remove':{'generals':[{'name':'张梁','variant':'英雄'}]}},root=self.root)
+        identities=[(r['name'],r.get('variant','普通')) for r in result['generals']]
+        self.assertNotIn(('张梁','英雄'),identities)
+        self.assertIn(('张梁','普通'),identities)
+        self.assertEqual(old['tactics'],result['tactics'])
+
+    def test_remove_requires_existing_unambiguous_identity(self):
+        old=load_inventory('bixianjue',self.root)
+        invalid=[
+            {'remove':{'generals':[{'name':'不存在','variant':'英雄'}]}},
+            {'remove':{'generals':[{'name':'张梁','variant':'英雄','quality':'金'}]}},
+            {'remove':{'generals':[{'name':'张梁','variant':'英雄'}]},'generals':[{'name':'张梁','variant':'英雄'}]},
+        ]
+        for patch in invalid:
+            with self.assertRaises(ValueError): prepare_update(old,patch,root=self.root)
+
     def test_unresolved_record_retained_and_reported(self):
         result=update_inventory('bixianjue',{'generals':[{'name':'待核新武将','quality':'金','advancement':None}]},root=self.root)
         self.assertEqual(validate_inventory(result,self.root)[0]['name'],'待核新武将')

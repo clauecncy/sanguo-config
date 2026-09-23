@@ -102,20 +102,43 @@ def load_inventory(user, root=ROOT):
 
 def prepare_update(current, patch, replace=False, root=ROOT):
     if not isinstance(patch,dict): raise ValueError('Input must be an object')
-    allowed = {'generals','tactics','verified_at','source','user_id'}
+    allowed = {'generals','tactics','remove','verified_at','source','user_id','tactic_level_note'}
     if set(patch)-allowed: raise ValueError(f'Unknown input fields: {set(patch)-allowed}')
-    if not any(g in patch for g in ['generals','tactics']): raise ValueError('No inventory records supplied')
+    if not any(g in patch for g in ['generals','tactics']) and 'remove' not in patch:
+        raise ValueError('No inventory records supplied')
     if replace and not all(g in patch for g in ['generals','tactics']):
         raise ValueError('Full replacement requires both generals and tactics lists')
+    removals = patch.get('remove',{})
+    if not isinstance(removals,dict) or set(removals)-{'generals','tactics'}:
+        raise ValueError('remove must contain only generals and/or tactics lists')
+    if replace and removals:
+        raise ValueError('remove cannot be combined with full replacement')
     result = copy.deepcopy(current)
     with public_connection(root) as c:
         for group in ['generals','tactics']:
-            if group not in patch: continue
-            if not isinstance(patch[group],list): raise ValueError(f'{group} must be a list')
-            incoming_keys = [key(group,r) for r in patch[group]]
+            incoming = patch.get(group,[])
+            if group in patch and not isinstance(incoming,list): raise ValueError(f'{group} must be a list')
+            remove_rows = removals.get(group,[])
+            if not isinstance(remove_rows,list): raise ValueError(f'remove.{group} must be a list')
+            if group not in patch and not remove_rows: continue
+            incoming_keys = [key(group,r) for r in incoming]
             if len(set(incoming_keys)) != len(incoming_keys): raise ValueError('Duplicate patch identities')
+            remove_keys = []
+            for row in remove_rows:
+                if not isinstance(row,dict) or not isinstance(row.get('name'),str) or not row['name'].strip():
+                    raise ValueError('Each removed record requires a name')
+                identity_fields = {'name','variant'} if group == 'generals' else {'name'}
+                if set(row)-identity_fields: raise ValueError(f'remove.{group} accepts identity fields only')
+                if group == 'generals' and 'variant' in row and not isinstance(row['variant'],str):
+                    raise ValueError('Removed general variant must be a string')
+                remove_keys.append(key(group,row))
+            if len(set(remove_keys)) != len(remove_keys): raise ValueError(f'Duplicate remove.{group} identities')
+            if set(incoming_keys) & set(remove_keys):
+                raise ValueError(f'Cannot update and remove the same {group} identity')
             records = {} if replace else {key(group,r):copy.deepcopy(r) for r in current[group]}
-            for incoming in patch[group]:
+            missing = set(remove_keys)-set(records)
+            if missing: raise ValueError(f'Cannot remove missing {group} identity: {next(iter(missing))}')
+            for incoming in incoming:
                 identity = key(group,incoming)
                 row = records.get(identity,{})
                 row.update(copy.deepcopy(incoming))
@@ -134,7 +157,13 @@ def prepare_update(current, patch, replace=False, root=ROOT):
                 else:
                     row.setdefault('entity_id',None)
                 records[identity] = row
+            for identity in remove_keys:
+                del records[identity]
             result[group] = list(records.values())
+    if 'tactic_level_note' in patch:
+        if not isinstance(patch['tactic_level_note'],str) or not patch['tactic_level_note'].strip():
+            raise ValueError('tactic_level_note must be a non-empty string')
+        result['tactic_level_note'] = patch['tactic_level_note']
     validate_inventory(result,root)
     return result
 

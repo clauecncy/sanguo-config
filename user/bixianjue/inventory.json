@@ -61,16 +61,6 @@
       "entity_id": "general:25fc0bde1163ca42219a"
     },
     {
-      "name": "张梁",
-      "faction": "群",
-      "advancement": 3,
-      "variant": "英雄",
-      "availability": "限时截图快照",
-      "notes": "截图剩余15小时16分；拍摄时刻未知，不推算到期时刻，不计入常驻库存。",
-      "quality": "金",
-      "entity_id": "general:e4039426f9f0f5d96689"
-    },
-    {
       "name": "鲁肃",
       "faction": "吴",
       "advancement": 0,
@@ -532,7 +522,10 @@
       "name": "断敌粮道",
       "quality": "金",
       "advancement": 1,
-      "entity_id": "tactic:e87a6add52ed58080f91"
+      "entity_id": "tactic:e87a6add52ed58080f91",
+      "level": 10,
+      "verified_at": "2026-09-23",
+      "source": "用户Steam S2战法详情截图（2026-09-23）"
     },
     {
       "name": "铁骑横冲",
@@ -556,8 +549,10 @@
       "name": "五雷轰顶",
       "quality": "金",
       "advancement": 0,
-      "level": 1,
-      "entity_id": "tactic:4f37cca376b8b2bc4c66"
+      "level": 10,
+      "entity_id": "tactic:4f37cca376b8b2bc4c66",
+      "verified_at": "2026-09-23",
+      "source": "用户Steam S2战法详情截图（2026-09-23）"
     },
     {
       "name": "无难之志",
@@ -611,7 +606,10 @@
       "name": "披坚执锐",
       "quality": "金",
       "advancement": 0,
-      "entity_id": "tactic:ce7505e773f930a6fb3e"
+      "entity_id": "tactic:ce7505e773f930a6fb3e",
+      "level": 10,
+      "verified_at": "2026-09-23",
+      "source": "用户Steam S2战法详情截图（2026-09-23）"
     },
     {
       "name": "攻其不备",
@@ -890,7 +888,31 @@
       "advancement": null,
       "first_season": "s2",
       "entity_id": "tactic:434e5368f6dfdb5870c7"
+    },
+    {
+      "name": "定心相助",
+      "quality": "金",
+      "level": 10,
+      "verified_at": "2026-09-23",
+      "source": "用户Steam S2战法详情截图（2026-09-23）",
+      "entity_id": null
+    },
+    {
+      "name": "计策粮仓",
+      "quality": "金",
+      "level": 10,
+      "verified_at": "2026-09-23",
+      "source": "用户Steam S2战法详情截图（2026-09-23）",
+      "entity_id": null
+    },
+    {
+      "name": "舍生取义",
+      "quality": "金",
+      "level": 10,
+      "verified_at": "2026-09-23",
+      "source": "用户Steam S2战法详情截图（2026-09-23）",
+      "entity_id": "tactic:e64bb6ec86e199f1f16f"
     }
   ],
-  "tactic_level_note": "仅伏兵四起、五雷轰顶截图明确当前为1级；其余战法未显示当前等级。31项金色战法均补充游戏内10级满级效果证据。"
+  "tactic_level_note": "2026-09-23截图明确当前10级：披坚执锐、断敌粮道、五雷轰顶、定心相助、计策粮仓、舍生取义；2026-09-10截图所示伏兵四起为1级；其他战法当前等级未知。原31项金色战法的游戏内10级满级效果证据记录保留；定心相助、计策粮仓尚无公共实体定义。"
 }

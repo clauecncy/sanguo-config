@@ -1,8 +1,19 @@
 {
   "counts": {
-    "generals": 45,
-    "tactics": 62
+    "generals": 44,
+    "tactics": 65
   },
-  "unresolved": [],
-  "known_max_level_details": 33
+  "unresolved": [
+    {
+      "group": "tactics",
+      "name": "定心相助",
+      "status": "公共定义待补录，原始记录保留"
+    },
+    {
+      "group": "tactics",
+      "name": "计策粮仓",
+      "status": "公共定义待补录，原始记录保留"
+    }
+  ],
+  "known_max_level_details": 34
 }

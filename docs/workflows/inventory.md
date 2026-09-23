@@ -3,7 +3,7 @@
 1. 用户没有明确目标账号时，先问“本次更新 bixianjue 还是 zhaoguohua 的库存？”。在答复之前不读取任何账号库存或写文件。用户在同一连续任务已明确账号时不重复询问。
 2. 声明“本次更新用户：xxx”。只读取该用户 `profile.json`、`inventory.json` 和本次图片。不得加载演武文档、外部模板、其他用户或历史综合交接文档。
 3. 按名称和版本匹配武将，按名称匹配战法。必要时通过公共库定向查询；截图不清晰的字段询问用户，不猜填。
-4. 将本次图片和部分更新 JSON 放入该用户 `evidence/incoming/`，通过 `--images` 传入本次整批图片。只提供本次明确的字段；省略字段沿用原值，明确的 `null` 才表示未知。未出现在图片中的已有条目保留。
+4. 将本次图片和部分更新 JSON 放入该用户 `evidence/incoming/`，通过 `--images` 传入本次整批图片。只提供本次明确的字段；省略字段沿用原值，明确的 `null` 才表示未知。未出现在图片中的已有条目保留。确需删除单条时，使用 `remove.generals`（名称及版本，版本省略时指普通）或 `remove.tactics`（名称）精确指定；不能用省略条目表示删除。
 5. 执行增量更新并校验、生成报告。成功后 `evidence/current/` 只保留最新一批截图和清单，替换旧批次并删除本次 incoming 临时输入；不再生成历史库存快照。失败时保留原库存和原截图。只在用户明确要求完整替换时加 `--replace`；完整替换必须同时提供两类列表。
 
 ```powershell
@@ -15,8 +15,10 @@ python scripts/account_inventory.py --user bixianjue report
 命令中的账号必须替换为本任务用户明确指定的账号，示例不构成默认值。
 
 ```json
-{"user_id":"bixianjue","verified_at":"2026-09-10","source":"本次用户截图","generals":[{"name":"小乔","variant":"普通","advancement":2}]}
+{"user_id":"bixianjue","verified_at":"2026-09-10","source":"本次用户截图","generals":[{"name":"小乔","variant":"普通","advancement":2}],"remove":{"generals":[{"name":"张梁","variant":"英雄"}]}}
 ```
+
+截图明确显示但此前未记录的当前战法等级可按名称增量写入；必要时同时通过 `tactic_level_note` 更新库存等级说明。该字段不代表满级效果正文。
 
 只统计金将和金紫战法，范围外条目不进入当前库存。公共定义尚未收录的名字可以连同明确品质作为待补录条目保留，不能伪造实体 ID。`validate` 显式报告未解析项；待补录完成前不用于自动配将。
 
