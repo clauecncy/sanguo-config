@@ -3,17 +3,6 @@
     "generals": 44,
     "tactics": 65
   },
-  "unresolved": [
-    {
-      "group": "tactics",
-      "name": "定心相助",
-      "status": "公共定义待补录，原始记录保留"
-    },
-    {
-      "group": "tactics",
-      "name": "计策粮仓",
-      "status": "公共定义待补录，原始记录保留"
-    }
-  ],
+  "unresolved": [],
   "known_max_level_details": 34
 }

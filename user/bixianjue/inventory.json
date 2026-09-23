@@ -890,29 +890,29 @@
       "entity_id": "tactic:434e5368f6dfdb5870c7"
     },
     {
-      "name": "定心相助",
-      "quality": "金",
-      "level": 10,
-      "verified_at": "2026-09-23",
-      "source": "用户Steam S2战法详情截图（2026-09-23）",
-      "entity_id": null
-    },
-    {
-      "name": "计策粮仓",
-      "quality": "金",
-      "level": 10,
-      "verified_at": "2026-09-23",
-      "source": "用户Steam S2战法详情截图（2026-09-23）",
-      "entity_id": null
-    },
-    {
       "name": "舍生取义",
       "quality": "金",
       "level": 10,
       "verified_at": "2026-09-23",
       "source": "用户Steam S2战法详情截图（2026-09-23）",
       "entity_id": "tactic:e64bb6ec86e199f1f16f"
+    },
+    {
+      "name": "忘私相助",
+      "quality": "金",
+      "level": 10,
+      "verified_at": "2026-09-23",
+      "source": "用户更正本批Steam S2战法详情截图名称（2026-09-23）",
+      "entity_id": "tactic:08ea3238229b37e68042"
+    },
+    {
+      "name": "计袭粮仓",
+      "quality": "金",
+      "level": 10,
+      "verified_at": "2026-09-23",
+      "source": "用户更正本批Steam S2战法详情截图名称（2026-09-23）",
+      "entity_id": "tactic:1ebe1c66d527d7992788"
     }
   ],
-  "tactic_level_note": "2026-09-23截图明确当前10级：披坚执锐、断敌粮道、五雷轰顶、定心相助、计策粮仓、舍生取义；2026-09-10截图所示伏兵四起为1级；其他战法当前等级未知。原31项金色战法的游戏内10级满级效果证据记录保留；定心相助、计策粮仓尚无公共实体定义。"
+  "tactic_level_note": "2026-09-23截图明确当前10级：披坚执锐、断敌粮道、五雷轰顶、忘私相助、计袭粮仓、舍生取义；2026-09-10截图所示伏兵四起为1级；其他战法当前等级未知。原31项金色战法的游戏内10级满级效果证据记录保留。"
 }
