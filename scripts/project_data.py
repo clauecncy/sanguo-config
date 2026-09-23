@@ -155,7 +155,7 @@ def prepare_update(current, patch, replace=False, root=ROOT):
                     row['entity_id'] = ref['entity_id']
                     row.setdefault('quality',ref['quality'])
                 else:
-                    row.setdefault('entity_id',None)
+                    raise ValueError(f'Public {group} definition missing for {row["name"]}; verify the name and add the evidenced public definition before updating inventory')
                 records[identity] = row
             for identity in remove_keys:
                 del records[identity]

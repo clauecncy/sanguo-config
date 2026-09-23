@@ -162,17 +162,19 @@ class InventoryTests(unittest.TestCase):
 
     def test_unknown_not_zero_and_hero_not_ordinary(self):
         old=load_inventory('bixianjue',self.root)
-        new=prepare_update(old,{'generals':[{'name':'张梁','variant':'英雄','level':None}]},root=self.root)
+        self.assertNotIn(('张梁','英雄'),[(r['name'],r.get('variant','普通')) for r in old['generals']])
+        new=prepare_update(old,{'generals':[{'name':'张梁','variant':'普通','level':None}]},root=self.root)
         ordinary=next(r for r in old['generals'] if r['name']=='张梁' and r.get('variant','普通')=='普通')
-        self.assertIn(ordinary,new['generals'])
+        self.assertEqual(next(r for r in new['generals'] if r['name']=='张梁')['entity_id'],ordinary['entity_id'])
         self.assertEqual(old['tactics'],new['tactics'])
         with query('bixianjue',self.root) as c:
-            self.assertIsNone(c.execute("select force from v_owned_generals where variant='英雄'").fetchone()[0])
+            self.assertIsNone(c.execute("select force from v_owned_generals where variant='英雄'").fetchone())
             self.assertEqual(c.execute("select advancement_verified_at from v_owned_tactics where name='烈火焚营'").fetchone()[0],'2026-09-02')
             self.assertIsNone(c.execute("select advancement_verified_at from v_owned_tactics where name='如有神助'").fetchone()[0])
 
     def test_remove_deletes_only_exact_general_variant(self):
         old=load_inventory('bixianjue',self.root)
+        old['generals'].append(dict(next(r for r in old['generals'] if r['name']=='张梁'),variant='英雄'))
         result=prepare_update(old,{'remove':{'generals':[{'name':'张梁','variant':'英雄'}]}},root=self.root)
         identities=[(r['name'],r.get('variant','普通')) for r in result['generals']]
         self.assertNotIn(('张梁','英雄'),identities)
@@ -189,11 +191,13 @@ class InventoryTests(unittest.TestCase):
         for patch in invalid:
             with self.assertRaises(ValueError): prepare_update(old,patch,root=self.root)
 
-    def test_unresolved_record_retained_and_reported(self):
-        result=update_inventory('bixianjue',{'generals':[{'name':'待核新武将','quality':'金','advancement':None}]},root=self.root)
-        self.assertEqual(validate_inventory(result,self.root)[0]['name'],'待核新武将')
-        with query('bixianjue',self.root) as c:
-            self.assertIsNotNone(c.execute("select * from v_owned_generals where name='待核新武将'").fetchone())
+    def test_missing_public_entity_aborts_inventory_update(self):
+        before=hashes(self.root)
+        for group,record in [('generals',{'name':'待核新武将','quality':'金'}),
+                             ('tactics',{'name':'待核新战法','quality':'金'})]:
+            with self.assertRaisesRegex(ValueError,'Public .* definition missing'):
+                update_inventory('bixianjue',{group:[record]},root=self.root)
+        self.assertEqual(before,hashes(self.root))
 
     def test_duplicate_and_invalid_level_rejected(self):
         old=load_inventory('bixianjue',self.root)
