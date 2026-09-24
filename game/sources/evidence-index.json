@@ -1771,5 +1771,795 @@
       "level"
     ],
     "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/临机制胜-10级.png",
+    "sha256": "a8c58a085b691d591f6234f2124115c8344d940d40b612913246c87eca8e60e8",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "临机制胜 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:a8c58a085b691d591f6234f2124115c8344d940d40b612913246c87eca8e60e8"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/苦肉计-10级.png",
+    "sha256": "d6357a5c5a7b8b6f6bba0f1f1a56b99e2da0c19036f2f7c4efc24d9de0de0e2a",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "苦肉计 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:d6357a5c5a7b8b6f6bba0f1f1a56b99e2da0c19036f2f7c4efc24d9de0de0e2a"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/百里疑城-10级.png",
+    "sha256": "99d39a398be3b40aaad9b8dc817bb8307ea6082cfd4a33e42db63577cbbefead",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "百里疑城 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:99d39a398be3b40aaad9b8dc817bb8307ea6082cfd4a33e42db63577cbbefead"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/天香-10级.png",
+    "sha256": "9f2bd4d303307348d20221304e5633999d51524f6adb113358f1450f53859ddb",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "天香 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:9f2bd4d303307348d20221304e5633999d51524f6adb113358f1450f53859ddb"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/火烧连营-10级.png",
+    "sha256": "2909afc072fde14e2e7c4ceb73fcd054dde39f0a076481adcee3b6583b6a81e5",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "火烧连营 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:2909afc072fde14e2e7c4ceb73fcd054dde39f0a076481adcee3b6583b6a81e5"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/虎踞江东-10级.png",
+    "sha256": "6ee697e57a2fd954a54fc862d652d278834d4b02b69066dcbe51ca9a47112c37",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "虎踞江东 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:6ee697e57a2fd954a54fc862d652d278834d4b02b69066dcbe51ca9a47112c37"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/荐计阻敌-10级.png",
+    "sha256": "0f4720269cbd4cbcf1436b69b2d753a0a2a00abc9c477bc5fb2f2536d645427a",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "荐计阻敌 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:0f4720269cbd4cbcf1436b69b2d753a0a2a00abc9c477bc5fb2f2536d645427a"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/智令从计-10级.png",
+    "sha256": "d4ef83196c89a1f1d8045e81ace3151d3722fcb93d15336736febb49be2ff9d3",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "智令从计 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:d4ef83196c89a1f1d8045e81ace3151d3722fcb93d15336736febb49be2ff9d3"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/骁勇无前-10级.png",
+    "sha256": "2c9b5f9b04258493050b2b0db869a432944309129358b64d4456a6c37ee4d8f6",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "骁勇无前 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:2c9b5f9b04258493050b2b0db869a432944309129358b64d4456a6c37ee4d8f6"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/七进七出-10级.png",
+    "sha256": "13aac1d8c0f9c18155eca84966bd1b61319d3b2e6514807413c51fed828dafc7",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "七进七出 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:13aac1d8c0f9c18155eca84966bd1b61319d3b2e6514807413c51fed828dafc7"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/巧言眩惑-10级.png",
+    "sha256": "bba59fc91319a8634d7c05066b9e32e06a4a7364ee95186892ddb327f83d286a",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "巧言眩惑 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:bba59fc91319a8634d7c05066b9e32e06a4a7364ee95186892ddb327f83d286a"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/红妆缭乱-10级.png",
+    "sha256": "f59e592cfdec53989231eb11732dbf2dbd70a2b051bb401d023b1426fe3b5b59",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "红妆缭乱 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:f59e592cfdec53989231eb11732dbf2dbd70a2b051bb401d023b1426fe3b5b59"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/勇冠贲育-10级.png",
+    "sha256": "f8b191527ffb2b33336a48cba6452da681e592eb14ceb71cd9c385835a30dc5c",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "勇冠贲育 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:f8b191527ffb2b33336a48cba6452da681e592eb14ceb71cd9c385835a30dc5c"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/流风回雪-10级.png",
+    "sha256": "f38876e2c3e726cccf6861810ae745d19d13547c76a175ae51c7e2276796aec0",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "流风回雪 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:f38876e2c3e726cccf6861810ae745d19d13547c76a175ae51c7e2276796aec0"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/国色-10级.png",
+    "sha256": "698dd616e504a5f16080236a0f7df9830e2f2193f68695d76756c3fa14063e5d",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "国色 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:698dd616e504a5f16080236a0f7df9830e2f2193f68695d76756c3fa14063e5d"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/闭月-10级.png",
+    "sha256": "fccc9a0323b86d1313689f111cc8de4fd832be5bd565bdff250344648adff6c7",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "闭月 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:fccc9a0323b86d1313689f111cc8de4fd832be5bd565bdff250344648adff6c7"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/诡道玄机-10级.png",
+    "sha256": "a01fe0044593a201662a3b8540fba923acf4973154b62667b1725dbe9958ded5",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "诡道玄机 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:a01fe0044593a201662a3b8540fba923acf4973154b62667b1725dbe9958ded5"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/裸衣血战-10级.png",
+    "sha256": "befda85e7103b4a4289baa55ab0ee18339d7fdac441e1482f6d15e940159f93b",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "裸衣血战 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:befda85e7103b4a4289baa55ab0ee18339d7fdac441e1482f6d15e940159f93b"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/古之恶来-10级.png",
+    "sha256": "635d667b16cd73b94f3e791a770bcf4a4d90b739f2a20a92ec5db0a3fe2be36e",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "古之恶来 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:635d667b16cd73b94f3e791a770bcf4a4d90b739f2a20a92ec5db0a3fe2be36e"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/算无遗策-10级.png",
+    "sha256": "0bc331becfb2866da1adeea3dc37d93f8ef32dba605212897c8023efe3b051b5",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "算无遗策 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:0bc331becfb2866da1adeea3dc37d93f8ef32dba605212897c8023efe3b051b5"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/持军毅重-10级.png",
+    "sha256": "ca9c70c6a031017adb9ea01e44a75b6eac061d47516a5afd988b4e9ba2c3b51e",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "持军毅重 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:ca9c70c6a031017adb9ea01e44a75b6eac061d47516a5afd988b4e9ba2c3b51e"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/大破街亭-10级.png",
+    "sha256": "e2d5dc54ed4eaeb0038b97f3fecaedce591b41ab79fddc9676b96d7a3918f75a",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "大破街亭 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:e2d5dc54ed4eaeb0038b97f3fecaedce591b41ab79fddc9676b96d7a3918f75a"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/长驱直入-10级.png",
+    "sha256": "9bfc548dc8e1359c2d02861297382abe1d1eea19decf1d115619144fbcbdf375",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "长驱直入 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:9bfc548dc8e1359c2d02861297382abe1d1eea19decf1d115619144fbcbdf375"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/神速奔袭-10级.png",
+    "sha256": "45885185e429e0b08786c6a01018dc7b5e3660061150117585e317515593264c",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "神速奔袭 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:45885185e429e0b08786c6a01018dc7b5e3660061150117585e317515593264c"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/固镇襄樊-10级.png",
+    "sha256": "36286985e37b81ab297c115189ade4df21be7838b4535dd34391df3b842c840e",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "固镇襄樊 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:36286985e37b81ab297c115189ade4df21be7838b4535dd34391df3b842c840e"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/威震华夏-10级.png",
+    "sha256": "242ba70abbae4feb8d752548f833602c61bbd2ce590bb3c049b84cdc9890efdd",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "威震华夏 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:242ba70abbae4feb8d752548f833602c61bbd2ce590bb3c049b84cdc9890efdd"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/万人之敌-10级.png",
+    "sha256": "f7ef811af58e245cadd13a5a60af217698b9f0192d8aa308a09d2c7aef9ae844",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "万人之敌 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:f7ef811af58e245cadd13a5a60af217698b9f0192d8aa308a09d2c7aef9ae844"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/折节学问-10级.png",
+    "sha256": "a42c45cf5dac770c2fb7fc9fc72224c13969b41ea9cf95b47e4b56b2b0ae8b43",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "折节学问 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:a42c45cf5dac770c2fb7fc9fc72224c13969b41ea9cf95b47e4b56b2b0ae8b43"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/睹事知机-10级.png",
+    "sha256": "c7d1bdcda50d60096d8dab1c718a44f4f1790f4c248a3f001546e2c2a3923f1c",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "睹事知机 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:c7d1bdcda50d60096d8dab1c718a44f4f1790f4c248a3f001546e2c2a3923f1c"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/龙吟四海-10级.png",
+    "sha256": "0897c7d652d1e02981285d64b96b79fffb55cca49780a9f01ba1719b2b6b10d1",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "龙吟四海 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:0897c7d652d1e02981285d64b96b79fffb55cca49780a9f01ba1719b2b6b10d1"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/忠烈勇武-10级.png",
+    "sha256": "9fd168dfd2e5191950045b25f37b854df929ae11473c36c8a4b9652b70c6d792",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "忠烈勇武 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:9fd168dfd2e5191950045b25f37b854df929ae11473c36c8a4b9652b70c6d792"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/制霸江东-10级.png",
+    "sha256": "53c8f78a1fd92a3aafdf5d6ab389b5ff890b68aad517c8e40b6a5fe9d85f42b7",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "制霸江东 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:53c8f78a1fd92a3aafdf5d6ab389b5ff890b68aad517c8e40b6a5fe9d85f42b7"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/划湘分荆-10级.png",
+    "sha256": "463bfafe6cafedc63326d97e60f4021fbd101f78e008f4daae93813730b0156c",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "划湘分荆 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:463bfafe6cafedc63326d97e60f4021fbd101f78e008f4daae93813730b0156c"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/锦帆渠魁-10级.png",
+    "sha256": "ebdf7bd0a1f06b669c1795374bb512cca91483b5ae4a89bc19a5c5a42aec3abd",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "锦帆渠魁 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:ebdf7bd0a1f06b669c1795374bb512cca91483b5ae4a89bc19a5c5a42aec3abd"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/兴王定霸-10级.png",
+    "sha256": "4b02768221eeb35573a16e3b4b1e111fdb44c4a7a7794d1ffde1603e1cf4b16a",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "兴王定霸 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:4b02768221eeb35573a16e3b4b1e111fdb44c4a7a7794d1ffde1603e1cf4b16a"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/白衣渡江-10级.png",
+    "sha256": "23f4a4af63f5a7066fd2b2369ba9b0974dfac5479e2daf24d73de315d4139b85",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "白衣渡江 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:23f4a4af63f5a7066fd2b2369ba9b0974dfac5479e2daf24d73de315d4139b85"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/悲愤诗-10级.png",
+    "sha256": "6c8dca427153ed204e8c18982433caf58866e05c906cecbcaaf48700c3d21d4f",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "悲愤诗 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:6c8dca427153ed204e8c18982433caf58866e05c906cecbcaaf48700c3d21d4f"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/黄天当立-10级.png",
+    "sha256": "83bd8c1973054e99c9c732d861bbd1180219f6cb31c3627646f129ca75cf27a4",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "黄天当立 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:83bd8c1973054e99c9c732d861bbd1180219f6cb31c3627646f129ca75cf27a4"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/膂力过人-10级.png",
+    "sha256": "28eff1733a84ca42a6b344bcedbcfdce8c78588ac54328c6fea789371e3f8d8c",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "膂力过人 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:28eff1733a84ca42a6b344bcedbcfdce8c78588ac54328c6fea789371e3f8d8c"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/交锋震威-10级.png",
+    "sha256": "6bba83278afebe668e12711386ff51089130cfadb43c25b28ef397fcf55ccd97",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "交锋震威 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:6bba83278afebe668e12711386ff51089130cfadb43c25b28ef397fcf55ccd97"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/麻沸散-10级.png",
+    "sha256": "8b4fc51b365b5ccd04863aac7674bafb3f189f2330bd9172568183d144ee97c4",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "麻沸散 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:8b4fc51b365b5ccd04863aac7674bafb3f189f2330bd9172568183d144ee97c4"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/陷阵蹈难-10级.png",
+    "sha256": "4c2d6fb8c351bda248039f0a7760c9d356cdaf19ba8fdd5db4a2642c906c14b0",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "陷阵蹈难 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:4c2d6fb8c351bda248039f0a7760c9d356cdaf19ba8fdd5db4a2642c906c14b0"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/顾盼生姿-10级.png",
+    "sha256": "8b387146a060ef02f5f934f0b3ea217fe382bff5f9b15dd23d16b9f2770fd863",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "顾盼生姿 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:8b387146a060ef02f5f934f0b3ea217fe382bff5f9b15dd23d16b9f2770fd863"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/妖武-10级.png",
+    "sha256": "2c03b8573c0edb6075d597358aae13236d0de48f4f9eb6c6b1f8350c321fb1e5",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "妖武 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:2c03b8573c0edb6075d597358aae13236d0de48f4f9eb6c6b1f8350c321fb1e5"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/妖风大作-10级.png",
+    "sha256": "7e653466db6e7d91291aeff8b1dd658d95b1dc482f394bb823fe9b893695edb5",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "妖风大作 10级满级预览，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:7e653466db6e7d91291aeff8b1dd658d95b1dc482f394bb823fe9b893695edb5"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/咏歌尝酒-10级.png",
+    "sha256": "af5c212d0e1e67511a62f879edc6c6157dd86123891a7099f124440bbc8f89cd",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "咏歌尝酒 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:af5c212d0e1e67511a62f879edc6c6157dd86123891a7099f124440bbc8f89cd"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/决水破敌-10级.png",
+    "sha256": "f9e5938728ce6ca25127f4d21a6c8d50edcc163e5e8f5c244858e598c66813eb",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "决水破敌 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:f9e5938728ce6ca25127f4d21a6c8d50edcc163e5e8f5c244858e598c66813eb"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/束手无策-10级.png",
+    "sha256": "bcf3a767908444db4e6433d842bd6196b0bfd9d085815f909ca3e14f2adf15a5",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "束手无策 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:bcf3a767908444db4e6433d842bd6196b0bfd9d085815f909ca3e14f2adf15a5"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/铸甲销戈-10级.png",
+    "sha256": "3766dbbe89473ffa4d3059df1c019a9622fbc4f19acd39adea6ff0c45de13837",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "铸甲销戈 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:3766dbbe89473ffa4d3059df1c019a9622fbc4f19acd39adea6ff0c45de13837"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/骁勇之姿-10级.png",
+    "sha256": "e6cbf11c34ec31ad3bd28ee83885afb64699369140ecdf1df0b786654b47fd46",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "骁勇之姿 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:e6cbf11c34ec31ad3bd28ee83885afb64699369140ecdf1df0b786654b47fd46"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/任人唯贤-10级.png",
+    "sha256": "cb5a1aecd5b362603fba436484e17bff4e48d0492d958d82b283c9abd8da0c7c",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "任人唯贤 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:cb5a1aecd5b362603fba436484e17bff4e48d0492d958d82b283c9abd8da0c7c"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/避其锐气-10级.png",
+    "sha256": "7dd1cb6577f2d3f7b7ef6349920916d86f5370ec79e0b61069a576c8611bb4a9",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "避其锐气 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:7dd1cb6577f2d3f7b7ef6349920916d86f5370ec79e0b61069a576c8611bb4a9"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/如有神助-10级.png",
+    "sha256": "6c7ddf364f0f6797049232afa09ca7a24b1240b6c72d2f5427282087ea7e6223",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "如有神助 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:6c7ddf364f0f6797049232afa09ca7a24b1240b6c72d2f5427282087ea7e6223"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/坚壁清野-10级.png",
+    "sha256": "3e1b892d881a8328c7ea35ee776cf7104532c8e2aa2f4ddb29dd07ce711ac586",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "坚壁清野 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:3e1b892d881a8328c7ea35ee776cf7104532c8e2aa2f4ddb29dd07ce711ac586"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/火羽-10级.png",
+    "sha256": "b8edf6a841bc9d83da98be272f2d205d0c57cfb0ee75d13cfd39e51b9af703ce",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "火羽 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:b8edf6a841bc9d83da98be272f2d205d0c57cfb0ee75d13cfd39e51b9af703ce"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/上兵伐谋-10级.png",
+    "sha256": "1d771081522dff23f39e457444e2b4b5fd80530641d1f2669d01bede1e35b24b",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "上兵伐谋 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:1d771081522dff23f39e457444e2b4b5fd80530641d1f2669d01bede1e35b24b"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/一计决胜-10级.png",
+    "sha256": "261ac50e0d6780f27b91065fdf15ae609314487b1dfdc2492feca9159cb8e455",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "一计决胜 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:261ac50e0d6780f27b91065fdf15ae609314487b1dfdc2492feca9159cb8e455"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/奇计迭出-10级.png",
+    "sha256": "437dde52e836739ee88d6fe1c80ee7c742e1c65a505276c2d802b86eb23d776c",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "奇计迭出 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:437dde52e836739ee88d6fe1c80ee7c742e1c65a505276c2d802b86eb23d776c"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/以战养战-10级.png",
+    "sha256": "37310b40f5c45b9a802423d3cdd8b51b824dcd474ead4d84b1a02c2c5c44bb3b",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "以战养战 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:37310b40f5c45b9a802423d3cdd8b51b824dcd474ead4d84b1a02c2c5c44bb3b"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/强袭-10级.png",
+    "sha256": "6ffc729e715d790d3c031d2076737564f0426db3a55ec80fc31d42dc14a8a042",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "强袭 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:6ffc729e715d790d3c031d2076737564f0426db3a55ec80fc31d42dc14a8a042"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/计逐穷寇-10级.png",
+    "sha256": "88be74bfff7cdfb16787d66453e34ead7813847ab67c7c13e903e5f700b8f773",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "计逐穷寇 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:88be74bfff7cdfb16787d66453e34ead7813847ab67c7c13e903e5f700b8f773"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/乱敌方阵-10级.png",
+    "sha256": "9f2209f161b7dcfd5fa030bf36885ff7c54f5d36bb188ad99599d9120663ecb0",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "乱敌方阵 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:9f2209f161b7dcfd5fa030bf36885ff7c54f5d36bb188ad99599d9120663ecb0"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/克敌如风-10级.png",
+    "sha256": "142556521c29f1e793b1328285f9e3901f5febfd28cb1075944fffde98208530",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "克敌如风 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:142556521c29f1e793b1328285f9e3901f5febfd28cb1075944fffde98208530"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/谈笑诛心-10级.png",
+    "sha256": "e4225c031f4818df2374c990cf46ab29cbd075793f614b2994dc018bb696bf87",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "谈笑诛心 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:e4225c031f4818df2374c990cf46ab29cbd075793f614b2994dc018bb696bf87"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/夜袭-10级.png",
+    "sha256": "dec39b57b9e4d7489b199cb1716dbc18718017eaa7a083ab3c7bca01a25d5f06",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "夜袭 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:dec39b57b9e4d7489b199cb1716dbc18718017eaa7a083ab3c7bca01a25d5f06"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/筹划良策-10级.png",
+    "sha256": "75390a0a53598058a7a1ddb497f311bc736cb231643db7ba3c436fda6e957843",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "筹划良策 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:75390a0a53598058a7a1ddb497f311bc736cb231643db7ba3c436fda6e957843"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/屈人之兵-10级.png",
+    "sha256": "986f7657e2318e09738832da6c73f177312ba1dcacb3eff8ceaa17a7d6da9a96",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "屈人之兵 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:986f7657e2318e09738832da6c73f177312ba1dcacb3eff8ceaa17a7d6da9a96"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/穷追不舍-10级.png",
+    "sha256": "fb6ae0a56d33b9e6252cb74c0e772b6f2a90abb2d4ad96c6e95d2edd04859fe8",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "穷追不舍 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:fb6ae0a56d33b9e6252cb74c0e772b6f2a90abb2d4ad96c6e95d2edd04859fe8"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/临阵突袭-10级.png",
+    "sha256": "7e0145db46298e46898c2cd7edcd1c2c92b110e648459ba8c048ca8e7c40ccee",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "临阵突袭 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:7e0145db46298e46898c2cd7edcd1c2c92b110e648459ba8c048ca8e7c40ccee"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/疾行侧击-10级.png",
+    "sha256": "c4230770f9b93261d7b48a1faf0fbf21c8baa85ca8d339bbf04547ea52f5e3c0",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "疾行侧击 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:c4230770f9b93261d7b48a1faf0fbf21c8baa85ca8d339bbf04547ea52f5e3c0"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/来好息师-10级.png",
+    "sha256": "455a40283a597cbc1332743de98050c214b9a0676fb3a8f565588adb76d392e4",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "来好息师 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:455a40283a597cbc1332743de98050c214b9a0676fb3a8f565588adb76d392e4"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/迎敌-10级.png",
+    "sha256": "cb256983f7064fd93a272133ffb46ae15ff7f634ab3f38c5367b20ee3bbc3abc",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "迎敌 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:cb256983f7064fd93a272133ffb46ae15ff7f634ab3f38c5367b20ee3bbc3abc"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/揭竿而起-10级.png",
+    "sha256": "479d495d28a1930378e95f9f4b6260b80940d7a54cf0e74f9e96c9dc8ccbbd36",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "揭竿而起 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:479d495d28a1930378e95f9f4b6260b80940d7a54cf0e74f9e96c9dc8ccbbd36"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/文治武功-10级.png",
+    "sha256": "03650f66f487d1092e602cebe148e2968b6cf2746a23118ed1c3d3826de8166d",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "文治武功 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:03650f66f487d1092e602cebe148e2968b6cf2746a23118ed1c3d3826de8166d"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/如沐春风-10级.png",
+    "sha256": "0bbd3150a5deeaba29c9da87d37b91b73f3e0e23559c9cb65ec5f66bf7ca09b0",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "如沐春风 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:0bbd3150a5deeaba29c9da87d37b91b73f3e0e23559c9cb65ec5f66bf7ca09b0"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/临危勇烈-10级.png",
+    "sha256": "5bbf2284e17e8dd346095d5655757892ccb6d463b5afeb4b026cbcba709b9d5b",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "临危勇烈 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:5bbf2284e17e8dd346095d5655757892ccb6d463b5afeb4b026cbcba709b9d5b"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/独断专权-10级.png",
+    "sha256": "fe86984f16605859ac6834b3770185167e2026678ec4f26808867ec89f279bfd",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "独断专权 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:fe86984f16605859ac6834b3770185167e2026678ec4f26808867ec89f279bfd"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/恃勇论锋-10级.png",
+    "sha256": "321eb550bdb04411d00259a2f317b0a6380768951b61651397fd7a0efaa477d8",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "恃勇论锋 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:321eb550bdb04411d00259a2f317b0a6380768951b61651397fd7a0efaa477d8"
+  },
+  {
+    "path": "game/sources/screenshots/2026-09-12/江东虎威-10级.png",
+    "sha256": "27b4a98c19cfb29f571d6dd494a247bfd22e188bc91a9d1eadc9fa477c164425",
+    "source_type": "游戏内截图",
+    "platform": "Steam",
+    "season": "S2",
+    "notes": "江东虎威 10级满级效果，用户提供",
+    "availability": "historical_missing",
+    "evidence_id": "sha256:27b4a98c19cfb29f571d6dd494a247bfd22e188bc91a9d1eadc9fa477c164425"
   }
 ]

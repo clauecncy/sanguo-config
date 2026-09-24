@@ -662,6 +662,52 @@ INSERT INTO "sources" VALUES(75,'用户Steam S2截图-五雷轰顶完整10级复
 INSERT INTO "sources" VALUES(76,'用户Steam S2截图-韬光养晦完整10级复核','game/sources/evidence/2026-09-24-韬光养晦10级-完整复核.png','游戏内截图','Steam','s2',100,'2026-09-24','用户当前完整10级截图；仅核实显示字段，不外推红度');
 INSERT INTO "sources" VALUES(77,'用户Steam S2截图-固镇襄樊完整10级','game/sources/evidence/2026-09-24-固镇襄樊10级-控制补证.png','游戏内截图','Steam','s2',100,'2026-09-24','用户当前完整10级截图；核实目标、时点及属性影响，不认证武将全部字段');
 INSERT INTO "sources" VALUES(78,'用户Steam S2截图-乱世奸雄完整10级','game/sources/evidence/2026-09-24-乱世奸雄10级-控制补证.png','游戏内截图','Steam','s2',100,'2026-09-24','用户当前完整10级截图；核实目标、时点及属性影响，不认证武将全部字段');
+INSERT INTO "sources" VALUES(79,'Steam截图-锦帆渠魁-10级-20260912','game/sources/screenshots/2026-09-12/锦帆渠魁-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(80,'Steam截图-兴王定霸-10级-20260912','game/sources/screenshots/2026-09-12/兴王定霸-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(81,'Steam截图-白衣渡江-10级-20260912','game/sources/screenshots/2026-09-12/白衣渡江-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(82,'Steam截图-悲愤诗-10级-20260912','game/sources/screenshots/2026-09-12/悲愤诗-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(83,'Steam截图-黄天当立-10级-20260912','game/sources/screenshots/2026-09-12/黄天当立-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(84,'Steam截图-膂力过人-10级-20260912','game/sources/screenshots/2026-09-12/膂力过人-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(85,'Steam截图-交锋震威-10级-20260912','game/sources/screenshots/2026-09-12/交锋震威-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(86,'Steam截图-麻沸散-10级-20260912','game/sources/screenshots/2026-09-12/麻沸散-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(87,'Steam截图-陷阵蹈难-10级-20260912','game/sources/screenshots/2026-09-12/陷阵蹈难-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(88,'Steam截图-顾盼生姿-10级-20260912','game/sources/screenshots/2026-09-12/顾盼生姿-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(89,'Steam截图-妖武-10级-20260912','game/sources/screenshots/2026-09-12/妖武-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(90,'Steam截图-妖风大作-10级-20260912','game/sources/screenshots/2026-09-12/妖风大作-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级预览/10级截图；公共战法证据');
+INSERT INTO "sources" VALUES(91,'Steam截图-咏歌尝酒-10级-20260912','game/sources/screenshots/2026-09-12/咏歌尝酒-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(92,'Steam截图-决水破敌-10级-20260912','game/sources/screenshots/2026-09-12/决水破敌-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(93,'Steam截图-束手无策-10级-20260912','game/sources/screenshots/2026-09-12/束手无策-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(94,'Steam截图-铸甲销戈-10级-20260912','game/sources/screenshots/2026-09-12/铸甲销戈-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(95,'Steam截图-骁勇之姿-10级-20260912','game/sources/screenshots/2026-09-12/骁勇之姿-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(96,'Steam截图-任人唯贤-10级-20260912','game/sources/screenshots/2026-09-12/任人唯贤-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(97,'Steam截图-避其锐气-10级-20260912','game/sources/screenshots/2026-09-12/避其锐气-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(98,'Steam截图-如有神助-10级-20260912','game/sources/screenshots/2026-09-12/如有神助-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(99,'Steam截图-坚壁清野-10级-20260912','game/sources/screenshots/2026-09-12/坚壁清野-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(100,'Steam截图-火羽-10级-20260912','game/sources/screenshots/2026-09-12/火羽-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(101,'Steam截图-上兵伐谋-10级-20260912','game/sources/screenshots/2026-09-12/上兵伐谋-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(102,'Steam截图-一计决胜-10级-20260912','game/sources/screenshots/2026-09-12/一计决胜-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(103,'Steam截图-奇计迭出-10级-20260912','game/sources/screenshots/2026-09-12/奇计迭出-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(104,'Steam截图-以战养战-10级-20260912','game/sources/screenshots/2026-09-12/以战养战-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(105,'Steam截图-强袭-10级-20260912','game/sources/screenshots/2026-09-12/强袭-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(106,'Steam截图-计逐穷寇-10级-20260912','game/sources/screenshots/2026-09-12/计逐穷寇-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(107,'Steam截图-乱敌方阵-10级-20260912','game/sources/screenshots/2026-09-12/乱敌方阵-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(108,'Steam截图-克敌如风-10级-20260912','game/sources/screenshots/2026-09-12/克敌如风-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(109,'Steam截图-谈笑诛心-10级-20260912','game/sources/screenshots/2026-09-12/谈笑诛心-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(110,'Steam截图-夜袭-10级-20260912','game/sources/screenshots/2026-09-12/夜袭-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(111,'Steam截图-筹划良策-10级-20260912','game/sources/screenshots/2026-09-12/筹划良策-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(112,'Steam截图-屈人之兵-10级-20260912','game/sources/screenshots/2026-09-12/屈人之兵-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(113,'Steam截图-穷追不舍-10级-20260912','game/sources/screenshots/2026-09-12/穷追不舍-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(114,'Steam截图-临阵突袭-10级-20260912','game/sources/screenshots/2026-09-12/临阵突袭-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(115,'Steam截图-疾行侧击-10级-20260912','game/sources/screenshots/2026-09-12/疾行侧击-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(116,'Steam截图-来好息师-10级-20260912','game/sources/screenshots/2026-09-12/来好息师-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(117,'Steam截图-迎敌-10级-20260912','game/sources/screenshots/2026-09-12/迎敌-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(118,'Steam截图-揭竿而起-10级-20260912','game/sources/screenshots/2026-09-12/揭竿而起-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(119,'Steam截图-文治武功-10级-20260912','game/sources/screenshots/2026-09-12/文治武功-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(120,'Steam截图-如沐春风-10级-20260912','game/sources/screenshots/2026-09-12/如沐春风-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(121,'Steam截图-临危勇烈-10级-20260912','game/sources/screenshots/2026-09-12/临危勇烈-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(122,'Steam截图-独断专权-10级-20260912','game/sources/screenshots/2026-09-12/独断专权-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(123,'Steam截图-恃勇论锋-10级-20260912','game/sources/screenshots/2026-09-12/恃勇论锋-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
+INSERT INTO "sources" VALUES(124,'Steam截图-江东虎威-10级-20260912','game/sources/screenshots/2026-09-12/江东虎威-10级.png','游戏内截图','Steam','S2',100,'2026-09-12T00:00:00+08:00','用户提供；满级/满级预览截图');
 CREATE TABLE strategy_books (
   id INTEGER PRIMARY KEY,
   name TEXT NOT NULL UNIQUE,
@@ -1083,6 +1129,10 @@ INSERT INTO "tactics" VALUES(229,'黄天当立','https://www.sgmdtx.com/zf/黄�
 INSERT INTO "tactics" VALUES(230,'黄天惑心','https://www.sgmdtx.com/zf/黄天惑心/',NULL,'主动','谋略',NULL,'盾兵、弓兵、长枪兵、骑兵',0,'对敌方全体造成70%→77.7%的谋略伤害，并施加妖术持续2回合，若目标已持有妖术状态则额外使其造成伤害降低8%→8.8%，持续1回合',NULL,'跨赛季参考',1,'2026-08-19T17:01:54+08:00',NULL,'tactic:d69c2eea4eb80c15323b',NULL,NULL,'需要确认','网页/缺失来源/无详情或已知残缺；须用户确认，不由旧核验标签升级','[]','reviewed');
 INSERT INTO "tactics" VALUES(231,'龙吟四海','https://www.sgmdtx.com/zf/龙吟四海/',NULL,'被动','兵刃',NULL,'盾兵、弓兵、长枪兵、骑兵',1,'自身造成兵刃伤害后有37.5%-41.6%概率触发龙吟：对目标施加畏惧，持续2回合，若目标已处于畏惧状态，则改对其造成50%-55.5%兵刃伤害。每回合可触发4次龙吟','s1','跨赛季参考',1,'2026-08-19T17:01:54+08:00',NULL,'tactic:c2427376c43aef7611a5',NULL,NULL,'需要确认','网页/缺失来源/无详情或已知残缺；须用户确认，不由旧核验标签升级','[]','reviewed');
 INSERT INTO "tactics" VALUES(232,'弦无虚发','https://www.sgmdtx.com/zf/%E5%BC%A6%E6%97%A0%E8%99%9A%E5%8F%91/',NULL,'被动','兵刃',NULL,'盾兵、弓兵、长枪兵、骑兵',1,NULL,'s1','跨赛季参考',1,'2026-08-19T17:01:54+08:00',NULL,'tactic:ea93e058bb08c7d6afbd',NULL,NULL,'需要确认','网页/缺失来源/无详情或已知残缺；须用户确认，不由旧核验标签升级','[]','reviewed');
+INSERT INTO "tactics" VALUES(233,'巧言眩惑',NULL,'金色','指挥','谋略','100%',NULL,1,'战斗开始时，使敌军随机两人造成兵刃伤害降低30%（受智力影响），持续2回合。第3回合开始时降低这两名目标30点智力（受智力影响），持续3回合，并对其造成500%谋略伤害（受智力差影响）','S2','Steam截图已核',56,'2026-09-12T00:00:00+08:00',10,'tactic:5d7cb5344a10c7241331',NULL,'Steam','需要确认','尚未逐字段人工核定；自动分类不覆盖已有决定','[]','reviewed');
+INSERT INTO "tactics" VALUES(234,'独断专权',NULL,'金','被动','治疗','100%',NULL,1,'自身统率提升40%（受统率影响），战斗中两名队友受到负面状态时，自身有30%概率（受统率影响）为其驱散1种随机负面状态，并恢复其兵力（治疗率100%，受智力和统率影响）','S2','Steam截图已核',122,'2026-09-12T00:00:00+08:00',10,'tactic:a87fd0a27d783e9f54c8',NULL,'Steam','需要确认','尚未逐字段人工核定；自动分类不覆盖已有决定','[]','reviewed');
+INSERT INTO "tactics" VALUES(235,'恃勇论锋',NULL,'金','主动','兵刃','65%',NULL,1,'对敌军随机单体（有75%概率选择统率最低目标）造成250%兵刃伤害，自身每有一个基础属性高于目标，兵刃系数提升80%，并恢复我军兵力最低单体兵力（治疗率180%，受武力影响）','S2','Steam截图已核',123,'2026-09-12T00:00:00+08:00',10,'tactic:d0b46aca34c00f4bccf8',NULL,'Steam','需要确认','尚未逐字段人工核定；自动分类不覆盖已有决定','[]','reviewed');
+INSERT INTO "tactics" VALUES(236,'江东虎威',NULL,'金','追击','兵刃','55%',NULL,1,'普通攻击后，降低敌军随机单体70点统率（受统率影响），持续2回合，并施加震慑，持续1回合','S2','Steam截图已核',124,'2026-09-12T00:00:00+08:00',10,'tactic:1cf003c1d0f8ee9d9fcb',NULL,'Steam','需要确认','尚未逐字段人工核定；自动分类不覆盖已有决定','[]','reviewed');
 CREATE VIEW v_general_level50_estimate AS
 SELECT
   name,

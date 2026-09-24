@@ -10,8 +10,14 @@ user/*/.inventory.lock
 user/*/evidence/incoming/
 user/*/evidence/.pending-*/
 user/*/evidence/.previous-*/
+user/*/evidence/current/*.png
+user/*/evidence/current/*.jpg
+user/*/evidence/current/*.jpeg
+user/*/evidence/current/*.webp
+user/*/演武/*/evidence/
 tests/tmp-inventory-*/
 game/rebuilt.sqlite3
+game/sources/screenshots/
 
 # Latest inventory screenshots live in user/*/evidence/current/.
 # No persistent inventory history or duplicate personal databases are generated.

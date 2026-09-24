@@ -1,0 +1,359 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-16",
+  "season": "s2",
+  "first_configuration_date": "2026-09-16",
+  "start_date": "2026-09-17",
+  "status": "configuration",
+  "date_source": "用户本次明确确认",
+  "native_generals": {
+    "status": "confirmed_from_screenshot",
+    "names": [
+      "黄月英",
+      "诸葛亮",
+      "田丰",
+      "于禁",
+      "袁绍",
+      "马超",
+      "黄盖",
+      "小乔",
+      "关羽",
+      "张飞"
+    ],
+    "level": 50,
+    "advancement": null
+  },
+  "native_tactics": {
+    "status": "confirmed_from_screenshot",
+    "gold": [
+      "兵贵神速",
+      "清风驱疾",
+      "铁骑横冲",
+      "指点乾坤",
+      "奇门遁甲",
+      "烈火焚营",
+      "狂风大作",
+      "战八方",
+      "以静制动",
+      "横征暴敛",
+      "奇正相生",
+      "胜敌益强"
+    ],
+    "purple": [
+      "穷追不舍",
+      "乱敌方阵",
+      "决水破敌",
+      "束手无策",
+      "避其锐气",
+      "文治武功",
+      "屈人之兵",
+      "揭竿而起"
+    ],
+    "note": "已学习仅表示截图状态，不据此推断具体携带者或战法等级"
+  },
+  "support": {
+    "status": "confirmed_from_screenshot",
+    "general": "陆逊",
+    "regular_tactics": [
+      "韬光养晦",
+      "知人善任"
+    ],
+    "extra_purple_tactic": "如有神助",
+    "evidence": "evidence/07.png"
+  },
+  "stratagem": {
+    "status": "withdrawn",
+    "name": "战法支援",
+    "withdrawal_reason": "原方案沿用截图分队，未充分比较全池重组、周瑜异常体系与陆逊前排体系；用户要求独立推导。"
+  },
+  "formation": {
+    "status": "withdrawn",
+    "teams": [
+      {
+        "generals": [
+          {
+            "name": "诸葛亮",
+            "tactics": [
+              "奇正相生",
+              "胜敌益强"
+            ]
+          },
+          {
+            "name": "田丰",
+            "tactics": [
+              "奇门遁甲",
+              "烈火焚营"
+            ]
+          },
+          {
+            "name": "黄月英",
+            "tactics": [
+              "清风驱疾",
+              "知人善任"
+            ]
+          }
+        ]
+      },
+      {
+        "generals": [
+          {
+            "name": "于禁",
+            "tactics": [
+              "以静制动",
+              "避其锐气"
+            ]
+          },
+          {
+            "name": "袁绍",
+            "tactics": [
+              "文治武功",
+              "指点乾坤"
+            ]
+          },
+          {
+            "name": "马超",
+            "tactics": [
+              "铁骑横冲",
+              "兵贵神速"
+            ]
+          }
+        ]
+      },
+      {
+        "generals": [
+          {
+            "name": "黄盖",
+            "tactics": [
+              "横征暴敛",
+              "如有神助"
+            ]
+          },
+          {
+            "name": "小乔",
+            "tactics": [
+              "束手无策",
+              "决水破敌"
+            ]
+          },
+          {
+            "name": "周瑜",
+            "tactics": [
+              "狂风大作",
+              "王佐之才"
+            ]
+          }
+        ]
+      }
+    ],
+    "positions_and_initiative": "待本轮详细属性及阵位截图核定；列表顺序不是前中后位置",
+    "withdrawal_reason": "原方案沿用截图分队，未充分比较全池重组、周瑜异常体系与陆逊前排体系；用户要求独立推导。"
+  },
+  "pending": [
+    "核定马超是否同时为队内武力及先攻最高",
+    "核定实际阵位及属性加点",
+    "袁绍空位及狂风大作、知人善任的最终分配",
+    "锦囊名称未直接截图确认，不把已见紫色支援反推为用户确认锦囊"
+  ],
+  "evidence": [
+    "evidence/01.png",
+    "evidence/02.png",
+    "evidence/03.png",
+    "evidence/04.png",
+    "evidence/05.png",
+    "evidence/06.png",
+    "evidence/07.png"
+  ],
+  "reassessment": {
+    "status": "superseded_by_mechanics_correction",
+    "constraint": "从本轮资源池独立组队，截图分队和已学习标记不是配置约束",
+    "candidates": [
+      {
+        "support_general": "周瑜",
+        "core": [
+          "周瑜",
+          "黄盖",
+          "小乔"
+        ],
+        "focus": "异常触发密度、风火集中与核心战法分配"
+      },
+      {
+        "support_general": "陆逊",
+        "core": [
+          "陆逊",
+          "黄盖",
+          "小乔"
+        ],
+        "core_tactics": [
+          "韬光养晦",
+          "横征暴敛"
+        ],
+        "formation": "锥形阵前排陆逊",
+        "focus": "本人施加负面触发续航、黄盖铺火、启动前生存及支援成本"
+      }
+    ],
+    "other_candidate_cores": [
+      [
+        "诸葛亮",
+        "袁绍",
+        "黄月英"
+      ],
+      [
+        "于禁",
+        "关羽",
+        "张飞"
+      ]
+    ],
+    "note": "全部为待验证候选，不表示用户已选择支援或游戏内已装备。",
+    "correction": "撤回本人施加负面的前提；不再优先诸葛亮袁绍组合。陆逊支援已由截图确认。"
+  },
+  "mechanics_corrections": [
+    {
+      "name": "横征暴敛",
+      "status": "user_confirmed",
+      "date": "2026-09-17",
+      "rule": "己方对敌方施加负面即可触发，不限携带者本人施加；不得据此推算未核逐次触发细节"
+    },
+    {
+      "name": "合聚群雄",
+      "status": "confirmed_from_screenshot",
+      "level": 10,
+      "coefficient_percent": 75,
+      "rule": "武力、智力、先攻最高单体分别对敌军对应属性最低单体造成兵刃和谋略伤害",
+      "evidence": "evidence/06.png",
+      "conflict": "公共库旧描述37.5%不得用于本轮满级计算"
+    }
+  ],
+  "support_history": [
+    {
+      "status": "withdrawn",
+      "general": "周瑜",
+      "regular_tactics": [
+        "王佐之才",
+        "知人善任"
+      ],
+      "extra_purple_tactic": "如有神助",
+      "eligibility": "常规库存有对应资源；最终以本轮支援选择界面为准",
+      "withdrawal_reason": "原方案沿用截图分队，未充分比较全池重组、周瑜异常体系与陆逊前排体系；用户要求独立推导。"
+    }
+  ],
+  "current_configuration": {
+    "status": "confirmed_from_screenshot",
+    "date": "2026-09-17",
+    "evidence": "evidence/07.png",
+    "note": "界面左至右顺序不自动映射前中后；不是推荐方案或锁定结果",
+    "teams": [
+      {
+        "formation": "锥形阵",
+        "generals": [
+          {
+            "name": "黄月英",
+            "tactics": [
+              "清风驱疾",
+              "束手无策"
+            ]
+          },
+          {
+            "name": "黄盖",
+            "tactics": [
+              "如有神助",
+              "指点乾坤"
+            ]
+          },
+          {
+            "name": "诸葛亮",
+            "tactics": [
+              "胜敌益强",
+              "奇正相生"
+            ]
+          }
+        ]
+      },
+      {
+        "formation": "一字阵",
+        "generals": [
+          {
+            "name": "田丰",
+            "tactics": [
+              "屈人之兵",
+              "决水破敌"
+            ]
+          },
+          {
+            "name": "袁绍",
+            "tactics": [
+              null,
+              "文治武功"
+            ]
+          },
+          {
+            "name": "马超",
+            "tactics": [
+              "兵贵神速",
+              "铁骑横冲"
+            ]
+          }
+        ]
+      },
+      {
+        "formation": "锥形阵",
+        "generals": [
+          {
+            "name": "于禁",
+            "tactics": [
+              "以静制动",
+              "避其锐气"
+            ]
+          },
+          {
+            "name": "陆逊",
+            "tactics": [
+              "韬光养晦",
+              "横征暴敛"
+            ]
+          },
+          {
+            "name": "小乔",
+            "tactics": [
+              "烈火焚营",
+              "奇门遁甲"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "next_recommendation": {
+    "status": "proposed",
+    "cores": [
+      [
+        "诸葛亮",
+        "黄盖",
+        "黄月英"
+      ],
+      [
+        "袁绍",
+        "马超",
+        "田丰"
+      ],
+      [
+        "陆逊",
+        "于禁",
+        "小乔"
+      ]
+    ],
+    "changes": [
+      {
+        "general": "小乔",
+        "remove": "奇门遁甲",
+        "add": "狂风大作",
+        "reason": "风火同队并为横征暴敛提供队友负面来源；第2回合才开始施加风暴，不算开局减伤"
+      },
+      {
+        "general": "袁绍",
+        "slot": "empty",
+        "add": "知人善任",
+        "reason": "优先补全支援位；智力最高目标需核定，不保证保护马超"
+      }
+    ]
+  }
+}
