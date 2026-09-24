@@ -1,0 +1,43 @@
+"""Record battle-buffed enemy attributes without altering public base stats."""
+import json
+import shutil
+import hashlib
+from datetime import datetime
+from PIL import Image
+from project_data import ROOT, atomic_json
+
+event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+backup = ROOT / 'notes/backups' / ('2026-09-24-' + datetime.now().strftime('%H%M%S') + '-enemy-snapshot')
+for f in [event / n for n in ['证据清单.json','event.json','上半场复盘.md']] + [ROOT / 'notes/业务逻辑.md',ROOT / 'notes/变更记录.md']:
+    dst=backup/f.relative_to(ROOT)
+    dst.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copy2(f,dst)
+directory=event/'证据/曹操队续战准备属性'
+directory.mkdir(exist_ok=False)
+ids=['084aedec-0742-48e6-adae-8a826f14cde0','19a12213-b4f1-42c9-9e38-925dbb1400d8','21593f20-d0c5-402d-b77b-374a514938fd','f2061877-c47b-4752-90af-6c9149786da1']
+manifest=json.loads((event/'证据清单.json').read_text(encoding='utf-8'))
+for i,img in enumerate(ids,1):
+    f=directory/f'{i:02d}.png'
+    shutil.copy2(f'C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{img}.png',f)
+    with Image.open(f) as image:
+        image.verify()
+    manifest['files'].append(dict(path=f.relative_to(event).as_posix(),size=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
+atomic_json(event/'证据清单.json',manifest)
+rows=[
+    dict(name='曹操',troop='盾',force=141.75,intelligence=268.80,command=232.05,initiative=141.22,troops=5596,max_troops=5596,damage_dealt_pct=12.00,damage_received_pct=-25.81),
+    dict(name='曹仁',troop='盾',force=149.62,intelligence=155.92,command=282.97,initiative=120.22,troops=3486,max_troops=3486,damage_dealt_pct=None,damage_received_pct=-48.39),
+    dict(name='周瑜',troop='弓',force=126.52,intelligence=302.92,command=204.22,initiative=147.52,troops=5823,max_troops=5823,damage_dealt_pct=12.00,damage_received_pct=-45.10),
+]
+for row in rows:
+    row.update(daoge_pct=10.57,gongxin_pct=10.57)
+assert sum(r['troops'] for r in rows)==14905
+data=dict(status='用户截图可信的战斗属性，不是基础属性',phase='用户确认准备阶段结束；兵力和14905吻合，判定为此前二队对揭阳平北军续战的属性快照',phase_basis='此前首次平局敌方14905，当前5596+3486+5823=14905',source_directory='证据/曹操队续战准备属性',generals=rows,log=[dict(skill='乱世奸雄',target='曹仁',reduction_increment=20.97,result_damage_received_pct=-30.26),dict(skill='乱世奸雄',target='周瑜',reduction_increment=22.31,result_damage_received_pct=-25.81),dict(skill='乱世奸雄',target='曹操',reduction_increment=22.31,result_damage_received_pct=-25.81),dict(skill='避其锐气',target='曹仁',reduction_increment=18.13,result_damage_received_pct=-48.39),dict(skill='避其锐气',target='周瑜',reduction_increment=19.28,result_damage_received_pct=-45.10)],limitations=['不把面板受伤修正当全场所有伤害最终倍率','不擅自把固镇奇数回合按攻击者前后排变化的减伤加入准备快照','避其标4回合，不能当全程常驻','同一施法者对不同目标的有效增量不同，只记日志，不推断未知结算公式','准备截图不能反证上一场buff未清空；本图显示重新施法','不将战斗四维写入公共武将基础属性或个人库存'])
+atomic_json(event/'曹操队续战准备属性.json',data)
+p=event/'event.json'
+d=json.loads(p.read_text(encoding='utf-8'))
+for name in ['两场控制补证.json','曹操队续战准备属性.json']:
+    if name not in d['files']:
+        d['files'].append(name)
+atomic_json(p,d)
+print('PASS: 4 images, 14905 troop match, battle-only snapshot; public base stats and inventory untouched')
+print(backup.relative_to(ROOT))

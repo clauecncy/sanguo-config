@@ -1,0 +1,73 @@
+"""Verify current full effects and invalidate the truncated Taoguang claim."""
+import json
+import shutil
+import sqlite3
+from contextlib import closing
+from datetime import datetime
+from PIL import Image
+from project_data import ROOT, atomic_json
+from verify_event_round3_details_20260923 import add_source, add_observation
+
+
+def main():
+    day = '2026-09-24'
+    event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+    files = [ROOT / p for p in ['game/game.sqlite3', 'game/sources/public-baseline.sql', 'game/sources/tactic_level_observations.json', 'game/sources/evidence-index.json', 'game/rules/技能勘误与证据优先级.md', 'notes/业务逻辑.md', 'notes/变更记录.md']]
+    backup = ROOT / 'notes/backups' / (day + datetime.now().strftime('-%H%M%S') + '-wulei-taoguang')
+    for f in files + [event / '重随后阵容.json', event / '重随后优化.md']:
+        dst = backup / f.relative_to(ROOT)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f, dst)
+    data = json.loads(files[2].read_text(encoding='utf-8'))
+    index = json.loads(files[3].read_text(encoding='utf-8'))
+    records = [
+        ('五雷轰顶', '主动', '50%', '准备1回合，对敌军随机单体造成160%谋略伤害，施放5次，每次命中持有洪水状态的目标时，该次伤害提升40%。', '907ea27b-5293-4959-a3af-1ee9a33bcf67'),
+        ('韬光养晦', '被动', '100%', '自带主动战法发动率提升6%（受智力影响），每个回合开始时使自身造成谋略伤害提升8%，可叠加，持续到战斗结束。', '30e6eda7-b116-471a-b6b0-fcf14e37936a'),
+    ]
+    reason = '2026-09-24完整图纠正：发动率增益仅限自带主动战法；旧转写漏自带，不可据此给学习战法加发动率'
+    with closing(sqlite3.connect(files[0])) as live, closing(sqlite3.connect(':memory:')) as c:
+        assert files[1].read_text(encoding='utf-8') == '\n'.join(live.iterdump()) + '\n'
+        live.backup(c)
+        tid = c.execute('SELECT id FROM tactics WHERE name=?', ('韬光养晦',)).fetchone()[0]
+        c.execute("UPDATE tactic_level_observations SET trust_status='需要确认',trust_reason=? WHERE tactic_id=? AND effect_raw NOT LIKE '%自带%'", (reason, tid))
+        for item in data['observations']:
+            if item['name'] == '韬光养晦' and '自带' not in item['effect_raw']:
+                item.update(trust_status='需要确认', trust_reason=reason)
+        for name, kind, rate, effect, image_id in records:
+            filename = f'{day}-{name}10级-完整复核.png'
+            target = ROOT / 'game/sources/evidence' / filename
+            if target.exists():
+                raise ValueError('Already recorded')
+            shutil.copy2(f'C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{image_id}.png', target)
+            with Image.open(target) as im:
+                im.verify()
+            tid, quality = c.execute('SELECT id,quality FROM tactics WHERE name=?', (name,)).fetchone()
+            sid, path = add_source(c, index, name + '完整10级复核', filename, '用户当前完整10级截图；仅核实显示字段，不外推红度')
+            c.execute('UPDATE sources SET fetched_at=? WHERE id=?', (day, sid))
+            index[-1]['verified_at'] = day
+            add_observation(c, data, tid, name, quality, kind, rate, effect, sid, path, '用户当前完整10级截图；红度未单独核定')
+            c.execute('UPDATE tactic_level_observations SET observed_at=? WHERE source_id=?', (day, sid))
+            data['observations'][-1]['observed_at'] = day
+            fields = json.dumps(['name', 'tactic_type', 'damage_type', 'activation_rate', 'description_raw', 'description_level'], ensure_ascii=False)
+            c.execute("UPDATE tactics SET tactic_type=?,activation_rate=?,damage_type='谋略',description_raw=?,description_level=10,source_id=?,trust_status='可信',trust_reason=?,screenshot_verified_fields=?,updated_at=? WHERE id=?", (kind, rate, effect, sid, '当前完整10级截图核实；韬光发动率仅作用自带主动' if name == '韬光养晦' else '当前完整10级截图核实准备、发动率、次数和洪水条件', fields, day, tid))
+        c.commit()
+        sql = '\n'.join(c.iterdump()) + '\n'
+        with closing(sqlite3.connect(':memory:')) as test:
+            test.executescript(sql)
+            assert list(test.iterdump()) == list(c.iterdump())
+        c.backup(live)
+    files[1].write_text(sql, encoding='utf-8')
+    atomic_json(files[2], data)
+    atomic_json(files[3], index)
+    p = event / '重随后阵容.json'
+    d = json.loads(p.read_text(encoding='utf-8'))
+    d['advice'].update(status='交换建议已撤回，保留当前配置', exchange=[], withdrawal_reason=reason, tradeoff='小乔韬光服务天香发动；黄月英保留奇正补第三队恢复，不为谋略增伤拆续航')
+    d['missing_detail'] = None
+    d['user_explanation'] = '天香自带发动40%；韬光给小乔补自带发动率，奇正给黄月英是因三队缺前排需治疗。未确认锁定。'
+    atomic_json(p, d)
+    print('PASS: two images, complete effects, historical Taoguang downgrade, SQL rebuild, exchange withdrawn')
+    print(backup.relative_to(ROOT))
+
+
+if __name__ == '__main__':
+    main()

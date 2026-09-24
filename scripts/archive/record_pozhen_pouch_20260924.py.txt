@@ -1,0 +1,77 @@
+"""Preserve full screenshot evidence and pending event recommendations."""
+import hashlib
+import json
+import shutil
+import sqlite3
+from contextlib import closing
+from datetime import datetime
+from PIL import Image
+from project_data import ROOT, atomic_json
+from verify_event_round3_details_20260923 import add_source, add_observation
+
+
+def main():
+    day = '2026-09-24'
+    event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+    paths = [ROOT / p for p in ['game/game.sqlite3', 'game/sources/public-baseline.sql', 'game/sources/tactic_level_observations.json', 'game/sources/evidence-index.json', 'notes/业务逻辑.md', 'notes/变更记录.md']]
+    paths += [event / p for p in ['event.json', '第6轮选战法.json']]
+    backup = ROOT / 'notes/backups' / (day + datetime.now().strftime('-%H%M%S') + '-pozhen-pouch')
+    filename = day + '-破阵驰围10级.png'
+    target = ROOT / 'game/sources/evidence' / filename
+    if target.exists():
+        raise ValueError('Evidence already recorded')
+    for p in paths:
+        dst = backup / p.relative_to(ROOT)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(p, dst)
+    inventory = ROOT / 'user/bixianjue/inventory.json'
+    inventory_hash = hashlib.sha256(inventory.read_bytes()).hexdigest()
+    shutil.copy2('C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-bbd4b6c2-43b6-4bda-8213-1a0b81391765.png', target)
+    with Image.open(target) as im:
+        im.verify()
+    effect = '准备1回合，使敌军随机单体受到伤害提升30%，持续2回合，然后对其造成440%兵刃伤害。若该战法首回合发动则无需准备。'
+    obs = json.loads(paths[2].read_text(encoding='utf-8'))
+    index = json.loads(paths[3].read_text(encoding='utf-8'))
+    with closing(sqlite3.connect(paths[0])) as live, closing(sqlite3.connect(':memory:')) as c:
+        assert paths[1].read_text(encoding='utf-8') == '\n'.join(live.iterdump()) + '\n'
+        live.backup(c)
+        tid, quality = c.execute('SELECT id,quality FROM tactics WHERE name=?', ('破阵驰围',)).fetchone()
+        sid, rel = add_source(c, index, '破阵驰围10级', filename, '本期完整10级截图；首回合发动无需准备；不外推其他红度')
+        c.execute('UPDATE sources SET fetched_at=? WHERE id=?', (day, sid))
+        index[-1]['verified_at'] = day
+        add_observation(c, obs, tid, '破阵驰围', quality, '主动', '55%', effect, sid, rel, '本期演武10级详情；红度未单独显示')
+        c.execute('UPDATE tactic_level_observations SET observed_at=? WHERE source_id=?', (day, sid))
+        obs['observations'][-1]['observed_at'] = day
+        fields = json.dumps(['name', 'tactic_type', 'damage_type', 'activation_rate', 'description_raw', 'description_level'], ensure_ascii=False)
+        c.execute("UPDATE tactics SET tactic_type='主动',damage_type='兵刃',activation_rate='55%',description_raw=?,description_level=10,source_id=?,trust_status='可信',trust_reason='用户完整10级截图，含首回合发动无需准备；不认证其他红度',verification_status='Steam已核',screenshot_verified_fields=?,updated_at=? WHERE id=?", (effect, sid, fields, day, tid))
+        c.commit()
+        sql = '\n'.join(c.iterdump()) + '\n'
+        with closing(sqlite3.connect(':memory:')) as test:
+            test.executescript(sql)
+            assert list(test.iterdump()) == list(c.iterdump())
+        c.backup(live)
+    paths[1].write_text(sql, encoding='utf-8')
+    atomic_json(paths[2], obs)
+    atomic_json(paths[3], index)
+    p = event / '第6轮选战法.json'
+    draft = json.loads(p.read_text(encoding='utf-8'))
+    draft.update(recommended_group=1, status='建议第一组，未确认选择', missing_details=[], evidence_note='破阵完整10级已核：55%，准备1回合，随机单体受伤+30%持续2回合，然后440%兵刃；首回合发动无需准备。胜敌旧值16.48不作为本期白板系数。')
+    atomic_json(p, draft)
+    recommendation = dict(user_id='bixianjue', event_id='s2-2026-09-23', status='建议，未执行', recommended_pouch='武将重随', material='黄盖', preferred_type='谋略', material_verification='第4轮第三组选入，金色非支援；尚未移出仓库', tradeoff='主动放弃缺徐盛、周瑜两人的火攻分支，保留现有完整邓艾夏侯惇关羽核心；非断言黄盖弱或无用', confirmed_pouch=None, reroll_result=None, support_status='1武将2战法保留，待随机结果后确定', caveat='优先类型不保证指定武将；当前无已证实刚需紫战法，不等于紫战法没有价值')
+    atomic_json(event / '第7轮锦囊建议.json', recommendation)
+    p = event / 'event.json'
+    data = json.loads(p.read_text(encoding='utf-8'))
+    data['stage'] = '第6轮建议第一组；第7轮建议黄盖重随优先谋略；均未确认执行，支援与配队待结果'
+    data['skill_evidence'].append(rel)
+    data['files'] += ['第7轮锦囊建议.json', '第6轮及锦囊建议.md']
+    atomic_json(p, data)
+    pool = json.loads((event / '当前仓库.json').read_text(encoding='utf-8'))
+    assert len(pool['generals']) == 10 and len(pool['tactics']) == 17
+    assert draft['confirmed_group'] is None
+    assert hashlib.sha256(inventory.read_bytes()).hexdigest() == inventory_hash
+    print('PASS: image, SQL rebuild, pending-state isolation, 10 generals/17 tactics, inventory unchanged')
+    print(backup.relative_to(ROOT))
+
+
+if __name__ == '__main__':
+    main()

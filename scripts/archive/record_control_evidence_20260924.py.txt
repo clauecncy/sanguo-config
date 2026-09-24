@@ -1,0 +1,69 @@
+"""Archive control statistics and verify Cao Cao/Cao Ren full tactics."""
+import json
+import shutil
+import sqlite3
+import hashlib
+from contextlib import closing
+from datetime import datetime
+from PIL import Image
+from project_data import ROOT, atomic_json
+from verify_event_round3_details_20260923 import add_source, add_observation
+
+def main():
+    event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+    public = [ROOT / p for p in ['game/game.sqlite3','game/sources/public-baseline.sql','game/sources/tactic_level_observations.json','game/sources/evidence-index.json']]
+    backup = ROOT / 'notes/backups' / ('2026-09-24-' + datetime.now().strftime('%H%M%S') + '-control-evidence')
+    for f in public + [event / '证据清单.json', event / '上半场复盘.md', ROOT / 'notes/业务逻辑.md', ROOT / 'notes/变更记录.md']:
+        dst = backup / f.relative_to(ROOT)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f, dst)
+    ids = ['3807532a-bcb1-432d-b465-ff46393c2af5','376bdc6b-81d4-438a-86b9-5119113847b1','9e267363-3ccb-4d59-82a6-570a08336f32','2d607a03-36df-4f02-a462-ebdf0bf910ab','f0fbba7b-9957-4d2e-a835-fea7cd3bacc8','0b325f81-db53-4f96-9d3d-ad69555bf5e0']
+    directory = event / '证据/两场控制补证'
+    directory.mkdir(exist_ok=False)
+    manifest = json.loads((event / '证据清单.json').read_text(encoding='utf-8'))
+    paths = []
+    for i, image_id in enumerate(ids, 1):
+        f = directory / f'{i:02d}.png'
+        shutil.copy2(f'C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{image_id}.png', f)
+        with Image.open(f) as image:
+            image.verify()
+        paths.append(f)
+        manifest['files'].append(dict(path=f.relative_to(event).as_posix(),size=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
+    atomic_json(event / '证据清单.json', manifest)
+    data = json.loads(public[2].read_text(encoding='utf-8'))
+    index = json.loads(public[3].read_text(encoding='utf-8'))
+    records = [
+        ('固镇襄樊','防御','奇数回合自身受到来自后排的伤害降低30%（受统率影响），来自前排的伤害降低15%（受统率影响）。偶数回合开始时有75%概率对敌军随机两人施加技穷，持续1回合，每个目标的概率独立判定。',paths[4]),
+        ('乱世奸雄','辅助','战斗开始时，使我军全体受到伤害降低14%（受智力影响），获得6%倒戈和攻心（受智力影响）。我军统率最高单体，每次受到伤害后，有30%概率恢复自身兵力（治疗率40%，受智力和统率影响）。',paths[5]),
+    ]
+    with closing(sqlite3.connect(public[0])) as live, closing(sqlite3.connect(':memory:')) as c:
+        assert public[1].read_text(encoding='utf-8') == '\n'.join(live.iterdump()) + '\n'
+        live.backup(c)
+        for name, trait, effect, src in records:
+            filename = f'2026-09-24-{name}10级-控制补证.png'
+            shutil.copy2(src, ROOT / 'game/sources/evidence' / filename)
+            tid, quality = c.execute('SELECT id,quality FROM tactics WHERE name=?',(name,)).fetchone()
+            sid, path = add_source(c,index,name+'完整10级',filename,'用户当前完整10级截图；核实目标、时点及属性影响，不认证武将全部字段')
+            c.execute('UPDATE sources SET fetched_at=? WHERE id=?',('2026-09-24',sid))
+            index[-1]['verified_at']='2026-09-24'
+            add_observation(c,data,tid,name,quality,'指挥','100%',effect,sid,path,'用户本期完整10级详情；未额外核定红度')
+            c.execute('UPDATE tactic_level_observations SET observed_at=? WHERE source_id=?',('2026-09-24',sid))
+            data['observations'][-1]['observed_at']='2026-09-24'
+            fields=json.dumps(['name','tactic_type','damage_type','activation_rate','description_raw','description_level'],ensure_ascii=False)
+            c.execute("UPDATE tactics SET tactic_type='指挥',damage_type=?,activation_rate='100%',description_raw=?,description_level=10,source_id=?,trust_status='可信',trust_reason='用户当前完整10级截图；核实目标、回合、数值及属性影响',screenshot_verified_fields=?,updated_at='2026-09-24' WHERE id=?",(trait,effect,sid,fields,tid))
+        c.commit()
+        sql='\n'.join(c.iterdump())+'\n'
+        with closing(sqlite3.connect(':memory:')) as test:
+            test.executescript(sql)
+            assert list(test.iterdump())==list(c.iterdump())
+        c.backup(live)
+    public[1].write_text(sql,encoding='utf-8')
+    atomic_json(public[2],data)
+    atomic_json(public[3],index)
+    report = dict(source_directory='证据/两场控制补证', team1=dict(received={'夏侯惇':{'技穷':2,'震慑':2},'邓艾':{'技穷':2,'震慑':2},'关羽':{'技穷':4,'震慑':2}}, guanyu_babafang_rounds=[1,5], diagnosis='用户说明及统计支持控制限制主动释放，不能将状态次数相加为独立受控回合；清风针对性补驱散和续航'),team2=dict(received={'周瑜':{'技穷':4},'黄盖':{'技穷':3},'小乔':{'技穷':2}}, visible_native_zhouyu_count=14, visible_huanggai_kurou_count=2, visible_huanggai_zhidian_count=4, visible_xiaoqiao_tianxiang_rounds=[3,5], visible_enemy_wangsi_count=21, diagnosis='控制压制主动及借刀/异常施加链；周瑜非主动自带仍有触发，不说技穷直接封被动。对手自减伤、全体减伤和治疗共同构成防护', limitations='逐回合统计未显示第7回合行，不补0；尚未独立确认这些截图对应首次平局还是续战，不跨场加总'), user_confirmed='邓艾改清风是针对关羽技穷震慑并补恢复；二队败因判断为技穷及曹操曹仁减伤', action='保持最新阵容；不据此将清风挪去二队，也不保证清风每次命中关羽或优先驱散所需控制')
+    atomic_json(event / '两场控制补证.json',report)
+    print('PASS: six images, public SQL rebuild, two complete effects, battle evidence separated from mechanics')
+    print(backup.relative_to(ROOT))
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,149 @@
+"""Retain field-scoped screenshot verification and three full tactic details."""
+
+from contextlib import closing
+import hashlib
+import json
+import os
+import sqlite3
+
+from project_data import ROOT, atomic_json
+from sync_game_data import validate_public
+
+
+DETAILS = [
+    (
+        "断敌粮道", "指挥", "100%",
+        "回合开始时，对敌军单体施加断粮，持续2回合。回合结束时，对持有断粮状态的敌军造成110%谋略伤害。",
+        "2026-09-23-断敌粮道10级-复核.png",
+    ),
+    (
+        "横扫千军", "追击", "45%",
+        "普通攻击后，对敌军全体造成120%兵刃伤害。成功释放后追击战法伤害提升8%，可叠加5次，持续到战斗结束。",
+        "2026-09-23-横扫千军10级.png",
+    ),
+    (
+        "兵贵神速", "追击", "40%",
+        "普通攻击后，提升自身30点先攻，持续2回合，并对敌军随机两人造成180%兵刃伤害（额外受先攻影响）。",
+        "2026-09-23-兵贵神速10级.png",
+    ),
+]
+
+
+def fields(*names):
+    return json.dumps(list(names), ensure_ascii=False, separators=(",", ":"))
+
+
+def main():
+    live = ROOT / "game/game.sqlite3"
+    baseline = ROOT / "game/sources/public-baseline.sql"
+    observations_path = ROOT / "game/sources/tactic_level_observations.json"
+    index_path = ROOT / "game/sources/evidence-index.json"
+    stage = ROOT / "game/.screenshot-verification-20260923.tmp"
+    if stage.exists():
+        raise ValueError(f"Existing staging file: {stage}")
+    observations = json.loads(observations_path.read_text(encoding="utf-8"))
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    indexed = {item["path"] for item in index}
+    with closing(sqlite3.connect(live.resolve().as_uri() + "?mode=ro", uri=True)) as old:
+        if baseline.read_text(encoding="utf-8") != "\n".join(old.iterdump()) + "\n":
+            raise ValueError("Public SQLite and SQL baseline differ")
+        if any(row[1] == "screenshot_verified_fields" for row in old.execute("PRAGMA table_info(tactics)")):
+            raise ValueError("Screenshot verification migration already applied")
+        c = sqlite3.connect(stage)
+        old.backup(c)
+    try:
+        for table in ("generals", "tactics"):
+            c.execute(f"ALTER TABLE {table} ADD COLUMN screenshot_verified_fields TEXT NOT NULL DEFAULT '[]'")
+
+        # Backfill only complete tactic records whose current trusted description
+        # directly names a game screenshot as its source. No general is certified
+        # merely because its self-tactic was photographed.
+        c.execute(
+            "UPDATE tactics SET screenshot_verified_fields=? WHERE id IN ("
+            "SELECT t.id FROM tactics t JOIN sources s ON s.id=t.source_id "
+            "WHERE t.trust_status='可信' AND t.description_level=10 "
+            "AND s.source_type='游戏内截图')",
+            (fields("name", "tactic_type", "activation_rate", "description_raw", "description_level"),),
+        )
+        c.execute(
+            "UPDATE tactics SET screenshot_verified_fields=? WHERE id IN ("
+            "SELECT DISTINCT t.id FROM tactics t JOIN tactic_level_observations o ON o.tactic_id=t.id "
+            "JOIN sources s ON s.id=o.source_id WHERE o.trust_status='可信' "
+            "AND o.observed_context LIKE '%卡面摘要%' AND s.source_type='游戏内截图' "
+            "AND t.screenshot_verified_fields='[]')",
+            (fields("name", "tactic_type", "activation_rate"),),
+        )
+
+        for name, kind, rate, effect, filename in DETAILS:
+            path = f"game/sources/evidence/{filename}"
+            image = ROOT / path
+            if path in indexed or not image.is_file():
+                raise ValueError(f"Evidence missing or already indexed: {path}")
+            row = c.execute("SELECT id,quality FROM tactics WHERE name=?", (name,)).fetchone()
+            if row is None:
+                raise ValueError(f"Unknown tactic: {name}")
+            tid, quality = row
+            c.execute(
+                "INSERT INTO sources(name,url,source_type,platform,season,trust_rank,fetched_at,notes) "
+                "VALUES(?,?,?,?,?,?,?,?)",
+                (f"用户Steam S2完整截图-{name}10级", path, "游戏内截图", "Steam", "s2", 100,
+                 "2026-09-23", "本次完整详情逐字复核；截图来源元数据及核定字段永久保留，删图不撤销核定"),
+            )
+            sid = c.execute("SELECT last_insert_rowid()").fetchone()[0]
+            c.execute(
+                "UPDATE tactics SET tactic_type=?,activation_rate=?,description_raw=?,description_level=10,"
+                "source_id=?,verification_status='Steam已核',trust_status='可信',trust_reason=?,"
+                "screenshot_verified_fields=?,updated_at='2026-09-23' WHERE id=?",
+                (kind, rate, effect, sid, f"用户2026-09-23完整10级截图已逐字段核实；来源ID={sid}",
+                 fields("name", "tactic_type", "activation_rate", "description_raw", "description_level"), tid),
+            )
+            c.execute(
+                "INSERT INTO tactic_level_observations(tactic_id,level,activation_rate,effect_raw,effect_json,"
+                "observed_context,verification_status,source_id,observed_at,trust_status,trust_reason) "
+                "VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                (tid, 10, rate, effect, None, "bixianjue演武s2-2026-09-23完整10级详情截图",
+                 "Steam已核", sid, "2026-09-23", "可信", "完整详情已逐字段核实；不认证其他赛季或武将基础属性"),
+            )
+            observations["observations"].append({
+                "name": name, "level": 10, "quality": quality, "tactic_type": kind,
+                "activation_rate": rate, "effect_raw": effect, "effect": {},
+                "context": "bixianjue演武s2-2026-09-23完整10级详情截图",
+                "verification_status": "Steam已核", "observed_at": "2026-09-23",
+                "trust_status": "可信", "trust_reason": "截图完整详情逐字段核实",
+                "source": {"name": f"用户Steam S2完整截图-{name}10级", "url": path,
+                           "source_type": "游戏内截图", "platform": "Steam", "season": "s2", "trust_rank": 100},
+            })
+            index.append({
+                "path": path, "sha256": hashlib.sha256(image.read_bytes()).hexdigest(),
+                "role": f"用户本期{name}10级完整详情；逐字段核实并留存转写",
+                "trust_status": "可信", "verified_at": "2026-09-23",
+            })
+
+        c.commit()
+        validate_public(c)
+        sql = "\n".join(c.iterdump()) + "\n"
+        with closing(sqlite3.connect(":memory:")) as rebuilt:
+            rebuilt.executescript(sql)
+            validate_public(rebuilt)
+            if list(rebuilt.iterdump()) != list(c.iterdump()):
+                raise ValueError("Independent SQL rebuild differs")
+        c.close()
+        temp_sql = baseline.with_suffix(".sql.tmp")
+        temp_sql.write_text(sql, encoding="utf-8")
+        with closing(sqlite3.connect(stage)) as staged, closing(sqlite3.connect(live)) as target:
+            staged.backup(target)
+            target.commit()
+            if list(target.iterdump()) != list(staged.iterdump()):
+                raise ValueError("Live catalog differs after backup")
+        os.replace(temp_sql, baseline)
+        atomic_json(observations_path, observations)
+        atomic_json(index_path, index)
+        print("Verified three full tactics and added field-scoped screenshot provenance.")
+    finally:
+        c.close()
+        if stage.exists():
+            stage.unlink()
+
+
+if __name__ == "__main__":
+    main()

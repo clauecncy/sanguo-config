@@ -1,0 +1,392 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "scope": "用户称上半场全部战斗，6组对手，部分详情",
+  "results": [
+    {
+      "round": 1,
+      "opponent": "博肯",
+      "team": 1,
+      "final_result": "败",
+      "own_remaining": 0,
+      "enemy_remaining": 6498,
+      "source": "证据/上半场/01.png",
+      "continuation": false,
+      "assessment": "败"
+    },
+    {
+      "round": 1,
+      "opponent": "博肯",
+      "team": 2,
+      "final_result": "胜",
+      "own_remaining": 20399,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/01.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 1,
+      "opponent": "博肯",
+      "team": 3,
+      "final_result": "败",
+      "own_remaining": 0,
+      "enemy_remaining": 23685,
+      "source": "证据/上半场/01.png",
+      "continuation": false,
+      "assessment": "败"
+    },
+    {
+      "round": 2,
+      "opponent": "龙九星",
+      "team": 1,
+      "final_result": "平",
+      "own_remaining": 2088,
+      "enemy_remaining": 13267,
+      "source": "证据/上半场/02.png",
+      "continuation": false,
+      "assessment": "预计负",
+      "assessment_basis": "用户授权按大幅兵力差评估；续战结果未展示，不改原始界面结果"
+    },
+    {
+      "round": 2,
+      "opponent": "龙九星",
+      "team": 2,
+      "final_result": "胜",
+      "own_remaining": 25202,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/02.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 2,
+      "opponent": "龙九星",
+      "team": 3,
+      "final_result": "胜",
+      "own_remaining": 19435,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/02.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 3,
+      "opponent": "揭阳平北军",
+      "team": 1,
+      "final_result": "胜",
+      "own_remaining": 10458,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/03.png",
+      "continuation": true,
+      "assessment": "胜"
+    },
+    {
+      "round": 3,
+      "opponent": "揭阳平北军",
+      "team": 2,
+      "final_result": "败",
+      "own_remaining": 3836,
+      "enemy_remaining": 10527,
+      "source": "证据/上半场/03.png",
+      "continuation": true,
+      "assessment": "败"
+    },
+    {
+      "round": 3,
+      "opponent": "揭阳平北军",
+      "team": 3,
+      "final_result": "胜",
+      "own_remaining": 19572,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/03.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 4,
+      "opponent": "渊渟岳峙",
+      "team": 1,
+      "final_result": "平",
+      "own_remaining": 502,
+      "enemy_remaining": 25643,
+      "source": "证据/上半场/04.png",
+      "continuation": false,
+      "assessment": "预计负",
+      "assessment_basis": "用户授权按大幅兵力差评估；续战结果未展示，不改原始界面结果"
+    },
+    {
+      "round": 4,
+      "opponent": "渊渟岳峙",
+      "team": 2,
+      "final_result": "胜",
+      "own_remaining": 25994,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/04.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 4,
+      "opponent": "渊渟岳峙",
+      "team": 3,
+      "final_result": "胜",
+      "own_remaining": 10474,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/04.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 5,
+      "opponent": "真欧老头",
+      "team": 1,
+      "final_result": "胜",
+      "own_remaining": 20599,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/05.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 5,
+      "opponent": "真欧老头",
+      "team": 2,
+      "final_result": "胜",
+      "own_remaining": 25569,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/05.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 5,
+      "opponent": "真欧老头",
+      "team": 3,
+      "final_result": "败",
+      "own_remaining": 0,
+      "enemy_remaining": 9089,
+      "source": "证据/上半场/05.png",
+      "continuation": false,
+      "assessment": "败"
+    },
+    {
+      "round": 6,
+      "opponent": "池阳玄甲军",
+      "team": 1,
+      "final_result": "平",
+      "own_remaining": 19707,
+      "enemy_remaining": 2394,
+      "source": "证据/上半场/06.png",
+      "continuation": false,
+      "assessment": "预计胜",
+      "assessment_basis": "用户授权按大幅兵力差评估；续战结果未展示，不改原始界面结果"
+    },
+    {
+      "round": 6,
+      "opponent": "池阳玄甲军",
+      "team": 2,
+      "final_result": "胜",
+      "own_remaining": 22168,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/06.png",
+      "continuation": false,
+      "assessment": "胜"
+    },
+    {
+      "round": 6,
+      "opponent": "池阳玄甲军",
+      "team": 3,
+      "final_result": "胜",
+      "own_remaining": 19222,
+      "enemy_remaining": 0,
+      "source": "证据/上半场/06.png",
+      "continuation": false,
+      "assessment": "胜"
+    }
+  ],
+  "final_counts": {
+    "1": {
+      "败": 1,
+      "平": 3,
+      "胜": 2
+    },
+    "2": {
+      "胜": 5,
+      "败": 1
+    },
+    "3": {
+      "败": 2,
+      "胜": 4
+    }
+  },
+  "visible_rows": {
+    "total": 20,
+    "win": 11,
+    "loss": 4,
+    "draw": 5
+  },
+  "merged_counts": {
+    "total": 18,
+    "win": 11,
+    "loss": 4,
+    "draw": 3
+  },
+  "continuations": [
+    {
+      "round": 3,
+      "team": 1,
+      "initial": "平",
+      "final": "胜",
+      "initial_remaining": [
+        11274,
+        6303
+      ]
+    },
+    {
+      "round": 3,
+      "team": 2,
+      "initial": "平",
+      "final": "败",
+      "initial_remaining": [
+        11073,
+        14905
+      ]
+    }
+  ],
+  "details": [
+    {
+      "image": 7,
+      "team": 1,
+      "opponent": "博肯",
+      "guanyu_native_count": 0,
+      "guanyu_native_damage": 0,
+      "shuiyan_count": 0,
+      "ganglie_damage": 7422,
+      "tuntian_heal": 10937,
+      "note": "不能由次数0确定控制或阵亡原因",
+      "source": "证据/上半场/07.png"
+    },
+    {
+      "image": 8,
+      "team": 3,
+      "opponent": "博肯",
+      "pangde_native_count": 1,
+      "pangde_native_damage": 3289,
+      "mu_niu_heal": 1528,
+      "qizheng_damage": 246,
+      "note": "早期箕形；不等于最新雁形配置",
+      "source": "证据/上半场/08.png"
+    },
+    {
+      "image": 9,
+      "team": 1,
+      "opponent": "龙九星",
+      "guanyu_native_damage": 12929,
+      "shuiyan_damage": 4035,
+      "tuntian_heal": 10357,
+      "source": "证据/上半场/09.png"
+    },
+    {
+      "image": 10,
+      "team": 3,
+      "opponent": "龙九星",
+      "pangde_native_damage": 11552,
+      "mu_niu_heal": 5612,
+      "qizheng_heal": 2074,
+      "note": "此时庞德破阵、袁绍束手疾行、黄月英奇正避其，与最新不同",
+      "source": "证据/上半场/10.png"
+    },
+    {
+      "image": 11,
+      "team": 3,
+      "opponent": "揭阳平北军",
+      "pangde_native_damage": 7354,
+      "mu_niu_heal": 4302,
+      "qizheng_heal": 2933,
+      "pangde_jixing_damage": 4043,
+      "source": "证据/上半场/11.png"
+    },
+    {
+      "image": 12,
+      "team": 1,
+      "opponent": "揭阳平北军",
+      "continuation": true,
+      "own_start": 11274,
+      "enemy_start": 6303,
+      "qingfeng_heal": 2380,
+      "note": "残兵续战不与满兵独立样本混计",
+      "source": "证据/上半场/12.png"
+    },
+    {
+      "image": 13,
+      "team": 3,
+      "opponent": "真欧老头",
+      "pangde_native_damage": 12435,
+      "mu_niu_heal": 6103,
+      "qizheng_heal": 4633,
+      "pangde_jixing_damage": 5421,
+      "enemy_zhouyu_native_damage": 14426,
+      "note": "虽败但打出两次庞德自带，不能简单说未活过启动",
+      "source": "证据/上半场/13.png"
+    },
+    {
+      "image": 14,
+      "team": 1,
+      "opponent": "真欧老头",
+      "guanyu_native_damage": 15928,
+      "pozhen_damage": 3947,
+      "tuntian_heal": 11535,
+      "qingfeng_heal": 5373,
+      "source": "证据/上半场/14.png"
+    },
+    {
+      "image": 15,
+      "team": 3,
+      "opponent": "池阳玄甲军",
+      "pangde_native_damage": 6486,
+      "mu_niu_heal": 4148,
+      "qizheng_heal": 2358,
+      "pangde_jixing_damage": 5160,
+      "source": "证据/上半场/15.png"
+    },
+    {
+      "image": 16,
+      "team": 1,
+      "opponent": "池阳玄甲军",
+      "guanyu_native_damage": 11684,
+      "pozhen_damage": 7061,
+      "tuntian_heal": 9737,
+      "qingfeng_heal": 8509,
+      "source": "证据/上半场/16.png"
+    }
+  ],
+  "limitations": [
+    "没有二队技能统计详情，不能计算天香/韬光收益",
+    "不把战损、剩余兵力及技能累计伤害混为一项",
+    "指挥被动次数1或伤害0不代表只生效一次或无效",
+    "战斗间配置改变，未做同对手同配置对照；不将结果归因于单次换法",
+    "用户确认每场最多8回合，续战保留兵力存活、重置增减buff；大幅差距可判胜负倾向，未截结果不伪造为实见"
+  ],
+  "assessed_counts": {
+    "total": {
+      "win": 12,
+      "loss": 6
+    },
+    "teams": {
+      "1": {
+        "win": 3,
+        "loss": 3
+      },
+      "2": {
+        "win": 5,
+        "loss": 1
+      },
+      "3": {
+        "win": 4,
+        "loss": 2
+      }
+    },
+    "note": "包括一场预计胜和两场预计负；不是新增实见续战结果，不是官方积分"
+  }
+}

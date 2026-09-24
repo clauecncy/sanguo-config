@@ -1,0 +1,905 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "files": [
+    {
+      "path": "证据/第1轮-第一组.png",
+      "size": 1623194,
+      "sha256": "24a78d2fec1f4b852e8737a424908e80b3e058fa2c946c2d199a99b1c7f1c331",
+      "evidence_id": "sha256:24a78d2fec1f4b852e8737a424908e80b3e058fa2c946c2d199a99b1c7f1c331",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-24a78d2fec1f4b852e8737a424908e80b3e058fa2c946c2d199a99b1c7f1c331",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:24a78d2fec1f4b852e8737a424908e80b3e058fa2c946c2d199a99b1c7f1c331 -->",
+      "verified_fields": [
+        "general_names"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第1轮-第二组.png",
+      "size": 1532286,
+      "sha256": "89dfd3c4d7d3f3455dd82fbff9f3fdf753123aecb3f9981a2fbfe5ea643b9dac",
+      "evidence_id": "sha256:89dfd3c4d7d3f3455dd82fbff9f3fdf753123aecb3f9981a2fbfe5ea643b9dac",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-89dfd3c4d7d3f3455dd82fbff9f3fdf753123aecb3f9981a2fbfe5ea643b9dac",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:89dfd3c4d7d3f3455dd82fbff9f3fdf753123aecb3f9981a2fbfe5ea643b9dac -->",
+      "verified_fields": [
+        "general_names"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第1轮-第三组.png",
+      "size": 1479487,
+      "sha256": "5bf90f9ec90605af57d929124b9266b5530716473936ba7b4dc947532ba5e5f5",
+      "evidence_id": "sha256:5bf90f9ec90605af57d929124b9266b5530716473936ba7b4dc947532ba5e5f5",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-5bf90f9ec90605af57d929124b9266b5530716473936ba7b4dc947532ba5e5f5",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:5bf90f9ec90605af57d929124b9266b5530716473936ba7b4dc947532ba5e5f5 -->",
+      "verified_fields": [
+        "general_names"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第2轮-第一组.png",
+      "size": 632111,
+      "sha256": "1dbc90b70c2c7e7d81bc350db9dfc48e6efcfd512ca0e38b9bb9f8fff763327b",
+      "evidence_id": "sha256:1dbc90b70c2c7e7d81bc350db9dfc48e6efcfd512ca0e38b9bb9f8fff763327b",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-1dbc90b70c2c7e7d81bc350db9dfc48e6efcfd512ca0e38b9bb9f8fff763327b",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:1dbc90b70c2c7e7d81bc350db9dfc48e6efcfd512ca0e38b9bb9f8fff763327b -->",
+      "verified_fields": [
+        "activation_rate",
+        "card_summary",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第2轮-第二组.png",
+      "size": 546961,
+      "sha256": "c4b9b86ed108841885e5991516a84f601c3c7fc2e45b46df3e37b3570c406ec3",
+      "evidence_id": "sha256:c4b9b86ed108841885e5991516a84f601c3c7fc2e45b46df3e37b3570c406ec3",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-c4b9b86ed108841885e5991516a84f601c3c7fc2e45b46df3e37b3570c406ec3",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:c4b9b86ed108841885e5991516a84f601c3c7fc2e45b46df3e37b3570c406ec3 -->",
+      "verified_fields": [
+        "activation_rate",
+        "card_summary",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第2轮-第三组.png",
+      "size": 490881,
+      "sha256": "5adecd7254a9404d1886d6402e9a1b69097e9d49e9d9e557d408c44c3682150b",
+      "evidence_id": "sha256:5adecd7254a9404d1886d6402e9a1b69097e9d49e9d9e557d408c44c3682150b",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-5adecd7254a9404d1886d6402e9a1b69097e9d49e9d9e557d408c44c3682150b",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:5adecd7254a9404d1886d6402e9a1b69097e9d49e9d9e557d408c44c3682150b -->",
+      "verified_fields": [
+        "activation_rate",
+        "card_summary",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第3轮-第一组.png",
+      "size": 788933,
+      "sha256": "877245339950848320d057eea61f8899c42b73c3c37e0d1fdef0d056014a00bd",
+      "evidence_id": "sha256:877245339950848320d057eea61f8899c42b73c3c37e0d1fdef0d056014a00bd",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-877245339950848320d057eea61f8899c42b73c3c37e0d1fdef0d056014a00bd",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:877245339950848320d057eea61f8899c42b73c3c37e0d1fdef0d056014a00bd -->",
+      "verified_fields": [
+        "activation_rate",
+        "card_summary",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第3轮-第二组.png",
+      "size": 758351,
+      "sha256": "6a941ced8901fc604c1ddba328da7c23f1e3abbf012e78fe2a5f701e62b0c931",
+      "evidence_id": "sha256:6a941ced8901fc604c1ddba328da7c23f1e3abbf012e78fe2a5f701e62b0c931",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-6a941ced8901fc604c1ddba328da7c23f1e3abbf012e78fe2a5f701e62b0c931",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:6a941ced8901fc604c1ddba328da7c23f1e3abbf012e78fe2a5f701e62b0c931 -->",
+      "verified_fields": [
+        "activation_rate",
+        "card_summary",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第3轮-第三组.png",
+      "size": 786450,
+      "sha256": "27b21c8946818486d2a3a1042f1bdb30642d4ab84a4583699dbaee612000fb7d",
+      "evidence_id": "sha256:27b21c8946818486d2a3a1042f1bdb30642d4ab84a4583699dbaee612000fb7d",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-27b21c8946818486d2a3a1042f1bdb30642d4ab84a4583699dbaee612000fb7d",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:27b21c8946818486d2a3a1042f1bdb30642d4ab84a4583699dbaee612000fb7d -->",
+      "verified_fields": [
+        "activation_rate",
+        "card_summary",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第4轮-第一组.png",
+      "size": 1035385,
+      "sha256": "4375a280315e570155ca4a637fa11affaf6e9b695e059748f167f05a5f0c2e67",
+      "evidence_id": "sha256:4375a280315e570155ca4a637fa11affaf6e9b695e059748f167f05a5f0c2e67",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-4375a280315e570155ca4a637fa11affaf6e9b695e059748f167f05a5f0c2e67",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:4375a280315e570155ca4a637fa11affaf6e9b695e059748f167f05a5f0c2e67 -->",
+      "verified_fields": [
+        "general_names"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第4轮-第二组.png",
+      "size": 749292,
+      "sha256": "1ad382318f8b7b588e1ee5a5bc2c4f7be50e8a86aafbcab1043ae06e7c5068af",
+      "evidence_id": "sha256:1ad382318f8b7b588e1ee5a5bc2c4f7be50e8a86aafbcab1043ae06e7c5068af",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-1ad382318f8b7b588e1ee5a5bc2c4f7be50e8a86aafbcab1043ae06e7c5068af",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:1ad382318f8b7b588e1ee5a5bc2c4f7be50e8a86aafbcab1043ae06e7c5068af -->",
+      "verified_fields": [
+        "general_names"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第4轮-第三组.png",
+      "size": 715610,
+      "sha256": "afdd9e1cd655a5a496e9f4321fef427e28bba05fcb8d58f111969203587ce746",
+      "evidence_id": "sha256:afdd9e1cd655a5a496e9f4321fef427e28bba05fcb8d58f111969203587ce746",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-afdd9e1cd655a5a496e9f4321fef427e28bba05fcb8d58f111969203587ce746",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:afdd9e1cd655a5a496e9f4321fef427e28bba05fcb8d58f111969203587ce746 -->",
+      "verified_fields": [
+        "general_names"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第5轮-第1组.png",
+      "size": 1731190,
+      "sha256": "347084b9266c7bf0b670bc6b04be8eca220d18240d735ae57ed88ad84b4f8794",
+      "evidence_id": "sha256:347084b9266c7bf0b670bc6b04be8eca220d18240d735ae57ed88ad84b4f8794",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-347084b9266c7bf0b670bc6b04be8eca220d18240d735ae57ed88ad84b4f8794",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:347084b9266c7bf0b670bc6b04be8eca220d18240d735ae57ed88ad84b4f8794 -->",
+      "verified_fields": [
+        "activation_rate",
+        "adapted_to",
+        "card_summary",
+        "category",
+        "level",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第5轮-第2组.png",
+      "size": 1510602,
+      "sha256": "bd775ccca3ea5ffb3d6df941dbfa7d2e86889164e84b37710e499b385a07e826",
+      "evidence_id": "sha256:bd775ccca3ea5ffb3d6df941dbfa7d2e86889164e84b37710e499b385a07e826",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-bd775ccca3ea5ffb3d6df941dbfa7d2e86889164e84b37710e499b385a07e826",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:bd775ccca3ea5ffb3d6df941dbfa7d2e86889164e84b37710e499b385a07e826 -->",
+      "verified_fields": [
+        "activation_rate",
+        "adapted_to",
+        "card_summary",
+        "category",
+        "level",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第5轮-第3组.png",
+      "size": 1617108,
+      "sha256": "176aee495c0e2f89f0d7b72faa35f5dc81d4e727a348c81f10ee781e60de0151",
+      "evidence_id": "sha256:176aee495c0e2f89f0d7b72faa35f5dc81d4e727a348c81f10ee781e60de0151",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-176aee495c0e2f89f0d7b72faa35f5dc81d4e727a348c81f10ee781e60de0151",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:176aee495c0e2f89f0d7b72faa35f5dc81d4e727a348c81f10ee781e60de0151 -->",
+      "verified_fields": [
+        "activation_rate",
+        "adapted_to",
+        "card_summary",
+        "category",
+        "level",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第6轮-第1组.png",
+      "size": 769943,
+      "sha256": "3b5a4397c96441be0e749e8dcbd3d544bce91fd42d5f013631113ea5bacd8e1b",
+      "evidence_id": "sha256:3b5a4397c96441be0e749e8dcbd3d544bce91fd42d5f013631113ea5bacd8e1b",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-3b5a4397c96441be0e749e8dcbd3d544bce91fd42d5f013631113ea5bacd8e1b",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:3b5a4397c96441be0e749e8dcbd3d544bce91fd42d5f013631113ea5bacd8e1b -->",
+      "verified_fields": [
+        "activation_rate",
+        "adapted_to",
+        "card_summary",
+        "category",
+        "level",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第6轮-第2组.png",
+      "size": 803582,
+      "sha256": "1065782bdbffc84bc71af67c32b92559cf6580f6c48222bc66310a03cc2d414c",
+      "evidence_id": "sha256:1065782bdbffc84bc71af67c32b92559cf6580f6c48222bc66310a03cc2d414c",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-1065782bdbffc84bc71af67c32b92559cf6580f6c48222bc66310a03cc2d414c",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:1065782bdbffc84bc71af67c32b92559cf6580f6c48222bc66310a03cc2d414c -->",
+      "verified_fields": [
+        "activation_rate",
+        "adapted_to",
+        "card_summary",
+        "category",
+        "level",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第6轮-第3组.png",
+      "size": 1814081,
+      "sha256": "9747943f70cc66a4382c2f97a40747c89ce2959f2ef8d92e1d53c9049f41fcc2",
+      "evidence_id": "sha256:9747943f70cc66a4382c2f97a40747c89ce2959f2ef8d92e1d53c9049f41fcc2",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-9747943f70cc66a4382c2f97a40747c89ce2959f2ef8d92e1d53c9049f41fcc2",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:9747943f70cc66a4382c2f97a40747c89ce2959f2ef8d92e1d53c9049f41fcc2 -->",
+      "verified_fields": [
+        "activation_rate",
+        "adapted_to",
+        "card_summary",
+        "category",
+        "level",
+        "tactic_names",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/第7轮锦囊规则.png",
+      "size": 126303,
+      "sha256": "aaab425d38883ad0e20376505a014aa5648be8eebbdb432eebb515dfe88ef336",
+      "evidence_id": "sha256:aaab425d38883ad0e20376505a014aa5648be8eebbdb432eebb515dfe88ef336",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-aaab425d38883ad0e20376505a014aa5648be8eebbdb432eebb515dfe88ef336",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:aaab425d38883ad0e20376505a014aa5648be8eebbdb432eebb515dfe88ef336 -->",
+      "verified_fields": [
+        "pouch_names",
+        "pouch_rules"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/战法重随结果及三队配置.png",
+      "size": 1880036,
+      "sha256": "a0fe82be56321d28e3e532ef880fb8e170707af5ef2311ca04acf1ed05148b6b",
+      "evidence_id": "sha256:a0fe82be56321d28e3e532ef880fb8e170707af5ef2311ca04acf1ed05148b6b",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-a0fe82be56321d28e3e532ef880fb8e170707af5ef2311ca04acf1ed05148b6b",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a0fe82be56321d28e3e532ef880fb8e170707af5ef2311ca04acf1ed05148b6b -->",
+      "verified_fields": [
+        "formation",
+        "members",
+        "reroll_result",
+        "tactics",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/01.png",
+      "size": 1813866,
+      "sha256": "a965d93027dcae27890a630eed4b9cd9010e45a21bd98fcaaf79e8936940f053",
+      "evidence_id": "sha256:a965d93027dcae27890a630eed4b9cd9010e45a21bd98fcaaf79e8936940f053",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-a965d93027dcae27890a630eed4b9cd9010e45a21bd98fcaaf79e8936940f053",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a965d93027dcae27890a630eed4b9cd9010e45a21bd98fcaaf79e8936940f053 -->",
+      "verified_fields": [
+        "continuation",
+        "enemy_remaining",
+        "final_result",
+        "opponent",
+        "own_remaining",
+        "round",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/02.png",
+      "size": 1747301,
+      "sha256": "0f078d665c3d1ec7765f846fc135f6de7edf03b828a6305b4ef5faa2533af5e3",
+      "evidence_id": "sha256:0f078d665c3d1ec7765f846fc135f6de7edf03b828a6305b4ef5faa2533af5e3",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-0f078d665c3d1ec7765f846fc135f6de7edf03b828a6305b4ef5faa2533af5e3",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:0f078d665c3d1ec7765f846fc135f6de7edf03b828a6305b4ef5faa2533af5e3 -->",
+      "verified_fields": [
+        "continuation",
+        "enemy_remaining",
+        "final_result",
+        "opponent",
+        "own_remaining",
+        "round",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/03.png",
+      "size": 3322199,
+      "sha256": "241e231dce3526cbdefda693bcad34cd28a66dc3b438679e1425f0d070059704",
+      "evidence_id": "sha256:241e231dce3526cbdefda693bcad34cd28a66dc3b438679e1425f0d070059704",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-241e231dce3526cbdefda693bcad34cd28a66dc3b438679e1425f0d070059704",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:241e231dce3526cbdefda693bcad34cd28a66dc3b438679e1425f0d070059704 -->",
+      "verified_fields": [
+        "continuation",
+        "enemy_remaining",
+        "final_result",
+        "opponent",
+        "own_remaining",
+        "round",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/04.png",
+      "size": 1786014,
+      "sha256": "0fec53c7e1e747908dfe3f0ffae49f3cd4a1aaec716f3534a7730b754d70db56",
+      "evidence_id": "sha256:0fec53c7e1e747908dfe3f0ffae49f3cd4a1aaec716f3534a7730b754d70db56",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-0fec53c7e1e747908dfe3f0ffae49f3cd4a1aaec716f3534a7730b754d70db56",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:0fec53c7e1e747908dfe3f0ffae49f3cd4a1aaec716f3534a7730b754d70db56 -->",
+      "verified_fields": [
+        "continuation",
+        "enemy_remaining",
+        "final_result",
+        "opponent",
+        "own_remaining",
+        "round",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/05.png",
+      "size": 1829551,
+      "sha256": "2cb97a5d49d2b9fe0199f6210a2faa9ade91724460ed16198a1347cfe1f044d2",
+      "evidence_id": "sha256:2cb97a5d49d2b9fe0199f6210a2faa9ade91724460ed16198a1347cfe1f044d2",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-2cb97a5d49d2b9fe0199f6210a2faa9ade91724460ed16198a1347cfe1f044d2",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:2cb97a5d49d2b9fe0199f6210a2faa9ade91724460ed16198a1347cfe1f044d2 -->",
+      "verified_fields": [
+        "continuation",
+        "enemy_remaining",
+        "final_result",
+        "opponent",
+        "own_remaining",
+        "round",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/06.png",
+      "size": 1773257,
+      "sha256": "78528b28026627e3f7f437e811706cf5c45c1a7bedfd61ce32270fd2a8d37ca8",
+      "evidence_id": "sha256:78528b28026627e3f7f437e811706cf5c45c1a7bedfd61ce32270fd2a8d37ca8",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-78528b28026627e3f7f437e811706cf5c45c1a7bedfd61ce32270fd2a8d37ca8",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:78528b28026627e3f7f437e811706cf5c45c1a7bedfd61ce32270fd2a8d37ca8 -->",
+      "verified_fields": [
+        "continuation",
+        "enemy_remaining",
+        "final_result",
+        "opponent",
+        "own_remaining",
+        "round",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/07.png",
+      "size": 1549979,
+      "sha256": "29ab64197e7196b87e4373d022e1125fb3db9d974f1b29e75de3c0366b953ab2",
+      "evidence_id": "sha256:29ab64197e7196b87e4373d022e1125fb3db9d974f1b29e75de3c0366b953ab2",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-29ab64197e7196b87e4373d022e1125fb3db9d974f1b29e75de3c0366b953ab2",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:29ab64197e7196b87e4373d022e1125fb3db9d974f1b29e75de3c0366b953ab2 -->",
+      "verified_fields": [
+        "ganglie_damage",
+        "guanyu_native_count",
+        "guanyu_native_damage",
+        "image",
+        "opponent",
+        "shuiyan_count",
+        "team",
+        "tuntian_heal"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/08.png",
+      "size": 1535713,
+      "sha256": "ba283472d4c1fc82a83b2c4e4f35fee2682735589d8d279761d89ad20914259c",
+      "evidence_id": "sha256:ba283472d4c1fc82a83b2c4e4f35fee2682735589d8d279761d89ad20914259c",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-ba283472d4c1fc82a83b2c4e4f35fee2682735589d8d279761d89ad20914259c",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:ba283472d4c1fc82a83b2c4e4f35fee2682735589d8d279761d89ad20914259c -->",
+      "verified_fields": [
+        "image",
+        "mu_niu_heal",
+        "opponent",
+        "pangde_native_count",
+        "pangde_native_damage",
+        "qizheng_damage",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/09.png",
+      "size": 1600751,
+      "sha256": "f043613c1566e18a4abcc9481b99cda8d348aefd7a76b1be7f8183f550dfde78",
+      "evidence_id": "sha256:f043613c1566e18a4abcc9481b99cda8d348aefd7a76b1be7f8183f550dfde78",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-f043613c1566e18a4abcc9481b99cda8d348aefd7a76b1be7f8183f550dfde78",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:f043613c1566e18a4abcc9481b99cda8d348aefd7a76b1be7f8183f550dfde78 -->",
+      "verified_fields": [
+        "guanyu_native_damage",
+        "image",
+        "opponent",
+        "shuiyan_damage",
+        "team",
+        "tuntian_heal"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/10.png",
+      "size": 1548687,
+      "sha256": "25994ce665485a851ca6ce87267083b8ed62d8c258b1da3414b769b6c3c76ba1",
+      "evidence_id": "sha256:25994ce665485a851ca6ce87267083b8ed62d8c258b1da3414b769b6c3c76ba1",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-25994ce665485a851ca6ce87267083b8ed62d8c258b1da3414b769b6c3c76ba1",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:25994ce665485a851ca6ce87267083b8ed62d8c258b1da3414b769b6c3c76ba1 -->",
+      "verified_fields": [
+        "image",
+        "mu_niu_heal",
+        "opponent",
+        "pangde_native_damage",
+        "qizheng_heal",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/11.png",
+      "size": 1560186,
+      "sha256": "54f1f478ec67ea7e0c4767e9bce782f0c02336f04a91d563f0fab528b37461dc",
+      "evidence_id": "sha256:54f1f478ec67ea7e0c4767e9bce782f0c02336f04a91d563f0fab528b37461dc",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-54f1f478ec67ea7e0c4767e9bce782f0c02336f04a91d563f0fab528b37461dc",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:54f1f478ec67ea7e0c4767e9bce782f0c02336f04a91d563f0fab528b37461dc -->",
+      "verified_fields": [
+        "image",
+        "mu_niu_heal",
+        "opponent",
+        "pangde_jixing_damage",
+        "pangde_native_damage",
+        "qizheng_heal",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/12.png",
+      "size": 1604444,
+      "sha256": "39517ff0f95aed39e9f2e9d189c9939058f581b72255c0e713e31fd78e35155e",
+      "evidence_id": "sha256:39517ff0f95aed39e9f2e9d189c9939058f581b72255c0e713e31fd78e35155e",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-39517ff0f95aed39e9f2e9d189c9939058f581b72255c0e713e31fd78e35155e",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:39517ff0f95aed39e9f2e9d189c9939058f581b72255c0e713e31fd78e35155e -->",
+      "verified_fields": [
+        "continuation",
+        "enemy_start",
+        "image",
+        "opponent",
+        "own_start",
+        "qingfeng_heal",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/13.png",
+      "size": 1539669,
+      "sha256": "ab9e07b2e03c02f9287dfeb64362cd9c26dcaee48bdae0d5f5c01c2ce702bf41",
+      "evidence_id": "sha256:ab9e07b2e03c02f9287dfeb64362cd9c26dcaee48bdae0d5f5c01c2ce702bf41",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-ab9e07b2e03c02f9287dfeb64362cd9c26dcaee48bdae0d5f5c01c2ce702bf41",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:ab9e07b2e03c02f9287dfeb64362cd9c26dcaee48bdae0d5f5c01c2ce702bf41 -->",
+      "verified_fields": [
+        "enemy_zhouyu_native_damage",
+        "image",
+        "mu_niu_heal",
+        "opponent",
+        "pangde_jixing_damage",
+        "pangde_native_damage",
+        "qizheng_heal",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/14.png",
+      "size": 1547056,
+      "sha256": "b7f56f9ac02a4f419a5b13168923433b502cbd5243bb6cc1d05d602e4067ffb2",
+      "evidence_id": "sha256:b7f56f9ac02a4f419a5b13168923433b502cbd5243bb6cc1d05d602e4067ffb2",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-b7f56f9ac02a4f419a5b13168923433b502cbd5243bb6cc1d05d602e4067ffb2",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:b7f56f9ac02a4f419a5b13168923433b502cbd5243bb6cc1d05d602e4067ffb2 -->",
+      "verified_fields": [
+        "guanyu_native_damage",
+        "image",
+        "opponent",
+        "pozhen_damage",
+        "qingfeng_heal",
+        "team",
+        "tuntian_heal"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/15.png",
+      "size": 1584742,
+      "sha256": "e98c0b9a27ab44a60a543ba9631a630159a3c281340e4fa32b4a5fb85e218334",
+      "evidence_id": "sha256:e98c0b9a27ab44a60a543ba9631a630159a3c281340e4fa32b4a5fb85e218334",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-e98c0b9a27ab44a60a543ba9631a630159a3c281340e4fa32b4a5fb85e218334",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:e98c0b9a27ab44a60a543ba9631a630159a3c281340e4fa32b4a5fb85e218334 -->",
+      "verified_fields": [
+        "image",
+        "mu_niu_heal",
+        "opponent",
+        "pangde_jixing_damage",
+        "pangde_native_damage",
+        "qizheng_heal",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/16.png",
+      "size": 1631070,
+      "sha256": "49199a60fbe4b9fa379283268a9c8d37c15e4af1024e435ec293dd7083173e8c",
+      "evidence_id": "sha256:49199a60fbe4b9fa379283268a9c8d37c15e4af1024e435ec293dd7083173e8c",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-49199a60fbe4b9fa379283268a9c8d37c15e4af1024e435ec293dd7083173e8c",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:49199a60fbe4b9fa379283268a9c8d37c15e4af1024e435ec293dd7083173e8c -->",
+      "verified_fields": [
+        "guanyu_native_damage",
+        "image",
+        "opponent",
+        "pozhen_damage",
+        "qingfeng_heal",
+        "team",
+        "tuntian_heal"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/上半场/17.png",
+      "size": 902075,
+      "sha256": "37aead999b9c3c607356fdfa8f0f3ca9a1a065389eb0f1b3531757b1f49846e9",
+      "evidence_id": "sha256:37aead999b9c3c607356fdfa8f0f3ca9a1a065389eb0f1b3531757b1f49846e9",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-37aead999b9c3c607356fdfa8f0f3ca9a1a065389eb0f1b3531757b1f49846e9",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:37aead999b9c3c607356fdfa8f0f3ca9a1a065389eb0f1b3531757b1f49846e9 -->",
+      "verified_fields": [
+        "formation",
+        "members",
+        "tactics",
+        "team"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/两场控制补证/01.png",
+      "size": 1280160,
+      "sha256": "e8bd373796ad6f7807fab65441214bd94593f45b24eba2ef24ba91821b39eca3",
+      "evidence_id": "sha256:e8bd373796ad6f7807fab65441214bd94593f45b24eba2ef24ba91821b39eca3",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-e8bd373796ad6f7807fab65441214bd94593f45b24eba2ef24ba91821b39eca3",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:e8bd373796ad6f7807fab65441214bd94593f45b24eba2ef24ba91821b39eca3 -->",
+      "verified_fields": [
+        "control_counts",
+        "visible_rounds",
+        "visible_trigger_counts"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/两场控制补证/02.png",
+      "size": 1152525,
+      "sha256": "f776dd481720276bcaf2d0b2b49ca419d238a2a6f64816809061de2825957da9",
+      "evidence_id": "sha256:f776dd481720276bcaf2d0b2b49ca419d238a2a6f64816809061de2825957da9",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-f776dd481720276bcaf2d0b2b49ca419d238a2a6f64816809061de2825957da9",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:f776dd481720276bcaf2d0b2b49ca419d238a2a6f64816809061de2825957da9 -->",
+      "verified_fields": [
+        "control_counts",
+        "visible_rounds",
+        "visible_trigger_counts"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/两场控制补证/03.png",
+      "size": 1248368,
+      "sha256": "19466c7bd7c933775c487c93d914572dcf44441f50bc80d6a511d8d8630414d2",
+      "evidence_id": "sha256:19466c7bd7c933775c487c93d914572dcf44441f50bc80d6a511d8d8630414d2",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-19466c7bd7c933775c487c93d914572dcf44441f50bc80d6a511d8d8630414d2",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:19466c7bd7c933775c487c93d914572dcf44441f50bc80d6a511d8d8630414d2 -->",
+      "verified_fields": [
+        "control_counts",
+        "visible_rounds",
+        "visible_trigger_counts"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/两场控制补证/04.png",
+      "size": 1258606,
+      "sha256": "e0e6cb31592287c7fabfae13796d8729805928b55fad4a3be169aa010f17a4b8",
+      "evidence_id": "sha256:e0e6cb31592287c7fabfae13796d8729805928b55fad4a3be169aa010f17a4b8",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-e0e6cb31592287c7fabfae13796d8729805928b55fad4a3be169aa010f17a4b8",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:e0e6cb31592287c7fabfae13796d8729805928b55fad4a3be169aa010f17a4b8 -->",
+      "verified_fields": [
+        "control_counts",
+        "visible_rounds",
+        "visible_trigger_counts"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/两场控制补证/05.png",
+      "size": 828652,
+      "sha256": "242836b9d0c1995c7f77c9962ae33be75f05da70cd20bc7cbb6714f5c087de5a",
+      "evidence_id": "sha256:242836b9d0c1995c7f77c9962ae33be75f05da70cd20bc7cbb6714f5c087de5a",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-242836b9d0c1995c7f77c9962ae33be75f05da70cd20bc7cbb6714f5c087de5a",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:242836b9d0c1995c7f77c9962ae33be75f05da70cd20bc7cbb6714f5c087de5a -->",
+      "verified_fields": [
+        "control_counts",
+        "visible_rounds",
+        "visible_trigger_counts"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/两场控制补证/06.png",
+      "size": 819907,
+      "sha256": "720ed3d02de540f52e34d168d363dec949d24b94e4775924fa7cbd16292ad1ad",
+      "evidence_id": "sha256:720ed3d02de540f52e34d168d363dec949d24b94e4775924fa7cbd16292ad1ad",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-720ed3d02de540f52e34d168d363dec949d24b94e4775924fa7cbd16292ad1ad",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:720ed3d02de540f52e34d168d363dec949d24b94e4775924fa7cbd16292ad1ad -->",
+      "verified_fields": [
+        "control_counts",
+        "visible_rounds",
+        "visible_trigger_counts"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/曹操队续战准备属性/01.png",
+      "size": 389024,
+      "sha256": "a1fdd7caea420668ace548cf932de72a3dcb2654fa4225c94688626d56ff8894",
+      "evidence_id": "sha256:a1fdd7caea420668ace548cf932de72a3dcb2654fa4225c94688626d56ff8894",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-a1fdd7caea420668ace548cf932de72a3dcb2654fa4225c94688626d56ff8894",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a1fdd7caea420668ace548cf932de72a3dcb2654fa4225c94688626d56ff8894 -->",
+      "verified_fields": [
+        "combat_attributes",
+        "troops",
+        "visible_buff_log"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/曹操队续战准备属性/02.png",
+      "size": 80082,
+      "sha256": "a6cdda9908b2c2a183eefd9369b1b6388ad18af4d7e50e7877c4b8274ced0540",
+      "evidence_id": "sha256:a6cdda9908b2c2a183eefd9369b1b6388ad18af4d7e50e7877c4b8274ced0540",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-a6cdda9908b2c2a183eefd9369b1b6388ad18af4d7e50e7877c4b8274ced0540",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a6cdda9908b2c2a183eefd9369b1b6388ad18af4d7e50e7877c4b8274ced0540 -->",
+      "verified_fields": [
+        "combat_attributes",
+        "troops",
+        "visible_buff_log"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/曹操队续战准备属性/03.png",
+      "size": 110906,
+      "sha256": "258f2ec6b89680c9bf971623f53e4f584fbf123bcfb588b5ad77e735ad31972c",
+      "evidence_id": "sha256:258f2ec6b89680c9bf971623f53e4f584fbf123bcfb588b5ad77e735ad31972c",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-258f2ec6b89680c9bf971623f53e4f584fbf123bcfb588b5ad77e735ad31972c",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:258f2ec6b89680c9bf971623f53e4f584fbf123bcfb588b5ad77e735ad31972c -->",
+      "verified_fields": [
+        "combat_attributes",
+        "troops",
+        "visible_buff_log"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/曹操队续战准备属性/04.png",
+      "size": 116454,
+      "sha256": "25b8ba127f136f125ffb3161fc37c40543cb5965fa6a0d7355b7dc43f6e8274e",
+      "evidence_id": "sha256:25b8ba127f136f125ffb3161fc37c40543cb5965fa6a0d7355b7dc43f6e8274e",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-25b8ba127f136f125ffb3161fc37c40543cb5965fa6a0d7355b7dc43f6e8274e",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:25b8ba127f136f125ffb3161fc37c40543cb5965fa6a0d7355b7dc43f6e8274e -->",
+      "verified_fields": [
+        "combat_attributes",
+        "troops",
+        "visible_buff_log"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    },
+    {
+      "path": "证据/贾诸法配置参考.png",
+      "size": 733685,
+      "sha256": "26e011d1dc84c203d658409f43313e731942f757b761b2cd0e655a7eec835253",
+      "evidence_id": "sha256:26e011d1dc84c203d658409f43313e731942f757b761b2cd0e655a7eec835253",
+      "availability": "local_only",
+      "transcription_ref": "user/bixianjue/演武/s2-2026-09-23/截图转译证据.md#image-26e011d1dc84c203d658409f43313e731942f757b761b2cd0e655a7eec835253",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:26e011d1dc84c203d658409f43313e731942f757b761b2cd0e655a7eec835253 -->",
+      "verified_fields": [
+        "equipped_tactics",
+        "general_names"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。"
+    }
+  ]
+}

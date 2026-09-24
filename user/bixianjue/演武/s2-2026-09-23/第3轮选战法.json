@@ -1,0 +1,31 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "round": 3,
+  "total_rounds": 7,
+  "type": "战法",
+  "groups": [
+    {"group": 1, "source": "证据/第3轮-第一组.png", "tactics": [
+      {"name": "奇正相生", "type": "指挥", "activation_rate": "100%", "card_summary": "每回合造成治疗和谋略伤害"},
+      {"name": "战八方", "type": "主动", "activation_rate": "55%", "card_summary": "对敌军全体造成兵刃伤害，并施加畏惧"},
+      {"name": "固若金汤", "type": "指挥", "activation_rate": "100%", "card_summary": "每回合概率嘲讽敌方群体"}
+    ]},
+    {"group": 2, "source": "证据/第3轮-第二组.png", "tactics": [
+      {"name": "兵贵神速", "type": "追击", "activation_rate": "40%", "card_summary": "自身先攻提升，造成群体兵刃伤害"},
+      {"name": "摧坚克难", "type": "被动", "activation_rate": "100%", "card_summary": "会心几率提升，行动结束后造成兵刃伤害"},
+      {"name": "横扫千军", "type": "追击", "activation_rate": "45%", "card_summary": "全体兵刃伤害"}
+    ]},
+    {"group": 3, "source": "证据/第3轮-第三组.png", "tactics": [
+      {"name": "知人善任", "type": "主动", "activation_rate": "75%", "card_summary": "使我军智力最高单体受到伤害降低，并获得抵御"},
+      {"name": "奇门遁甲", "type": "主动", "activation_rate": "40%", "card_summary": "全体谋略伤害并概率造成震慑"},
+      {"name": "风卷残云", "type": "主动", "activation_rate": "60%", "card_summary": "对敌军群体造成兵刃伤害"}
+    ]}
+  ],
+  "status": "已确认第一组",
+  "recommended_group": 1,
+  "confirmed_group": 1,
+  "confirmation_source": "用户未反驳第3轮第一组推荐而直接发送第4轮选将截图；按本期连续任务确认约定视为实际选择",
+  "round2_basis": "用户明确说明第2轮选第一组断敌粮道、锐不可当、出其不意",
+  "percentage_policy": "卡面角标疑似选取率，不作胜率、红度或收益数值",
+  "evidence_boundary": "九项卡面类型、发动率和短摘要已入公共库；奇正相生、摧坚克难、奇门遁甲、风卷残云已由用户本期完整10级截图核实。断敌粮道本地一红113.3%及演武白板110%分别保存，不混用。"
+}

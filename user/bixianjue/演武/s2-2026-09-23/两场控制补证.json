@@ -1,0 +1,49 @@
+{
+  "source_directory": "证据/两场控制补证",
+  "team1": {
+    "received": {
+      "夏侯惇": {
+        "技穷": 2,
+        "震慑": 2
+      },
+      "邓艾": {
+        "技穷": 2,
+        "震慑": 2
+      },
+      "关羽": {
+        "技穷": 4,
+        "震慑": 2
+      }
+    },
+    "guanyu_babafang_rounds": [
+      1,
+      5
+    ],
+    "diagnosis": "用户说明及统计支持控制限制主动释放，不能将状态次数相加为独立受控回合；清风针对性补驱散和续航"
+  },
+  "team2": {
+    "received": {
+      "周瑜": {
+        "技穷": 4
+      },
+      "黄盖": {
+        "技穷": 3
+      },
+      "小乔": {
+        "技穷": 2
+      }
+    },
+    "visible_native_zhouyu_count": 14,
+    "visible_huanggai_kurou_count": 2,
+    "visible_huanggai_zhidian_count": 4,
+    "visible_xiaoqiao_tianxiang_rounds": [
+      3,
+      5
+    ],
+    "visible_enemy_wangsi_count": 21,
+    "diagnosis": "控制压制主动及借刀/异常施加链；周瑜非主动自带仍有触发，不说技穷直接封被动。对手自减伤、全体减伤和治疗共同构成防护",
+    "limitations": "逐回合统计未显示第7回合行，不补0；尚未独立确认这些截图对应首次平局还是续战，不跨场加总"
+  },
+  "user_confirmed": "邓艾改清风是针对关羽技穷震慑并补恢复；二队败因判断为技穷及曹操曹仁减伤",
+  "action": "保持最新阵容；不据此将清风挪去二队，也不保证清风每次命中关羽或优先驱散所需控制"
+}

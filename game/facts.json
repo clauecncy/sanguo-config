@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "policy": "仅复用已核定字段；用户确认的机制不认证整个技能、完整10级倍率或跨版本适用性。",
+  "facts": [
+    {
+      "id": "tianxiang-user-rate",
+      "subjects": [
+        "小乔",
+        "天香"
+      ],
+      "field": "activation_rate",
+      "value": "用户明确自带天香基础发动率40%；此项只确认发动率，不补完整技能正文或治疗倍率。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-24",
+      "source_type": "用户确认MD",
+      "source": "user/bixianjue/演武/s2-2026-09-23/重随后优化.md"
+    },
+    {
+      "id": "taoguang-native-active",
+      "subjects": [
+        "韬光养晦",
+        "天香",
+        "小乔"
+      ],
+      "field": "activation_scope",
+      "value": "只提高自带主动战法发动率，不提高学习的料事如神或五雷轰顶发动率。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-24",
+      "source_type": "游戏内图片转译Markdown",
+      "source": "game/sources/图片转译证据.md",
+      "source_anchor": "image-00cccf52e2b388aa33c1f557183e3a109e1b5bc6fd444eadbe65e132c2da9335",
+      "evidence_id": "sha256:00cccf52e2b388aa33c1f557183e3a109e1b5bc6fd444eadbe65e132c2da9335",
+      "source_image_sha256": "00cccf52e2b388aa33c1f557183e3a109e1b5bc6fd444eadbe65e132c2da9335"
+    },
+    {
+      "id": "xuhuangyu-chain",
+      "subjects": [
+        "徐盛",
+        "黄盖",
+        "周瑜",
+        "临机制胜",
+        "苦肉计",
+        "指点乾坤"
+      ],
+      "field": "mechanism_chain",
+      "value": "用户确认嘲讽等负面触发周瑜，周瑜叠智力并获得暴击相关增益，苦肉及指点借刀，苦肉火攻再次触发周瑜。暴击具体术语和完整倍率不由此确认。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-23",
+      "source_type": "用户确认MD",
+      "source": "user/bixianjue/演武/s2-2026-09-23/阵容链条纠正.md"
+    },
+    {
+      "id": "xunyu-self-heal",
+      "subjects": [
+        "荀彧",
+        "贾诩"
+      ],
+      "field": "mechanism_scope",
+      "value": "用户纠正搭档为荀彧而非郭嘉；全队奇谋增益与荀彧自身恢复双倍分开，不能推广成队友全部治疗双倍。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-23",
+      "source_type": "用户确认MD",
+      "source": "user/bixianjue/演武/s2-2026-09-23/阵容链条纠正.md"
+    },
+    {
+      "id": "guanyu-deserter",
+      "subjects": [
+        "关羽",
+        "邓艾",
+        "威震华夏"
+      ],
+      "field": "damage_scope",
+      "value": "用户确认关羽逃兵不受减伤影响；不可将此推广到关羽全部伤害，也不可将邓艾双方降伤直接套到逃兵输出。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-23",
+      "source_type": "用户确认MD",
+      "source": "user/bixianjue/演武/s2-2026-09-23/阵容链条纠正.md"
+    },
+    {
+      "id": "event-continuation",
+      "subjects": [
+        "演武",
+        "续战"
+      ],
+      "field": "continuation",
+      "value": {
+        "max_rounds": 8,
+        "retain": [
+          "兵力",
+          "武将存活"
+        ],
+        "reset": [
+          "增益buff",
+          "减益buff"
+        ],
+        "assessment": "大幅兵力差可判断倾向；实见结果与预计结果分列，不将重复续战计为新组对局。"
+      },
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-24",
+      "source_type": "用户确认MD",
+      "source": "docs/workflows/events.md"
+    },
+    {
+      "id": "support-advancement",
+      "subjects": [
+        "演武",
+        "支援",
+        "红度"
+      ],
+      "field": "inheritance",
+      "value": "支援武将和战法保留红度；战法面板发动概率不随红度提升，效果正文概率不可与面板概率混淆。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-24",
+      "source_type": "用户确认记录",
+      "source": "user/bixianjue/演武/s2-2026-09-23/event.json"
+    },
+    {
+      "id": "event-reroll-materials",
+      "subjects": [
+        "演武",
+        "重随"
+      ],
+      "field": "eligibility",
+      "value": "武将和战法重随材料必须金色且非支援；额外战法支援锦囊新增紫色位，不是金色位。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-24",
+      "source_type": "用户确认MD",
+      "source": "docs/workflows/events.md"
+    }
+  ]
+}

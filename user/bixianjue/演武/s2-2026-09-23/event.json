@@ -1,0 +1,592 @@
+{
+  "schema_version": 1,
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "season": "s2",
+  "season_source": "user/bixianjue/profile.json；本次截图未单独显示赛季",
+  "platform": "Steam",
+  "first_recorded_at": "2026-09-23",
+  "start_date": null,
+  "status": "进行中",
+  "stage": "上半场已复盘，按用户最新配置待后续；未确认锁定",
+  "new_event_confirmation": "用户明确开始新一轮演武，并说明是本赛季最后一轮演武",
+  "files": [
+    "初始仓库.json",
+    "当前仓库.json",
+    "第1轮选将.json",
+    "第1轮选将建议.md",
+    "第1轮选将推荐.md",
+    "第2轮选战法.json",
+    "第2轮选战法建议.md",
+    "第3轮选战法.json",
+    "第3轮战法核查.md",
+    "第3轮选战法建议.md",
+    "第4轮选将.json",
+    "第4轮选将核查.md",
+    "证据清单.json",
+    "第4轮选将建议.md",
+    "第5轮选战法.json",
+    "第5轮选战法建议.md",
+    "第6轮选战法.json",
+    "第7轮锦囊建议.json",
+    "第6轮及锦囊建议.md",
+    "重随后阵容.json",
+    "重随后优化.md",
+    "上半场战报.json",
+    "上半场后最新阵容.json",
+    "上半场复盘.md",
+    "两场控制补证.json",
+    "曹操队续战准备属性.json",
+    "current_state.json",
+    "decision_history.json",
+    "当前状态.md",
+    "截图转译证据.md"
+  ],
+  "selection_confirmation_policy": "仅本期连续任务：助手推荐后用户未反驳而发送下一轮选卡截图，视为上一轮按推荐组实际选择；明确改选优先",
+  "skill_evidence": [
+    "game/sources/evidence/2026-09-23-鲁肃-划湘分荆10级.png",
+    "game/sources/evidence/2026-09-23-程昱-勇冠贲育10级.png",
+    "game/sources/evidence/2026-09-23-许褚-裸衣血战10级.png",
+    "game/sources/evidence/2026-09-23-贾诩-诡道玄机10级.png",
+    "game/sources/evidence/2026-09-23-庞德-陷阵蹈难10级.png",
+    "game/sources/evidence/2026-09-23-断敌粮道10级-复核.png",
+    "game/sources/evidence/2026-09-23-横扫千军10级.png",
+    "game/sources/evidence/2026-09-23-兵贵神速10级.png",
+    "game/sources/evidence/2026-09-23-断敌粮道10级-一红.png",
+    "game/sources/evidence/2026-09-23-奇正相生10级.png",
+    "game/sources/evidence/2026-09-23-摧坚克难10级.png",
+    "game/sources/evidence/2026-09-23-奇门遁甲10级.png",
+    "game/sources/evidence/2026-09-23-风卷残云10级.png",
+    "game/sources/evidence/2026-09-23-曹仁-固镇襄樊10级.png",
+    "game/sources/evidence/2026-09-23-蔡文姬-悲愤诗10级.png",
+    "game/sources/evidence/2026-09-23-邓艾-屯田令10级.png",
+    "game/sources/evidence/2026-09-23-忘私相助10级-历史图复核.png",
+    "game/sources/evidence/2026-09-23-指点乾坤10级.png",
+    "game/sources/evidence/2026-09-23-以静制动10级.png",
+    "game/sources/evidence/2026-09-23-披坚执锐10级-历史图复核.png",
+    "game/sources/evidence/2026-09-24-破阵驰围10级.png",
+    "game/sources/evidence/2026-09-24-铸甲销戈10级-3红.png",
+    "game/sources/evidence/2026-09-24-来好息师10级-2红.png",
+    "game/sources/evidence/2026-09-24-五雷轰顶10级-完整复核.png",
+    "game/sources/evidence/2026-09-24-韬光养晦10级-完整复核.png",
+    "game/sources/evidence/2026-09-24-固镇襄樊10级-控制补证.png",
+    "game/sources/evidence/2026-09-24-乱世奸雄10级-控制补证.png"
+  ],
+  "rules": {
+    "strategy_books_allowed": false,
+    "selection": "三组武将中整组选一组，确认后无法修改",
+    "percentage_policy": "用户判断应为选取率，尚无界面定义佐证；不作为胜率、红度或加成",
+    "fixed_pouch_options": [
+      "武将重随",
+      "战法重随",
+      "战法支援（新增1个紫色战法支援位）"
+    ],
+    "s1_s2_formations": [
+      "一字阵",
+      "箕形阵",
+      "雁形阵",
+      "方圆阵",
+      "锥形阵",
+      "鱼鳞阵"
+    ],
+    "support_slots": {
+      "generals": 1,
+      "tactics": 2,
+      "retains_advancement": true,
+      "advancement_rule_source": "2026-09-24用户明确支援武将和战法保留本地红度；战法面板发动概率不随红度提升，选法主要看机制搭配",
+      "source": "用户本次末句明确1武将2战法；来自自己的库存"
+    },
+    "remaining_rounds": {
+      "5": "战法",
+      "6": "战法",
+      "7": "锦囊"
+    },
+    "pouch_details": {
+      "武将重随": "1名非支援武将，优先类型兵刃/谋略/辅助；材料金色限制仍按已确认公共规则",
+      "战法重随": "2个非支援橙色战法，优先类型兵刃/谋略/追击",
+      "战法支援": "额外1个上品(紫色)战法支援位，从自身拥有战法选；不是金色位",
+      "source": "证据/第7轮锦囊规则.png"
+    },
+    "continuation": {
+      "max_rounds_per_battle": 8,
+      "retains": [
+        "剩余兵力",
+        "武将存活状态"
+      ],
+      "resets": [
+        "增益buff",
+        "减益buff"
+      ],
+      "source": "2026-09-24用户明确说明",
+      "assessment": "大幅兵力及存活优势可判断胜负倾向；未展示续战结果与实见结果分列"
+    }
+  },
+  "public_evidence": [
+    {
+      "path": "game/sources/evidence/2026-09-23-鲁肃-划湘分荆10级.png",
+      "evidence_id": "sha256:3acc2a65bf43a911626ed2920366d486e3590a4e0fe160eb0cec62393122d2c6",
+      "observations": [
+        {
+          "observation_id": 39,
+          "entity_id": "tactic:b4396c15e973f5030acc",
+          "name": "划湘分荆",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-程昱-勇冠贲育10级.png",
+      "evidence_id": "sha256:f8191327b45b46f10b6054e901951a19510a70c8f5937c1840ac71d0eeee5863",
+      "observations": [
+        {
+          "observation_id": 40,
+          "entity_id": "tactic:a5128942e86412a27356",
+          "name": "勇冠贲育",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-许褚-裸衣血战10级.png",
+      "evidence_id": "sha256:7acfec53869946254d92784f69f0f73618dee9c0fb818ae6ffc339774ac313df",
+      "observations": [
+        {
+          "observation_id": 41,
+          "entity_id": "tactic:0744143b4be4741efab0",
+          "name": "裸衣血战",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-贾诩-诡道玄机10级.png",
+      "evidence_id": "sha256:f5b102a4750b0cccec9a0ed183b6181becff2a214eaf9abb2cb099544802ba0c",
+      "observations": [
+        {
+          "observation_id": 42,
+          "entity_id": "tactic:5a8966c7e72ec0c51a34",
+          "name": "诡道玄机",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-庞德-陷阵蹈难10级.png",
+      "evidence_id": "sha256:5b66e7aa32184c1fedf8311a38fd1b3ed3ad2af846fb684e159d05b92890232f",
+      "observations": [
+        {
+          "observation_id": 43,
+          "entity_id": "tactic:f45d41b9eccf83dbd2ad",
+          "name": "陷阵蹈难",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-断敌粮道10级-复核.png",
+      "evidence_id": "sha256:29a015771808d730171cb2aa619a992f3a9e22b2c5b032b1e76cfc4c0c094790",
+      "observations": [
+        {
+          "observation_id": 53,
+          "entity_id": "tactic:e87a6add52ed58080f91",
+          "name": "断敌粮道",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate",
+            "advancement_confirmed"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-横扫千军10级.png",
+      "evidence_id": "sha256:b8d5192e5457e50a9c269f7b68bb96240ca648292380c11775b96860cad56d74",
+      "observations": [
+        {
+          "observation_id": 54,
+          "entity_id": "tactic:c737dd6eca594efc9c5c",
+          "name": "横扫千军",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-兵贵神速10级.png",
+      "evidence_id": "sha256:ab6d00ea2d74464a941b6e401bcedda510ca4fa87a7cedd08d65972a5aa2ee22",
+      "observations": [
+        {
+          "observation_id": 55,
+          "entity_id": "tactic:f217f263c5141babbde8",
+          "name": "兵贵神速",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-断敌粮道10级-一红.png",
+      "evidence_id": "sha256:2db710511bacefc5752cdfbe5f455827dd13f6ae86935eb30c538b7c8a26302f",
+      "observations": [
+        {
+          "observation_id": 65,
+          "entity_id": "tactic:e87a6add52ed58080f91",
+          "name": "断敌粮道",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate",
+            "advancement_confirmed"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-奇正相生10级.png",
+      "evidence_id": "sha256:378e98ad8c9f596c6a980cc6a5409d3f466e0e933f32fa974a2401732050453a",
+      "observations": [
+        {
+          "observation_id": 66,
+          "entity_id": "tactic:789a1412ef5a010da75e",
+          "name": "奇正相生",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-摧坚克难10级.png",
+      "evidence_id": "sha256:9693d19407de8153debc9689d676dcb370982341aa671cd47a92c427d2f3b1ea",
+      "observations": [
+        {
+          "observation_id": 67,
+          "entity_id": "tactic:f15358a92b7318ab3014",
+          "name": "摧坚克难",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-奇门遁甲10级.png",
+      "evidence_id": "sha256:040b457e05b9c8b7e0b2b6a120b4b5e2102361954191c2b1aa976dd0714884e8",
+      "observations": [
+        {
+          "observation_id": 68,
+          "entity_id": "tactic:b123e1f04311f204a94b",
+          "name": "奇门遁甲",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-风卷残云10级.png",
+      "evidence_id": "sha256:03de21e0fb6e95b68b2bccb0e753b51178f5bde119b7f4b4fbf54406cfe6ada8",
+      "observations": [
+        {
+          "observation_id": 69,
+          "entity_id": "tactic:732f31d3802bbac61f71",
+          "name": "风卷残云",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-曹仁-固镇襄樊10级.png",
+      "evidence_id": "sha256:4f09ad060db66a4a87619a25bdfaa83e7ffa8b9e542eb0224ba0cb12aea61ad4",
+      "observations": [
+        {
+          "observation_id": 70,
+          "entity_id": "tactic:532ecee7751c9982d10a",
+          "name": "固镇襄樊",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-蔡文姬-悲愤诗10级.png",
+      "evidence_id": "sha256:a9576c9b765bc08dea2c56cb23b9f8a70441ac62d431c65ea39482db128fd7de",
+      "observations": [
+        {
+          "observation_id": 71,
+          "entity_id": "tactic:b669481c9f89ce0a2cce",
+          "name": "悲愤诗",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-邓艾-屯田令10级.png",
+      "evidence_id": "sha256:e6798b5423838c7efd14695d0a4ebed2c5f6d29bb006c151bcf1274ac2719cdd",
+      "observations": [
+        {
+          "observation_id": 72,
+          "entity_id": "tactic:e00ff7430a14bdea255e",
+          "name": "屯田令",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-忘私相助10级-历史图复核.png",
+      "evidence_id": "sha256:ecf4a39f8d59ef3a144ce02335d971900b0633f1a9cf525d2156fda05cde1e2f",
+      "observations": [
+        {
+          "observation_id": 73,
+          "entity_id": "tactic:08ea3238229b37e68042",
+          "name": "忘私相助",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-指点乾坤10级.png",
+      "evidence_id": "sha256:4971a3b938b707f0dc73801b46c4986a51f504b1f8015167631e9e46f598f975",
+      "observations": [
+        {
+          "observation_id": 74,
+          "entity_id": "tactic:41a965ac27196665294c",
+          "name": "指点乾坤",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-以静制动10级.png",
+      "evidence_id": "sha256:f4894e07615a4d6f9ce60c4fcc3e79e6d9d3e8f6dbf08955a671ba61c5d9f740",
+      "observations": [
+        {
+          "observation_id": 75,
+          "entity_id": "tactic:0e805dafe4ac6dced483",
+          "name": "以静制动",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-23-披坚执锐10级-历史图复核.png",
+      "evidence_id": "sha256:d46e9d571e40ea2f4eb3150dcbd5a6f06eaa1c6595bf79cecbdd7ce538c33621",
+      "observations": [
+        {
+          "observation_id": 76,
+          "entity_id": "tactic:ce7505e773f930a6fb3e",
+          "name": "披坚执锐",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-24-破阵驰围10级.png",
+      "evidence_id": "sha256:768c0cc488260545e1af79cabadd6ec1a70b2d95c207426eaaa15c75b55f0a6a",
+      "observations": [
+        {
+          "observation_id": 77,
+          "entity_id": "tactic:d63b395d5863736c5bdf",
+          "name": "破阵驰围",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-24-铸甲销戈10级-3红.png",
+      "evidence_id": "sha256:32ce03778fcd69ba28238d08762588283e41758c2317135620ced0dd14912b0a",
+      "observations": [
+        {
+          "observation_id": 78,
+          "entity_id": "tactic:209cd4cbd1a4b56ae15e",
+          "name": "铸甲销戈",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate",
+            "advancement_confirmed"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-24-来好息师10级-2红.png",
+      "evidence_id": "sha256:db62eeaa078274308e31499181c3fde44b21f63ecb135ac102ffb3f2698c279c",
+      "observations": [
+        {
+          "observation_id": 79,
+          "entity_id": "tactic:15208bb4d258ae927282",
+          "name": "来好息师",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate",
+            "advancement_confirmed"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-24-五雷轰顶10级-完整复核.png",
+      "evidence_id": "sha256:b842615c1dc847a45adc8b7ebbbbefe407109b3ac24259a31662645a1328459d",
+      "observations": [
+        {
+          "observation_id": 80,
+          "entity_id": "tactic:4f37cca376b8b2bc4c66",
+          "name": "五雷轰顶",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-24-韬光养晦10级-完整复核.png",
+      "evidence_id": "sha256:00cccf52e2b388aa33c1f557183e3a109e1b5bc6fd444eadbe65e132c2da9335",
+      "observations": [
+        {
+          "observation_id": 81,
+          "entity_id": "tactic:90aacda6cfdfc7296c53",
+          "name": "韬光养晦",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-24-固镇襄樊10级-控制补证.png",
+      "evidence_id": "sha256:242836b9d0c1995c7f77c9962ae33be75f05da70cd20bc7cbb6714f5c087de5a",
+      "observations": [
+        {
+          "observation_id": 82,
+          "entity_id": "tactic:532ecee7751c9982d10a",
+          "name": "固镇襄樊",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/2026-09-24-乱世奸雄10级-控制补证.png",
+      "evidence_id": "sha256:720ed3d02de540f52e34d168d363dec949d24b94e4775924fa7cbd16292ad1ad",
+      "observations": [
+        {
+          "observation_id": 83,
+          "entity_id": "tactic:0da02b61e0c8c8ec13b5",
+          "name": "乱世奸雄",
+          "verified_fields": [
+            "effect_raw",
+            "level",
+            "activation_rate"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    }
+  ],
+  "current_state": "current_state.json",
+  "decision_history": "decision_history.json",
+  "image_transcription_file": "截图转译证据.md"
+}

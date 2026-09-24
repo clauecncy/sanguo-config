@@ -1,0 +1,90 @@
+{
+  "status": "用户截图可信的战斗属性，不是基础属性",
+  "phase": "用户确认准备阶段结束；兵力和14905吻合，判定为此前二队对揭阳平北军续战的属性快照",
+  "phase_basis": "此前首次平局敌方14905，当前5596+3486+5823=14905",
+  "source_directory": "证据/曹操队续战准备属性",
+  "generals": [
+    {
+      "name": "曹操",
+      "troop": "盾",
+      "force": 141.75,
+      "intelligence": 268.8,
+      "command": 232.05,
+      "initiative": 141.22,
+      "troops": 5596,
+      "max_troops": 5596,
+      "damage_dealt_pct": 12.0,
+      "damage_received_pct": -25.81,
+      "daoge_pct": 10.57,
+      "gongxin_pct": 10.57
+    },
+    {
+      "name": "曹仁",
+      "troop": "盾",
+      "force": 149.62,
+      "intelligence": 155.92,
+      "command": 282.97,
+      "initiative": 120.22,
+      "troops": 3486,
+      "max_troops": 3486,
+      "damage_dealt_pct": null,
+      "damage_received_pct": -48.39,
+      "daoge_pct": 10.57,
+      "gongxin_pct": 10.57
+    },
+    {
+      "name": "周瑜",
+      "troop": "弓",
+      "force": 126.52,
+      "intelligence": 302.92,
+      "command": 204.22,
+      "initiative": 147.52,
+      "troops": 5823,
+      "max_troops": 5823,
+      "damage_dealt_pct": 12.0,
+      "damage_received_pct": -45.1,
+      "daoge_pct": 10.57,
+      "gongxin_pct": 10.57
+    }
+  ],
+  "log": [
+    {
+      "skill": "乱世奸雄",
+      "target": "曹仁",
+      "reduction_increment": 20.97,
+      "result_damage_received_pct": -30.26
+    },
+    {
+      "skill": "乱世奸雄",
+      "target": "周瑜",
+      "reduction_increment": 22.31,
+      "result_damage_received_pct": -25.81
+    },
+    {
+      "skill": "乱世奸雄",
+      "target": "曹操",
+      "reduction_increment": 22.31,
+      "result_damage_received_pct": -25.81
+    },
+    {
+      "skill": "避其锐气",
+      "target": "曹仁",
+      "reduction_increment": 18.13,
+      "result_damage_received_pct": -48.39
+    },
+    {
+      "skill": "避其锐气",
+      "target": "周瑜",
+      "reduction_increment": 19.28,
+      "result_damage_received_pct": -45.1
+    }
+  ],
+  "limitations": [
+    "不把面板受伤修正当全场所有伤害最终倍率",
+    "不擅自把固镇奇数回合按攻击者前后排变化的减伤加入准备快照",
+    "避其标4回合，不能当全程常驻",
+    "同一施法者对不同目标的有效增量不同，只记日志，不推断未知结算公式",
+    "准备截图不能反证上一场buff未清空；本图显示重新施法",
+    "不将战斗四维写入公共武将基础属性或个人库存"
+  ]
+}

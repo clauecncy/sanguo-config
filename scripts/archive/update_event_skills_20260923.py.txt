@@ -1,0 +1,146 @@
+"""Apply five user-provided S2 level-10 self-tactic details to the public catalog."""
+
+import hashlib
+import json
+import os
+from pathlib import Path
+import sqlite3
+from contextlib import closing
+
+from project_data import ROOT, atomic_json
+from sync_game_data import validate_public
+
+
+EVIDENCE = [
+    (
+        "鲁肃", "划湘分荆", "主动", "45%",
+        "对敌我全体随机4个目标施加缴械，持续1回合。若选中我方目标，则使目标受到伤害降低20%（受智力影响），持续1回合；若选中敌方目标，则使目标受到伤害提升20%（受智力影响），持续1回合。",
+    ),
+    (
+        "程昱", "勇冠贲育", "主动", "60%",
+        "使敌军随机单体产生逃兵（受智力影响），之后对其造成360%谋略伤害；若目标为前排则伤害系数提高80%。",
+    ),
+    (
+        "许褚", "裸衣血战", "被动", "100%",
+        "战斗开始时，自身先攻和武力提升20点，连击率提升100%，统率降低15点。我军全体每累计进行4次普通攻击时，提升全体2%破甲（受武力影响），可叠加，持续到战斗结束。",
+    ),
+    (
+        "贾诩", "诡道玄机", "指挥", "100%",
+        "每个回合开始时有90%概率对敌军随机单体和一名队友施加混乱，持续2回合。若敌军目标已持有混乱状态，则额外造成300%谋略伤害；若友军目标已持有混乱状态，则额外恢复其和自身兵力（治疗率110%，受智力影响）。我军全体对自身和友军造成的伤害降低60%。",
+    ),
+    (
+        "庞德", "陷阵蹈难", "被动", "100%",
+        "战斗第3、5回合自身行动时，降低敌军全体30点统率和智力（受武力影响），持续2回合，随后造成340%兵刃伤害。",
+    ),
+]
+
+
+def main():
+    live = ROOT / "game/game.sqlite3"
+    baseline = ROOT / "game/sources/public-baseline.sql"
+    observation_path = ROOT / "game/sources/tactic_level_observations.json"
+    index_path = ROOT / "game/sources/evidence-index.json"
+    stage = ROOT / "game/.event-skills-20260923.tmp"
+    if stage.exists():
+        raise ValueError(f"Existing staging file: {stage}")
+
+    observations = json.loads(observation_path.read_text(encoding="utf-8"))
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    existing_observations = {(x["name"], x["level"]) for x in observations["observations"]}
+    existing_paths = {x["path"] for x in index}
+    paths = {
+        tactic: f"game/sources/evidence/2026-09-23-{general}-{tactic}10级.png"
+        for general, tactic, *_ in EVIDENCE
+    }
+    if any((tactic, 10) in existing_observations for tactic in paths):
+        raise ValueError("An observation is already present; inspect before retrying")
+    if any(path in existing_paths or not (ROOT / path).is_file() for path in paths.values()):
+        raise ValueError("Evidence missing or already indexed")
+
+    with closing(sqlite3.connect(live.resolve().as_uri() + "?mode=ro", uri=True)) as old:
+        current_dump = "\n".join(old.iterdump()) + "\n"
+        if baseline.read_text(encoding="utf-8") != current_dump:
+            raise ValueError("Live public catalog differs from SQL baseline")
+        c = sqlite3.connect(stage)
+        old.backup(c)
+
+    try:
+        for general, tactic, kind, rate, effect in EVIDENCE:
+            path = paths[tactic]
+            row = c.execute(
+                "SELECT g.self_tactic_id,t.id,t.quality FROM generals g "
+                "JOIN tactics t ON t.id=g.self_tactic_id WHERE g.name=? AND t.name=?",
+                (general, tactic),
+            ).fetchone()
+            if row is None or row[0] != row[1]:
+                raise ValueError(f"General/self-tactic mapping mismatch: {general}/{tactic}")
+            tid, quality = row[1:]
+            if c.execute("SELECT 1 FROM sources WHERE url=?", (path,)).fetchone():
+                raise ValueError(f"Source already exists: {path}")
+            c.execute(
+                "INSERT INTO sources(name,url,source_type,platform,season,trust_rank,fetched_at,notes) "
+                "VALUES(?,?,?,?,?,?,?,?)",
+                (f"用户Steam S2截图-{tactic}10级", path, "游戏内截图", "Steam", "s2", 100,
+                 "2026-09-23", "bixianjue本期演武；只核截图显示的10级自带技能，不认证武将其他字段"),
+            )
+            sid = c.execute("SELECT last_insert_rowid()").fetchone()[0]
+            c.execute(
+                "UPDATE tactics SET tactic_type=?,activation_rate=?,description_raw=?,description_level=10,"
+                "source_id=?,verification_status='Steam已核',trust_status='可信',trust_reason=?,updated_at=? "
+                "WHERE id=?",
+                (kind, rate, effect, sid, "用户2026-09-23 Steam S2 10级完整详情截图；仅该技能正文字段可信", "2026-09-23", tid),
+            )
+            c.execute(
+                "INSERT INTO tactic_level_observations(tactic_id,level,activation_rate,effect_raw,effect_json,"
+                "observed_context,verification_status,source_id,observed_at,trust_status,trust_reason) "
+                "VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                (tid, 10, rate, effect, None, "bixianjue演武s2-2026-09-23；用户10级满级详情截图",
+                 "Steam已核", sid, "2026-09-23", "可信", "用户截图明确显示等级、类型、发动概率和技能正文"),
+            )
+            observations["observations"].append({
+                "name": tactic, "level": 10, "quality": quality, "tactic_type": kind,
+                "activation_rate": rate, "effect_raw": effect, "effect": {},
+                "context": "bixianjue演武s2-2026-09-23用户10级详情", "verification_status": "Steam已核",
+                "observed_at": "2026-09-23", "trust_status": "可信",
+                "source": {"name": f"用户Steam S2截图-{tactic}10级", "url": path,
+                           "source_type": "游戏内截图", "platform": "Steam", "season": "s2", "trust_rank": 100},
+            })
+            index.append({
+                "path": path, "sha256": hashlib.sha256((ROOT / path).read_bytes()).hexdigest(),
+                "role": f"用户本期10级完整详情：{general}自带技能{tactic}；不证明武将其他字段",
+                "trust_status": "可信", "verified_at": "2026-09-23",
+            })
+
+        c.commit()
+        validate_public(c)
+        sql = "\n".join(c.iterdump()) + "\n"
+        rebuilt = sqlite3.connect(":memory:")
+        try:
+            rebuilt.executescript(sql)
+            validate_public(rebuilt)
+            if list(rebuilt.iterdump()) != list(c.iterdump()):
+                raise ValueError("Independent SQL rebuild differs")
+        finally:
+            rebuilt.close()
+        c.close()
+
+        temp_sql = baseline.with_suffix(".sql.tmp")
+        temp_sql.write_text(sql, encoding="utf-8")
+        # Windows may deny replacing an open catalog file; SQLite backup writes it transactionally.
+        with closing(sqlite3.connect(stage)) as staged, closing(sqlite3.connect(live)) as target:
+            staged.backup(target)
+            target.commit()
+            if list(target.iterdump()) != list(staged.iterdump()):
+                raise ValueError("Live catalog differs after SQLite backup")
+        os.replace(temp_sql, baseline)
+        atomic_json(observation_path, observations)
+        atomic_json(index_path, index)
+        print("Applied five verified level-10 skills and rebuilt public SQL baseline.")
+    finally:
+        c.close()
+        if stage.exists():
+            stage.unlink()
+
+
+if __name__ == "__main__":
+    main()

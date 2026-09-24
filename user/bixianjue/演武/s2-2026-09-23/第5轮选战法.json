@@ -1,0 +1,40 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "round": 5,
+  "groups": [
+    {
+      "group": 1,
+      "tactics": [
+        {"name":"破军袭敌","level":10,"type":"主动","category":"兵刃","activation_rate":"50%","card_summary":"全体兵刃伤害","adapted_to":["关羽","庞德"]},
+        {"name":"忘私相助","level":10,"type":"被动","category":"治疗","activation_rate":"100%","card_summary":"受伤治疗友军群体","adapted_to":["黄盖","邓艾"]},
+        {"name":"上智为间","level":10,"type":"主动","category":"谋略","activation_rate":"45%","card_summary":"单体谋略伤害和混乱","adapted_to":["郭嘉"]}
+      ],
+      "source": "证据/第5轮-第1组.png"
+    },
+    {
+      "group": 2,
+      "tactics": [
+        {"name":"烈火焚营","level":10,"type":"主动","category":"谋略","activation_rate":"45%","card_summary":"对敌军全体造成谋略伤害，并施加火攻","adapted_to":["郭嘉"]},
+        {"name":"指点乾坤","level":10,"type":"主动","category":"文武","activation_rate":"50%","card_summary":"令我军单体造成兵刃和谋略伤害","adapted_to":["黄盖","邓艾"]},
+        {"name":"舍生取义","level":10,"type":"指挥","category":"辅助","activation_rate":"100%","card_summary":"全体连击率提升"}
+      ],
+      "source": "证据/第5轮-第2组.png"
+    },
+    {
+      "group": 3,
+      "tactics": [
+        {"name":"以静制动","level":10,"type":"被动","category":"防御","activation_rate":"100%","card_summary":"降低自身受到的伤害"},
+        {"name":"奇门遁甲","level":10,"type":"主动","category":"谋略","activation_rate":"40%","card_summary":"全体造成谋略伤害并概率造成震慑"},
+        {"name":"知人善任","level":10,"type":"主动","category":"防御","activation_rate":"75%","card_summary":"使我军智力最高单体受到伤害降低，并获得抵御","adapted_to":["袁绍","田丰"]}
+      ],
+      "source": "证据/第5轮-第3组.png"
+    }
+  ],
+  "recommended_group": 2,
+  "confirmed_group": 2,
+  "status": "已确认第二组",
+  "missing_details": [],
+  "evidence_note": "指点乾坤及以静制动已按本期完整10级图核实；烈火旧满级红度未知，不将其数值硬套演武白板。卡面右上百分比不纳入可信字段。",
+  "confirmation_source": "第6轮截图仓库显示烈火焚营、指点乾坤、舍生取义"
+}

@@ -1,0 +1,277 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "status": "上半场6组对手战报已存；原生10将20战法不变，最新配置见上半场后最新阵容.json",
+  "generals": [
+    {
+      "name": "郭嘉",
+      "quality": "金",
+      "origin": "初始仓库",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "夏侯惇",
+      "quality": "金",
+      "origin": "初始仓库",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "关羽",
+      "quality": "金",
+      "origin": "初始仓库",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "田丰",
+      "quality": "金",
+      "origin": "初始仓库",
+      "level": null,
+      "advancement": null
+    },
+    {
+      "name": "袁绍",
+      "quality": "金",
+      "origin": "第1轮第三组",
+      "level": 50,
+      "advancement": null
+    },
+    {
+      "name": "庞德",
+      "quality": "金",
+      "origin": "第1轮第三组",
+      "level": 50,
+      "advancement": null
+    },
+    {
+      "name": "小乔",
+      "quality": "金",
+      "origin": "第1轮第三组",
+      "level": 50,
+      "advancement": null
+    },
+    {
+      "name": "黄盖",
+      "quality": "金",
+      "origin": "第4轮第三组",
+      "level": 50,
+      "advancement": null
+    },
+    {
+      "name": "黄月英",
+      "quality": "金",
+      "origin": "第4轮第三组",
+      "level": 50,
+      "advancement": null
+    },
+    {
+      "name": "邓艾",
+      "quality": "金",
+      "origin": "第4轮第三组",
+      "level": 50,
+      "advancement": null
+    }
+  ],
+  "tactics": [
+    {
+      "name": "束手无策",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "避其锐气",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "乱敌方阵",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "上兵伐谋",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "文治武功",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "穷追不舍",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "疾行侧击",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "如有神助",
+      "quality": "紫",
+      "origin": "初始仓库"
+    },
+    {
+      "name": "断敌粮道",
+      "quality": "金",
+      "origin": "第2轮第一组"
+    },
+    {
+      "name": "锐不可当",
+      "quality": "金",
+      "origin": "第2轮第一组"
+    },
+    {
+      "name": "奇正相生",
+      "quality": "金",
+      "origin": "第3轮第一组"
+    },
+    {
+      "name": "战八方",
+      "quality": "金",
+      "origin": "第3轮第一组"
+    },
+    {
+      "name": "固若金汤",
+      "quality": "金",
+      "origin": "第3轮第一组"
+    },
+    {
+      "name": "烈火焚营",
+      "quality": "金",
+      "origin": "第5轮第二组"
+    },
+    {
+      "name": "指点乾坤",
+      "quality": "金",
+      "origin": "第5轮第二组"
+    },
+    {
+      "name": "胜敌益强",
+      "quality": "金",
+      "origin": "第6轮第一组"
+    },
+    {
+      "name": "料事如神",
+      "quality": "金",
+      "origin": "第6轮第一组"
+    },
+    {
+      "name": "破阵驰围",
+      "quality": "金",
+      "origin": "第6轮第一组"
+    },
+    {
+      "name": "五雷轰顶",
+      "quality": "金",
+      "origin": "第7轮战法重随"
+    },
+    {
+      "name": "韬光养晦",
+      "quality": "金",
+      "origin": "第7轮战法重随"
+    }
+  ],
+  "confirmed_rounds": [
+    {
+      "round": 1,
+      "group": 3,
+      "generals": [
+        "袁绍",
+        "庞德",
+        "小乔"
+      ],
+      "confirmation": "用户明确回复第1轮选了第三组"
+    },
+    {
+      "round": 2,
+      "group": 1,
+      "tactics": [
+        "断敌粮道",
+        "锐不可当",
+        "出其不意"
+      ],
+      "confirmation": "用户说明第3轮截图是选择第2轮第一组后的下一轮选项"
+    },
+    {
+      "round": 3,
+      "group": 1,
+      "tactics": [
+        "奇正相生",
+        "战八方",
+        "固若金汤"
+      ],
+      "confirmation": "用户未反驳第3轮推荐而直接发送第4轮选将截图"
+    },
+    {
+      "round": 4,
+      "group": 3,
+      "generals": [
+        "黄盖",
+        "黄月英",
+        "邓艾"
+      ],
+      "confirmation": "用户明确选了第三组并提供第5轮截图"
+    },
+    {
+      "round": 5,
+      "group": 2,
+      "tactics": [
+        "烈火焚营",
+        "指点乾坤",
+        "舍生取义"
+      ],
+      "confirmation": "第6轮仓库截图明确出现三项；亦符合连续确认约定"
+    },
+    {
+      "round": 6,
+      "group": 1,
+      "tactics": [
+        "胜敌益强",
+        "料事如神",
+        "破阵驰围"
+      ],
+      "confirmation": "用户后续实际配置图出现本组三项，确认第一组"
+    }
+  ],
+  "support": {
+    "generals": [
+      {
+        "name": "周瑜",
+        "source": "证据/战法重随结果及三队配置.png"
+      }
+    ],
+    "tactics": [
+      {
+        "name": "百战不殆",
+        "source": "证据/上半场/17.png",
+        "confirmation": "此前已确认支援"
+      },
+      {
+        "name": "清风驱疾",
+        "source": "证据/上半场/17.png",
+        "confirmation": "当前装备与已知原生池推定，未单独展示援标"
+      }
+    ],
+    "status": "周瑜及百战保留；清风替水淹由最新装备及已知资源池推定，不写个人库存"
+  },
+  "reroll_history": [
+    {
+      "materials": [
+        "舍生取义",
+        "出其不意"
+      ],
+      "results": [
+        "五雷轰顶",
+        "韬光养晦"
+      ],
+      "source": "用户明确说明及结果截图",
+      "preferred_type": null
+    }
+  ],
+  "generated_from": "current_state.json"
+}

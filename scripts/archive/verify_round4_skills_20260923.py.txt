@@ -1,0 +1,75 @@
+"""Record round-four screenshots and a support-aware recommendation."""
+from contextlib import closing
+import json
+import shutil
+import sqlite3
+
+from project_data import ROOT, atomic_json
+from sync_game_data import validate_public
+from verify_event_round3_details_20260923 import add_source, add_observation
+
+
+DETAILS = [
+    ("曹仁", "固镇襄樊", "指挥", "100%", "奇数回合自身受到来自后排的伤害降低30%（受统率影响），来自前排的伤害降低15%（受统率影响）。偶数回合开始时有75%概率对敌军随机两人施加技穷，持续1回合，每个目标的概率独立判定。", "47db14d2-0da7-4a22-8e7d-6e39c29a198d"),
+    ("蔡文姬", "悲愤诗", "主动", "65%", "恢复我军全体兵力（治疗率120%，受智力影响），并施加1层抵御。若目标为前排，则额外恢复兵力（治疗率50%，受智力影响）。", "cd0516eb-e109-48ab-b19a-9c705d75bbc6"),
+    ("邓艾", "屯田令", "指挥", "100%", "战斗开始前3回合，敌我全体造成伤害降低35%。每个回合开始时，我军全体受到恢复效果提升10%，可叠加，然后恢复我军全体兵力（治疗率100%，受智力影响）。", "e4738a0f-8f93-48ea-b7f7-b458f01e69d0"),
+]
+
+
+def main():
+    event = "user/bixianjue/演武/s2-2026-09-23/"
+    paths = ["game/game.sqlite3", "game/sources/public-baseline.sql", "game/sources/tactic_level_observations.json", "game/sources/evidence-index.json", event + "event.json", event + "第4轮选将.json", event + "第4轮选将核查.md", "notes/业务逻辑.md", "notes/变更记录.md"]
+    backup = ROOT / "notes/backups/2026-09-23-1554"
+    if backup.exists():
+        raise ValueError("Backup already exists; inspect before retrying")
+    for rel in paths:
+        dest = backup / rel
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / rel, dest)
+    obs_path = ROOT / paths[2]
+    index_path = ROOT / paths[3]
+    obs = json.loads(obs_path.read_text(encoding="utf-8"))
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    with closing(sqlite3.connect(ROOT / paths[0])) as live, closing(sqlite3.connect(":memory:")) as c:
+        assert (ROOT / paths[1]).read_text(encoding="utf-8") == "\n".join(live.iterdump()) + "\n"
+        live.backup(c)
+        for general, name, kind, rate, effect, image_id in DETAILS:
+            filename = f"2026-09-23-{general}-{name}10级.png"
+            target = ROOT / "game/sources/evidence" / filename
+            if target.exists():
+                raise ValueError(f"Evidence already exists: {target}")
+            shutil.copy2(f"C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{image_id}.png", target)
+            tid, quality = c.execute("SELECT t.id,t.quality FROM generals g JOIN tactics t ON t.id=g.self_tactic_id WHERE g.name=? AND t.name=?", (general, name)).fetchone()
+            sid, path = add_source(c, index, f"{general}-{name}10级", filename, "用户本期完整10级自带战法截图；不认证武将其他属性或其他红度")
+            c.execute("UPDATE tactics SET tactic_type=?,activation_rate=?,description_raw=?,description_level=10,source_id=?,trust_status='可信',trust_reason=?,verification_status='Steam已核',screenshot_verified_fields=?,updated_at='2026-09-23' WHERE id=?", (kind, rate, effect, sid, "本期用户完整10级截图逐字段核实；不外推其他红度", json.dumps(["name", "tactic_type", "activation_rate", "description_raw", "description_level"], ensure_ascii=False), tid))
+            add_observation(c, obs, tid, name, quality, kind, rate, effect, sid, path, "bixianjue演武s2-2026-09-23第4轮完整10级详情")
+        c.commit()
+        validate_public(c)
+        sql = "\n".join(c.iterdump()) + "\n"
+        with closing(sqlite3.connect(":memory:")) as rebuilt:
+            rebuilt.executescript(sql)
+            assert list(rebuilt.iterdump()) == list(c.iterdump())
+        c.backup(live)
+        live.commit()
+        assert list(live.iterdump()) == list(c.iterdump())
+    (ROOT / paths[1]).write_text(sql, encoding="utf-8")
+    atomic_json(obs_path, obs)
+    atomic_json(index_path, index)
+    p = ROOT / event / "第4轮选将.json"
+    data = json.loads(p.read_text(encoding="utf-8"))
+    data.update(status="建议第三组，待实际选择", recommended_group=3, evidence_boundary="曹仁、蔡文姬、邓艾本期完整10级详情已同步公共库；其余按本期截图和同赛季已确认MD字段比较。")
+    data["support_plan"] = {"status": "建议，未实际支援", "general": "周瑜", "tactics": ["烈火焚营", "狂风大作"], "basis": "已核bixianjue个人库存；按用户本期说明1武将2战法支援比较，后两轮战法后可调整"}
+    atomic_json(p, data)
+    p = ROOT / event / "event.json"
+    data = json.loads(p.read_text(encoding="utf-8"))
+    data["stage"] = "前3轮已确认；第4轮最后选将建议第三组，之后两轮战法及一轮锦囊"
+    data["rules"]["support_slots"] = {"generals": 1, "tactics": 2, "source": "用户本次末句明确1武将2战法；来自自己的库存"}
+    data["rules"]["remaining_rounds"] = {"5": "战法", "6": "战法", "7": "锦囊"}
+    if "第4轮选将建议.md" not in data["files"]:
+        data["files"].append("第4轮选将建议.md")
+    atomic_json(p, data)
+    print("Three full skills verified; group 3 recommended with inventory-backed support.")
+
+
+if __name__ == "__main__":
+    main()

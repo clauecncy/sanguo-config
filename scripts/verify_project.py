@@ -44,7 +44,7 @@ def verify(root=ROOT, migration=False):
     # Original task prose is immutable, and resolves via migration-manifest.json.
     for p in root.rglob('*.md'):
         if any(part in ['.git','__pycache__','.ocr-python'] or part.startswith('tmp') for part in p.parts): continue
-        if p.is_relative_to(root/'notes/tasks'): continue
+        if any(p.is_relative_to(root/x) for x in ('notes/tasks','notes/backups','notes/history')): continue
         for raw in re.findall(r'\]\(([^)\n]+)\)',p.read_text(encoding='utf-8-sig')):
             if raw.startswith(('http:','https:','mailto:','#','app:')): continue
             target=unquote(raw.split('#')[0].strip('<>'))
@@ -54,6 +54,8 @@ def verify(root=ROOT, migration=False):
     result['missing_original_assets']=len(manifest.get('missing_original_assets',[]))
     result['cleaned_materials']=manifest.get('retention_cleanup',{}).get('removed_count',0)
     result['public_integrity']='ok'
+    from validate_materials import verify_materials
+    result['materials'] = verify_materials(root)
     if migration: result['migration_fields']='unchanged except documented quality exclusions and added IDs'
     return result
 

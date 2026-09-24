@@ -1,0 +1,159 @@
+"""Preserve advancement contexts and record round-three card summaries."""
+
+from contextlib import closing
+import hashlib
+import json
+import os
+import sqlite3
+
+from project_data import ROOT, atomic_json
+from sync_game_data import validate_public
+
+
+GROUPS = [
+    ("第3轮-第一组.png", [
+        ("奇正相生", "指挥", "100%", "每回合造成治疗和谋略伤害"),
+        ("战八方", "主动", "55%", "对敌军全体造成兵刃伤害，并施加畏惧"),
+        ("固若金汤", "指挥", "100%", "每回合概率嘲讽敌方群体"),
+    ]),
+    ("第3轮-第二组.png", [
+        ("兵贵神速", "追击", "40%", "自身先攻提升，造成群体兵刃伤害"),
+        ("摧坚克难", "被动", "100%", "会心几率提升，行动结束后造成兵刃伤害"),
+        ("横扫千军", "追击", "45%", "全体兵刃伤害"),
+    ]),
+    ("第3轮-第三组.png", [
+        ("知人善任", "主动", "75%", "使我军智力最高单体受到伤害降低，并获得抵御"),
+        ("奇门遁甲", "主动", "40%", "全体谋略伤害并概率造成震慑"),
+        ("风卷残云", "主动", "60%", "对敌军群体造成兵刃伤害"),
+    ]),
+]
+
+
+def main():
+    live = ROOT / "game/game.sqlite3"
+    baseline = ROOT / "game/sources/public-baseline.sql"
+    observations_path = ROOT / "game/sources/tactic_level_observations.json"
+    index_path = ROOT / "game/sources/evidence-index.json"
+    stage = ROOT / "game/.event-round3-20260923.tmp"
+    if stage.exists():
+        raise ValueError(f"Existing staging file: {stage}")
+    observations = json.loads(observations_path.read_text(encoding="utf-8"))
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    indexed = {x["path"] for x in index}
+    sources = [f"user/bixianjue/演武/s2-2026-09-23/证据/{name}" for name, _ in GROUPS]
+    if any(path in indexed or not (ROOT / path).is_file() for path in sources):
+        raise ValueError("Round-three screenshot missing or already indexed")
+    with closing(sqlite3.connect(live.resolve().as_uri() + "?mode=ro", uri=True)) as old:
+        if baseline.read_text(encoding="utf-8") != "\n".join(old.iterdump()) + "\n":
+            raise ValueError("Live public catalog differs from SQL baseline")
+        c = sqlite3.connect(stage)
+        old.backup(c)
+    try:
+        c.execute("ALTER TABLE tactic_level_observations ADD COLUMN advancement_confirmed INTEGER")
+        c.execute("ALTER TABLE tactic_level_observations ADD COLUMN advancement_hypothesis INTEGER")
+        old_row = c.execute(
+            "SELECT o.id FROM tactic_level_observations o JOIN tactics t ON t.id=o.tactic_id "
+            "JOIN sources s ON s.id=o.source_id WHERE t.name='断敌粮道' AND o.level=10 "
+            "AND o.effect_raw LIKE '%113.3%' AND s.url='local:conversation/2026-09-10/断敌粮道'"
+        ).fetchone()
+        new_row = c.execute(
+            "SELECT o.id FROM tactic_level_observations o JOIN tactics t ON t.id=o.tactic_id "
+            "WHERE t.name='断敌粮道' AND o.level=10 AND o.effect_raw LIKE '%110%' "
+            "AND o.observed_context LIKE '%完整10级详情截图%'"
+        ).fetchone()
+        if not old_row or not new_row:
+            raise ValueError("Cannot identify both advancement-specific observations")
+        c.execute(
+            "UPDATE tactic_level_observations SET advancement_hypothesis=1,"
+            "trust_reason='113.3%有2026-09-10用户截图转写来源；用户推测为本地一红，红度未确证，不与演武白板110%互相覆盖' WHERE id=?",
+            (old_row[0],),
+        )
+        c.execute(
+            "UPDATE tactic_level_observations SET advancement_confirmed=0,"
+            "trust_reason='用户明确本次演武白板10级110%；只适用于该红度上下文' WHERE id=?",
+            (new_row[0],),
+        )
+        c.execute(
+            "UPDATE tactics SET trust_reason='用户2026-09-23完整截图核实演武白板10级110%；旧113.3%另存为可能一红观察，不互相覆盖' "
+            "WHERE name='断敌粮道'"
+        )
+        for item in observations["observations"]:
+            if item["name"] != "断敌粮道" or item["level"] != 10:
+                continue
+            if "113.3%" in item["effect_raw"]:
+                item["advancement_confirmed"] = None
+                item["advancement_hypothesis"] = 1
+                item["trust_reason"] = "数值见旧截图转写；用户推测一红，红度未确证"
+            elif "110%" in item["effect_raw"] and "完整10级详情截图" in item.get("context", ""):
+                item["advancement_confirmed"] = 0
+                item["advancement_hypothesis"] = None
+                item["trust_reason"] = "用户明确演武白板；数值见本次完整截图"
+
+        for (_, cards), path in zip(GROUPS, sources):
+            c.execute(
+                "INSERT INTO sources(name,url,source_type,platform,season,trust_rank,fetched_at,notes) "
+                "VALUES(?,?,?,?,?,?,?,?)",
+                (f"用户Steam S2演武第3轮摘要-{path.rsplit('/', 1)[-1]}", path,
+                 "游戏内截图", "Steam", "s2", 100, "2026-09-23",
+                 "选卡短摘要；仅核类型、发动率和可见短说明，不认证完整效果"),
+            )
+            sid = c.execute("SELECT last_insert_rowid()").fetchone()[0]
+            index.append({
+                "path": path, "sha256": hashlib.sha256((ROOT / path).read_bytes()).hexdigest(),
+                "role": "用户本期第3轮选卡短摘要；非完整10级详情",
+                "trust_status": "可信", "verified_at": "2026-09-23",
+            })
+            for name, kind, rate, summary in cards:
+                row = c.execute("SELECT id,quality,screenshot_verified_fields FROM tactics WHERE name=?", (name,)).fetchone()
+                if not row:
+                    raise ValueError(f"Missing public tactic: {name}")
+                tid, quality, verified = row
+                c.execute("UPDATE tactics SET tactic_type=?,activation_rate=?,updated_at='2026-09-23' WHERE id=?",
+                          (kind, rate, tid))
+                if verified == "[]":
+                    c.execute("UPDATE tactics SET screenshot_verified_fields=? WHERE id=?",
+                              (json.dumps(["name", "tactic_type", "activation_rate"], ensure_ascii=False, separators=(",", ":")), tid))
+                c.execute(
+                    "INSERT INTO tactic_level_observations(tactic_id,level,activation_rate,effect_raw,effect_json,"
+                    "observed_context,verification_status,source_id,observed_at,trust_status,trust_reason) "
+                    "VALUES(?,?,?,?,?,?,?,?,?,?,?)",
+                    (tid, 10, rate, summary, None, "bixianjue演武s2-2026-09-23第3轮卡面摘要；非完整详情",
+                     "Steam已核卡面", sid, "2026-09-23", "可信", "仅卡面显示字段可信；完整机制另依可信详情"),
+                )
+                observations["observations"].append({
+                    "name": name, "level": 10, "quality": quality, "tactic_type": kind,
+                    "activation_rate": rate, "effect_raw": summary, "effect": {},
+                    "context": "bixianjue演武s2-2026-09-23第3轮卡面摘要；非完整详情",
+                    "verification_status": "Steam已核卡面", "observed_at": "2026-09-23",
+                    "trust_status": "可信", "trust_reason": "仅卡面字段可信；非完整效果",
+                    "source": {"name": f"用户Steam S2演武第3轮摘要-{path.rsplit('/', 1)[-1]}",
+                               "url": path, "source_type": "游戏内截图", "platform": "Steam", "season": "s2"},
+                })
+        c.commit()
+        validate_public(c)
+        sql = "\n".join(c.iterdump()) + "\n"
+        with closing(sqlite3.connect(":memory:")) as rebuilt:
+            rebuilt.executescript(sql)
+            validate_public(rebuilt)
+            if list(rebuilt.iterdump()) != list(c.iterdump()):
+                raise ValueError("Independent rebuild differs")
+        c.close()
+        temp_sql = baseline.with_suffix(".sql.tmp")
+        temp_sql.write_text(sql, encoding="utf-8")
+        with closing(sqlite3.connect(stage)) as staged, closing(sqlite3.connect(live)) as target:
+            staged.backup(target)
+            target.commit()
+            if list(target.iterdump()) != list(staged.iterdump()):
+                raise ValueError("Live catalog differs after backup")
+        os.replace(temp_sql, baseline)
+        atomic_json(observations_path, observations)
+        atomic_json(index_path, index)
+        print("Recorded two advancement contexts and nine round-three card summaries.")
+    finally:
+        c.close()
+        if stage.exists():
+            stage.unlink()
+
+
+if __name__ == "__main__":
+    main()

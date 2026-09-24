@@ -1,0 +1,41 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "round": 6,
+  "total_rounds": 7,
+  "groups": [
+    {
+      "group": 1,
+      "tactics": [
+        {"name":"胜敌益强","level":10,"type":"被动","category":"文武","activation_rate":"100%","card_summary":"造成伤害后提升属性"},
+        {"name":"料事如神","level":10,"type":"主动","category":"谋略","activation_rate":"45%","card_summary":"对敌军群体造成谋略伤害，几率造成技穷","adapted_to":["黄月英","郭嘉"]},
+        {"name":"破阵驰围","level":10,"type":"主动","category":"兵刃","activation_rate":"55%","card_summary":"向敌军单体造成伤害，提升其受到伤害","adapted_to":["关羽","庞德"]}
+      ],
+      "source": "证据/第6轮-第1组.png"
+    },
+    {
+      "group": 2,
+      "tactics": [
+        {"name":"横扫千军","level":10,"type":"追击","category":"兵刃","activation_rate":"45%","card_summary":"全体兵刃伤害"},
+        {"name":"忘私相助","level":10,"type":"被动","category":"治疗","activation_rate":"100%","card_summary":"受伤治疗友军群体","adapted_to":["夏侯惇","邓艾"]},
+        {"name":"攻其不备","level":10,"type":"追击","category":"兵刃","activation_rate":"40%","card_summary":"造成群体兵刃伤害和概率震慑"}
+      ],
+      "source": "证据/第6轮-第2组.png"
+    },
+    {
+      "group": 3,
+      "tactics": [
+        {"name":"破军袭敌","level":10,"type":"主动","category":"兵刃","activation_rate":"50%","card_summary":"全体兵刃伤害"},
+        {"name":"披坚执锐","level":10,"type":"指挥","category":"辅助","activation_rate":"100%","card_summary":"恢复友军兵力，友军进行普攻后造成额外伤害","adapted_to":["田丰","黄月英"]},
+        {"name":"摧坚克难","level":10,"type":"被动","category":"兵刃","activation_rate":"100%","card_summary":"会心几率提升，行动结束后造成兵刃伤害"}
+      ],
+      "source": "证据/第6轮-第3组.png"
+    }
+  ],
+  "recommended_group": 1,
+  "confirmed_group": 1,
+  "status": "已确认第一组",
+  "evidence_note": "破阵完整10级已核：55%，准备1回合，随机单体受伤+30%持续2回合，然后440%兵刃；首回合发动无需准备。胜敌旧值16.48不作为本期白板系数。卡面右上百分比不纳入可信字段。",
+  "missing_details": [],
+  "confirmation_source": "证据/战法重随结果及三队配置.png"
+}

@@ -5,6 +5,7 @@ Thumbs.db
 .DS_Store
 __pycache__/
 *.pyc
+.materials.lock
 user/*/.inventory.lock
 user/*/evidence/incoming/
 user/*/evidence/.pending-*/
@@ -14,6 +15,15 @@ game/rebuilt.sqlite3
 
 # Latest inventory screenshots live in user/*/evidence/current/.
 # No persistent inventory history or duplicate personal databases are generated.
+
+# Original evidence screenshots stay local; publish the hash-linked Markdown transcription.
+game/sources/evidence/*.png
+user/*/evidence/current/*.png
+user/*/演武/**/*.png
+user/*/演武/*.png
+user/*/演武/**/*.jpg
+user/*/演武/**/*.jpeg
+user/*/演武/**/*.webp
 
 # Local OCR runtime, source images, and derived crop artifacts
 chi_sim.traineddata

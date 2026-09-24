@@ -210,6 +210,13 @@ def query(user, root=ROOT):
     c.execute('INSERT INTO inventory_metadata VALUES(?)',(json.dumps({k:v for k,v in payload.items() if k not in ['generals','tactics']},ensure_ascii=False),))
     for group in ['generals','tactics']:
         c.executemany(f'INSERT INTO owned_{group} VALUES(?)',[(json.dumps(r,ensure_ascii=False),) for r in payload[group]])
+    from catalog_effects import select_effect
+    profile = read_json(user_dir(user, root) / 'profile.json')
+    c.execute('CREATE TEMP TABLE selected_effects(name TEXT PRIMARY KEY, record TEXT NOT NULL)')
+    for row in payload['tactics']:
+        effect = select_effect(c, row['name'], level=10, advancement=row.get('advancement'),
+                               platform=profile['platform'], season=profile['current_season'])
+        c.execute('INSERT INTO selected_effects VALUES(?,?)', (row['name'], json.dumps(effect, ensure_ascii=False)))
     c.executescript('''
       CREATE TEMP VIEW v_owned_generals AS
       SELECT json_extract(a.record,'$.name') AS name,
@@ -240,12 +247,18 @@ def query(user, root=ROOT):
         CASE WHEN json_extract(a.record,'$.advancement') IS NOT NULL THEN
           CASE WHEN json_type(a.record,'$.advancement_source') IS NOT NULL THEN json_extract(a.record,'$.advancement_source')
           ELSE json_extract(m.record,'$.tactic_advancement_source') END END AS advancement_source,
-        t.tactic_type,t.activation_rate,t.description_level,t.description_raw AS max_level_effect,
-        CASE WHEN t.description_level=10 AND t.trust_status='可信' THEN '可信' ELSE '需要确认' END AS detail_status,
-        t.trust_status,t.trust_reason,s.url AS detail_source,
+        t.tactic_type,json_extract(e.record,'$.activation_rate') AS activation_rate,
+        json_extract(e.record,'$.description_level') AS description_level,
+        json_extract(e.record,'$.effect') AS max_level_effect,
+        json_extract(e.record,'$.status') AS detail_status,
+        json_extract(e.record,'$.status') AS trust_status,
+        json_extract(e.record,'$.reason') AS trust_reason,
+        json_extract(e.record,'$.source') AS detail_source,
+        json_extract(e.record,'$.observation_id') AS detail_observation_id,
+        json_extract(e.record,'$.available_observations') AS available_observations,
         t.first_season,t.applicable_seasons,t.platform,a.record AS inventory_record
       FROM owned_tactics a CROSS JOIN inventory_metadata m LEFT JOIN tactics t ON t.entity_id=json_extract(a.record,'$.entity_id')
-      LEFT JOIN sources s ON s.id=t.source_id;
+      LEFT JOIN selected_effects e ON e.name=json_extract(a.record,'$.name');
     ''')
     return c
 
@@ -255,6 +268,8 @@ def summary(user, root=ROOT):
     data['user_id'] = user
     data['counts'] = {g:len(data[g]) for g in ['generals','tactics']}
     data['unresolved'] = validate_inventory(load_inventory(user,root),root)
+    from catalog_effects import facts_for
+    data['verified_mechanisms'] = facts_for(root, [r['name'] for g in ('generals','tactics') for r in data[g]])
     return data
 
 def candidates(user, root=ROOT):

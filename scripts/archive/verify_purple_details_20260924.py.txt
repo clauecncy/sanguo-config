@@ -1,0 +1,66 @@
+"""Record red-specific purple tactic screenshots without changing inventory."""
+import json
+import shutil
+import sqlite3
+import hashlib
+from datetime import datetime
+from contextlib import closing
+from PIL import Image
+from project_data import ROOT, atomic_json
+from verify_event_round3_details_20260923 import add_source, add_observation
+
+
+def main():
+    date = '2026-09-24'
+    event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+    public = [ROOT / p for p in ['game/game.sqlite3', 'game/sources/public-baseline.sql', 'game/sources/tactic_level_observations.json', 'game/sources/evidence-index.json']]
+    backup = ROOT / 'notes/backups' / (date + datetime.now().strftime('-%H%M%S') + '-purple-details')
+    for f in public + [ROOT / 'notes/业务逻辑.md', ROOT / 'notes/变更记录.md', event / '第6轮及锦囊建议.md']:
+        target = backup / f.relative_to(ROOT)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f, target)
+    inventory = ROOT / 'user/bixianjue/inventory.json'
+    before = hashlib.sha256(inventory.read_bytes()).hexdigest()
+    records = [
+        ('铸甲销戈', 3, '指挥', '防御', '战斗开始前3回合，我军全体在回合开始时有70.85%概率获得1层抵御。', 'f8aea98a-4c87-4927-a851-1eabf0df11ad'),
+        ('来好息师', 2, '被动', '治疗', '每回合结束时，恢复我军前排全体兵力（治疗率95.4%，受智力影响）。', '295c5226-9894-4a06-8969-41705f80dd7a'),
+    ]
+    obs = json.loads(public[2].read_text(encoding='utf-8'))
+    index = json.loads(public[3].read_text(encoding='utf-8'))
+    with closing(sqlite3.connect(public[0])) as live, closing(sqlite3.connect(':memory:')) as c:
+        assert public[1].read_text(encoding='utf-8') == '\n'.join(live.iterdump()) + '\n'
+        live.backup(c)
+        for name, red, kind, trait, effect, image_id in records:
+            filename = f'{date}-{name}10级-{red}红.png'
+            target = ROOT / 'game/sources/evidence' / filename
+            if target.exists():
+                raise ValueError('Already recorded: ' + name)
+            shutil.copy2(f'C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{image_id}.png', target)
+            with Image.open(target) as im:
+                im.verify()
+            tid, quality = c.execute('SELECT id,quality FROM tactics WHERE name=?', (name,)).fetchone()
+            reason = f'用户完整10级截图及{red}个红标；本地{red}红数值，不是白板基准，不确认演武支援红度规则'
+            sid, path = add_source(c, index, f'{name}10级{red}红', filename, reason)
+            c.execute('UPDATE sources SET fetched_at=? WHERE id=?', (date, sid))
+            index[-1]['verified_at'] = date
+            add_observation(c, obs, tid, name, quality, kind, '100%', effect, sid, path, f'本地{red}红10级完整详情；红标与正文截图核实', red)
+            c.execute('UPDATE tactic_level_observations SET observed_at=?,trust_reason=? WHERE source_id=?', (date, reason, sid))
+            obs['observations'][-1].update(observed_at=date, trust_reason=reason)
+            fields = json.dumps(['name', 'quality', 'tactic_type', 'damage_type', 'activation_rate', 'description_raw', 'description_level'], ensure_ascii=False)
+            c.execute("UPDATE tactics SET tactic_type=?,damage_type=?,activation_rate='100%',description_raw=?,description_level=10,source_id=?,trust_status='可信',trust_reason=?,verification_status='Steam已核',screenshot_verified_fields=?,updated_at=? WHERE id=?", (kind, trait, effect, sid, reason, fields, date, tid))
+        c.commit()
+        sql = '\n'.join(c.iterdump()) + '\n'
+        with closing(sqlite3.connect(':memory:')) as test:
+            test.executescript(sql)
+            assert list(test.iterdump()) == list(c.iterdump())
+        c.backup(live)
+    public[1].write_text(sql, encoding='utf-8')
+    atomic_json(public[2], obs)
+    atomic_json(public[3], index)
+    assert before == hashlib.sha256(inventory.read_bytes()).hexdigest()
+    print('PASS: two images, red-specific observations, SQL rebuild, inventory unchanged')
+    print(backup.relative_to(ROOT))
+
+
+if __name__ == '__main__':
+    main()

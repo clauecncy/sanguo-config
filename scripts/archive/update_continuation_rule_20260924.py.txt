@@ -1,0 +1,33 @@
+"""Separate observed results from user-authorized strength assessment."""
+import json
+import shutil
+from datetime import datetime
+from project_data import ROOT, atomic_json
+
+event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+backup = ROOT / 'notes/backups' / ('2026-09-24-' + datetime.now().strftime('%H%M%S') + '-continuation')
+for f in [event / n for n in ['event.json', '上半场战报.json', '上半场复盘.md']] + [ROOT / n for n in ['docs/workflows/events.md', 'notes/业务逻辑.md', 'notes/变更记录.md']]:
+    dst = backup / f.relative_to(ROOT)
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(f, dst)
+p = event / 'event.json'
+d = json.loads(p.read_text(encoding='utf-8'))
+d['rules']['continuation'] = dict(max_rounds_per_battle=8, retains=['剩余兵力', '武将存活状态'], resets=['增益buff', '减益buff'], source='2026-09-24用户明确说明', assessment='大幅兵力及存活优势可判断胜负倾向；未展示续战结果与实见结果分列')
+atomic_json(p, d)
+p = event / '上半场战报.json'
+d = json.loads(p.read_text(encoding='utf-8'))
+for row in d['results']:
+    if row['final_result'] == '平':
+        row['assessment'] = '预计胜' if row['own_remaining'] > row['enemy_remaining'] else '预计负'
+        row['assessment_basis'] = '用户授权按大幅兵力差评估；续战结果未展示，不改原始界面结果'
+    else:
+        row['assessment'] = row['final_result']
+d['assessed_counts'] = dict(total=dict(win=12, loss=6), teams={'1':dict(win=3,loss=3),'2':dict(win=5,loss=1),'3':dict(win=4,loss=2)}, note='包括一场预计胜和两场预计负；不是新增实见续战结果，不是官方积分')
+d['limitations'] = [s for s in d['limitations'] if '回合上限' not in s]
+d['limitations'].append('用户确认每场最多8回合，续战保留兵力存活、重置增减buff；大幅差距可判胜负倾向，未截结果不伪造为实见')
+atomic_json(p, d)
+assert sum(x['assessment'] in ['胜','预计胜'] for x in d['results']) == 12
+assert sum(x['assessment'] in ['败','预计负'] for x in d['results']) == 6
+assert sum(x['final_result']=='平' for x in d['results']) == 3
+print('PASS: assessed 12/6, observed 11/4/3 retained; continuation rule recorded')
+print(backup.relative_to(ROOT))

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "legacy-pouch",
+      "status": "superseded",
+      "reason": "用户实际选择战法重随，当前支援清风替代水淹；旧推荐不作当前状态",
+      "source": "第7轮锦囊建议.json",
+      "snapshot": {
+        "user_id": "bixianjue",
+        "event_id": "s2-2026-09-23",
+        "status": "实际选择战法重随，原武将重随建议未执行",
+        "recommended_pouch": "武将重随",
+        "material": "郭嘉",
+        "preferred_type": "谋略",
+        "material_verification": "初始仓库金色非支援；尚未移出仓库",
+        "tradeoff": "按用户纠正保留黄盖通用法师借刀价值；郭嘉虽有可用主动战法，但本期未形成优先保留的配套核心。原黄盖重随建议撤回",
+        "tactic_reroll_alternative": {
+          "first_material": "舍生取义",
+          "second_material": null,
+          "status": "备选，未建议执行",
+          "reason": "目前没有成套普攻追击阵容，舍生优先级降低；战法重随需两项非支援金色，不为凑数牺牲有用战法"
+        },
+        "confirmed_pouch": "战法重随",
+        "reroll_result": {
+          "materials": [
+            "舍生取义",
+            "出其不意"
+          ],
+          "results": [
+            "五雷轰顶",
+            "韬光养晦"
+          ],
+          "preferred_type": null
+        },
+        "support_status": "已支援周瑜、水淹七军、百战不殆",
+        "support_advancement": "用户确认武将战法支援保留红度；战法机制优先，不以小幅红度增益改变选法优先级；面板发动概率不提升",
+        "caveat": "优先类型不保证指定武将；当前无已证实刚需紫战法，不等于紫战法没有价值"
+      }
+    }
+  ]
+}

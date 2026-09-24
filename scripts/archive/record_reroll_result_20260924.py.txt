@@ -1,0 +1,71 @@
+"""Record actual reroll and support selections, separately from advice."""
+import json
+import shutil
+import hashlib
+from datetime import datetime
+from PIL import Image
+from project_data import ROOT, atomic_json
+
+
+def main():
+    event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+    stamp = '2026-09-24-' + datetime.now().strftime('%H%M%S')
+    backup = ROOT / 'notes/backups' / (stamp + '-reroll-result')
+    names = ['当前仓库.json', '第6轮选战法.json', '第7轮锦囊建议.json', 'event.json', '证据清单.json']
+    for f in [event / n for n in names] + [ROOT / 'notes/业务逻辑.md', ROOT / 'notes/变更记录.md']:
+        dst = backup / f.relative_to(ROOT)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f, dst)
+    inv = ROOT / 'user/bixianjue/inventory.json'
+    digest = hashlib.sha256(inv.read_bytes()).hexdigest()
+    rel = '证据/战法重随结果及三队配置.png'
+    target = event / rel
+    if target.exists():
+        raise ValueError('Already recorded')
+    shutil.copy2('C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-9803f29a-38ea-4f1c-84eb-8993720ca256.png', target)
+    with Image.open(target) as im:
+        im.verify()
+    manifest = json.loads((event / names[4]).read_text(encoding='utf-8'))
+    manifest['files'].append(dict(path=rel, size=target.stat().st_size, sha256=hashlib.sha256(target.read_bytes()).hexdigest()))
+    atomic_json(event / names[4], manifest)
+    pool = json.loads((event / names[0]).read_text(encoding='utf-8'))
+    assert len(pool['tactics']) == 17
+    added = ['胜敌益强', '料事如神', '破阵驰围']
+    pool['tactics'] += [dict(name=n, quality='金', origin='第6轮第一组') for n in added]
+    pool['confirmed_rounds'].append(dict(round=6, group=1, tactics=added, confirmation='用户后续实际配置图出现本组三项，确认第一组'))
+    removed = ['舍生取义', '出其不意']
+    pool['tactics'] = [t for t in pool['tactics'] if t['name'] not in removed]
+    pool['tactics'] += [dict(name=n, quality='金', origin='第7轮战法重随') for n in ['五雷轰顶', '韬光养晦']]
+    pool['reroll_history'] = [dict(materials=removed, results=['五雷轰顶', '韬光养晦'], source='用户明确说明及结果截图', preferred_type=None)]
+    pool['support'] = dict(generals=[dict(name='周瑜', source=rel)], tactics=[dict(name=n, source=rel) for n in ['水淹七军', '百战不殆']], status='截图绿色援标确认，支援独立于原生仓库')
+    pool['status'] = '第6轮第一组及战法重随已确认；原生10将20战法，另支援周瑜和水淹七军、百战不殆；阵容未锁定'
+    atomic_json(event / names[0], pool)
+    d = json.loads((event / names[1]).read_text(encoding='utf-8'))
+    d.update(confirmed_group=1, status='已确认第一组', confirmation_source=rel)
+    atomic_json(event / names[1], d)
+    d = json.loads((event / names[2]).read_text(encoding='utf-8'))
+    d.update(status='实际选择战法重随，原武将重随建议未执行', confirmed_pouch='战法重随', reroll_result=dict(materials=removed, results=['五雷轰顶', '韬光养晦'], preferred_type=None), support_status='已支援周瑜、水淹七军、百战不殆')
+    atomic_json(event / names[2], d)
+    teams = [
+        [('夏侯惇', ['固若金汤', '百战不殆']), ('邓艾', ['断敌粮道', '上兵伐谋']), ('关羽', ['战八方', '水淹七军'])],
+        [('黄盖', ['如有神助', '指点乾坤']), ('周瑜', ['胜敌益强', '烈火焚营']), ('小乔', ['韬光养晦', '束手无策'])],
+        [('黄月英', ['奇正相生', '料事如神']), ('袁绍', ['避其锐气', '疾行侧击']), ('庞德', ['锐不可当', '破阵驰围'])],
+    ]
+    snapshot = dict(status='截图实际配置，未确认锁定', source=rel, teams=[dict(team=i, formation='箕形阵', members=[dict(name=n, tactics=t) for n,t in team]) for i,team in enumerate(teams, 1)], advice=dict(status='建议未执行', exchange=['小乔韬光养晦', '黄月英奇正相生'], tradeoff='韬光配料事；奇正移二队，须注意三队续航', support_change='暂不替换百战不殆；王佐可作二队优先的替代分支，不视为无代价升级'), missing_detail='五雷轰顶完整本期10级详情；旧观察仍需确认')
+    atomic_json(event / '重随后阵容.json', snapshot)
+    d = json.loads((event / names[3]).read_text(encoding='utf-8'))
+    d['stage'] = pool['status']
+    d['files'] += ['重随后阵容.json', '重随后优化.md']
+    atomic_json(event / names[3], d)
+    assert len(pool['generals']) == 10 and len(pool['tactics']) == 20
+    assert len({t['name'] for t in pool['tactics']}) == 20
+    equipped = [t for team in teams for _,ts in team for t in ts]
+    assert len(equipped) == len(set(equipped)) == 18
+    assert set(equipped) <= {t['name'] for t in pool['tactics']} | {'水淹七军', '百战不殆'}
+    assert digest == hashlib.sha256(inv.read_bytes()).hexdigest()
+    print('PASS: screenshot, 10 native generals/20 tactics + 1/2 supports, 18 unique equipped tactics, inventory unchanged')
+    print(backup.relative_to(ROOT))
+
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,106 @@
+"""Archive first-half reports, deduplicate continuations, preserve lineup versions."""
+import hashlib
+import json
+import shutil
+from collections import Counter
+from datetime import datetime
+from PIL import Image
+from project_data import ROOT, atomic_json
+
+IDS = [
+    'f3b9f6fd-cb27-4f95-919c-0b8ad2613ea8', 'bd1f9361-fa3a-4508-8c1a-3ed68962734e',
+    '653e0b93-018e-47f8-82a9-dd7d479e4670', '3d0a3402-2eda-41e9-ac79-b727d0e06ed6',
+    'f411ffeb-ab34-45e0-8b1b-39ae44bedfb4', '288605a1-574a-445d-b086-a98b09534469',
+    '6da56231-c640-4463-a443-c41731cc1309', '308eeda7-9a79-4986-984a-9665400a95d7',
+    'bebb8469-f6c4-4197-95c1-98be1df64a93', '04a0a4f6-be9b-4670-893e-fb78f27bf23f',
+    '59ef37cd-cf67-4b23-a707-2efdecf00a00', '000e1288-8813-4613-80b9-fda8d413068c',
+    '97268042-2c74-45d8-a09c-71ad7a769d3e', '1f514734-c68f-49df-a751-7f5d7a17cd71',
+    '76fdce88-a4a3-4fff-a4c1-bf93f78ad8f1', '475b48f7-f488-4a0b-b87c-3e7a05f37f6d',
+    '355a7c0b-b84a-4fb1-a1ca-3cf5bec5dc4f',
+]
+
+
+def main():
+    event = ROOT / 'user/bixianjue/演武/s2-2026-09-23'
+    backup = ROOT / 'notes/backups' / ('2026-09-24-' + datetime.now().strftime('%H%M%S') + '-half-time')
+    for f in [event / n for n in ['event.json', '当前仓库.json', '证据清单.json']] + [ROOT / 'notes/业务逻辑.md', ROOT / 'notes/变更记录.md']:
+        dst = backup / f.relative_to(ROOT)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f, dst)
+    inventory = ROOT / 'user/bixianjue/inventory.json'
+    inventory_hash = hashlib.sha256(inventory.read_bytes()).hexdigest()
+    evidence = event / '证据/上半场'
+    if evidence.exists():
+        raise ValueError('Batch already recorded')
+    evidence.mkdir()
+    manifest = json.loads((event / '证据清单.json').read_text(encoding='utf-8'))
+    sources = []
+    for i, image_id in enumerate(IDS, 1):
+        f = evidence / f'{i:02d}.png'
+        shutil.copy2(f'C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{image_id}.png', f)
+        with Image.open(f) as image:
+            image.verify()
+        rel = f.relative_to(event).as_posix()
+        sources.append(rel)
+        manifest['files'].append(dict(path=rel, size=f.stat().st_size, sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
+    atomic_json(event / '证据清单.json', manifest)
+    opponents = ['博肯', '龙九星', '揭阳平北军', '渊渟岳峙', '真欧老头', '池阳玄甲军']
+    rows = [
+        [('败', 0, 6498), ('胜', 20399, 0), ('败', 0, 23685)],
+        [('平', 2088, 13267), ('胜', 25202, 0), ('胜', 19435, 0)],
+        [('胜', 10458, 0), ('败', 3836, 10527), ('胜', 19572, 0)],
+        [('平', 502, 25643), ('胜', 25994, 0), ('胜', 10474, 0)],
+        [('胜', 20599, 0), ('胜', 25569, 0), ('败', 0, 9089)],
+        [('平', 19707, 2394), ('胜', 22168, 0), ('胜', 19222, 0)],
+    ]
+    results = []
+    for r, (opp, row) in enumerate(zip(opponents, rows), 1):
+        for team, (outcome, own, enemy) in enumerate(row, 1):
+            results.append(dict(round=r, opponent=opp, team=team, final_result=outcome, own_remaining=own, enemy_remaining=enemy, source=sources[r-1], continuation=(r == 3 and team in [1, 2])))
+    counts = {str(t): dict(Counter(x['final_result'] for x in results if x['team'] == t)) for t in [1, 2, 3]}
+    assert counts == {'1': {'败': 1, '平': 3, '胜': 2}, '2': {'胜': 5, '败': 1}, '3': {'败': 2, '胜': 4}}
+    details = [
+        dict(image=7, team=1, opponent=opponents[0], guanyu_native_count=0, guanyu_native_damage=0, shuiyan_count=0, ganglie_damage=7422, tuntian_heal=10937, note='不能由次数0确定控制或阵亡原因'),
+        dict(image=8, team=3, opponent=opponents[0], pangde_native_count=1, pangde_native_damage=3289, mu_niu_heal=1528, qizheng_damage=246, note='早期箕形；不等于最新雁形配置'),
+        dict(image=9, team=1, opponent=opponents[1], guanyu_native_damage=12929, shuiyan_damage=4035, tuntian_heal=10357),
+        dict(image=10, team=3, opponent=opponents[1], pangde_native_damage=11552, mu_niu_heal=5612, qizheng_heal=2074, note='此时庞德破阵、袁绍束手疾行、黄月英奇正避其，与最新不同'),
+        dict(image=11, team=3, opponent=opponents[2], pangde_native_damage=7354, mu_niu_heal=4302, qizheng_heal=2933, pangde_jixing_damage=4043),
+        dict(image=12, team=1, opponent=opponents[2], continuation=True, own_start=11274, enemy_start=6303, qingfeng_heal=2380, note='残兵续战不与满兵独立样本混计'),
+        dict(image=13, team=3, opponent=opponents[4], pangde_native_damage=12435, mu_niu_heal=6103, qizheng_heal=4633, pangde_jixing_damage=5421, enemy_zhouyu_native_damage=14426, note='虽败但打出两次庞德自带，不能简单说未活过启动'),
+        dict(image=14, team=1, opponent=opponents[4], guanyu_native_damage=15928, pozhen_damage=3947, tuntian_heal=11535, qingfeng_heal=5373),
+        dict(image=15, team=3, opponent=opponents[5], pangde_native_damage=6486, mu_niu_heal=4148, qizheng_heal=2358, pangde_jixing_damage=5160),
+        dict(image=16, team=1, opponent=opponents[5], guanyu_native_damage=11684, pozhen_damage=7061, tuntian_heal=9737, qingfeng_heal=8509),
+    ]
+    for item in details:
+        item['source'] = sources[item['image']-1]
+    report = dict(user_id='bixianjue', event_id='s2-2026-09-23', scope='用户称上半场全部战斗，6组对手，部分详情', results=results, final_counts=counts, visible_rows=dict(total=20, win=11, loss=4, draw=5), merged_counts=dict(total=18, win=11, loss=4, draw=3), continuations=[dict(round=3, team=1, initial='平', final='胜', initial_remaining=[11274,6303]), dict(round=3, team=2, initial='平', final='败', initial_remaining=[11073,14905])], details=details, limitations=['没有二队技能统计详情，不能计算天香/韬光收益', '不把战损、剩余兵力及技能累计伤害混为一项', '指挥被动次数1或伤害0不代表只生效一次或无效', '战斗间配置改变，未做同对手同配置对照；不将结果归因于单次换法', '计数为截图最终结果，不推断游戏官方积分或回合上限'])
+    atomic_json(event / '上半场战报.json', report)
+    members = [
+        [('夏侯惇',['固若金汤','百战不殆']),('邓艾',['断敌粮道','清风驱疾']),('关羽',['战八方','破阵驰围'])],
+        [('周瑜',['胜敌益强','烈火焚营']),('黄盖',['如有神助','指点乾坤']),('小乔',['韬光养晦','料事如神'])],
+        [('庞德',['锐不可当','疾行侧击']),('袁绍',['避其锐气','乱敌方阵']),('黄月英',['奇正相生','束手无策'])],
+    ]
+    latest = dict(status='用户明确最新阵容；截图仍有锁定倒计时，不记已锁定', source=sources[-1], teams=[dict(team=i, formation='箕形阵' if i==1 else '雁形阵', members=[dict(name=n,tactics=t) for n,t in rows]) for i,rows in enumerate(members,1)], support=dict(generals=['周瑜'], tactics=['百战不殆','清风驱疾'], tactic_source='由此前原生战法池及当前装备推定支援调整；本图不单独显示战法援标'), supersedes='重随后阵容.json（历史快照保留）')
+    atomic_json(event / '上半场后最新阵容.json', latest)
+    pool = json.loads((event / '当前仓库.json').read_text(encoding='utf-8'))
+    pool['support']['tactics'] = [dict(name=n, source=sources[-1], confirmation='此前已确认支援' if n=='百战不殆' else '当前装备与已知原生池推定，未单独展示援标') for n in ['百战不殆','清风驱疾']]
+    pool['support']['status'] = '周瑜及百战保留；清风替水淹由最新装备及已知资源池推定，不写个人库存'
+    pool['status'] = '上半场6组对手战报已存；原生10将20战法不变，最新配置见上半场后最新阵容.json'
+    atomic_json(event / '当前仓库.json', pool)
+    d = json.loads((event / 'event.json').read_text(encoding='utf-8'))
+    d['stage'] = '上半场已复盘，按用户最新配置待后续；未确认锁定'
+    d['files'] += ['上半场战报.json','上半场后最新阵容.json','上半场复盘.md']
+    atomic_json(event / 'event.json', d)
+    assert len(results)==18 and sum(Counter(r['final_result'] for r in results).values())==18
+    assert len(pool['tactics'])==20
+    equipped = [t for team in members for _, ts in team for t in ts]
+    assert len(equipped)==len(set(equipped))==18
+    assert set(equipped) <= {x['name'] for x in pool['tactics']} | {'百战不殆','清风驱疾'}
+    assert inventory_hash == hashlib.sha256(inventory.read_bytes()).hexdigest()
+    print('PASS: 17 images, 18 merged/20 raw records, 18 unique equipped tactics, native pool/inventory unchanged')
+    print(json.dumps(counts, ensure_ascii=False))
+    print(backup.relative_to(ROOT))
+
+
+if __name__ == '__main__':
+    main()

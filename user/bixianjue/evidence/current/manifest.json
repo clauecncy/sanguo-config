@@ -3,32 +3,128 @@
     {
       "file": "d46e9d571e40ea2f4eb3150dcbd5a6f06eaa1c6595bf79cecbdd7ce538c33621.png",
       "sha256": "d46e9d571e40ea2f4eb3150dcbd5a6f06eaa1c6595bf79cecbdd7ce538c33621",
-      "bytes": 821935
+      "bytes": 821935,
+      "transcription_ref": "user/bixianjue/evidence/current/截图文字转译.md#image-d46e9d571e40ea2f4eb3150dcbd5a6f06eaa1c6595bf79cecbdd7ce538c33621",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:d46e9d571e40ea2f4eb3150dcbd5a6f06eaa1c6595bf79cecbdd7ce538c33621 -->",
+      "verified_fields": [
+        "activation_rate",
+        "damage_type",
+        "effect_raw",
+        "level",
+        "name",
+        "quality",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。",
+      "availability": "local_only",
+      "evidence_id": "sha256:d46e9d571e40ea2f4eb3150dcbd5a6f06eaa1c6595bf79cecbdd7ce538c33621"
     },
     {
       "file": "ffa13f2c2b6dfca80a03206f583d29e4fa77e15316c56127f5b454c9be8c385e.png",
       "sha256": "ffa13f2c2b6dfca80a03206f583d29e4fa77e15316c56127f5b454c9be8c385e",
-      "bytes": 753864
+      "bytes": 753864,
+      "transcription_ref": "user/bixianjue/evidence/current/截图文字转译.md#image-ffa13f2c2b6dfca80a03206f583d29e4fa77e15316c56127f5b454c9be8c385e",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:ffa13f2c2b6dfca80a03206f583d29e4fa77e15316c56127f5b454c9be8c385e -->",
+      "verified_fields": [
+        "activation_rate",
+        "damage_type",
+        "effect_raw",
+        "level",
+        "name",
+        "quality",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。",
+      "availability": "local_only",
+      "evidence_id": "sha256:ffa13f2c2b6dfca80a03206f583d29e4fa77e15316c56127f5b454c9be8c385e"
     },
     {
       "file": "a6d19a657a0dce1f45962ef06bb31c8ddd6b4d738a4d577704ecfc56471ab6c3.png",
       "sha256": "a6d19a657a0dce1f45962ef06bb31c8ddd6b4d738a4d577704ecfc56471ab6c3",
-      "bytes": 764482
+      "bytes": 764482,
+      "transcription_ref": "user/bixianjue/evidence/current/截图文字转译.md#image-a6d19a657a0dce1f45962ef06bb31c8ddd6b4d738a4d577704ecfc56471ab6c3",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a6d19a657a0dce1f45962ef06bb31c8ddd6b4d738a4d577704ecfc56471ab6c3 -->",
+      "verified_fields": [
+        "activation_rate",
+        "damage_type",
+        "effect_raw",
+        "level",
+        "name",
+        "quality",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。",
+      "availability": "local_only",
+      "evidence_id": "sha256:a6d19a657a0dce1f45962ef06bb31c8ddd6b4d738a4d577704ecfc56471ab6c3"
     },
     {
       "file": "ecf4a39f8d59ef3a144ce02335d971900b0633f1a9cf525d2156fda05cde1e2f.png",
       "sha256": "ecf4a39f8d59ef3a144ce02335d971900b0633f1a9cf525d2156fda05cde1e2f",
-      "bytes": 713287
+      "bytes": 713287,
+      "transcription_ref": "user/bixianjue/evidence/current/截图文字转译.md#image-ecf4a39f8d59ef3a144ce02335d971900b0633f1a9cf525d2156fda05cde1e2f",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:ecf4a39f8d59ef3a144ce02335d971900b0633f1a9cf525d2156fda05cde1e2f -->",
+      "verified_fields": [
+        "activation_rate",
+        "damage_type",
+        "effect_raw",
+        "level",
+        "name",
+        "quality",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。",
+      "availability": "local_only",
+      "evidence_id": "sha256:ecf4a39f8d59ef3a144ce02335d971900b0633f1a9cf525d2156fda05cde1e2f"
     },
     {
       "file": "06cb852557c17cf7e9c95ca80e49dcd29ffda8452be164f603b67fb59de64a2e.png",
       "sha256": "06cb852557c17cf7e9c95ca80e49dcd29ffda8452be164f603b67fb59de64a2e",
-      "bytes": 727022
+      "bytes": 727022,
+      "transcription_ref": "user/bixianjue/evidence/current/截图文字转译.md#image-06cb852557c17cf7e9c95ca80e49dcd29ffda8452be164f603b67fb59de64a2e",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:06cb852557c17cf7e9c95ca80e49dcd29ffda8452be164f603b67fb59de64a2e -->",
+      "verified_fields": [
+        "activation_rate",
+        "damage_type",
+        "effect_raw",
+        "level",
+        "name",
+        "quality",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。",
+      "availability": "local_only",
+      "evidence_id": "sha256:06cb852557c17cf7e9c95ca80e49dcd29ffda8452be164f603b67fb59de64a2e"
     },
     {
       "file": "6b7441ee93cd1b4f3b2c13510f6759d1993f684db6dc5817215c65dfb2c5905d.png",
       "sha256": "6b7441ee93cd1b4f3b2c13510f6759d1993f684db6dc5817215c65dfb2c5905d",
-      "bytes": 699772
+      "bytes": 699772,
+      "transcription_ref": "user/bixianjue/evidence/current/截图文字转译.md#image-6b7441ee93cd1b4f3b2c13510f6759d1993f684db6dc5817215c65dfb2c5905d",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:6b7441ee93cd1b4f3b2c13510f6759d1993f684db6dc5817215c65dfb2c5905d -->",
+      "verified_fields": [
+        "activation_rate",
+        "damage_type",
+        "effect_raw",
+        "level",
+        "name",
+        "quality",
+        "tactic_type"
+      ],
+      "trust_status": "可信",
+      "trust_reason": "按原图逐字段人工核定并保留内容SHA-256；可信范围仅限verified_fields，不推断未展示字段。",
+      "availability": "local_only",
+      "evidence_id": "sha256:6b7441ee93cd1b4f3b2c13510f6759d1993f684db6dc5817215c65dfb2c5905d"
     }
   ]
 }

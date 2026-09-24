@@ -1,0 +1,43 @@
+{
+  "user_id": "bixianjue",
+  "event_id": "s2-2026-09-23",
+  "round": 2,
+  "total_rounds": 7,
+  "type": "战法",
+  "groups": [
+    {
+      "group": 1,
+      "source": "证据/第2轮-第一组.png",
+      "tactics": [
+        {"name": "断敌粮道", "type": "指挥", "activation_rate": "100%", "card_summary": "施加断粮，并对有断粮的敌人造成谋略伤害"},
+        {"name": "锐不可当", "type": "被动", "activation_rate": "100%", "card_summary": "提升自身破甲和造成伤害"},
+        {"name": "出其不意", "type": "主动", "activation_rate": "55%", "card_summary": "单体谋略伤害"}
+      ]
+    },
+    {
+      "group": 2,
+      "source": "证据/第2轮-第二组.png",
+      "tactics": [
+        {"name": "舍生取义", "type": "指挥", "activation_rate": "100%", "card_summary": "全体连击率提升"},
+        {"name": "伏兵四起", "type": "主动", "activation_rate": "50%", "card_summary": "造成4次兵刃伤害，并有概率触发会心"},
+        {"name": "横扫千军", "type": "追击", "activation_rate": "45%", "card_summary": "全体兵刃伤害"}
+      ]
+    },
+    {
+      "group": 3,
+      "source": "证据/第2轮-第三组.png",
+      "tactics": [
+        {"name": "兵贵神速", "type": "追击", "activation_rate": "40%", "card_summary": "自身先攻提升，造成群体兵刃伤害"},
+        {"name": "三军夺气", "type": "追击", "activation_rate": "60%", "card_summary": "降低敌军单体属性"},
+        {"name": "趁火打劫", "type": "主动", "activation_rate": "50%", "card_summary": "对敌军群体造成兵刃和谋略伤害"}
+      ]
+    }
+  ],
+  "status": "已确认第一组",
+  "recommended_group": 1,
+  "confirmed_group": 1,
+  "confirmation_source": "用户明确说明第3轮截图是选择第2轮第一组后的下一轮选项；亦符合本期连续任务确认约定",
+  "round1_basis": "用户明确确认第1轮选择第三组袁绍、庞德、小乔",
+  "percentage_policy": "卡面右侧占比疑似选取率；不用于胜率或战法收益计算",
+  "evidence_boundary": "九项10级卡面摘要及发动率可信，但不等于完整详情。断敌粮道、横扫千军、兵贵神速已有用户2026-09-23完整10级截图逐字段核实，公共库保存完整转写及来源；其他战法按各自可信等级观察使用。"
+}

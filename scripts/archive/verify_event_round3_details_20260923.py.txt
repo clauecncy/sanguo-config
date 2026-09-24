@@ -1,0 +1,151 @@
+"""Confirm one-red Duandi and four full round-three tactic details."""
+
+from contextlib import closing
+import hashlib
+import json
+import os
+import sqlite3
+
+from project_data import ROOT, atomic_json
+from sync_game_data import validate_public
+
+
+DETAILS = [
+    ("奇正相生", "指挥", "100%", "第2回合起，回合开始时有65%概率恢复我军随机两人兵力（治疗率150%，受智力影响）；回合结束时有65%概率对敌军随机两人造成150%谋略伤害。", "2026-09-23-奇正相生10级.png"),
+    ("摧坚克难", "被动", "100%", "提升自身20%会心几率；每个回合行动结束时，对敌军随机两人造成110%兵刃伤害。", "2026-09-23-摧坚克难10级.png"),
+    ("奇门遁甲", "主动", "40%", "准备1回合，对敌军全体造成250%谋略伤害，并有25%概率施加震慑，持续1回合。目标每多一种异常状态，谋略伤害系数提升25%，震慑概率提升8%，可提升5次。", "2026-09-23-奇门遁甲10级.png"),
+    ("风卷残云", "主动", "60%", "对敌军随机两人造成190%兵刃伤害。若目标处于风暴状态，则自身造成伤害提升15%，持续2回合，可叠加2次；若自身处于风暴状态，则自身规避率提升10%，持续2回合。", "2026-09-23-风卷残云10级.png"),
+]
+RED_NAME = "断敌粮道"
+RED_EFFECT = "回合开始时，对敌军单体施加断粮，持续2回合。回合结束时，对持有断粮状态的敌军造成113.3%谋略伤害。"
+RED_IMAGE = "2026-09-23-断敌粮道10级-一红.png"
+
+
+def add_source(c, index, name, filename, note):
+    path = f"game/sources/evidence/{filename}"
+    image = ROOT / path
+    if not image.is_file() or any(item["path"] == path for item in index):
+        raise ValueError(f"Missing or duplicate evidence: {path}")
+    c.execute(
+        "INSERT INTO sources(name,url,source_type,platform,season,trust_rank,fetched_at,notes) "
+        "VALUES(?,?,?,?,?,?,?,?)",
+        (f"用户Steam S2截图-{name}", path, "游戏内截图", "Steam", "s2", 100, "2026-09-23", note),
+    )
+    sid = c.execute("SELECT last_insert_rowid()").fetchone()[0]
+    index.append({
+        "path": path, "sha256": hashlib.sha256(image.read_bytes()).hexdigest(),
+        "role": note, "trust_status": "可信", "verified_at": "2026-09-23",
+    })
+    return sid, path
+
+
+def add_observation(c, data, tid, name, quality, kind, rate, effect, sid, path, context, advancement=None):
+    c.execute(
+        "INSERT INTO tactic_level_observations(tactic_id,level,activation_rate,effect_raw,effect_json,"
+        "observed_context,verification_status,source_id,observed_at,trust_status,trust_reason,advancement_confirmed) "
+        "VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
+        (tid, 10, rate, effect, None, context, "Steam已核", sid, "2026-09-23", "可信",
+         "用户完整10级详情截图；红度以本条上下文为准", advancement),
+    )
+    data["observations"].append({
+        "name": name, "level": 10, "quality": quality, "tactic_type": kind,
+        "activation_rate": rate, "effect_raw": effect, "effect": {}, "context": context,
+        "verification_status": "Steam已核", "observed_at": "2026-09-23",
+        "trust_status": "可信", "trust_reason": "用户完整10级详情截图；红度以本条上下文为准",
+        "advancement_confirmed": advancement,
+        "source": {"name": f"用户Steam S2截图-{name}", "url": path,
+                   "source_type": "游戏内截图", "platform": "Steam", "season": "s2", "trust_rank": 100},
+    })
+
+
+def main():
+    live = ROOT / "game/game.sqlite3"
+    baseline = ROOT / "game/sources/public-baseline.sql"
+    observations_path = ROOT / "game/sources/tactic_level_observations.json"
+    index_path = ROOT / "game/sources/evidence-index.json"
+    stage = ROOT / "game/.round3-details-20260923.tmp"
+    if stage.exists():
+        raise ValueError(f"Existing staging file: {stage}")
+    observations = json.loads(observations_path.read_text(encoding="utf-8"))
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    with closing(sqlite3.connect(live.resolve().as_uri() + "?mode=ro", uri=True)) as old:
+        if baseline.read_text(encoding="utf-8") != "\n".join(old.iterdump()) + "\n":
+            raise ValueError("Live public catalog differs from SQL baseline")
+        c = sqlite3.connect(stage)
+        old.backup(c)
+    try:
+        red = c.execute("SELECT id,quality FROM tactics WHERE name=?", (RED_NAME,)).fetchone()
+        if red is None:
+            raise ValueError("Missing Duandi entity")
+        tid, quality = red
+        sid, path = add_source(c, index, "断敌粮道10级一红", RED_IMAGE,
+                               "用户本地一红10级完整详情，113.3%；与演武白板110%并存")
+        c.execute(
+            "UPDATE tactic_level_observations SET advancement_confirmed=1,advancement_hypothesis=NULL,"
+            "trust_status='可信',trust_reason='2026-09-23用户新图明确一红及113.3%；旧2026-09-10来源保留' "
+            "WHERE tactic_id=? AND level=10 AND effect_raw LIKE '%113.3%' AND advancement_hypothesis=1",
+            (tid,),
+        )
+        if c.execute("SELECT changes()").fetchone()[0] != 1:
+            raise ValueError("Expected one historical one-red observation")
+        for item in observations["observations"]:
+            if item["name"] == RED_NAME and "113.3%" in item["effect_raw"]:
+                item["advancement_confirmed"] = 1
+                item["advancement_hypothesis"] = None
+                item["trust_status"] = "可信"
+                item["trust_reason"] = "本次用户新图确认本地一红113.3%；旧来源保留"
+        add_observation(c, observations, tid, RED_NAME, quality, "指挥", "100%", RED_EFFECT,
+                        sid, path, "bixianjue本地一红10级完整详情截图", 1)
+        c.execute(
+            "UPDATE tactics SET trust_reason='用户完整10级图核实演武白板110%；另有本地一红113.3%可信等级观察，按红度区分' "
+            "WHERE id=?",
+            (tid,),
+        )
+
+        verified_fields = json.dumps(["name", "tactic_type", "activation_rate", "description_raw", "description_level"],
+                                     ensure_ascii=False, separators=(",", ":"))
+        for name, kind, rate, effect, filename in DETAILS:
+            row = c.execute("SELECT id,quality FROM tactics WHERE name=?", (name,)).fetchone()
+            if row is None:
+                raise ValueError(f"Missing tactic: {name}")
+            tid, quality = row
+            sid, path = add_source(c, index, f"{name}10级", filename,
+                                   f"用户本期{name}完整10级详情，逐字段核实；不认证其他红度")
+            c.execute(
+                "UPDATE tactics SET tactic_type=?,activation_rate=?,description_raw=?,description_level=10,"
+                "source_id=?,verification_status='Steam已核',trust_status='可信',trust_reason=?,"
+                "screenshot_verified_fields=?,updated_at='2026-09-23' WHERE id=?",
+                (kind, rate, effect, sid, "用户2026-09-23 Steam S2完整10级详情截图；红度未单独显示，不外推其他红度",
+                 verified_fields, tid),
+            )
+            add_observation(c, observations, tid, name, quality, kind, rate, effect, sid, path,
+                            "bixianjue演武s2-2026-09-23完整10级详情截图；红度未单独核定")
+
+        c.commit()
+        validate_public(c)
+        sql = "\n".join(c.iterdump()) + "\n"
+        with closing(sqlite3.connect(":memory:")) as rebuilt:
+            rebuilt.executescript(sql)
+            validate_public(rebuilt)
+            if list(rebuilt.iterdump()) != list(c.iterdump()):
+                raise ValueError("Independent SQL rebuild differs")
+        c.close()
+        temp_sql = baseline.with_suffix(".sql.tmp")
+        temp_sql.write_text(sql, encoding="utf-8")
+        with closing(sqlite3.connect(stage)) as staged, closing(sqlite3.connect(live)) as target:
+            staged.backup(target)
+            target.commit()
+            if list(target.iterdump()) != list(staged.iterdump()):
+                raise ValueError("Live catalog differs after backup")
+        os.replace(temp_sql, baseline)
+        atomic_json(observations_path, observations)
+        atomic_json(index_path, index)
+        print("Verified one-red Duandi and four complete round-three tactics.")
+    finally:
+        c.close()
+        if stage.exists():
+            stage.unlink()
+
+
+if __name__ == "__main__":
+    main()

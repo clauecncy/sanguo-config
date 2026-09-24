@@ -30,7 +30,7 @@ def main():
                 lines.append('| '+' | '.join(display(r[k]) for k in ['name','variant','availability','advancement','level'])+' |')
             lines += ['', '## 战法', '', '| 名称 | 品质 | 红度 | 等级 | 满级详情 |', '| --- | --- | --- | --- | --- |']
             for r in data['tactics']:
-                lines.append('| '+' | '.join(display(r[k]) for k in ['name','quality','advancement','level'])+' | '+('已核' if r['description_level']==10 else '待补录')+' |')
+                lines.append('| '+' | '.join(display(r[k]) for k in ['name','quality','advancement','level'])+' | '+('对应红度已核' if r['detail_status']=='可信' else '对应红度待核')+' |')
             base.joinpath('reports').mkdir(exist_ok=True)
             base.joinpath('reports/库存.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
             atomic_json(base/'reports/覆盖率.json',{'counts':data['counts'],'unresolved':data['unresolved'],

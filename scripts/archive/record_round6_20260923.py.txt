@@ -1,0 +1,82 @@
+"""Record last tactic draft and recover complete Pijian evidence."""
+import json
+import shutil
+import sqlite3
+import hashlib
+from datetime import datetime
+from contextlib import closing
+from PIL import Image
+from project_data import ROOT, atomic_json
+from verify_event_round3_details_20260923 import add_source, add_observation
+
+def main():
+    event = ROOT / "user/bixianjue/演武/s2-2026-09-23"
+    public = [ROOT / x for x in ("game/game.sqlite3", "game/sources/public-baseline.sql", "game/sources/tactic_level_observations.json", "game/sources/evidence-index.json")]
+    backup = ROOT / "notes/backups" / (datetime.now().strftime("%Y-%m-%d-%H%M%S") + "-round6")
+    for f in public + [event/x for x in ("event.json", "当前仓库.json", "第5轮选战法.json", "证据清单.json")] + [ROOT/"notes/业务逻辑.md", ROOT/"notes/变更记录.md"]:
+        dest = backup / f.relative_to(ROOT)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f,dest)
+    ids = ["bac81e57-7d62-40ab-a7ab-1b551901d69a", "c2d5c854-a1f4-47d8-a827-f7b3a6c4ae81", "4b958200-8f35-41e0-a2bf-0b02558ec25b", "1d90cc0c-a157-4d5a-8d61-7938b78cd939"]
+    manifest = json.loads((event/"证据清单.json").read_text(encoding="utf-8"))
+    for i, image_id in enumerate(ids,1):
+        rel = f"证据/第6轮-第{i}组.png" if i < 4 else "证据/第7轮锦囊规则.png"
+        f = event/rel
+        if f.exists():
+            raise ValueError("Evidence already recorded")
+        shutil.copy2(f"C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{image_id}.png",f)
+        Image.open(f).verify()
+        manifest["files"].append(dict(path=rel,size=f.stat().st_size,sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
+    atomic_json(event/"证据清单.json",manifest)
+    pool = json.loads((event/"当前仓库.json").read_text(encoding="utf-8"))
+    names = ["烈火焚营","指点乾坤","舍生取义"]
+    for name in names:
+        assert not any(x["name"]==name for x in pool["tactics"])
+        pool["tactics"].append(dict(name=name,quality="金",origin="第5轮第二组"))
+    pool["confirmed_rounds"].append(dict(round=5,group=2,tactics=names,confirmation="第6轮仓库截图明确出现三项；亦符合连续确认约定"))
+    pool["status"] = "前5轮已确认，10将17战法；第6轮尚未选择"
+    atomic_json(event/"当前仓库.json",pool)
+    p = event/"第5轮选战法.json"
+    d=json.loads(p.read_text(encoding="utf-8"))
+    d.update(status="已确认第二组",confirmed_group=2,confirmation_source="第6轮截图仓库显示烈火焚营、指点乾坤、舍生取义")
+    atomic_json(p,d)
+    groups=[["胜敌益强","料事如神","破阵驰围"],["横扫千军","忘私相助","攻其不备"],["破军袭敌","披坚执锐","摧坚克难"]]
+    atomic_json(event/"第6轮选战法.json",dict(user_id="bixianjue",event_id="s2-2026-09-23",round=6,total_rounds=7,groups=[dict(group=i,tactics=g,source=f"证据/第6轮-第{i}组.png") for i,g in enumerate(groups,1)],recommended_group=None,confirmed_group=None,status="待破阵驰围完整10级详情后定组",evidence_note="披坚完整库存旧图已恢复入公共库；胜敌旧10级记录可用机制，16.48不可当本期白板定值。",missing_details=["破阵驰围完整10级详情"]))
+    p=event/"event.json"
+    d=json.loads(p.read_text(encoding="utf-8"))
+    d["stage"]="前5轮已确认，10将17战法；第6轮最后战法待补证，第7轮锦囊及支援待选"
+    d["files"].append("第6轮选战法.json")
+    d["rules"]["pouch_details"]={"武将重随":"1名非支援武将，优先类型兵刃/谋略/辅助；材料金色限制仍按已确认公共规则","战法重随":"2个非支援橙色战法，优先类型兵刃/谋略/追击","战法支援":"额外1个上品(紫色)战法支援位，从自身拥有战法选；不是金色位","source":"证据/第7轮锦囊规则.png"}
+    atomic_json(p,d)
+    obs=json.loads(public[2].read_text(encoding="utf-8"))
+    index=json.loads(public[3].read_text(encoding="utf-8"))
+    filename="2026-09-23-披坚执锐10级-历史图复核.png"
+    target=ROOT/"game/sources/evidence"/filename
+    if target.exists():
+        raise ValueError("Public evidence already recorded")
+    shutil.copy2(ROOT/"user/bixianjue/evidence/current/d46e9d571e40ea2f4eb3150dcbd5a6f06eaa1c6595bf79cecbdd7ce538c33621.png",target)
+    Image.open(target).verify()
+    effect="战斗开始时，使我军随机单体（优先前排）获得披坚：行动前恢复自身兵力（治疗率80%，受目标智力和统率影响），受到兵刃伤害降低20%。使我军武力最高单体获得执锐：普通攻击后，有50%概率对敌军随机单体造成1次100%兵刃伤害。"
+    with closing(sqlite3.connect(public[0])) as live, closing(sqlite3.connect(":memory:")) as c:
+        assert public[1].read_text(encoding="utf-8")=="\n".join(live.iterdump())+"\n"
+        live.backup(c)
+        tid,quality=c.execute("select id,quality from tactics where name=?",("披坚执锐",)).fetchone()
+        sid,path=add_source(c,index,"披坚执锐10级历史原图复核",filename,"用户原库存10级完整图；补齐优先前排、行动前恢复及目标属性；红度未知")
+        c.execute("update tactics set description_raw=?,description_level=10,tactic_type='指挥',activation_rate='100%',source_id=?,trust_status='可信',trust_reason='完整旧图复核，补全整理漏项；红度未知',verification_status='Steam已核',screenshot_verified_fields=?,updated_at='2026-09-23' where id=?",(effect,sid,json.dumps(["name","tactic_type","activation_rate","description_raw","description_level"],ensure_ascii=False),tid))
+        add_observation(c,obs,tid,"披坚执锐",quality,"指挥","100%",effect,sid,path,"本地10级原图复核；红度未知")
+        c.commit()
+        sql="\n".join(c.iterdump())+"\n"
+        with closing(sqlite3.connect(":memory:")) as test:
+            test.executescript(sql)
+            assert list(test.iterdump())==list(c.iterdump())
+        c.backup(live)
+    public[1].write_text(sql,encoding="utf-8")
+    atomic_json(public[2],obs)
+    atomic_json(public[3],index)
+    assert len(pool["generals"])==10 and len(pool["tactics"])==17
+    [json.loads(f.read_text(encoding="utf-8")) for f in event.glob("*.json")]
+    print("Round 5 confirmed, 10 generals/17 tactics; four images and full Pijian verified; SQL rebuild equal.")
+    print(backup)
+
+if __name__=="__main__":
+    main()

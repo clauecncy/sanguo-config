@@ -1,0 +1,74 @@
+"""Record round five and recover the previously supplied Wangsi screenshot."""
+import json
+import shutil
+import sqlite3
+from contextlib import closing
+from datetime import datetime
+from project_data import ROOT, atomic_json
+from verify_event_round3_details_20260923 import add_source, add_observation
+
+def main():
+    event = ROOT / "user/bixianjue/演武/s2-2026-09-23"
+    public = [ROOT / x for x in ("game/game.sqlite3", "game/sources/public-baseline.sql", "game/sources/tactic_level_observations.json", "game/sources/evidence-index.json")]
+    backup = ROOT / "notes/backups" / (datetime.now().strftime("%Y-%m-%d-%H%M%S") + "-round5")
+    for f in public + [event / x for x in ("event.json", "当前仓库.json", "第4轮选将.json", "证据清单.json")]:
+        dest = backup / f.relative_to(ROOT)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f, dest)
+    groups = [["破军袭敌", "忘私相助", "上智为间"], ["烈火焚营", "指点乾坤", "舍生取义"], ["以静制动", "奇门遁甲", "知人善任"]]
+    ids = ["1bb7d2c4-2d40-41a4-88ec-b773b52b46a6", "262cec4b-ebfc-4d06-98bd-f25ba92631df", "6a9de722-c13f-4b75-bb7e-b469c22357b1"]
+    import hashlib
+    manifest = json.loads((event / "证据清单.json").read_text(encoding="utf-8"))
+    for n, image_id in enumerate(ids, 1):
+        rel = f"证据/第5轮-第{n}组.png"
+        f = event / rel
+        if f.exists():
+            raise ValueError("Round five already recorded")
+        shutil.copy2(f"C:/Users/BIXIAN~1/AppData/Local/Temp/codex-clipboard-{image_id}.png", f)
+        manifest["files"].append(dict(path=rel, size=f.stat().st_size, sha256=hashlib.sha256(f.read_bytes()).hexdigest()))
+    atomic_json(event / "证据清单.json", manifest)
+    pool = json.loads((event / "当前仓库.json").read_text(encoding="utf-8"))
+    for name in ("黄盖", "黄月英", "邓艾"):
+        assert not any(x["name"] == name for x in pool["generals"])
+        pool["generals"].append(dict(name=name, quality="金", origin="第4轮第三组", level=50, advancement=None))
+    pool["confirmed_rounds"].append(dict(round=4, group=3, generals=["黄盖", "黄月英", "邓艾"], confirmation="用户明确选了第三组并提供第5轮截图"))
+    pool["status"] = "前4轮已确认；第5轮待详情与选择"
+    atomic_json(event / "当前仓库.json", pool)
+    d = json.loads((event / "第4轮选将.json").read_text(encoding="utf-8"))
+    d.update(status="已确认第三组", confirmed_group=3, confirmation_source="用户明确选第三组并提供第5轮截图")
+    atomic_json(event / "第4轮选将.json", d)
+    d = json.loads((event / "event.json").read_text(encoding="utf-8"))
+    d["stage"] = "10将14战法；第5轮待指点乾坤、以静制动完整10级详情"
+    d["files"].append("第5轮选战法.json")
+    atomic_json(event / "event.json", d)
+    atomic_json(event / "第5轮选战法.json", dict(user_id="bixianjue", event_id="s2-2026-09-23", round=5, groups=[dict(group=i, tactics=g, source=f"证据/第5轮-第{i}组.png") for i,g in enumerate(groups,1)], recommended_group=None, confirmed_group=None, status="先补证，不确定选组", missing_details=["指点乾坤10级", "以静制动10级"], evidence_note="忘私原库存10级图已定位并同步公共库；指点已有1至2级截图，不能外推10级；烈火旧满级值红度未核，不直接当白板倍率"))
+    obs = json.loads(public[2].read_text(encoding="utf-8"))
+    index = json.loads(public[3].read_text(encoding="utf-8"))
+    filename = "2026-09-23-忘私相助10级-历史图复核.png"
+    shutil.copy2(ROOT / "user/bixianjue/evidence/current/ecf4a39f8d59ef3a144ce02335d971900b0633f1a9cf525d2156fda05cde1e2f.png", ROOT / "game/sources/evidence" / filename)
+    with closing(sqlite3.connect(public[0])) as live, closing(sqlite3.connect(":memory:")) as c:
+        assert public[1].read_text(encoding="utf-8") == "\n".join(live.iterdump()) + "\n"
+        live.backup(c)
+        tid, quality = c.execute("select id,quality from tactics where name=?", ("忘私相助",)).fetchone()
+        sid, path = add_source(c,index,"忘私相助10级历史原图复核",filename,"用户此前库存完整10级原图；本次定位复核，红度未知")
+        effect = "自身受到伤害前，有50%概率恢复两名队友兵力（治疗率50%，受智力和统率影响）。"
+        c.execute("update tactics set description_raw=?,description_level=10,tactic_type='被动',activation_rate='100%',source_id=?,trust_status='可信',trust_reason='用户历史完整10级截图复核，红度未知',screenshot_verified_fields=?,updated_at='2026-09-23' where id=?", (effect,sid,json.dumps(["name","tactic_type","activation_rate","description_raw","description_level"],ensure_ascii=False),tid))
+        add_observation(c,obs,tid,"忘私相助",quality,"被动","100%",effect,sid,path,"本地10级原图复核；红度未知")
+        c.commit()
+        sql = "\n".join(c.iterdump()) + "\n"
+        with closing(sqlite3.connect(":memory:")) as test:
+            test.executescript(sql)
+            assert list(test.iterdump()) == list(c.iterdump())
+        c.backup(live)
+    public[1].write_text(sql,encoding="utf-8")
+    atomic_json(public[2],obs)
+    atomic_json(public[3],index)
+    from PIL import Image
+    for n in range(1,4):
+        Image.open(event / f"证据/第5轮-第{n}组.png").verify()
+    assert len(pool["generals"]) == 10 and len(pool["tactics"]) == 14
+    print("Confirmed 10 generals/14 tactics; 3 images verified; public SQL rebuild equal; Wangsi recovered.")
+    print("Backup:",backup)
+
+if __name__ == "__main__":
+    main()

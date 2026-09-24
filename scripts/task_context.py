@@ -16,7 +16,11 @@ def route(task, user=None, event=None, root=ROOT):
         if not event:
             return {'status':'ask_user','question':'请明确本次演武期次。','files':[prefix+'/演武/index.json']}
         path=event_dir(user,event,root)
-        return {'status':'ready','files':['docs/workflows/events.md',path.relative_to(root).as_posix()+'/event.json'],
+        files=['docs/workflows/events.md',path.relative_to(root).as_posix()+'/event.json']
+        if (path/'current_state.json').exists():
+            files.append(path.relative_to(root).as_posix()+'/current_state.json')
+        files.append('game/facts.json')
+        return {'status':'ready','files':files,
                 'additional':'仅读取本期与问题有关的记录；支援核对才读常规库存'}
     season=read_json(base/'profile.json')['current_season']
     return {'status':'ready','files':['docs/workflows/formations.md',prefix+'/profile.json',prefix+'/inventory.json',f'references/{season}/README.md']}
