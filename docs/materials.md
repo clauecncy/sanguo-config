@@ -8,6 +8,7 @@
 - `verified_fields` 表示本条证据认证的字段，`observation_scope` 区分 `event_native/support/owned/unspecified`。没有来源依据的场景保留 unspecified，不从日期猜填。`screenshot_verified_fields` 仍保留主表历史核定边界。
 - `game/facts.json` 是单独机制事实的公共入口。每条有字段、对象、来源、核定日期、平台、赛季、状态。用户确认MD可认证对应机制，但不是整项技能完整10级认证，也不是账号拥有证明。
 - `evidence_id=sha256:<内容哈希>` 标识证据内容；路径可不同。索引保存观察及实体字段关联、`event_refs=账号/期次`。已有原图哈希不符直接报错；历史已清理材料标 historical_missing。用户指定不入版本库的图片标 `local_only`：本机仍核哈希，远端缺少文件可接受，后续索引刷新保留此状态；不伪造图片，也不自动推翻保留的核定转写。
+- Git可转换文本换行：UTF-8 Markdown证据允许仅LF/CRLF等价转换，保留记录的原SHA及证据ID；正文改变仍拒绝。生成JSON/Markdown投影比较也忽略这种换行差异，其他字节变化仍拒绝。此兼容不用于PNG/JPG等原图，图片始终严格核对原始字节哈希。
 
 本地图片证据要随文字数据发布时，在同目录或对应事件目录保存转译Markdown，并在索引/清单写 `transcription_ref`、`transcription_status=verified_text`、`transcription_marker`、`trust_status`、`trust_reason` 和非空 `verified_fields`。文内锚点使用 `image-<SHA256>`，并写标记 `<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:<SHA256> -->`；校验器核对引用、锚点及标记。标记用于可核查地绑定文字记录与原图内容身份，不是数字签名或准确性证明；可信度仍由逐字段复核和 `trust_status/trust_reason` 决定。原始 PNG/JPG/WebP 在本机保留并忽略 Git，不将二进制截图加入提交。
 

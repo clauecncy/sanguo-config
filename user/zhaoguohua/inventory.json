@@ -1,20 +1,21 @@
 {
   "schema_version": 3,
-  "verified_at": "2026-09-16",
-  "season": "s1",
-  "source": "2026-09-16 用户提供的8张常规库存截图，以及紫色战法齐全的文字确认；逐项来源见记录。",
-  "scope": "按截图增量核定48名金色普通武将、37个金色战法；按账号当前S1公共目录及用户文字确认补齐29个紫色战法。未拍到不视为没有，不从75/81推断金将数量；演武池独立保存。",
+  "verified_at": "2026-09-30",
+  "season": "s2",
+  "source": "2026-09-30 用户明确按S2更新，4张常规武将截图增量核定；常规战法完整保留2026-09-16的S1来源记录，本次6张战法图属于演武，不认证个人拥有。",
+  "scope": "本次核定56条金将记录（55名普通武将及英雄张梁）；红色标记计红度，名称前数字为等级。紫将不入库，83/83不当金将数量；重复武将遮罩不增计、不撤销拥有。常规战法仍为37金29紫，原核定日期和来源不变，不能据此声称S2战法已全部重新核定。演武仓库独立保存。",
   "generals": [
     {
       "name": "程普",
       "faction": "吴",
-      "advancement": 0,
+      "advancement": 1,
       "quality": "金",
       "entity_id": "general:83f68b3328def1bac222",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "孙坚",
@@ -24,8 +25,9 @@
       "entity_id": "general:1fbb0e34373c3146b851",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "徐盛",
@@ -34,9 +36,10 @@
       "quality": "金",
       "entity_id": "general:0d04bc60f598c1da65da",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 42,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "吕布",
@@ -46,8 +49,9 @@
       "entity_id": "general:990961b2ffc3e6140e01",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "李儒",
@@ -57,8 +61,9 @@
       "entity_id": "general:593ee96e11ce91cde8ea",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "张角",
@@ -68,8 +73,9 @@
       "entity_id": "general:5508fa98c2d6421d3e3c",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "华雄",
@@ -79,8 +85,9 @@
       "entity_id": "general:9ebe9a7cec93ffc5d3b4",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "颜良",
@@ -90,19 +97,21 @@
       "entity_id": "general:f2f34af1e7f448967678",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "文丑",
       "faction": "群",
-      "advancement": 0,
+      "advancement": 1,
       "quality": "金",
       "entity_id": "general:0f4c4105c1f5bc1b73e7",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "华佗",
@@ -112,8 +121,9 @@
       "entity_id": "general:084a5bb9b1c318048a03",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "庞德",
@@ -123,8 +133,9 @@
       "entity_id": "general:083b612aff32ed77fda8",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "董卓",
@@ -134,19 +145,21 @@
       "entity_id": "general:96633bbf689f585f17ef",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "邹氏",
       "faction": "群",
-      "advancement": 0,
+      "advancement": 1,
       "quality": "金",
       "entity_id": "general:13144b0dc85fccd26d2c",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "张宝",
@@ -156,8 +169,9 @@
       "entity_id": "general:35ca90d064630a3cea3c",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123225.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "孙尚香",
@@ -166,9 +180,10 @@
       "quality": "金",
       "entity_id": "general:823d59e4b1f09b921470",
       "variant": "普通",
-      "level": 21,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "吕蒙",
@@ -177,9 +192,10 @@
       "quality": "金",
       "entity_id": "general:d09edc72e62e34cdb2da",
       "variant": "普通",
-      "level": 21,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "许褚",
@@ -189,8 +205,9 @@
       "entity_id": "general:7e6ebaf83b5273507779",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "典韦",
@@ -200,8 +217,9 @@
       "entity_id": "general:2157ac6b1d85220f6eee",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "于禁",
@@ -211,8 +229,9 @@
       "entity_id": "general:21556222ec2ac1e89ba2",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "徐晃",
@@ -222,8 +241,9 @@
       "entity_id": "general:58b6c02e43ff0623a55f",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "夏侯渊",
@@ -233,8 +253,9 @@
       "entity_id": "general:727dbb61cc174f1035db",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "夏侯惇",
@@ -244,8 +265,9 @@
       "entity_id": "general:2a7e68aa7262c5da7f9f",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "曹仁",
@@ -255,19 +277,21 @@
       "entity_id": "general:121d406fe7d172e7f8ea",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "甄洛",
       "faction": "魏",
-      "advancement": 0,
+      "advancement": 2,
       "quality": "金",
       "entity_id": "general:22b24edb3bdf2d0a2c72",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "徐庶",
@@ -277,8 +301,9 @@
       "entity_id": "general:8321c989883724cb13b2",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "黄月英",
@@ -287,9 +312,10 @@
       "quality": "金",
       "entity_id": "general:979781ac090cb71634a2",
       "variant": "普通",
-      "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 20,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "关平",
@@ -299,8 +325,9 @@
       "entity_id": "general:5109ea07440a2473642b",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "周仓",
@@ -310,8 +337,9 @@
       "entity_id": "general:63bf93615779c60037e7",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "小乔",
@@ -320,9 +348,10 @@
       "quality": "金",
       "entity_id": "general:67e210997dbbf2430955",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "甘宁",
@@ -332,8 +361,9 @@
       "entity_id": "general:2665384131699d31ae0d",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "刘备",
@@ -342,9 +372,10 @@
       "quality": "金",
       "entity_id": "general:daf7b56cd3aea44f7fdf",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 25,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "张飞",
@@ -353,9 +384,10 @@
       "quality": "金",
       "entity_id": "general:95264f699dc478478eef",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "黄忠",
@@ -364,9 +396,10 @@
       "quality": "金",
       "entity_id": "general:c9065395c9a7298a3331",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "诸葛亮",
@@ -375,9 +408,10 @@
       "quality": "金",
       "entity_id": "general:53081486f9dbff9359d8",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "黄盖",
@@ -386,31 +420,34 @@
       "quality": "金",
       "entity_id": "general:af28979bd438c204232c",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 42,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "大乔",
       "faction": "吴",
-      "advancement": 1,
+      "advancement": 2,
       "quality": "金",
       "entity_id": "general:8ac44a43f06673d6272e",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "貂蝉",
       "faction": "群",
-      "advancement": 0,
+      "advancement": 1,
       "quality": "金",
       "entity_id": "general:5d3f27adabcf2be8a310",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 25,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "蔡文姬",
@@ -419,9 +456,10 @@
       "quality": "金",
       "entity_id": "general:8e64b2b3040737249797",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "张梁",
@@ -430,9 +468,10 @@
       "quality": "金",
       "entity_id": "general:e4039426f9f0f5d96689",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "曹操",
@@ -441,9 +480,10 @@
       "quality": "金",
       "entity_id": "general:4fbe01ab8d14bc669b3e",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 40,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "荀彧",
@@ -452,9 +492,10 @@
       "quality": "金",
       "entity_id": "general:035be51454baa21b0e7b",
       "variant": "普通",
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 40,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "程昱",
@@ -464,8 +505,9 @@
       "entity_id": "general:16e9b12b026f2d40d0fc",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "赵云",
@@ -474,9 +516,10 @@
       "quality": "金",
       "entity_id": "general:d949c9c8d528498c7bc1",
       "variant": "普通",
-      "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 25,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "马超",
@@ -485,20 +528,22 @@
       "quality": "金",
       "entity_id": "general:63655267babca9c136c2",
       "variant": "普通",
-      "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 20,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "关羽",
       "faction": "蜀",
-      "advancement": 0,
+      "advancement": 1,
       "quality": "金",
       "entity_id": "general:4b97cac39000f1c8f17e",
       "variant": "普通",
       "level": 5,
-      "source": "用户库存截图 微信图片_20260916123232.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "孙策",
@@ -507,29 +552,130 @@
       "quality": "金",
       "entity_id": "general:0278350322db68c0fb7a",
       "variant": "普通",
-      "level": 21,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16"
+      "level": 5,
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "season": "s2"
     },
     {
       "name": "周瑜",
       "variant": "普通",
       "quality": "金",
       "advancement": 1,
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123240.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16",
-      "entity_id": "general:ff0ae9c2a3b32145b872"
+      "level": 42,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:ff0ae9c2a3b32145b872",
+      "faction": "吴",
+      "season": "s2"
     },
     {
       "name": "郭嘉",
       "variant": "普通",
       "quality": "金",
+      "advancement": 1,
+      "level": 5,
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:525276a9bc4a7162be8f",
+      "faction": "魏",
+      "season": "s2"
+    },
+    {
+      "name": "陆逊",
+      "variant": "普通",
+      "quality": "金",
+      "faction": "吴",
+      "level": 40,
       "advancement": 0,
-      "level": 50,
-      "source": "用户库存截图 微信图片_20260916123255.jpg；红色标记计红度，名称前数字为等级",
-      "verified_at": "2026-09-16",
-      "entity_id": "general:525276a9bc4a7162be8f"
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:f88e20a568d008a29c2d"
+    },
+    {
+      "name": "马云禄",
+      "variant": "普通",
+      "quality": "金",
+      "faction": "蜀",
+      "level": 20,
+      "advancement": 0,
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 1db53410b7609eb37ac46118a9d0e8e.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:943b7a7b14597aba4a9f"
+    },
+    {
+      "name": "张郃",
+      "variant": "普通",
+      "quality": "金",
+      "faction": "魏",
+      "level": 5,
+      "advancement": 0,
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:a03830e035dfa5932ce6"
+    },
+    {
+      "name": "张辽",
+      "variant": "普通",
+      "quality": "金",
+      "faction": "魏",
+      "level": 5,
+      "advancement": 0,
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:a5b74013147e47af899b"
+    },
+    {
+      "name": "法正",
+      "variant": "普通",
+      "quality": "金",
+      "faction": "蜀",
+      "level": 5,
+      "advancement": 0,
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 035dd337593e0c28e642da2b88aaed6.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:12d700a23b775c08623f"
+    },
+    {
+      "name": "鲁肃",
+      "variant": "普通",
+      "quality": "金",
+      "faction": "吴",
+      "level": 5,
+      "advancement": 0,
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:8dc0bfe19c5d81dc129c"
+    },
+    {
+      "name": "田丰",
+      "variant": "普通",
+      "quality": "金",
+      "faction": "群",
+      "level": 5,
+      "advancement": 1,
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 1c022e1db11a56b65625f267f269cd8.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:25fc0bde1163ca42219a"
+    },
+    {
+      "name": "张梁",
+      "variant": "英雄",
+      "quality": "金",
+      "faction": "群",
+      "level": 5,
+      "advancement": 1,
+      "season": "s2",
+      "source": "用户S2常规武将库存截图 db108729fcc8a21c4d5e7ba55361d59.jpg；红色标记计红度，名称前数字为等级；重复武将遮罩不改变拥有记录",
+      "verified_at": "2026-09-30",
+      "entity_id": "general:e4039426f9f0f5d96689"
     }
   ],
   "tactics": [

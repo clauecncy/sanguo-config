@@ -4,7 +4,7 @@ import sqlite3
 from collections import Counter
 from project_data import ROOT, read_json, public_connection
 from material_transaction import digest, safe_target
-from evidence_registry import export_observations
+from evidence_registry import export_observations, matches_evidence_hash
 from event_state import validate_state, projections
 
 
@@ -65,6 +65,10 @@ def validate_transcription(root, row, owner):
         raise ValueError(f'Transcription anchor/marker missing from document: {owner}')
 
 
+def matches_generated_text(actual, expected):
+    return actual.replace(b'\r\n', b'\n') == expected.replace(b'\r\n', b'\n')
+
+
 def verify_materials(root=ROOT):
     result = {}
     transcribed_public = 0
@@ -72,7 +76,7 @@ def verify_materials(root=ROOT):
     known = {r.get('evidence_id') for r in index if r.get('evidence_id')}
     for row in index:
         p = safe_target(root, row['path'])
-        if p.is_file() and digest(p.read_bytes()) != row['sha256'].lower():
+        if p.is_file() and not matches_evidence_hash(p, p.read_bytes(), row['sha256']):
             raise ValueError('Evidence hash mismatch: ' + row['path'])
         if row.get('availability') == 'present' and not p.is_file():
             raise ValueError('Indexed evidence lost: ' + row['path'])
@@ -119,7 +123,7 @@ def verify_materials(root=ROOT):
         validate_state(state, event['user_id'], event['event_id'])
         prefix = p.parent.relative_to(root).as_posix()
         for target, data in projections(prefix, state).items():
-            if (root / target).read_bytes() != data:
+            if not matches_generated_text((root / target).read_bytes(), data):
                 raise ValueError('Stale generated event projection: ' + target)
         manifest = read_json(p.parent / '证据清单.json')
         indexed = {r['path'] for r in manifest['files']}
@@ -129,7 +133,7 @@ def verify_materials(root=ROOT):
             raise ValueError('Event evidence inventory differs from files')
         for row in manifest['files']:
             target = safe_target(root, prefix + '/' + row['path'])
-            if target.is_file() and digest(target.read_bytes()) != row['sha256'].lower():
+            if target.is_file() and not matches_evidence_hash(target, target.read_bytes(), row['sha256']):
                 raise ValueError('Event evidence hash mismatch')
             if not target.is_file() and row.get('availability') != 'local_only':
                 raise ValueError('Event evidence lost: ' + row['path'])

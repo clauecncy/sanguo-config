@@ -312,10 +312,19 @@ class InventoryTests(unittest.TestCase):
             with self.assertRaises(ValueError): load_profile('bixianjue', self.root)
 
     def test_current_season_does_not_relabel_inventory(self):
+        path = self.root/'user/zhaoguohua/inventory.json'
+        inventory = read_json(path)
+        inventory['season'] = 's1'
+        atomic_json(path, inventory)
+        profile_path = self.root/'user/zhaoguohua/profile.json'
+        profile = read_json(profile_path)
+        profile['current_season'] = 's2'
+        atomic_json(profile_path, profile)
         data = summary('zhaoguohua', self.root)
         self.assertEqual(data['context']['current_season'], 's2')
         self.assertEqual(data['context']['inventory_season'], 's1')
         self.assertFalse(data['context']['inventory_is_query_season'])
+        self.assertEqual(read_json(path), inventory)
 
     def test_context_missing_season_reference_is_explicit(self):
         result = route('formations', 'bixianjue', root=self.root, season='s3')
@@ -343,7 +352,8 @@ class InventoryTests(unittest.TestCase):
             with self.assertRaises(ValueError): verify_events('bixianjue', self.root)
 
     def test_event_season_is_historical_not_profile_season(self):
-        self.assertEqual(verify_events('zhaoguohua', self.root), 2)
+        index = read_json(self.root/'user/zhaoguohua/演武/index.json')
+        self.assertEqual(verify_events('zhaoguohua', self.root), len(index['events']))
         path = self.root/'user/zhaoguohua/演武/s1-2026-09-16/event.json'
         event = read_json(path)
         event['season'] = 's2'

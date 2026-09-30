@@ -150,6 +150,25 @@
       "verified_at": "2026-09-24",
       "source_type": "用户确认MD",
       "source": "docs/workflows/events.md"
+    },
+    {
+      "id": "shensu-per-enemy-20260930",
+      "subjects": [
+        "夏侯渊",
+        "神速奔袭"
+      ],
+      "field": "trigger_and_stack",
+      "value": "每回合行动时武力提升为先攻的40%，持续1回合；自身先攻每高过一名敌军获得1层神速，造成伤害和会心几率提升5%（受先攻影响），持续1回合。不要求先攻首位；末行截断，不认证完整额外伤害正文或任意红度数值。",
+      "status": "active",
+      "trust_status": "可信",
+      "platform": "Steam",
+      "season": "s2",
+      "verified_at": "2026-09-30",
+      "source_type": "游戏内图片转译Markdown",
+      "source": "game/sources/2026-09-30-技能详情核定.md",
+      "source_anchor": "image-b4e68769bf0050d3489af8bdc829d5706ee3027ea2b9c006c8274368f6b7e5da",
+      "evidence_id": "sha256:b4e68769bf0050d3489af8bdc829d5706ee3027ea2b9c006c8274368f6b7e5da",
+      "source_image_sha256": "b4e68769bf0050d3489af8bdc829d5706ee3027ea2b9c006c8274368f6b7e5da"
     }
   ]
 }

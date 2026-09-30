@@ -50,7 +50,8 @@ def projections(prefix, state):
             lines.append('- ' + member['name'] + '：' + '、'.join(member['tactics']))
         lines.append('')
     lines += ['支援及可信边界：', '', state['warehouse']['support'].get('status', ''), '',
-              '未确认锁定不等于未装备；清风支援来源推定与装备截图确认分开。', '']
+              state.get('evidence_boundary',
+                        '未确认锁定不等于未装备；清风支援来源推定与装备截图确认分开。'), '']
     return {prefix + '/当前仓库.json': json_bytes(warehouse),
             prefix + '/当前状态.md': '\n'.join(lines).encode('utf-8')}
 

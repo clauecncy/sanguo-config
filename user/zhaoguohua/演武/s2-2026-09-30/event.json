@@ -1,0 +1,197 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s2-2026-09-30",
+  "season": "s2",
+  "platform": "Steam",
+  "first_recorded_at": "2026-09-30",
+  "start_date": null,
+  "status": "本期在进行；具体轮次和锁定未知",
+  "source": "用户确认新一期；不是已有批次。日期采用本项目首次记录日，不推断实际开赛日期。",
+  "files": [
+    "event.json",
+    "current_state.json",
+    "decision_history.json",
+    "当前仓库.json",
+    "当前状态.md",
+    "证据清单.json",
+    "截图转译.md",
+    "三队建议.md"
+  ],
+  "public_evidence": [
+    {
+      "path": "game/sources/evidence/21d55b8f69c3734ad589a4ba36dc0b0e0b1fa03980b4f0035fe642db20605ab0.png",
+      "evidence_id": "sha256:21d55b8f69c3734ad589a4ba36dc0b0e0b1fa03980b4f0035fe642db20605ab0",
+      "observations": [
+        {
+          "observation_id": 84,
+          "entity_id": "tactic:faeffa408f0f700ae6b6",
+          "name": "刚烈",
+          "verified_fields": [
+            "activation_rate",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/cfec0b067b817a4213085247fefa8eb86d8e1d4000f084b6d76e317c2510d1a3.png",
+      "evidence_id": "sha256:cfec0b067b817a4213085247fefa8eb86d8e1d4000f084b6d76e317c2510d1a3",
+      "observations": [
+        {
+          "observation_id": 85,
+          "entity_id": "tactic:587985d3057fb8251ae0",
+          "name": "木牛流马",
+          "verified_fields": [
+            "activation_rate",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/8eaceb339698a7e9f5a3241b084419da2250b7ba9e2e53af6e8bc878cb2ea960.png",
+      "evidence_id": "sha256:8eaceb339698a7e9f5a3241b084419da2250b7ba9e2e53af6e8bc878cb2ea960",
+      "observations": [
+        {
+          "observation_id": 86,
+          "entity_id": "tactic:49b98e1bf703c8853a54",
+          "name": "火烧连营",
+          "verified_fields": [
+            "activation_rate",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/1653d9eb22f5105b0bda68d9b4eb150ce4d2116e1a4fbc458a207527745318ad.png",
+      "evidence_id": "sha256:1653d9eb22f5105b0bda68d9b4eb150ce4d2116e1a4fbc458a207527745318ad",
+      "observations": [
+        {
+          "observation_id": 87,
+          "entity_id": "tactic:e4684f5caef1da9c34ec",
+          "name": "睹事知机",
+          "verified_fields": [
+            "activation_rate",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/b35360b16038e62e20e7798118ece2489df4af050be383cf40389ccf2d59003a.png",
+      "evidence_id": "sha256:b35360b16038e62e20e7798118ece2489df4af050be383cf40389ccf2d59003a",
+      "observations": [
+        {
+          "observation_id": 88,
+          "entity_id": "tactic:fd360dc72c2aa84b9747",
+          "name": "疾行侧击",
+          "verified_fields": [
+            "activation_rate",
+            "advancement_confirmed",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/c23b7353ea03ee4d82b9e16dbf82f2949894bca2563bb5330752752bb3b16629.png",
+      "evidence_id": "sha256:c23b7353ea03ee4d82b9e16dbf82f2949894bca2563bb5330752752bb3b16629",
+      "observations": [
+        {
+          "observation_id": 89,
+          "entity_id": "tactic:9090d66942f323653183",
+          "name": "临阵突袭",
+          "verified_fields": [
+            "activation_rate",
+            "advancement_confirmed",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/e36fead18d427b4d5d5a509f1b48ab4ae47ff0290cd3830db13a924441cf66cb.png",
+      "evidence_id": "sha256:e36fead18d427b4d5d5a509f1b48ab4ae47ff0290cd3830db13a924441cf66cb",
+      "observations": [
+        {
+          "observation_id": 90,
+          "entity_id": "tactic:0311b14b82c6442df693",
+          "name": "任人唯贤",
+          "verified_fields": [
+            "activation_rate",
+            "advancement_confirmed",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/a945fe3ed95a4069dec1f1e435efaa01b82e20a6f35543537b3c12d080589d42.png",
+      "evidence_id": "sha256:a945fe3ed95a4069dec1f1e435efaa01b82e20a6f35543537b3c12d080589d42",
+      "observations": [
+        {
+          "observation_id": 91,
+          "entity_id": "tactic:2719eef84e7b80a5e50d",
+          "name": "坚壁清野",
+          "verified_fields": [
+            "activation_rate",
+            "advancement_confirmed",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    },
+    {
+      "path": "game/sources/evidence/b4e68769bf0050d3489af8bdc829d5706ee3027ea2b9c006c8274368f6b7e5da.png",
+      "evidence_id": "sha256:b4e68769bf0050d3489af8bdc829d5706ee3027ea2b9c006c8274368f6b7e5da",
+      "observations": []
+    },
+    {
+      "path": "game/sources/evidence/85248dc72a99ca300ce401ea3256dd00b1147f5e7542e0acbd7ab63eb8b21c9d.png",
+      "evidence_id": "sha256:85248dc72a99ca300ce401ea3256dd00b1147f5e7542e0acbd7ab63eb8b21c9d",
+      "observations": [
+        {
+          "observation_id": 92,
+          "entity_id": "tactic:35b204762e467be39bda",
+          "name": "长驱直入",
+          "verified_fields": [
+            "activation_rate",
+            "effect_raw",
+            "level"
+          ],
+          "review_state": "reviewed"
+        }
+      ]
+    }
+  ],
+  "skill_evidence": [
+    "game/sources/evidence/21d55b8f69c3734ad589a4ba36dc0b0e0b1fa03980b4f0035fe642db20605ab0.png",
+    "game/sources/evidence/cfec0b067b817a4213085247fefa8eb86d8e1d4000f084b6d76e317c2510d1a3.png",
+    "game/sources/evidence/8eaceb339698a7e9f5a3241b084419da2250b7ba9e2e53af6e8bc878cb2ea960.png",
+    "game/sources/evidence/1653d9eb22f5105b0bda68d9b4eb150ce4d2116e1a4fbc458a207527745318ad.png",
+    "game/sources/evidence/b35360b16038e62e20e7798118ece2489df4af050be383cf40389ccf2d59003a.png",
+    "game/sources/evidence/c23b7353ea03ee4d82b9e16dbf82f2949894bca2563bb5330752752bb3b16629.png",
+    "game/sources/evidence/e36fead18d427b4d5d5a509f1b48ab4ae47ff0290cd3830db13a924441cf66cb.png",
+    "game/sources/evidence/a945fe3ed95a4069dec1f1e435efaa01b82e20a6f35543537b3c12d080589d42.png",
+    "game/sources/evidence/b4e68769bf0050d3489af8bdc829d5706ee3027ea2b9c006c8274368f6b7e5da.png",
+    "game/sources/evidence/85248dc72a99ca300ce401ea3256dd00b1147f5e7542e0acbd7ab63eb8b21c9d.png"
+  ],
+  "scope": "常规库存与本期资源分离；本期仓库按截图可见内容整理，战法全量未知"
+}

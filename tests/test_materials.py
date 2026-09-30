@@ -13,8 +13,44 @@ from catalog_effects import select_effect, facts_for
 from materials import memory_catalog, migrate, import_evidence, update_state
 from material_transaction import publish, rollback, digest, material_lock, safe_target
 from event_state import validate_state
-from validate_materials import validate_reviews, battle_counts, verify_materials, validate_transcription
-from evidence_registry import refresh_index
+from validate_materials import validate_reviews, battle_counts, verify_materials, validate_transcription, matches_generated_text
+from evidence_registry import refresh_index, matches_evidence_hash
+
+
+class LineEndingTests(unittest.TestCase):
+    def test_markdown_accepts_both_checkout_line_endings(self):
+        lf = b'# Evidence\nverified text\n'
+        crlf = lf.replace(b'\n', b'\r\n')
+        self.assertTrue(matches_evidence_hash('evidence.md', crlf, digest(lf)))
+        self.assertTrue(matches_evidence_hash('evidence.md', lf, digest(crlf)))
+
+    def test_markdown_content_change_is_rejected(self):
+        original = b'verified text\r\n'
+        self.assertFalse(matches_evidence_hash('evidence.md', b'changed text\n', digest(original)))
+
+    def test_binary_images_keep_exact_hash_requirement(self):
+        original = b'PNG\r\ndata'
+        for suffix in ('.png', '.jpg', '.webp'):
+            self.assertTrue(matches_evidence_hash('image'+suffix, original, digest(original)))
+            self.assertFalse(matches_evidence_hash('image'+suffix, b'PNG\ndata', digest(original)))
+
+    def test_invalid_utf8_is_not_normalized_as_markdown(self):
+        self.assertFalse(matches_evidence_hash('evidence.md', b'\xff\n', digest(b'\xff\r\n')))
+
+    def test_refresh_preserves_recorded_text_identity(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'tests') as directory:
+            root = Path(directory)
+            (root/'evidence.md').write_bytes(b'verified text\n')
+            sha = digest(b'verified text\r\n')
+            rows = refresh_index(root, [dict(path='evidence.md', sha256=sha)])
+            self.assertEqual(rows[0]['sha256'], sha)
+            self.assertEqual(rows[0]['evidence_id'], 'sha256:'+sha)
+
+    def test_generated_projection_accepts_only_line_ending_changes(self):
+        expected = b'{\n  "revision": 1\n}\n'
+        self.assertTrue(matches_generated_text(expected.replace(b'\n', b'\r\n'), expected))
+        self.assertFalse(matches_generated_text(expected.replace(b'1', b'2'), expected))
+        self.assertFalse(matches_generated_text(expected+b' ', expected))
 
 
 class EffectTests(unittest.TestCase):

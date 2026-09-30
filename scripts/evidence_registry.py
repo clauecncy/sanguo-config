@@ -1,10 +1,26 @@
 """Content-addressed evidence identities and deterministic observation exports."""
 import json
+from pathlib import Path
 from material_transaction import digest, safe_target
 
 
 def evidence_id(sha256):
     return 'sha256:' + sha256.lower()
+
+
+def matches_evidence_hash(path, raw, expected):
+    expected = expected.lower()
+    if digest(raw) == expected:
+        return True
+    if Path(path).suffix.lower() != '.md':
+        return False
+    try:
+        raw.decode('utf-8')
+    except UnicodeDecodeError:
+        return False
+    # Git may change Markdown line endings, never original image bytes.
+    lf = raw.replace(b'\r\n', b'\n')
+    return expected in (digest(lf), digest(lf.replace(b'\n', b'\r\n')))
 
 
 def refresh_index(root, entries):
@@ -13,9 +29,10 @@ def refresh_index(root, entries):
         row = dict(original)
         path = safe_target(root, row['path'])
         if path.is_file():
-            actual = digest(path.read_bytes())
-            if row.get('sha256') and row['sha256'].lower() != actual:
+            raw = path.read_bytes()
+            if row.get('sha256') and not matches_evidence_hash(path, raw, row['sha256']):
                 raise ValueError('Evidence hash mismatch: ' + row['path'])
+            actual = row['sha256'].lower() if row.get('sha256') else digest(raw)
             availability = 'local_only' if row.get('availability') == 'local_only' else 'present'
             row.update(sha256=actual, evidence_id=evidence_id(actual), availability=availability)
         else:

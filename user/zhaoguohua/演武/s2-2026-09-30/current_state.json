@@ -1,0 +1,946 @@
+{
+  "schema_version": 1,
+  "user_id": "zhaoguohua",
+  "event_id": "s2-2026-09-30",
+  "revision": 8,
+  "verified_at": "2026-09-30",
+  "source": "用户明确本批为新一期演武；6张战法图及最新11/11武将图，逐图见截图转译.md；2026-09-30追加9张技能详情，公开字段已同步公共证据索引；用户明确两队优先，撤回平均分配版；新增徐晃长驱直入完整预览，按最新用户纠正重配；用户明确全智默认邓艾初始先攻高于陆逊；用户讨论箕形单前排并要求完整三队与push",
+  "stage": "完整三队建议已定：箕形双减火攻、方圆夏侯渊、雁形徐晃；用户授权本次Git提交及推送，游戏执行未确认",
+  "locked": null,
+  "evidence_boundary": "当前队伍及携带关系仅供截图追溯，不是配队约束；不索要当前配置或装备截图。最终建议须依据已选资源、最新常规库存及核实后的技能机制。",
+  "extra_purple_support_confirmed": null,
+  "warehouse": {
+    "generals": [
+      {
+        "name": "夏侯惇",
+        "entity_id": "general:2a7e68aa7262c5da7f9f",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "邓艾",
+        "entity_id": "general:4f57385c8b1cd7e417b7",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "陆逊",
+        "entity_id": "general:f88e20a568d008a29c2d",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "黄月英",
+        "entity_id": "general:979781ac090cb71634a2",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "法正",
+        "entity_id": "general:12d700a23b775c08623f",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "貂蝉",
+        "entity_id": "general:5d3f27adabcf2be8a310",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "田丰",
+        "entity_id": "general:25fc0bde1163ca42219a",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "徐晃",
+        "entity_id": "general:58b6c02e43ff0623a55f",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "夏侯渊",
+        "entity_id": "general:727dbb61cc174f1035db",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "蔡文姬",
+        "entity_id": "general:8e64b2b3040737249797",
+        "quality": "金",
+        "level": 50,
+        "advancement": null,
+        "origin": "本轮武将库非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      }
+    ],
+    "tactics": [
+      {
+        "name": "清风驱疾",
+        "entity_id": "tactic:f62577aa18a9be541993",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "60%",
+        "equipped_by": "貂蝉",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+          "证据/d5149aa58ccbda42661789715dfb086.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "威名显赫",
+        "entity_id": "tactic:379f54a5ed6f5ba3c80f",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "50%",
+        "equipped_by": "赵云",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+          "证据/d5149aa58ccbda42661789715dfb086.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "趁火打劫",
+        "entity_id": "tactic:320f7a0d6e28e0f607e0",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "50%",
+        "equipped_by": "夏侯惇",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+          "证据/d5149aa58ccbda42661789715dfb086.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "披坚执锐",
+        "entity_id": "tactic:ce7505e773f930a6fb3e",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "指挥",
+        "activation_rate": "100%",
+        "equipped_by": "貂蝉",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+          "证据/d5149aa58ccbda42661789715dfb086.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "以静制动",
+        "entity_id": "tactic:0e805dafe4ac6dced483",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "被动",
+        "activation_rate": "100%",
+        "equipped_by": null,
+        "equipment_status": "携带者未核定（空白或截断，不推断未装备）",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+          "证据/d5149aa58ccbda42661789715dfb086.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "蓄势待发",
+        "entity_id": "tactic:62bbd903f61b9c8f919f",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "指挥",
+        "activation_rate": "100%",
+        "equipped_by": "邓艾",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+          "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "知人善任",
+        "entity_id": "tactic:3e8e778583664d66866f",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "75%",
+        "equipped_by": "法正",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/bc2d2bcc91b57090241c9e75c0de820.jpg",
+          "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+          "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "韬光养晦",
+        "entity_id": "tactic:90aacda6cfdfc7296c53",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "被动",
+        "activation_rate": "100%",
+        "equipped_by": "陆逊",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/bc2d2bcc91b57090241c9e75c0de820.jpg",
+          "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+          "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "奇正相生",
+        "entity_id": "tactic:789a1412ef5a010da75e",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "指挥",
+        "activation_rate": "100%",
+        "equipped_by": "陆逊",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/bc2d2bcc91b57090241c9e75c0de820.jpg",
+          "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+          "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "固若金汤",
+        "entity_id": "tactic:343749cab32d242b4147",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "指挥",
+        "activation_rate": "100%",
+        "equipped_by": "夏侯惇",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/bc2d2bcc91b57090241c9e75c0de820.jpg",
+          "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+          "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "水淹七军",
+        "entity_id": "tactic:d312f12e723387aad752",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "40%",
+        "equipped_by": null,
+        "equipment_status": "携带者未核定（空白或截断，不推断未装备）",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/bc2d2bcc91b57090241c9e75c0de820.jpg",
+          "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+          "证据/3c55ea8561db9c86021e060f602a0c4.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "兵贵神速",
+        "entity_id": "tactic:f217f263c5141babbde8",
+        "quality": "金",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "追击",
+        "activation_rate": "40%",
+        "equipped_by": null,
+        "equipment_status": "携带者未核定（空白或截断，不推断未装备）",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/bc2d2bcc91b57090241c9e75c0de820.jpg",
+          "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+          "证据/3c55ea8561db9c86021e060f602a0c4.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "揭竿而起",
+        "entity_id": "tactic:33709403c93fc96ec553",
+        "quality": "紫",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "45%",
+        "equipped_by": "田丰",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/3c55ea8561db9c86021e060f602a0c4.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "任人唯贤",
+        "entity_id": "tactic:0311b14b82c6442df693",
+        "quality": "紫",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "60%",
+        "equipped_by": "法正",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/3c55ea8561db9c86021e060f602a0c4.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "临阵突袭",
+        "entity_id": "tactic:9090d66942f323653183",
+        "quality": "紫",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "追击",
+        "activation_rate": "40%",
+        "equipped_by": null,
+        "equipment_status": "携带者未核定（空白或截断，不推断未装备）",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/3c55ea8561db9c86021e060f602a0c4.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "坚壁清野",
+        "entity_id": "tactic:2719eef84e7b80a5e50d",
+        "quality": "紫",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "50%",
+        "equipped_by": null,
+        "equipment_status": "携带者未核定（空白或截断，不推断未装备）",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/3c55ea8561db9c86021e060f602a0c4.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "疾行侧击",
+        "entity_id": "tactic:fd360dc72c2aa84b9747",
+        "quality": "紫",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "60%",
+        "equipped_by": null,
+        "equipment_status": "携带者未核定（空白或截断，不推断未装备）",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/3c55ea8561db9c86021e060f602a0c4.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "决水破敌",
+        "entity_id": "tactic:cb8cc13dc9eaed066ee7",
+        "quality": "紫",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "主动",
+        "activation_rate": "60%",
+        "equipped_by": "黄月英",
+        "equipment_status": "截图显示携带者",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      },
+      {
+        "name": "避其锐气",
+        "entity_id": "tactic:569140a6f79a8df6a042",
+        "quality": "紫",
+        "level": 10,
+        "advancement": null,
+        "tactic_type": "指挥",
+        "activation_rate": "100%",
+        "equipped_by": null,
+        "equipment_status": "携带者未核定（空白或截断，不推断未装备）",
+        "origin": "本轮战法库可见非支援记录；具体选卡轮次未知",
+        "source_images": [
+          "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg"
+        ],
+        "verified_at": "2026-09-30"
+      }
+    ],
+    "support": {
+      "generals": [
+        {
+          "name": "赵云",
+          "entity_id": "general:d949c9c8d528498c7bc1",
+          "quality": "金",
+          "level": 50,
+          "advancement": null,
+          "origin": "截图明确支援中",
+          "source_images": [
+            "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg"
+          ],
+          "verified_at": "2026-09-30"
+        }
+      ],
+      "tactics": [
+        {
+          "name": "烈火焚营",
+          "entity_id": "tactic:2dd59b3e8429ac4febac",
+          "quality": "金",
+          "level": 10,
+          "advancement": null,
+          "tactic_type": "主动",
+          "activation_rate": "45%",
+          "equipped_by": "邓艾",
+          "equipment_status": "截图显示携带者",
+          "origin": "截图明确支援中",
+          "source_images": [
+            "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+            "证据/d5149aa58ccbda42661789715dfb086.jpg"
+          ],
+          "verified_at": "2026-09-30"
+        },
+        {
+          "name": "摧坚克难",
+          "entity_id": "tactic:f15358a92b7318ab3014",
+          "quality": "金",
+          "level": 10,
+          "advancement": null,
+          "tactic_type": "被动",
+          "activation_rate": "100%",
+          "equipped_by": "赵云",
+          "equipment_status": "截图显示携带者",
+          "origin": "截图明确支援中",
+          "source_images": [
+            "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+            "证据/d5149aa58ccbda42661789715dfb086.jpg"
+          ],
+          "verified_at": "2026-09-30"
+        }
+      ],
+      "status": "已确认赵云、烈火焚营、摧坚克难支援中；倒计时原文保留，不推算开赛日期或当前锁定",
+      "countdown_raw": {
+        "generals": "31:53:47后不可替换",
+        "tactics": [
+          "31:52:26后不可替换",
+          "31:53:31后不可替换"
+        ]
+      }
+    },
+    "completeness": {
+      "generals": "11/11完整可见，含10名原生及1名支援",
+      "tactics": "部分截图，可见去重21项（19非支援、2支援）；未展示总数，不宣称完整仓库"
+    }
+  },
+  "lineup": {
+    "status": "截图中原有配置，仅供追溯；本次三队方案可全部重新组合",
+    "member_order": "同队归属已确认，成员数组顺序不是站位",
+    "teams": [
+      {
+        "team": 1,
+        "formation": "未知",
+        "formation_confirmed": false,
+        "members": [
+          {
+            "name": "夏侯惇",
+            "tactics": [
+              "趁火打劫",
+              "固若金汤"
+            ],
+            "tactics_complete": true,
+            "tactic_slots": null,
+            "position": null
+          },
+          {
+            "name": "邓艾",
+            "tactics": [
+              "烈火焚营",
+              "蓄势待发"
+            ],
+            "tactics_complete": true,
+            "tactic_slots": null,
+            "position": null
+          },
+          {
+            "name": "陆逊",
+            "tactics": [
+              "韬光养晦",
+              "奇正相生"
+            ],
+            "tactics_complete": true,
+            "tactic_slots": null,
+            "position": null
+          }
+        ]
+      },
+      {
+        "team": 2,
+        "formation": "未知",
+        "formation_confirmed": false,
+        "members": [
+          {
+            "name": "赵云",
+            "tactics": [
+              "摧坚克难",
+              "威名显赫"
+            ],
+            "tactics_complete": true,
+            "tactic_slots": null,
+            "position": null
+          },
+          {
+            "name": "黄月英",
+            "tactics": [
+              "决水破敌"
+            ],
+            "tactics_complete": false,
+            "tactic_slots": null,
+            "position": null
+          },
+          {
+            "name": "法正",
+            "tactics": [
+              "知人善任",
+              "任人唯贤"
+            ],
+            "tactics_complete": true,
+            "tactic_slots": null,
+            "position": null
+          }
+        ]
+      },
+      {
+        "team": 3,
+        "formation": "未知",
+        "formation_confirmed": false,
+        "members": [
+          {
+            "name": "貂蝉",
+            "tactics": [
+              "清风驱疾",
+              "披坚执锐"
+            ],
+            "tactics_complete": true,
+            "tactic_slots": null,
+            "position": null
+          },
+          {
+            "name": "田丰",
+            "tactics": [
+              "揭竿而起"
+            ],
+            "tactics_complete": false,
+            "tactic_slots": null,
+            "position": null
+          },
+          {
+            "name": "徐晃",
+            "tactics": [],
+            "tactics_complete": false,
+            "tactic_slots": null,
+            "position": null
+          }
+        ]
+      }
+    ],
+    "reserves": [
+      "夏侯渊",
+      "蔡文姬"
+    ]
+  },
+  "advice": {
+    "status": "当前完整三队建议，游戏配置尚未确认执行",
+    "executed": false,
+    "verified_at": "2026-09-30",
+    "objective": "先保证两支主力争取两胜，第三队仍建立输出与补胜能力；不三队平均，不全辅助放弃第三队",
+    "teams": [
+      {
+        "team": 1,
+        "priority": "第一主力",
+        "label": "双减火攻叠增伤",
+        "formation": "箕形阵",
+        "members": [
+          {
+            "name": "夏侯惇",
+            "position": "前排",
+            "tactics": [
+              "固若金汤",
+              "趁火打劫"
+            ]
+          },
+          {
+            "name": "邓艾",
+            "position": "后排",
+            "tactics": [
+              "蓄势待发",
+              "烈火焚营"
+            ],
+            "recommended_stat_allocation": "全智力"
+          },
+          {
+            "name": "陆逊",
+            "position": "后排",
+            "tactics": [
+              "韬光养晦",
+              "奇正相生"
+            ],
+            "recommended_stat_allocation": "全智力"
+          }
+        ]
+      },
+      {
+        "team": 2,
+        "priority": "第二主力",
+        "label": "夏侯渊集中输出",
+        "formation": "方圆阵",
+        "members": [
+          {
+            "name": "曹操",
+            "position": "前排",
+            "tactics": [
+              "以静制动",
+              "披坚执锐"
+            ]
+          },
+          {
+            "name": "黄月英",
+            "position": "前排",
+            "tactics": [
+              "清风驱疾",
+              "知人善任"
+            ]
+          },
+          {
+            "name": "夏侯渊",
+            "position": "后排",
+            "tactics": [
+              "兵贵神速",
+              "摧坚克难"
+            ]
+          }
+        ]
+      },
+      {
+        "team": 3,
+        "priority": "第三队争取补胜，不拆两主力",
+        "label": "徐晃输出与控制辅助",
+        "formation": "雁形阵",
+        "members": [
+          {
+            "name": "貂蝉",
+            "position": "前排",
+            "tactics": [
+              "坚壁清野",
+              "水淹七军"
+            ]
+          },
+          {
+            "name": "法正",
+            "position": "前排",
+            "tactics": [
+              "任人唯贤",
+              "疾行侧击"
+            ]
+          },
+          {
+            "name": "徐晃",
+            "position": "后排",
+            "tactics": [
+              "威名显赫",
+              "临阵突袭"
+            ]
+          }
+        ]
+      }
+    ],
+    "support_changes": [
+      {
+        "kind": "general",
+        "from_name": "赵云",
+        "to_name": "曹操",
+        "advancement": 0,
+        "status": "建议",
+        "reason": "曹操直接提供第二主力减伤、倒戈/攻心及受伤条件恢复；以静+披坚是被动/指挥，不带主动互斥"
+      }
+    ],
+    "retain_support_tactics": [
+      "烈火焚营",
+      "摧坚克难"
+    ],
+    "reserves": [
+      "蔡文姬",
+      "田丰"
+    ],
+    "resource_check": {
+      "generals": 9,
+      "unique_generals": 9,
+      "learned_tactics": 18,
+      "unique_tactics": 18,
+      "main_team_learned_tactics": 12,
+      "third_team_has_output": true,
+      "formation_positions_valid": true,
+      "support_general_owned": true,
+      "support_general_advancement": 0,
+      "extra_purple_support_used": false
+    },
+    "alternatives": [
+      {
+        "name": "陆逊烈火与一队清风版",
+        "status": "备选结构，不与主方案同时装备",
+        "teams": [
+          {
+            "team": 1,
+            "members": [
+              {
+                "name": "夏侯惇",
+                "position": "前排",
+                "tactics": [
+                  "固若金汤",
+                  "趁火打劫"
+                ]
+              },
+              {
+                "name": "邓艾",
+                "position": "后排",
+                "tactics": [
+                  "蓄势待发",
+                  "清风驱疾"
+                ]
+              },
+              {
+                "name": "陆逊",
+                "position": "后排",
+                "tactics": [
+                  "韬光养晦",
+                  "烈火焚营"
+                ]
+              }
+            ],
+            "formation": "箕形阵"
+          },
+          {
+            "team": 2,
+            "members": [
+              {
+                "name": "曹操",
+                "position": "前排",
+                "tactics": [
+                  "以静制动",
+                  "披坚执锐"
+                ]
+              },
+              {
+                "name": "黄月英",
+                "position": "前排",
+                "tactics": [
+                  "奇正相生",
+                  "知人善任"
+                ]
+              },
+              {
+                "name": "夏侯渊",
+                "position": "后排",
+                "tactics": [
+                  "兵贵神速",
+                  "摧坚克难"
+                ]
+              }
+            ]
+          }
+        ],
+        "conditions": [
+          "另行调整先攻导致邓艾不再先于陆逊，或更需要一队清风驱散时再比较"
+        ],
+        "tradeoff": "邓艾蓄势清风、陆逊韬光烈火、二队黄月英奇正知人；不作战斗中可即时换法的承诺"
+      }
+    ],
+    "comparison": {
+      "primary_reason": "用户已确认默认两者全智时邓艾初始先攻高于陆逊，先铺火版升为主方案。第一队蓄势增幅夏侯惇/陆逊，邓艾烈火铺火、陆逊自带承接焚烧；奇正加强一队恢复输出，清风移二队。",
+      "growth_tactic": "蓄势放邓艾，确定作用两名队友夏侯惇和陆逊；不分给曹操，不要求增伤百分比直接与韬光相加。",
+      "baizhan": "百战仅常规库存拥有，不是本期已选。引入必须替换烈火或摧坚；本方案保留群体火攻和夏侯渊稳定输出，不凭空新增第三金支援位。",
+      "third_team": "徐晃用自带单体伤害及技穷、威名群伤/倒戈、临阵追击；貂蝉闭月协助输出，法正睹事提供非普攻触发恢复和追加谋略伤害。"
+    },
+    "limitations": [
+      "建议不等于执行，保留原生池、实际支援及截图历史；曹操替换是否可执行以当前锁定为准。",
+      "用户确认全智默认初始邓艾先攻高于陆逊；不填具体先攻，不保证战斗内增减益后仍同序，也不保证两个主动每轮都发动。原生红度未知，预览不证明已升级，紫色3/4红不反填本轮倍率。",
+      "第一队屯田前3回合也压低己方伤害；刚烈为受击概率针对来源降伤，双减不相加、不全程全体覆盖。",
+      "韬光只提升自带火烧连营发动率，不提升学习烈火；趁火准备1回合，火攻与混乱联动有条件。",
+      "以静只保护曹操与随机一名友军，不保证每轮覆盖夏侯渊；最高属性目标看实际属性，披坚优先前排不等于后排保护。",
+      "方圆提高普攻率，不是保证连击；兵贵先攻提升在普攻后，不假定首次行动前已生效。",
+      "徐晃伤害提升条件是目标已有技穷或最低兵力，不把本次新施技穷说成当次必然吃30%增伤；长驱技穷不是震慑。",
+      "貂蝉水淹、法正疾行主要取控制与非普攻触发，不按高兵刃伤害配置；任人随机两人，不保证固定命中徐晃。",
+      "闭月按历史用户确认机制使用；最高武力友军由游戏实际属性决定，额外一击不能会心。",
+      "阵型依据已存公共截图来源记录；不声称本期重新核图或经实战证明胜率最高。",
+      "单场最多8回合；续战保留兵力存活但重置buff，蓄势、韬光等需重新叠，不延续上一场满层。"
+    ],
+    "evidence_refs": [
+      "game/sources/2026-09-30-技能详情核定.md",
+      "notes/tasks/2026-09-04-州内阶段追加选卡.md#闭月联动校正"
+    ],
+    "supersedes_reason": "完成用户要求的三队稿并授权Git推送；第一队按讨论改箕形单前排，实际游戏仍未确认执行",
+    "confirmed_comparisons": [
+      {
+        "subjects": [
+          "邓艾",
+          "陆逊"
+        ],
+        "allocation": "两者默认全智力加点",
+        "initial_initiative_order": [
+          "邓艾",
+          "陆逊"
+        ],
+        "trust_status": "可信",
+        "source_type": "用户明确口述",
+        "source_quote": "邓艾和陆逊默认全智力加点的话，邓艾先攻就比陆逊高",
+        "verified_at": "2026-09-30",
+        "scope": "zhaoguohua/s2-2026-09-30默认配置下的相对初始先攻，不认证具体数值或战斗内恒定顺序"
+      }
+    ],
+    "formation_rationale": {
+      "primary": "箕形夏侯惇单前排、邓艾与陆逊后排：集中承伤，两名后排均有阵型增伤；后排仍可能受随机/群体伤害。",
+      "fallback": "若实际战报显示夏侯惇过早被击穿，可比较雁形夏侯惇与邓艾前排、陆逊后排；不把单前排当全部伤害必定集中。"
+    }
+  },
+  "uncertainties": [
+    "开赛日期未知；期次按项目首次记录日命名",
+    "本期武将和战法红度未单独核定，不从常规库存反填原生演武红度",
+    "未见支援标记的战法按本轮可见非支援记录保存，战法池总数未知",
+    "演武战法不作为常规库存拥有证明",
+    "当前队伍不作为推荐约束；未展示的现有装备不影响资源池重配",
+    "阵型采用已存公共历史截图记录；实际红度与支援锁定未知，建议未执行"
+  ],
+  "planning_request": {
+    "requested_at": "2026-09-30",
+    "source": "用户明确：只关心本轮已选武将、战法与最新常规库存，由助手评估支援更替并组成三队，不需关心目前队伍；用户纠正：先保证两队强度，第三队不能拆走主力核心资源；用户进一步明确：蓄势优先邓艾增幅夏侯惇与陆逊，趁火可给夏侯惇，第三队仍需有输出和补胜能力",
+    "current_lineup_is_constraint": false,
+    "current_equipment_is_required": false,
+    "request_current_lineup_screenshot": false,
+    "resource_inputs": [
+      "本期已选原生武将和战法",
+      "本期现有支援",
+      "zhaoguohua最新常规武将库存及已确认常规战法拥有记录"
+    ],
+    "allowed_changes": [
+      "重新选择9名上阵武将",
+      "重新分配全部学习战法",
+      "评估是否替换支援赵云",
+      "评估是否替换支援烈火焚营和摧坚克难"
+    ],
+    "output_target": "有可信技能机制支持的最终三队与明确的支援保留/替换建议",
+    "recommendation_is_execution": false,
+    "evidence_gate": "缺乏可靠机制或来源冲突时先核实，不以旧网页、旧脚本文字或适配标签猜测定案",
+    "objective": "先保证两支主力争取两胜，第三队仍建立输出与补胜能力；不三队平均，不全辅助放弃第三队",
+    "confirmed_defaults": [
+      {
+        "subjects": [
+          "邓艾",
+          "陆逊"
+        ],
+        "allocation": "两者默认全智力加点",
+        "initial_initiative_order": [
+          "邓艾",
+          "陆逊"
+        ],
+        "trust_status": "可信",
+        "source_type": "用户明确口述",
+        "source_quote": "邓艾和陆逊默认全智力加点的话，邓艾先攻就比陆逊高",
+        "verified_at": "2026-09-30",
+        "scope": "zhaoguohua/s2-2026-09-30默认配置下的相对初始先攻，不认证具体数值或战斗内恒定顺序"
+      }
+    ],
+    "publish_authorization": {
+      "date": "2026-09-30",
+      "request": "给出三队完整阵容并push到云端",
+      "scope": "本次连续任务相关库存、公共技能、演武方案及验证文件"
+    }
+  }
+}

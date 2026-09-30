@@ -1,44 +1,84 @@
 {
   "files": [
     {
-      "file": "f16363065656b76fbc1fe06fbe4eab4ff6e320c6c1081a90b4c9e1edddabae78.jpg",
-      "sha256": "f16363065656b76fbc1fe06fbe4eab4ff6e320c6c1081a90b4c9e1edddabae78",
-      "bytes": 949024
+      "file": "259b831f234660d90c9bf1fcc4a025cef6df2bcd324de93a62e16000d96c35ec.jpg",
+      "sha256": "259b831f234660d90c9bf1fcc4a025cef6df2bcd324de93a62e16000d96c35ec",
+      "bytes": 376398,
+      "availability": "local_only",
+      "evidence_id": "sha256:259b831f234660d90c9bf1fcc4a025cef6df2bcd324de93a62e16000d96c35ec",
+      "transcription_ref": "user/zhaoguohua/evidence/current/截图转译.md#image-259b831f234660d90c9bf1fcc4a025cef6df2bcd324de93a62e16000d96c35ec",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:259b831f234660d90c9bf1fcc4a025cef6df2bcd324de93a62e16000d96c35ec -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确S2常规武将库存；逐卡核对明确显示字段，不认证技能正文",
+      "verified_fields": [
+        "name",
+        "variant",
+        "quality",
+        "faction",
+        "level",
+        "advancement"
+      ]
     },
     {
-      "file": "95b6764f4c6215401489605ec4881b1d00cdb4f19fddef96da46c847701d71ff.jpg",
-      "sha256": "95b6764f4c6215401489605ec4881b1d00cdb4f19fddef96da46c847701d71ff",
-      "bytes": 1151423
+      "file": "a2d7e1006b36632a4ab0325b0a27f8515eb9572ac24195570e3005f2db31d204.jpg",
+      "sha256": "a2d7e1006b36632a4ab0325b0a27f8515eb9572ac24195570e3005f2db31d204",
+      "bytes": 383846,
+      "availability": "local_only",
+      "evidence_id": "sha256:a2d7e1006b36632a4ab0325b0a27f8515eb9572ac24195570e3005f2db31d204",
+      "transcription_ref": "user/zhaoguohua/evidence/current/截图转译.md#image-a2d7e1006b36632a4ab0325b0a27f8515eb9572ac24195570e3005f2db31d204",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a2d7e1006b36632a4ab0325b0a27f8515eb9572ac24195570e3005f2db31d204 -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确S2常规武将库存；逐卡核对明确显示字段，不认证技能正文",
+      "verified_fields": [
+        "name",
+        "variant",
+        "quality",
+        "faction",
+        "level",
+        "advancement"
+      ]
     },
     {
-      "file": "382fc7acf6da2b7514cac208951ba380957c274c1d352acae2dc527012720adc.jpg",
-      "sha256": "382fc7acf6da2b7514cac208951ba380957c274c1d352acae2dc527012720adc",
-      "bytes": 1095937
+      "file": "edc058ef33f54f1fc65b1556510438b06266494624e0cc02bc7b1cc147b1b3b6.jpg",
+      "sha256": "edc058ef33f54f1fc65b1556510438b06266494624e0cc02bc7b1cc147b1b3b6",
+      "bytes": 383755,
+      "availability": "local_only",
+      "evidence_id": "sha256:edc058ef33f54f1fc65b1556510438b06266494624e0cc02bc7b1cc147b1b3b6",
+      "transcription_ref": "user/zhaoguohua/evidence/current/截图转译.md#image-edc058ef33f54f1fc65b1556510438b06266494624e0cc02bc7b1cc147b1b3b6",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:edc058ef33f54f1fc65b1556510438b06266494624e0cc02bc7b1cc147b1b3b6 -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确S2常规武将库存；逐卡核对明确显示字段，不认证技能正文",
+      "verified_fields": [
+        "name",
+        "variant",
+        "quality",
+        "faction",
+        "level",
+        "advancement"
+      ]
     },
     {
-      "file": "7eb38b5d31070dfc747c2afe825fb579b2cabedb60b73bc61d6cd36bf2bbea04.jpg",
-      "sha256": "7eb38b5d31070dfc747c2afe825fb579b2cabedb60b73bc61d6cd36bf2bbea04",
-      "bytes": 1150146
-    },
-    {
-      "file": "4b645efbe43cd69036fae8bc2aa07ecda777f5f563b3b98535886fb4cdbe4214.jpg",
-      "sha256": "4b645efbe43cd69036fae8bc2aa07ecda777f5f563b3b98535886fb4cdbe4214",
-      "bytes": 1280630
-    },
-    {
-      "file": "cf1a390e0ff4c4cfffa9be66fcd9169a5fb52ed4b30320d34c2cf4d370092fe7.jpg",
-      "sha256": "cf1a390e0ff4c4cfffa9be66fcd9169a5fb52ed4b30320d34c2cf4d370092fe7",
-      "bytes": 1311847
-    },
-    {
-      "file": "8bfd2e5238edc18d2dc13374b563163c4614b7c2441134e3d90c8ec0bf16b8c2.jpg",
-      "sha256": "8bfd2e5238edc18d2dc13374b563163c4614b7c2441134e3d90c8ec0bf16b8c2",
-      "bytes": 1305252
-    },
-    {
-      "file": "90b153d20b99a9d85da57a015c043d57538c6f803c0a1ff20bea6f5b48865e69.jpg",
-      "sha256": "90b153d20b99a9d85da57a015c043d57538c6f803c0a1ff20bea6f5b48865e69",
-      "bytes": 1232786
+      "file": "e0a02f923f6e09c0762d68395e56873615da33c801a5363340c82f6c8c684a5e.jpg",
+      "sha256": "e0a02f923f6e09c0762d68395e56873615da33c801a5363340c82f6c8c684a5e",
+      "bytes": 395370,
+      "availability": "local_only",
+      "evidence_id": "sha256:e0a02f923f6e09c0762d68395e56873615da33c801a5363340c82f6c8c684a5e",
+      "transcription_ref": "user/zhaoguohua/evidence/current/截图转译.md#image-e0a02f923f6e09c0762d68395e56873615da33c801a5363340c82f6c8c684a5e",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:e0a02f923f6e09c0762d68395e56873615da33c801a5363340c82f6c8c684a5e -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确S2常规武将库存；逐卡核对明确显示字段，不认证技能正文",
+      "verified_fields": [
+        "name",
+        "variant",
+        "quality",
+        "faction",
+        "level",
+        "advancement"
+      ]
     }
   ]
 }

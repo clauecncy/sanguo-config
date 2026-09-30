@@ -1,0 +1,165 @@
+{
+  "user_id": "zhaoguohua",
+  "event_id": "s2-2026-09-30",
+  "files": [
+    {
+      "path": "证据/32e5b21546cac631e5437f2e096c7f4.jpg",
+      "sha256": "9aeee89df55f737910be6b2e074187d9fc855d478b0e13d7677b90f34c7ece7e",
+      "bytes": 228596,
+      "evidence_id": "sha256:9aeee89df55f737910be6b2e074187d9fc855d478b0e13d7677b90f34c7ece7e",
+      "availability": "local_only",
+      "role": "本期战法库滚动截图",
+      "transcription_ref": "user/zhaoguohua/演武/s2-2026-09-30/截图转译.md#image-9aeee89df55f737910be6b2e074187d9fc855d478b0e13d7677b90f34c7ece7e",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:9aeee89df55f737910be6b2e074187d9fc855d478b0e13d7677b90f34c7ece7e -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确演武归属，人工核对截图显示字段；部分页面不认证完整仓库或完整技能效果",
+      "verified_fields": [
+        "name",
+        "quality",
+        "level",
+        "tactic_type",
+        "activation_rate",
+        "equipped_by",
+        "support_status"
+      ],
+      "size": 228596
+    },
+    {
+      "path": "证据/3c55ea8561db9c86021e060f602a0c4.jpg",
+      "sha256": "7531381b0e9e37e46e46c15c4886afead12cd98c3af74d540e5dcfab0ee20e13",
+      "bytes": 218871,
+      "evidence_id": "sha256:7531381b0e9e37e46e46c15c4886afead12cd98c3af74d540e5dcfab0ee20e13",
+      "availability": "local_only",
+      "role": "本期战法库滚动截图",
+      "transcription_ref": "user/zhaoguohua/演武/s2-2026-09-30/截图转译.md#image-7531381b0e9e37e46e46c15c4886afead12cd98c3af74d540e5dcfab0ee20e13",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:7531381b0e9e37e46e46c15c4886afead12cd98c3af74d540e5dcfab0ee20e13 -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确演武归属，人工核对截图显示字段；部分页面不认证完整仓库或完整技能效果",
+      "verified_fields": [
+        "name",
+        "quality",
+        "level",
+        "tactic_type",
+        "activation_rate",
+        "equipped_by",
+        "support_status"
+      ],
+      "size": 218871
+    },
+    {
+      "path": "证据/bc2d2bcc91b57090241c9e75c0de820.jpg",
+      "sha256": "a660246bb8a528f41e3040c3b5232654a64713f27832fc990274756b79d9d6a8",
+      "bytes": 228886,
+      "evidence_id": "sha256:a660246bb8a528f41e3040c3b5232654a64713f27832fc990274756b79d9d6a8",
+      "availability": "local_only",
+      "role": "本期战法库滚动截图",
+      "transcription_ref": "user/zhaoguohua/演武/s2-2026-09-30/截图转译.md#image-a660246bb8a528f41e3040c3b5232654a64713f27832fc990274756b79d9d6a8",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a660246bb8a528f41e3040c3b5232654a64713f27832fc990274756b79d9d6a8 -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确演武归属，人工核对截图显示字段；部分页面不认证完整仓库或完整技能效果",
+      "verified_fields": [
+        "name",
+        "quality",
+        "level",
+        "tactic_type",
+        "activation_rate",
+        "equipped_by",
+        "support_status"
+      ],
+      "size": 228886
+    },
+    {
+      "path": "证据/c65f66690187f4c66c4ac036a6dbbfa.jpg",
+      "sha256": "b025a62c4a43f87f00e2f5169cf18869dd58415436ddb93877668cc1bc047fee",
+      "bytes": 228540,
+      "evidence_id": "sha256:b025a62c4a43f87f00e2f5169cf18869dd58415436ddb93877668cc1bc047fee",
+      "availability": "local_only",
+      "role": "本期战法库滚动截图",
+      "transcription_ref": "user/zhaoguohua/演武/s2-2026-09-30/截图转译.md#image-b025a62c4a43f87f00e2f5169cf18869dd58415436ddb93877668cc1bc047fee",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:b025a62c4a43f87f00e2f5169cf18869dd58415436ddb93877668cc1bc047fee -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确演武归属，人工核对截图显示字段；部分页面不认证完整仓库或完整技能效果",
+      "verified_fields": [
+        "name",
+        "quality",
+        "level",
+        "tactic_type",
+        "activation_rate",
+        "equipped_by",
+        "support_status"
+      ],
+      "size": 228540
+    },
+    {
+      "path": "证据/codex-clipboard-91e07eec-537a-4e81-901f-a320208d19d2.jpg",
+      "sha256": "38f711ca85f1140340f6420f5bb57c6fe2160c0f31bc8f6dfcf4ebe8dc2bf6c6",
+      "bytes": 273259,
+      "evidence_id": "sha256:38f711ca85f1140340f6420f5bb57c6fe2160c0f31bc8f6dfcf4ebe8dc2bf6c6",
+      "availability": "local_only",
+      "role": "本期武将库及三队归属",
+      "transcription_ref": "user/zhaoguohua/演武/s2-2026-09-30/截图转译.md#image-38f711ca85f1140340f6420f5bb57c6fe2160c0f31bc8f6dfcf4ebe8dc2bf6c6",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:38f711ca85f1140340f6420f5bb57c6fe2160c0f31bc8f6dfcf4ebe8dc2bf6c6 -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确演武归属，人工核对截图显示字段；部分页面不认证完整仓库或完整技能效果",
+      "verified_fields": [
+        "name",
+        "quality",
+        "level",
+        "team",
+        "support_status"
+      ],
+      "size": 273259
+    },
+    {
+      "path": "证据/d5149aa58ccbda42661789715dfb086.jpg",
+      "sha256": "8bc94cf35ef1953decc2e15e0a397980953fbd169c07e69b25ef76edab2809c4",
+      "bytes": 242933,
+      "evidence_id": "sha256:8bc94cf35ef1953decc2e15e0a397980953fbd169c07e69b25ef76edab2809c4",
+      "availability": "local_only",
+      "role": "本期战法库滚动截图",
+      "transcription_ref": "user/zhaoguohua/演武/s2-2026-09-30/截图转译.md#image-8bc94cf35ef1953decc2e15e0a397980953fbd169c07e69b25ef76edab2809c4",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:8bc94cf35ef1953decc2e15e0a397980953fbd169c07e69b25ef76edab2809c4 -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确演武归属，人工核对截图显示字段；部分页面不认证完整仓库或完整技能效果",
+      "verified_fields": [
+        "name",
+        "quality",
+        "level",
+        "tactic_type",
+        "activation_rate",
+        "equipped_by",
+        "support_status"
+      ],
+      "size": 242933
+    },
+    {
+      "path": "证据/e875d14f8c02ad0bbc733725f64d854.jpg",
+      "sha256": "a4777971c3bef569a258868520b4d27d8c130b07bc878efa9cfdac5ea5f6dfbe",
+      "bytes": 243604,
+      "evidence_id": "sha256:a4777971c3bef569a258868520b4d27d8c130b07bc878efa9cfdac5ea5f6dfbe",
+      "availability": "local_only",
+      "role": "本期战法库滚动截图",
+      "transcription_ref": "user/zhaoguohua/演武/s2-2026-09-30/截图转译.md#image-a4777971c3bef569a258868520b4d27d8c130b07bc878efa9cfdac5ea5f6dfbe",
+      "transcription_status": "verified_text",
+      "transcription_marker": "<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:a4777971c3bef569a258868520b4d27d8c130b07bc878efa9cfdac5ea5f6dfbe -->",
+      "trust_status": "可信",
+      "trust_reason": "用户明确演武归属，人工核对截图显示字段；部分页面不认证完整仓库或完整技能效果",
+      "verified_fields": [
+        "name",
+        "quality",
+        "level",
+        "tactic_type",
+        "activation_rate",
+        "equipped_by",
+        "support_status"
+      ],
+      "size": 243604
+    }
+  ]
+}
