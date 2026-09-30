@@ -1,9 +1,13 @@
 """Return a small task reading list; missing identities require conversation."""
 import argparse
 import json
-from project_data import ROOT, event_dir, read_json, user_dir
+from project_data import ROOT, event_dir, user_dir, season_context
 
-def route(task, user=None, event=None, root=ROOT):
+def route(task, user=None, event=None, root=ROOT, *, season=None):
+    if task not in ('inventory', 'events', 'formations'):
+        raise ValueError('Unknown task')
+    if season is not None and task != 'formations':
+        raise ValueError('--season only applies to formations planning')
     if not user:
         return {'status':'ask_user','question':'本次更新 bixianjue 还是 zhaoguohua 的库存？' if task=='inventory' else '本次操作哪个用户？','files':[]}
     base=user_dir(user,root)
@@ -22,16 +26,24 @@ def route(task, user=None, event=None, root=ROOT):
         files.append('game/facts.json')
         return {'status':'ready','files':files,
                 'additional':'仅读取本期与问题有关的记录；支援核对才读常规库存'}
-    season=read_json(base/'profile.json')['current_season']
-    return {'status':'ready','files':['docs/workflows/formations.md',prefix+'/profile.json',prefix+'/inventory.json',f'references/{season}/README.md']}
+    context = season_context(user, root, season=season)
+    reference = f'references/{context["query_season"]}/README.md'
+    files = ['docs/workflows/formations.md',prefix+'/profile.json',prefix+'/inventory.json']
+    available = (root/reference).is_file()
+    if available:
+        files.append(reference)
+    return {'status':'ready','context':context,'files':files,
+            'reference_status':'available' if available else 'missing',
+            'additional':'缺少目标赛季参考时不冒用旧赛季模板；库存赛季和核定日期以inventory.json为准，转季不代表库存已更新'}
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--task',choices=['inventory','formations','events'],required=True)
     p.add_argument('--user')
     p.add_argument('--event')
+    p.add_argument('--season',help='Explicit formation planning season; does not change the profile.')
     args=p.parse_args()
-    try: print(json.dumps(route(args.task,args.user,args.event),ensure_ascii=False,indent=2))
+    try: print(json.dumps(route(args.task,args.user,args.event,season=args.season),ensure_ascii=False,indent=2))
     except (ValueError,OSError) as e: p.exit(1,str(e)+'\n')
 
 if __name__=='__main__': main()

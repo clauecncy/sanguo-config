@@ -8,6 +8,8 @@
 
 账号查询只在内存中建立 `v_owned_generals` 和 `v_owned_tactics`。公共文件中不含账号表，不复制公共数据库作为新的个人运行库。迁移验收后的旧库存和 SQLite 副本已清理，不再生成多个库存版本。
 
+账号 `profile.json.current_season` 与库存 `inventory.json.season` 分别表示实际当前赛季和库存来源赛季。计划转季用 `planned_season_transition` 保存 `season/planned_date/status=planned/recorded_at/source`，不自动生效，不回写库存或历史演武。常规查询返回 `context`；显式 `--season` 仅供只读预配。已核机制事实按平台、赛季严格匹配，不跨版本借填。详见 [配将操作](workflows/formations.md)。
+
 演武 `event.json` 明确所有者、赛季和首次记录日期；`start_date=null` 表示开赛日期未知。索引只导航，不作为用户确认当前期次的替代。
 
 来源中的截图路径可以指向个人证据，不复制图片。`evidence-index.json` 记录迁移后的路径与校验值；历史来源中的旧路径由迁移清单映射。

@@ -10,6 +10,8 @@
 - 库存任务只读 `docs/workflows/inventory.md`、指定账号的 `profile.json`、`inventory.json` 和本次图片。有歧义才定向查询公共实体或相关证据。默认不读演武、配将参考、其他账号、完整变更记录、历史综合长文，不为找库存遍历全项目。
 - 可运行 `python scripts/task_context.py --task inventory --user <明确账号>` 获取最小读取清单；未指定账号时该入口只返回询问，不读取任何个人库存。
 - 常规配将读 `docs/workflows/formations.md`，然后读取指定用户库存、相关赛季参考和必要规则。
+- 当前账号赛季以 `profile.json.current_season` 为准，计划转季保存在 `planned_season_transition`，不因日期到达自动当成已完成。库存 `season` 是来源赛季；转季不得清空库存、重写旧证据赛季或改名历史演武。
+- 明确下赛季预配可用 `--season` 只读查询；缺少目标赛季参考或机制证据时按需确认，不冒用旧赛季模板或继承旧赛季可信结论。
 - 演武任务读 `docs/workflows/events.md`，明确用户和期次后只读本期资料。需要核对支援时才读常规库存。
 - 演武期次统一按 `赛季-本轮首次配置日期` 命名，开赛日期单独记录，未知留空；不按开赛日期命名。
 - 公共数据任务读 `docs/workflows/game.md`。只有项目维护/结构迁移任务才可按需跨账号核验。

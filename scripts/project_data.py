@@ -1,6 +1,7 @@
 """Shared public catalog and explicitly scoped, JSON-backed user inventories."""
 from __future__ import annotations
 import copy
+from datetime import date
 import json
 import os
 from pathlib import Path
@@ -50,6 +51,38 @@ def event_dir(user, event, root=ROOT):
     data = read_json(path / 'event.json')
     if data['user_id'] != user or data['event_id'] != event: raise ValueError('Event ownership mismatch')
     return path
+
+def validate_season(season):
+    if not isinstance(season, str) or not re.fullmatch(r's[1-9]\d*', season):
+        raise ValueError('Season must be s1, s2, s3, ...')
+    return season
+
+def load_profile(user, root=ROOT):
+    profile = read_json(user_dir(user, root) / 'profile.json')
+    validate_season(profile.get('current_season'))
+    if not isinstance(profile.get('platform'), str) or not profile['platform'].strip():
+        raise ValueError('Profile requires a platform')
+    transition = profile.get('planned_season_transition')
+    if transition is not None:
+        if not isinstance(transition, dict) or transition.get('status') != 'planned':
+            raise ValueError('Invalid planned season transition')
+        target = validate_season(transition.get('season'))
+        if int(target[1:]) <= int(profile['current_season'][1:]):
+            raise ValueError('Planned season must follow current season')
+        try:
+            date.fromisoformat(transition['planned_date'])
+        except (KeyError, TypeError, ValueError) as exc:
+            raise ValueError('Planned transition requires an ISO date') from exc
+        if not transition.get('source') or not transition.get('recorded_at'):
+            raise ValueError('Planned transition requires provenance')
+    return profile
+
+def season_context(user, root=ROOT, *, season=None):
+    profile = load_profile(user, root)
+    target = validate_season(season) if season is not None else profile['current_season']
+    return {'platform': profile['platform'], 'current_season': profile['current_season'],
+            'query_season': target, 'mode': 'current' if target == profile['current_season'] else 'planning',
+            'planned_transition': profile.get('planned_season_transition')}
 
 def public_connection(root=ROOT):
     c = sqlite3.connect((root / 'game/game.sqlite3').resolve().as_uri()+'?mode=ro', uri=True, factory=ClosingConnection)
@@ -198,8 +231,9 @@ def update_inventory(user, patch, replace=False, root=ROOT, images=None):
     finally:
         lock.unlink()
 
-def query(user, root=ROOT):
+def query(user, root=ROOT, *, season=None):
     """In-memory joins only; public file and other accounts are never written."""
+    context = season_context(user, root, season=season)
     payload = load_inventory(user,root)
     c = sqlite3.connect(':memory:',factory=ClosingConnection)
     with public_connection(root) as source: source.backup(c)
@@ -211,11 +245,10 @@ def query(user, root=ROOT):
     for group in ['generals','tactics']:
         c.executemany(f'INSERT INTO owned_{group} VALUES(?)',[(json.dumps(r,ensure_ascii=False),) for r in payload[group]])
     from catalog_effects import select_effect
-    profile = read_json(user_dir(user, root) / 'profile.json')
     c.execute('CREATE TEMP TABLE selected_effects(name TEXT PRIMARY KEY, record TEXT NOT NULL)')
     for row in payload['tactics']:
         effect = select_effect(c, row['name'], level=10, advancement=row.get('advancement'),
-                               platform=profile['platform'], season=profile['current_season'])
+                               platform=context['platform'], season=context['query_season'])
         c.execute('INSERT INTO selected_effects VALUES(?,?)', (row['name'], json.dumps(effect, ensure_ascii=False)))
     c.executescript('''
       CREATE TEMP VIEW v_owned_generals AS
@@ -262,20 +295,25 @@ def query(user, root=ROOT):
     ''')
     return c
 
-def summary(user, root=ROOT):
-    with query(user,root) as c:
+def summary(user, root=ROOT, *, season=None):
+    context = season_context(user, root, season=season)
+    with query(user,root,season=season) as c:
         data = {g:[dict(r) for r in c.execute(f'SELECT * FROM v_owned_{g} ORDER BY name')] for g in ['generals','tactics']}
     data['user_id'] = user
+    inventory = load_inventory(user, root)
+    data['context'] = dict(context, inventory_season=inventory.get('season'),
+                           inventory_verified_at=inventory.get('verified_at'),
+                           inventory_is_query_season=inventory.get('season') == context['query_season'])
     data['counts'] = {g:len(data[g]) for g in ['generals','tactics']}
-    data['unresolved'] = validate_inventory(load_inventory(user,root),root)
+    data['unresolved'] = validate_inventory(inventory,root)
     from catalog_effects import facts_for
-    data['verified_mechanisms'] = facts_for(root, [r['name'] for g in ('generals','tactics') for r in data[g]])
+    data['verified_mechanisms'] = facts_for(root, [r['name'] for g in ('generals','tactics') for r in data[g]],
+                                           platform=context['platform'], season=context['query_season'])
     return data
 
-def candidates(user, root=ROOT):
-    data = summary(user,root)
-    profile = read_json(user_dir(user,root)/'profile.json')
-    season = profile['current_season']
+def candidates(user, root=ROOT, *, season=None):
+    data = summary(user,root,season=season)
+    season = data['context']['query_season']
     data['generals'] = [r for r in data['generals'] if r['availability']=='常驻' and r['variant']=='普通']
     for group in ['generals','tactics']:
         selected=[]
@@ -286,7 +324,7 @@ def candidates(user, root=ROOT):
                 if int(first[1:]) > int(season[1:]): continue
             applicable=json.loads(row['applicable_seasons']) if row['applicable_seasons'] else None
             if applicable is not None and season not in applicable: continue
-            if row['platform'] is not None and row['platform'] != profile['platform']: continue
+            if row['platform'] is not None and row['platform'] != data['context']['platform']: continue
             row['season_status'] = '已标注适用' if applicable else '适用范围待核，首发赛季不等于仅限该赛季'
             selected.append(row)
         data[group]=selected

@@ -2,6 +2,13 @@
   "user_id": "bixianjue",
   "platform": "Steam",
   "current_season": "s2",
+  "planned_season_transition": {
+    "season": "s3",
+    "planned_date": "2026-10-02",
+    "status": "planned",
+    "recorded_at": "2026-09-30",
+    "source": "用户说明10月2日将进入S3；计划不自动改写当前赛季，实际进入后确认"
+  },
   "inventory_tracking": {
     "track_current_levels": false,
     "track_advancement": true,

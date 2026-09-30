@@ -15,9 +15,11 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from project_data import (load_inventory, prepare_update, update_inventory, user_dir,
                           event_dir, query, read_json, validate_inventory, candidates)
+from project_data import atomic_json, load_profile, season_context, summary
 from sync_game_data import rebuild, validate_public
 from task_context import route
 from inventory_evidence import cleanup_incoming, remove_owned
+from verify_project import verify_events
 
 def hashes(path):
     return {p.relative_to(path).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in path.rglob('*') if p.is_file()}
@@ -262,6 +264,10 @@ class InventoryTests(unittest.TestCase):
         self.assertNotIn('周瑜',[r['name'] for r in candidates('bixianjue',self.root)['generals']])
 
     def test_future_and_unknown_seasons_differ(self):
+        profile_path = self.root/'user/zhaoguohua/profile.json'
+        profile = read_json(profile_path)
+        profile['current_season'] = 's1'
+        atomic_json(profile_path, profile)
         name=load_inventory('zhaoguohua',self.root)['generals'][0]['name']
         with closing(sqlite3.connect(self.root/'game/game.sqlite3')) as c:
             c.execute("UPDATE generals SET first_season='s2',applicable_seasons=NULL WHERE name=?",(name,))
@@ -273,6 +279,85 @@ class InventoryTests(unittest.TestCase):
         row=next(r for r in candidates('zhaoguohua',self.root)['generals'] if r['name']==name)
         self.assertIsNone(row['first_season'])
         self.assertIn('待核',row['season_status'])
+
+    def test_planned_transition_never_changes_current_or_inventory(self):
+        profile_path = self.root/'user/bixianjue/profile.json'
+        profile = read_json(profile_path)
+        profile['planned_season_transition'] = dict(season='s3', planned_date='2000-01-01',
+                                                  status='planned', recorded_at='2000-01-01', source='test')
+        atomic_json(profile_path, profile)
+        before = hashes(self.root/'user')
+        current = season_context('bixianjue', self.root)
+        self.assertEqual(current['query_season'], 's2')
+        planned = candidates('bixianjue', self.root, season='s3')
+        self.assertEqual(planned['context']['query_season'], 's3')
+        self.assertEqual(planned['context']['mode'], 'planning')
+        self.assertEqual(planned['context']['inventory_season'], 's2')
+        self.assertFalse(planned['context']['inventory_is_query_season'])
+        self.assertEqual(planned['verified_mechanisms'], [])
+        self.assertTrue(all(r['max_level_effect'] is None for r in planned['tactics']))
+        self.assertEqual(before, hashes(self.root/'user'))
+
+    def test_profile_rejects_invalid_season_and_plan(self):
+        path = self.root/'user/bixianjue/profile.json'
+        original = read_json(path)
+        for invalid in ('S3', 's0', '../s3', None):
+            profile = dict(original, current_season=invalid)
+            atomic_json(path, profile)
+            with self.assertRaises(ValueError): load_profile('bixianjue', self.root)
+        for field, value in [('season', 's1'), ('planned_date', '2026-02-30'), ('status', 'confirmed')]:
+            profile = copy.deepcopy(original)
+            profile['planned_season_transition'][field] = value
+            atomic_json(path, profile)
+            with self.assertRaises(ValueError): load_profile('bixianjue', self.root)
+
+    def test_current_season_does_not_relabel_inventory(self):
+        data = summary('zhaoguohua', self.root)
+        self.assertEqual(data['context']['current_season'], 's2')
+        self.assertEqual(data['context']['inventory_season'], 's1')
+        self.assertFalse(data['context']['inventory_is_query_season'])
+
+    def test_context_missing_season_reference_is_explicit(self):
+        result = route('formations', 'bixianjue', root=self.root, season='s3')
+        self.assertEqual(result['reference_status'], 'missing')
+        self.assertEqual(result['context']['mode'], 'planning')
+        self.assertFalse(any(f.startswith('references/') for f in result['files']))
+        reference = self.root/'references/s3/README.md'
+        reference.parent.mkdir(parents=True)
+        reference.write_text('test', encoding='utf-8')
+        result = route('formations', 'bixianjue', root=self.root, season='s3')
+        self.assertEqual(result['reference_status'], 'available')
+        self.assertIn('references/s3/README.md', result['files'])
+        for task in ('inventory', 'events'):
+            with self.assertRaises(ValueError): route(task, 'bixianjue', root=self.root, season='s3')
+
+    def test_event_index_checks_current_duplicates_and_omissions(self):
+        path = self.root/'user/bixianjue/演武/index.json'
+        original = read_json(path)
+        self.assertEqual(verify_events('bixianjue', self.root), len(original['events']))
+        cases = [dict(original, current_event='s3-2026-10-02'),
+                 dict(original, events=original['events'] + [original['events'][0]]),
+                 dict(original, events=original['events'][:-1], current_event=original['events'][0])]
+        for index in cases:
+            atomic_json(path, index)
+            with self.assertRaises(ValueError): verify_events('bixianjue', self.root)
+
+    def test_event_season_is_historical_not_profile_season(self):
+        self.assertEqual(verify_events('zhaoguohua', self.root), 2)
+        path = self.root/'user/zhaoguohua/演武/s1-2026-09-16/event.json'
+        event = read_json(path)
+        event['season'] = 's2'
+        atomic_json(path, event)
+        with self.assertRaisesRegex(ValueError, 'Event season'):
+            verify_events('zhaoguohua', self.root)
+
+    def test_cli_rejects_planning_on_write_commands(self):
+        before = hashes(ROOT/'user')
+        result = subprocess.run([sys.executable, str(ROOT/'scripts/account_inventory.py'),
+                                 '--user', 'bixianjue', 'report', '--season', 's3'], capture_output=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn(b'--season only applies', result.stderr)
+        self.assertEqual(before, hashes(ROOT/'user'))
 
     def test_context_missing_user_asks_before_reading(self):
         result=route('inventory',root=self.root)

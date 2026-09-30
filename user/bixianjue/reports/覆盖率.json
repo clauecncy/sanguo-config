@@ -4,5 +4,21 @@
     "tactics": 65
   },
   "unresolved": [],
-  "known_max_level_details": 34
+  "context": {
+    "platform": "Steam",
+    "current_season": "s2",
+    "query_season": "s2",
+    "mode": "current",
+    "planned_transition": {
+      "season": "s3",
+      "planned_date": "2026-10-02",
+      "status": "planned",
+      "recorded_at": "2026-09-30",
+      "source": "用户说明10月2日将进入S3；计划不自动改写当前赛季，实际进入后确认"
+    },
+    "inventory_season": "s2",
+    "inventory_verified_at": "2026-09-10",
+    "inventory_is_query_season": true
+  },
+  "known_max_level_details": 1
 }

@@ -37,10 +37,13 @@ def select_effect(c, name, *, level=10, advancement=None, platform=None, season=
     return result
 
 
-def facts_for(root, names):
+def facts_for(root, names, *, platform=None, season=None):
     path = root / 'game/facts.json'
     if not path.exists():
         return []
     names = set(names)
     return [f for f in json.loads(path.read_text(encoding='utf-8'))['facts']
-            if f['status'] == 'active' and names.intersection(f['subjects'])]
+            if f['status'] == 'active' and f.get('trust_status') == '可信'
+            and names.intersection(f['subjects'])
+            and (platform is None or f.get('platform') == platform)
+            and (season is None or f.get('season') == season)]

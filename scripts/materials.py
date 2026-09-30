@@ -322,7 +322,7 @@ def main():
             with public_connection() as c:
                 result = select_effect(c,args.name,level=args.level,advancement=args.advancement,
                                        platform=event['platform'],season=event['season'],scope=args.scope)
-            result['mechanisms'] = facts_for(ROOT,[args.name])
+            result['mechanisms'] = facts_for(ROOT,[args.name],platform=event['platform'],season=event['season'])
             print(json.dumps(result,ensure_ascii=False,indent=2))
             return
         with material_lock(ROOT):

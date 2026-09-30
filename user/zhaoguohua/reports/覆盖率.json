@@ -4,5 +4,15 @@
     "tactics": 66
   },
   "unresolved": [],
-  "known_max_level_details": 24
+  "context": {
+    "platform": "Steam",
+    "current_season": "s2",
+    "query_season": "s2",
+    "mode": "current",
+    "planned_transition": null,
+    "inventory_season": "s1",
+    "inventory_verified_at": "2026-09-16",
+    "inventory_is_query_season": false
+  },
+  "known_max_level_details": 0
 }

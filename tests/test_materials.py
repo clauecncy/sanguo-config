@@ -9,7 +9,7 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from project_data import ROOT, read_json, public_connection, atomic_json
 from catalog_trust import classify
-from catalog_effects import select_effect
+from catalog_effects import select_effect, facts_for
 from materials import memory_catalog, migrate, import_evidence, update_state
 from material_transaction import publish, rollback, digest, material_lock, safe_target
 from event_state import validate_state
@@ -44,6 +44,24 @@ class EffectTests(unittest.TestCase):
         self.assertIn('113.3%',one['effect'])
         self.assertIsNone(select_effect(self.c,'断敌粮道',advancement=1,season='s99')['effect'])
         self.assertIsNone(select_effect(self.c,'断敌粮道',advancement=1,platform='other')['effect'])
+
+    def test_facts_require_matching_platform_season_and_trust(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'tests') as directory:
+            root = Path(directory)
+            (root/'game').mkdir()
+            facts = [dict(id='valid', subjects=['小乔'], status='active', trust_status='可信',
+                          platform='Steam', season='s2')]
+            for identifier, changes in [('other-season', {'season':'s1'}),
+                                         ('other-platform', {'platform':'mobile'}),
+                                         ('unknown-season', {'season':None}),
+                                         ('untrusted', {'trust_status':'需要确认'}),
+                                         ('retired', {'status':'retracted'})]:
+                facts.append(dict(facts[0], id=identifier, **changes))
+            atomic_json(root/'game/facts.json', {'facts':facts})
+            selected = facts_for(root, ['小乔'], platform='Steam', season='s2')
+            self.assertEqual([f['id'] for f in selected], ['valid'])
+            self.assertEqual(facts_for(root, ['小乔'], platform='Steam', season='s3'), [])
+            self.assertEqual(facts_for(root, ['其他'], platform='Steam', season='s2'), [])
 
     def test_invalid_levels(self):
         for red in (-1,6,True):

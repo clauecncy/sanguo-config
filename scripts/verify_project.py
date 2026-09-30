@@ -5,15 +5,35 @@ import json
 from pathlib import Path
 import re
 from urllib.parse import unquote
-from project_data import ROOT, read_json, public_connection, load_inventory, query
+from project_data import ROOT, read_json, public_connection, load_inventory, query, load_profile, event_dir
 from sync_game_data import validate_public
+
+def verify_events(user, root=ROOT):
+    index = read_json(root/f'user/{user}/演武/index.json')
+    events = index['events']
+    if not isinstance(events, list) or any(not isinstance(e, str) for e in events) or len(set(events)) != len(events):
+        raise ValueError('Invalid/duplicate event index: ' + user)
+    if index.get('current_event') is not None and index['current_event'] not in events:
+        raise ValueError('Current event missing from index: ' + user)
+    actual = {p.parent.name for p in (root/f'user/{user}/演武').glob('*/event.json')}
+    if set(events) != actual:
+        raise ValueError('Event directories differ from index: ' + user)
+    for event in events:
+        path = event_dir(user, event, root)
+        metadata = read_json(path/'event.json')
+        if metadata['season'] != event.split('-', 1)[0]:
+            raise ValueError('Event season differs from identity: ' + event)
+    return len(events)
 
 def verify(root=ROOT, migration=False):
     manifest=read_json(root/'docs/migration-manifest.json')
     with public_connection(root) as c:
         validate_public(c)
     result={}
+    event_count = 0
     for user in ['bixianjue','zhaoguohua']:
+        load_profile(user, root)
+        event_count += verify_events(user, root)
         current=load_inventory(user,root)
         if migration:
             baseline=manifest.get('inventory_baseline',{}).get(user)
@@ -54,6 +74,7 @@ def verify(root=ROOT, migration=False):
     result['missing_original_assets']=len(manifest.get('missing_original_assets',[]))
     result['cleaned_materials']=manifest.get('retention_cleanup',{}).get('removed_count',0)
     result['public_integrity']='ok'
+    result['indexed_events'] = event_count
     from validate_materials import verify_materials
     result['materials'] = verify_materials(root)
     if migration: result['migration_fields']='unchanged except documented quality exclusions and added IDs'
