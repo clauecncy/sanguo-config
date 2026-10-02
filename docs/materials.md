@@ -2,6 +2,8 @@
 
 ## 数据边界
 
+- 武将、战法详情统一存公共库；演武只保存选择、每轮状态和战报等事件数据，通过实体引用查询公共详情。演武对话补充的缺失详情也同步到公共库，可保留事件与证据的来源关联，不在每期重复存放完整技能详情。
+
 - `game/game.sqlite3` 与 `game/sources/public-baseline.sql` 同步发布；等级观察 JSON 是数据库的确定性导出。
 - 主表正文是历史来源展示，不是任意红度的通用满级效果。查询以 `tactic_level_observations` 中对应等级、红度、平台、赛季、场景和有效核定为准。红度未知不当零，无匹配返回需要确认并列出现有观察。
 - `review_state` 区分 `unreviewed/reviewed/superseded/retracted`。`superseded_by` 指向同技能的新观察，禁止自环和循环；已撤回/被替代观察不参加可信查询。自动分类不覆盖已核决定。
@@ -22,12 +24,13 @@
 
 ## 命令
 
-公共材料维护使用 Python 3.11+（SQLite serialize 支持）；导入图片额外需要 Pillow。普通库存/离线重建仍可用 Python 3.10+ 标准库。所有材料入口必须显式用户和期次，不能写个人 inventory.json。
+公共材料维护使用 Python 3.11+（SQLite serialize 支持）；导入图片额外需要 Pillow。普通库存/离线重建仍可用 Python 3.10+ 标准库。演武入口必须显式用户和期次，不能写个人 inventory.json。纯公共详情导入使用 `import --public`，不带账号和期次；它只写公共资料。演武来源的详情仍可通过原 `import --user ... --event ...` 写入公共库并关联该期来源。
 
 ```powershell
 python scripts/materials.py query --user bixianjue --event s2-2026-09-23 --name 断敌粮道 --advancement 1
 python scripts/materials.py validate --user bixianjue --event s2-2026-09-23
 python scripts/materials.py import --user bixianjue --event s2-2026-09-23 --input incoming-review.json
+python scripts/materials.py import --public --input public-review.json
 ```
 
 写入命令默认只预演；核对 `changed_files` 后同命令加 `--apply`。材料入库必须先人工对图逐字段确认，CLI不执行OCR或自动判真。现阶段导入已有公共战法的完整等级观察；新增实体、武将四维需先单独审核定义，不能塞进战法观察，也不能把战斗buff属性当基础四维。
@@ -58,6 +61,8 @@ python scripts/materials.py import --user bixianjue --event s2-2026-09-23 --inpu
 ```
 
 明确红度时填0至5并在 verified_fields 增加 advancement_confirmed；未核发动率填 null，不在 verified_fields 声称核定。`supersedes` 填明确被替代的旧观察ID。同证据同上下文重复导入不新增观察；冲突转写拒绝覆盖，需要独立证据和明确替代关系。主表不会因这次导入自动把整个武将/战法升可信。
+
+纯公共输入省略 `user_id`、`event_id`，观察 `scope` 使用 `unspecified`。2026-09-25 用户明确本批 2026-09-12 截图只记录10级满级效果（含满级预览右侧值），红度未展示按白板0；已展示红度保留实值。默认白板须在 `trust_reason` 说明来自用户约定，不声称截图展示了0红，也不自动重写历史未知红度。
 
 当前状态更新用 `materials.py state`，输入 `{expected_revision, reason, state}`；state为完整当前状态，必须保留证据和不确定性。旧修订自动追加历史，版本不符拒绝覆盖。更新后先 dry-run，再 --apply。图像文件本身只复制，不修改原始输入。
 

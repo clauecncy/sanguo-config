@@ -173,14 +173,21 @@ def migrate(root, user, event_id, recipe):
     return changes
 
 
-def import_evidence(root, user, event_id, payload):
+def import_evidence(root, user, event_id, payload, *, public=False):
     root = root.resolve()
-    base = event_dir(user, event_id, root)
-    if payload.get('user_id') != user or payload.get('event_id') != event_id:
+    if public:
+        if user is not None or event_id is not None or payload.get('user_id') is not None or payload.get('event_id') is not None:
+            raise ValueError('Public import cannot carry account/event ownership')
+        base, event_refs = None, []
+    else:
+        base = event_dir(user, event_id, root)
+        event_refs = [user + '/' + event_id]
+    if not public and (payload.get('user_id') != user or payload.get('event_id') != event_id):
         raise ValueError('Import ownership mismatch')
     if not payload.get('observations'):
         raise ValueError('No observations supplied')
     changes, entries = {}, refresh_index(root, read_json(root / 'game/sources/evidence-index.json'))
+    imported_evidence = set()
     c = memory_catalog(root)
     try:
         for item in payload['observations']:
@@ -198,6 +205,8 @@ def import_evidence(root, user, event_id, payload):
                 raise ValueError('Invalid advancement')
             if item['scope'] not in ('event_native','support','owned','unspecified'):
                 raise ValueError('Invalid scope')
+            if public and item['scope'] != 'unspecified':
+                raise ValueError('Public import requires unspecified scope')
             expected_fields = {'effect_raw','level'}
             if item['activation_rate'] is not None:
                 if not re.fullmatch(r'\d+(\.\d+)?%', item['activation_rate']):
@@ -224,15 +233,17 @@ def import_evidence(root, user, event_id, payload):
             with Image.open(io.BytesIO(raw)) as decoded:
                 decoded.verify()
             sha = digest(raw)
+            imported_evidence.add(evidence_id(sha))
             target = 'game/sources/evidence/' + sha + image.suffix.lower()
             existing = next((r for r in entries if r.get('evidence_id') == evidence_id(sha)
-                             and r['path'].startswith('game/sources/evidence/')), None)
+                             and (r['path'].startswith('game/sources/evidence/') or
+                                  (public and r['path'].startswith('game/sources/')))), None)
             if existing:
                 target = existing['path']
-                existing['event_refs'] = sorted(set(existing.get('event_refs', []) + [user + '/' + event_id]))
+                existing['event_refs'] = sorted(set(existing.get('event_refs', []) + event_refs))
             else:
                 entries.append(dict(path=target,sha256=sha,evidence_id=evidence_id(sha),availability='present',
-                                    event_refs=[user + '/' + event_id],role='逐字段人工核定截图'))
+                                    event_refs=event_refs,role='逐字段人工核定截图'))
             changes[target] = raw
             source_name = item['name'] + ':' + item['observed_at'] + ':' + item['platform'] + ':' + item['season']
             # Source labels/dates can change without creating independent evidence.
@@ -268,10 +279,36 @@ def import_evidence(root, user, event_id, payload):
                 c.execute("UPDATE tactic_level_observations SET review_state='superseded',superseded_by=?,trust_status='需要确认',trust_reason=? WHERE id=?",
                           (oid,item['trust_reason'],old_id))
         associate(c, entries)
+        if public:
+            # Keep the durable transcription and its evidence identity in the same transaction.
+            for entry in entries:
+                if entry.get('evidence_id') not in imported_evidence:
+                    continue
+                rows = c.execute('''SELECT o.*,t.name FROM tactic_level_observations o
+                    JOIN tactics t ON t.id=o.tactic_id WHERE o.evidence_id=? ORDER BY o.id''',
+                    (entry['evidence_id'],)).fetchall()
+                sha = entry['sha256'].lower()
+                marker = '<!-- IMAGE_TEXT_TRANSCRIPTION_V1:sha256:' + sha + ' -->'
+                document = 'game/sources/transcriptions/' + sha + '.md'
+                lines = ['# 公共满级战法截图转写', '', '<a id="image-' + sha + '"></a>', '', marker, '']
+                fields = set()
+                for row in rows:
+                    fields.update(json.loads(row['verified_fields']))
+                    lines.extend(['## ' + row['name'] + '（观察 ' + str(row['id']) + '）', '',
+                        '- 等级：' + str(row['level']), '- 红度：' + str(row['advancement_confirmed']),
+                        '- 发动率：' + str(row['activation_rate']), '- 核定：' + row['trust_reason'],
+                        '- 可信字段：' + row['verified_fields'], '', row['effect_raw'], ''])
+                changes[document] = '\n'.join(lines).encode('utf-8')
+                entry.update(availability='local_only',transcription_ref=document+'#image-'+sha,
+                    transcription_status='verified_text',transcription_marker=marker,
+                    trust_status='可信',trust_reason='人工逐字段核对；详见各观察的核定依据及边界。',
+                    verified_fields=sorted(fields))
         changes.update(catalog_changes(c,root))
     finally:
         c.close()
     changes['game/sources/evidence-index.json'] = json_bytes(entries)
+    if public:
+        return changes
     event = read_json(base / 'event.json')
     manifest = event_evidence(root,base,event,entries)
     prefix = base.relative_to(root).as_posix()
@@ -300,8 +337,9 @@ def update_state(root, user, event_id, payload):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command',choices=['migrate','import','state','query','recover','validate'])
-    parser.add_argument('--user',required=True)
-    parser.add_argument('--event',required=True)
+    parser.add_argument('--user')
+    parser.add_argument('--event')
+    parser.add_argument('--public', action='store_true', help='Import public evidence without account/event ownership')
     parser.add_argument('--input',type=Path)
     parser.add_argument('--apply',action='store_true')
     parser.add_argument('--name')
@@ -311,7 +349,14 @@ def main():
     parser.add_argument('--journal',type=Path)
     args = parser.parse_args()
     try:
-        base = event_dir(args.user,args.event)
+        if args.public:
+            if args.command != 'import' or args.user is not None or args.event is not None:
+                raise ValueError('--public is only for import without --user/--event')
+            base = None
+        else:
+            if not args.user or not args.event:
+                raise ValueError('--user and --event required unless using import --public')
+            base = event_dir(args.user,args.event)
         if args.command == 'validate':
             print(json.dumps(verify_materials(),ensure_ascii=False,indent=2))
             return
@@ -339,7 +384,8 @@ def main():
                 raise ValueError('--input required')
             payload = read_json(args.input)
             build = {'migrate':migrate,'import':import_evidence,'state':update_state}[args.command]
-            changes = build(ROOT,args.user,args.event,payload)
+            changes = (build(ROOT,args.user,args.event,payload,public=True) if args.public
+                       else build(ROOT,args.user,args.event,payload))
             changed = [p for p,b in changes.items() if not (ROOT/p).exists() or (ROOT/p).read_bytes()!=b]
             print(json.dumps({'mode':'apply' if args.apply else 'dry-run','changed_files':changed},ensure_ascii=False,indent=2))
             if args.apply:

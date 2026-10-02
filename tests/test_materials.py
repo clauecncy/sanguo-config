@@ -104,6 +104,11 @@ class EffectTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 select_effect(self.c,'断敌粮道',advancement=red)
 
+    def test_terminal_full_stop_is_not_effect_conflict(self):
+        self.c.execute("UPDATE tactic_level_observations SET effect_raw=rtrim(effect_raw,'。') WHERE tactic_id=(SELECT id FROM tactics WHERE name='铸甲销戈')")
+        self.c.execute("UPDATE tactic_level_observations SET effect_raw=effect_raw || '。' WHERE id=(SELECT max(o.id) FROM tactic_level_observations o JOIN tactics t ON t.id=o.tactic_id WHERE t.name='铸甲销戈')")
+        self.assertIn('70.85%', select_effect(self.c,'铸甲销戈',advancement=3)['effect'])
+
     def test_supersession_validation(self):
         self.c.execute("UPDATE tactic_level_observations SET review_state='superseded',trust_status='需要确认',superseded_by=27 WHERE id=27")
         with self.assertRaises(ValueError):
@@ -234,14 +239,14 @@ class EventTests(unittest.TestCase):
                 row['availability']='historical_missing'
         public_row=next(r for r in index if r['path'].startswith('game/sources/evidence/') and r.get('availability')=='local_only')
         public_row['availability']='local_only'
-        (root/public_row['path']).unlink()
+        (root/public_row['path']).unlink(missing_ok=True)
         atomic_json(index_path,index)
 
         manifest_path=event_target/'证据清单.json'
         manifest=read_json(manifest_path)
         event_row=manifest['files'][0]
         event_row['availability']='local_only'
-        (event_target/event_row['path']).unlink()
+        (event_target/event_row['path']).unlink(missing_ok=True)
         atomic_json(manifest_path,manifest)
         self.assertEqual(refresh_index(root,[public_row])[0]['availability'],'local_only')
         verify_materials(root)
@@ -270,6 +275,12 @@ class ImportTests(unittest.TestCase):
             activation_rate=observation['activation_rate'], platform=observation['source']['platform'],
             season=observation['source']['season'], advancement=observation['advancement_confirmed'],
             scope=observation['observation_scope'], verified_fields=observation['verified_fields'])
+        # Real screenshots are deliberately unversioned; tests use an isolated image fixture.
+        from PIL import Image
+        Image.new('RGB',(2,2),'black').save(self.root/'fixture-seed.png')
+        self.payload['observations'][0]['image'] = 'fixture-seed.png'
+        publish(self.root, import_evidence(self.root,'bixianjue','s2-2026-09-23',self.payload))
+        self.payload['observations'][0]['image'] = 'game/sources/evidence/' + digest((self.root/'fixture-seed.png').read_bytes()) + '.png'
 
     def tearDown(self):
         self.temp.cleanup()
@@ -292,6 +303,28 @@ class ImportTests(unittest.TestCase):
         self.payload['observations'][0]['reviewed']=False
         with self.assertRaises(ValueError):
             import_evidence(self.root,'bixianjue','s2-2026-09-23',self.payload)
+
+    def test_public_import_has_no_event_writes_and_is_idempotent(self):
+        from PIL import Image
+        Image.new('RGB',(2,2),'white').save(self.root/'fixture.png')
+        payload = dict(observations=copy.deepcopy(self.payload['observations']))
+        payload['observations'][0].update(image='fixture.png', effect_raw='公共入口隔离测试', scope='unspecified')
+        changes = import_evidence(self.root,None,None,payload,public=True)
+        self.assertFalse(any(p.startswith('user/') for p in changes))
+        entries = json.loads(changes['game/sources/evidence-index.json'])
+        entry = next(r for r in entries if r['sha256'] == digest((self.root/'fixture.png').read_bytes()))
+        self.assertEqual(entry['event_refs'], [])
+        with material_lock(self.root):
+            publish(self.root, changes, check=lambda: verify_materials(self.root))
+            self.assertIsNone(publish(self.root, import_evidence(self.root,None,None,payload,public=True)))
+
+    def test_public_import_rejects_event_identity_and_scope(self):
+        with self.assertRaises(ValueError):
+            import_evidence(self.root,None,None,self.payload,public=True)
+        payload = dict(observations=copy.deepcopy(self.payload['observations']))
+        payload['observations'][0]['scope'] = 'event_native'
+        with self.assertRaises(ValueError):
+            import_evidence(self.root,None,None,payload,public=True)
 
     def test_new_evidence_publishes_once(self):
         from PIL import Image

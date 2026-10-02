@@ -27,7 +27,10 @@ def select_effect(c, name, *, level=10, advancement=None, platform=None, season=
     exact = [r for r in compatible if r['advancement_confirmed'] == advancement]
     if not exact:
         return result
-    if len({(r['effect_raw'], r['activation_rate']) for r in exact}) > 1:
+    # A transcription may append a final full stop absent from the screenshot.
+    # Ignore only that presentation difference; preserve internal punctuation,
+    # numbers, mechanics and activation rates for conflict detection.
+    if len({(r['effect_raw'].strip().rstrip('。'), r['activation_rate']) for r in exact}) > 1:
         result['reason'] = '同一上下文存在未撤回的冲突观察，需核定替代关系'
         return result
     row = exact[0]
